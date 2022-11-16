@@ -1,0 +1,219 @@
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:48	    Page 1
+tri_fp.asm
+
+
+
+      1
+      2					 ; this	function draws a triangle from y1 to y2	using x1 and x2	as the starting
+      3					 ; x points along with deltas dx_right amd dx_left. The	function uses 32 bit
+      4					 ; fixed point math, notice the	use of floating	point instructions to convert
+      5					 ; the floating	point values into fixed	point values
+      6
+      7	    0000			 .MODEL	MEDIUM		    ; use medium memory	model C	function names
+      8
+      9					 .386
+     10					 .387
+     11
+     12	    0000			 .CODE			    ; begin the	code segment
+     13
+     14					 PUBLIC	_Triangle_Asm	    ; export function name to linker
+     15
+     16	    0000			 _Triangle_Asm PROC
+     17
+     18					 ARG dest:DWORD, y1:WORD, y2:WORD, x1:DWORD, x2:DWORD, dx_left:DWORD, dx_right:DWORD,	    +
+     19					 color:WORD
+     20
+     21					 ; local variables
+     22
+     23					 LOCAL xs_f:DWORD, xe_f:DWORD,dx_left_f:DWORD, dx_right_f:DWORD,xs:WORD,xe:WORD
+     24
+     25	    0000  55			     push bp		      ;	create stack frame
+     26	    0001  8B EC			     mov bp,sp
+     27	    0003  57			     push di		      ;	save di
+     28
+     29
+     30	    0004  BB 0000		     mov bx,0		      ;	reset bx to 0, use for line increment
+     31
+     32	    0007  8B 56	0A		     mov dx,y1		      ;	dx=y1
+     33
+     34	    000A  D9 46	0E		     fld  x1		      ;	xs_f = (x1*65536)
+     35	    000D  2E: DC 0E 00ACr	     fmul FP_SHIFT
+     36	    0012  DB 5E	FC		     fistp xs_f
+     37
+     38	    0015  D9 46	12		     fld  x2		      ;	xe_f = (x2*65536)
+     39	    0018  2E: DC 0E 00ACr	     fmul FP_SHIFT
+     40	    001D  DB 5E	F8		     fistp xe_f
+     41
+     42	    0020  D9 46	16		     fld  dx_left	      ;	dx_left_f = (dx_left*65536)
+     43	    0023  2E: DC 0E 00ACr	     fmul FP_SHIFT
+     44	    0028  DB 5E	F4		     fistp dx_left_f
+     45
+     46	    002B  D9 46	1A		     fld  dx_right	      ;	dx_right_f = (dx_right*65536)
+     47	    002E  2E: DC 0E 00ACr	     fmul FP_SHIFT
+     48	    0033  DB 5E	F0		     fistp dx_right_f
+     49
+     50
+     51					 ; for (dx=y1; dx<=y2; dx++)
+     52
+     53	    0036			 begin_line:
+     54
+     55	    0036  8B 46	FE		     mov ax,WORD PTR xs_f[2]  ;	get whole part of xs_f into xs
+     56	    0039  89 46	EE		     mov xs,ax
+     57
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:48	    Page 2
+tri_fp.asm
+
+
+
+     58	    003C  8B 46	FA		     mov ax,WORD PTR xe_f[2]  ;	get whole part of xe_f into xe
+     59	    003F  89 46	EC		     mov xe,ax
+     60
+     61
+     62	    0042  C4 7E	06		     les di,dest	      ;	point es:di to start of	line
+     63	    0045  03 7E	EE		     add di,xs
+     64	    0048  03 FB			     add di,bx		      ;	add vertical offset
+     65
+     66	    004A  8B 4E	1E		     mov cx, color	      ;	cx = color | color << 8
+     67	    004D  8A E9			     mov ch,cl
+     68
+     69	    004F			 process_left_end:
+     70
+     71	    004F  8B 46	FE		     mov ax,WORD PTR xs_f[2]  ;	ax=xs &	0x01
+     72	    0052  25 0001		     and ax,01h
+     73
+     74	    0055			 test_l1:
+     75
+     76	    0055  3D 0001		     cmp ax,1		      ;	if (ax==1)
+     77	    0058  75 06			     jne process_right_end
+     78
+     79	    005A  26: 88 0D		     mov es:[di], cl	      ;	plot pixel
+     80	    005D  FF 46	EE		     inc xs		      ;	xs++;
+     81
+     82	    0060			 process_right_end:
+     83
+     84	    0060  C4 7E	06		     les di,dest	      ;	point es:di to start of	line
+     85	    0063  03 7E	EC		     add di,xe
+     86	    0066  03 FB			     add di,bx		      ;	add vertical offset
+     87
+     88	    0068  8B 46	EC		     mov ax,xe		      ;	ax=xs &	0x01
+     89	    006B  25 0001		     and ax,01h
+     90
+     91	    006E			 test_r0:		      ;	if (ax==0)
+     92
+     93	    006E  3D 0000		     cmp ax,0
+     94	    0071  75 06			     jne process_middle
+     95
+     96	    0073  26: 88 0D		     mov es:[di],cl	      ;	plot pixel
+     97
+     98	    0076  FF 4E	EC		     dec xe		      ;	xe-=1
+     99
+    100	    0079			 process_middle:
+    101
+    102
+    103	    0079  C4 7E	06		     les di,dest	      ;	point es:di to start of	line
+    104	    007C  03 7E	EE		     add di,xs
+    105	    007F  03 FB			     add di,bx		      ;	add vertical offset
+    106
+    107	    0081  FC			     cld		      ;	clear the direction of movement
+    108
+    109	    0082  8B C1			     mov ax, cx		      ;	move the color data into eax
+    110
+    111	    0084  8B 4E	EC		     mov cx,xe		      ;	compute	number of words	to move	 (xe-xs+1)/2
+    112	    0087  2B 4E	EE		     sub cx,xs
+    113	    008A  41			     inc cx
+    114	    008B  D1 E9			     shr cx,1		      ;	divide by 2
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:48	    Page 3
+tri_fp.asm
+
+
+
+    115
+    116	    008D  F3> AB		     rep stosw		      ;	fill the region	with data
+    117
+    118
+    119	    008F			 end_line:
+    120								      ;	perform	fixed point addition of	deltas
+    121	    008F  66| 8B 46 F4		     mov eax,dx_left_f	      ;	xs_f+=dx_left_f
+    122	    0093  66| 01 46 FC		     add xs_f,eax
+    123
+    124	    0097  66| 8B 46 F0		     mov eax,dx_right_f	      ;	xe_f+=dx_right_f
+    125	    009B  66| 01 46 F8		     add xe_f,eax
+    126
+    127	    009F  81 C3	0140		     add bx,320		      ;	move to	next line in destination buffer
+    128
+    129
+    130	    00A3  42			     inc dx		      ;	dx++
+    131	    00A4  3B 56	0C		     cmp dx,y2
+    132
+    133	    00A7  7E 8D			     jle begin_line	      ;	if (dx<=y2) process next line
+    134
+    135	    00A9  5F			     pop di		      ;	restore	di
+    136	    00AA  5D			     pop bp		      ;	fixup stack
+    137
+    138	    00AB  CB			     ret		      ;	later!
+    139
+    140
+    141					 ; constants section, must be here so that processor doesn't try to execute
+    142					 ; data
+    143
+    144	    00AC  40F0000000000000	 FP_SHIFT DQ 65536.0 ; this is equivalent to FP_SCALE in the fixed point defines
+    145
+    146
+    147	    00B4			 _Triangle_Asm ENDP
+    148
+    149
+    150					 END
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:48	    Page 4
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "05/26/95"
+??filename			  Text	 "tri_fp  "
+??time				  Text	 "02:23:48"
+??version			  Number 0400
+@32Bit				  Text	 0
+@CodeSize			  Text	 1
+@Cpu				  Text	 0F0FH
+@DataSize			  Text	 0
+@FileName			  Text	 tri_fp
+@Interface			  Text	 00h
+@Model				  Text	 4
+@WordSize			  Text	 2
+@code				  Text	 tri_fp_TEXT
+@curseg				  Text	 tri_fp_TEXT
+@data				  Text	 DGROUP
+@stack				  Text	 DGROUP
+FP_SHIFT			  Qword	 tri_fp_TEXT:00AC
+_Triangle_Asm			  Far	 tri_fp_TEXT:0000
+begin_line			  Near	 tri_fp_TEXT:0036
+color				  Number [DGROUP:BP+001E]
+dest				  Number [DGROUP:BP+0006]
+dx_left				  Number [DGROUP:BP+0016]
+dx_left_f			  Number [DGROUP:BP-000C]
+dx_right			  Number [DGROUP:BP+001A]
+dx_right_f			  Number [DGROUP:BP-0010]
+end_line			  Near	 tri_fp_TEXT:008F
+process_left_end		  Near	 tri_fp_TEXT:004F
+process_middle			  Near	 tri_fp_TEXT:0079
+process_right_end		  Near	 tri_fp_TEXT:0060
+test_l1				  Near	 tri_fp_TEXT:0055
+test_r0				  Near	 tri_fp_TEXT:006E
+x1				  Number [DGROUP:BP+000E]
+x2				  Number [DGROUP:BP+0012]
+xe				  Number [DGROUP:BP-0014]
+xe_f				  Number [DGROUP:BP-0008]
+xs				  Number [DGROUP:BP-0012]
+xs_f				  Number [DGROUP:BP-0004]
+y1				  Number [DGROUP:BP+000A]
+y2				  Number [DGROUP:BP+000C]
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+tri_fp_TEXT			  16  00B4 Word	  Public  CODE
+

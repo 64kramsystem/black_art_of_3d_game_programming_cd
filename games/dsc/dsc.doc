@@ -1,0 +1,472 @@
+                          Desert Storm Command
+                           by David Johndrow
+           An MVP Software and Pod Bay Enterprises Production
+
+Desert Storm Command is shareware.  You are free to evaluate this software.
+If you enjoy the game you must register with MVP Software.  When you register
+you'll receive Desert Storm Command Deluxe, with new scenarios and levels.
+Thanks for playing Desert Storm Command and for supporting shareware.  Your
+honesty pays.
+
+This is Desert Storm Command.  Read on to find out how you can get the Deluxe
+version, with twice as much graphics, action and fun!
+
+To order Desert Storm Command Deluxe, call 800-968-9684 toll-free 24 hours a
+day.  Please have your Master Card or Visa ready when you call.  Or fill out
+the order form at the end of this manual and fax it to: 616-245-3204.  Make
+sure your credit card number and expiration date are legible.  Or if you
+prefer mail the order form and your check to: MVP Software, 1035 Dallas SE,
+Grand Rapids, MI 49507-1407.
+
+For overseas orders or technical support call 616-245-8376.
+
+           Download All the Latest MVP Shareware Games FREE
+
+If your favorite BBS doesn't have an MVP file section, then you may be
+missing some great shareware.  To get all the latest and greatest MVP
+shareware releases, call one of the leading boards listed below, and check
+out the FREE MVP file area.
+
+In Grand Rapids, Michigan -- Ryan's Bar (616) 456-1845
+In Milwaukee, Wisconsin -- Exec-PC (414) 789-4360
+In New York, New York -- The Invention Factory (212) 274-8110
+In Boston, Massachusetts -- Channel 1 (617) 354-3230
+In Kansas City, Missouri -- Sound Advice (816) 436-8029
+In Reston, Virginia -- WorldNet (703) 620-8900
+
+Even better, tell your favorite sysop about the MVP Distribution Network and
+how he can be assured of getting all of the latest MVP shareware hits as soon
+as they are released.  See the SYSOP.DOC file for details.
+
+                    MVP is Now on CompuServe!
+
+You can get all of the latest MVP shareware releases, and discuss MVP titles
+directly with the authors on MVP's new section on the world's largest
+online information network, Compuserve.  Just type GO MVPSOFT to get to our
+section!  If you are not a Compuserve member, call (616) 245-8376 and ask for
+a special money-saving membership offer.
+
+Installation
+------------
+If you downloaded this file from a BBS, you don't need to run Install.  If you
+purchased an evaluation disk from a shareware vendor or the story, follow these
+directions.  To install Desert Storm Command, place the diskette into the A
+drive and type A:, or into the B drive and type B:.  When the A> or B> prompt
+appears on the screen, type INSTALL.  Follow the directions to install the
+software.
+
+Note that you must have your mouse and the DOS mouse driver installed to run
+this game.  If you normally use the mouse with Windows programs, remember that
+the Windows mouse driver does not work with DOS programs.  (Blame Microsoft
+for this, not us.)  You need to run the MOUSE.COM program before running
+Desert Storm Command if your mouse driver is not installed.  This can be
+found on the disk that came with your mouse.
+
+To begin the game type DSC.
+
+Note to Windows Users
+---------------------
+Desert Storm Command will run as a DOS application, spawned under Windows, but
+you may encounter sound card conflicts.  The best solution if you run into
+conflicts is to completely exit from Windows before starting Desert Storm
+Command.  Clicking on the DOS prompt is NOT exiting Windows.  You must
+actually close your Windows session.
+
+Desert Storm Command and Sound Blaster 16
+-----------------------------------------
+The Sound Blaster 16 sound card causes special problems, especially in 486 DX2
+systems.  If the game locks up, try running it without digitized sound effects.
+Another option is to include the following command in your AUTOEXEC.BAT:
+  
+    SET SB-SET FM:9,9
+
+This command may also make the music louder if it is too soft on your SB 16.
+
+Making a clean boot disk
+------------------------
+If you encounter problems running Desert Storm Command there may be a
+conflict between it and a program resident in memory.  Here's a way to avoid
+the conflict.
+
+Place a blank, unformatted diskette into drive A of your computer.  Then type
+
+            FORMAT A:/S/U
+
+and press enter.  When the computer is finished formatting the disk and
+copying the system files to it, press the RESET button on your computer or the
+ALT-CTRL-DEL keys at the same time.  After your computer has rebooted, go to
+the Desert Storm Command directory and play the game.  If it runs, there is a
+conflict between a resident program loaded by your AUTOEXEC.BAT or CONFIG.SYS
+file.  Whenever you want to play Desert Storm Command, simply reboot your
+computer with the boot disk you have created.
+
+Introduction
+------------
+Desert Storm Command is an arcade-style game that puts you in the conflict in
+the Persian Gulf.  This game comprises 20 missions.  Missions take place all
+over the gulf region and require you to meet certain objectives to pass on to
+the next mission.  There are two basic mission types to contend with in the
+shareware version: Combat & Scuds.
+
+The Main Menu
+-------------
+When the game starts, it enters a demonstration mode which will show you both
+of the basic mission types.  When you have finished viewing the demonstration,
+click the left mouse button to go to the main menu.  The main menu has seven
+different options which are as follows:
+
+(1) Play Game - This option  will actually start a new game, beginning with
+Mission number one.
+
+(2) Practice - This option will allow you to practice either of the basic
+mission types.  When the practice menu screen comes up, click the left mouse
+button on the mission type you want to practice.  Notice that there are four
+choices in this menu.  The choices labelled "TOMAHAWKS" and "TANKS" are not
+available in the shareware version of this game.  Refer to the section
+discussing Desert Storm Command Deluxe for more about these mission types.
+
+(3) Load Game - When playing a game, if you achieve the minimum objective to
+advance to the next level, you will be offered a chance to save the game at
+that point.  Doing so will allow you to either continue play at a later time
+or resume at this same point should you not meet the objectives for the
+coming round.  To make reaching the finale more of a challenge, after the
+15th level, the save option is not offered.  When the "Save Game?" prompt
+appears, hit the Y key.  Note: There is only one saved game at a time so be
+careful not to overwrite a 14th level save with a 3rd level save.
+
+(4) Instructions - This section not only gives you a brief overview of the
+program, it also takes you through both of the mission types, step-by-step.
+Note: A "Click mouse button or hit any key" prompt is displayed for the first
+few screens but is not from then on.  Be aware that the help section will
+wait for you to tell it to advance.
+
+(5) Game Settings - This section will allow you to set the program up the way
+you like it.  After clicking on this option, you will see the Game Settings
+menu.  Within this menu you can: (1) Turn music on & off (2) Turn sound
+effects on and off (3) Adjust the music and sound volumes and (4) set the
+game difficulty from easy to extremely hard.
+
+(6) Hall of Fame - This is a record of the 10 highest scoring players.  When
+a new high score is achieved, you will be asked to enter your name.  In
+addition to the score, the Hall of Fame also reports the level reached,
+difficulty used, whether the game was finished (level 20), and whether the
+scorer ever saved the game.  Since saving games will allow you to start over
+at that point, individuals who play the game straight through are duly noted
+for their courageous efforts!  If you desire to start a new high score table,
+simply delete the file called "DSC.SCR".
+
+(7) Quit - Exits Desert Storm Command and returns you to DOS.
+
+Getting Started
+---------------
+When you run Desert Storm Command for the first time, you will be asked
+whether or not you want to run the game in bloodless mode.  This is due to
+the bloody nature of the combat scenarios.  If you choose YES, the combat
+missions will not display the blood during shooting.  You will also be
+informed of what to do if your machine is slow enough to cause problems or if
+there are some sound card conflicts that may cause lock-ups.  After getting
+through this section the first time, you won't be annoyed with the questions
+subsequently.  If you wish to change the bloodless setting, you can always
+delete the file called DSC.SAV and run the program again.  All other settings
+can be changed in the GAME SETTINGS menu.
+
+Combat Missions
+---------------
+The combat missions throw you into the heat of hand-to-hand battle.  When the
+mission begins, you will see men start to run across the bottom of the screen
+from left to right.  These are the men in your troop and you must protect
+them.  Meanwhile, men will start appearing in window sills, bushes, and even
+foxholes.  Unbeknownst to everyone but you, your troop has stumbled into an
+ambush!  You must eliminate these snipers before they take pot-shots at your
+men.  As the levels advance, more and more men will appear at the same time.
+Fortunately for you, your weapons will advance as well.  When you start the
+game you are using an M-9 pistol.  Each shot must be carefully aimed.  As you
+eventually work your way towards an M-60, multiple shots are fired for each
+pull of the trigger.  Of your original troop, at least half of them must make
+it across the screen alive for you to advance in the game.  Troop sizes vary
+from 12 to 30, so be prepared for some long engagements.
+
+Scud Missions
+-------------
+The scud missions put you in charge of the Patriot Missile Defense System.
+You will use your Patriot missiles to eliminate wave after wave of enemy scud
+missiles, choppers, and jets.  Foremost, and by far most important, are the
+scud missiles.  Move your crosshairs across the screen and click the left
+mouse button repeatedly to send up Patriots to intercept the scuds as they
+rain down on intended targets.  When the occasional chopper comes out, you
+should eliminate it as early as possible.  If the chopper is left alone, it
+will drop a bomb which does damage to the targets below.  The bomb does about
+half of the damage done by a single scud missile, so it is clearly not as
+important.  If you can spare the time, though, the chopper is certainly
+easier to hit than the bombs are.
+
+You will also periodically see an enemy jet stray onto the screen.  The jets
+are worth a lot of points, but since they do no damage, you can ignore them.
+This is always good advice when you have your hands full with a volley of
+scuds.  Every scud missile that you fail to intercept will cause damage to
+the cities and installations below.  Your primary goal in these missions is
+to maintain the status of these installations at 50% or more.  Pay close
+attention to your status bar in the top left corner of the screen.  When the
+status bar turns yellow, it is a warning that you are in danger of
+approaching the 50% mark.  When this status bar turns red, it means that you
+have exceeded the 50% mark and the game will end after this mission.
+
+Game Playing Tips
+-----------------
+Combat Missions: At times this section will get a bit difficult.  On the
+foxhole screen, if your hands are full, you may want to choose to ignore the
+guy in the foxhole since he is in such a remote location.  Likewise for the
+guy in the bushes on the red-building screen.  Sometimes the time taken to
+get your crosshairs over to them will cost you more men than just ignoring
+them will.  Also, as the missions get more intense, fortunately the skill
+of the snipers worsens.  For example, in the early missions the sniper will
+hit his target on 1 out of every 2 shots.  Later, this may go to 1 out of 5.
+This doesn't make it too easy on you, though, since there are so many snipers
+then.
+
+Scud Missions: When the scud density is high, you may have to sacrifice a
+portion of the screen.  Decide where the largest portion of buildings are,
+protect them at all cost, and you should succeed.
+
+During scud missions, if you can afford the time, hit choppers when they first
+appear.  Never do this, though, at the cost of letting a scud hit its target.
+
+Mission Tables
+--------------
+Note: The term "random Seed" in the tables below refers to frequency with
+which either choppers or jets can appear.  This value ranges from 0 to 255
+with the following qualities:
+
+     0 - The jet or chopper never appears on this level
+     1 - The jet or chopper is almost constantly appearing
+     .
+     .
+   255 - The jet or chopper rarely appears
+
+     +---------------------------------------------------------+
+     |                      Scud Missions                      +
+     +-------+---------+---------+---------+---------+---------+
+     |       |  Max #  | Total # |  Max #  |   Jet   | Chopper |
+     |Mission|  scuds  |  scuds  | patriots|  Random |  Random |
+     |Number | at once | in level|  at once|   Seed  |   Seed  |
+     +-------+---------+---------+---------+---------+---------+
+     |   2   |    1    |   30    |    5    |   200   |   200   |
+     |   3   |    2    |   40    |    3    |   255   |   255   |
+     |   5   |    2    |   40    |    5    |    50   |   100   |
+     |   6   |    2    |   50    |    6    |   200   |     0   |
+     |   8   |    1    |   24    |    1    |   100   |     0   |
+     |   9   |    2    |   50    |    2    |     0   |   100   |
+     |  10   |    2    |   40    |    5    |    10   |   255   |
+     |  12   |    3    |   60    |    6    |     0   |   200   |
+     |  13   |    3    |   80    |    6    |    20   |     0   |
+     |  14   |    2    |  100    |    5    |    25   |   100   |
+     |  16   |    1    |   50    |    1    |   200   |   255   |
+     |  17   |    6    |  120    |    5    |   200   |   200   |
+     |  19   |    2    |  100    |    6    |   100   |   255   |
+     |  20   |    3    |  150    |    6    |     0   |     0   |
+     +-------+---------+---------+---------+---------+---------+
+
+     +-------------------------------------------------------------+
+     |                    Combat Missions                          |
+     +-------+---------+---------+--------+------------------------+
+     |Mission| Total # | Sniper  |  Your  |                        |
+     |Number | Troops  | density | Weapon |       Setting          |
+     +-------+---------+---------+--------+------------------------+
+     |   1   |   16    |    2    |  M-9   | Desert Village/Foxhole |
+     |   4   |   24    |    2    |  M-1   | Semi-Urban             |
+     |   7   |   20    |    3    |  M-1   | Desert Village/Foxhole |
+     |  11   |   20    |    3    |  M-16  | Semi-Urban             |
+     |  15   |   30    |    3    |  M-60  | Desert Village/Foxhole |
+     |  18   |   20    |    3    |  M-16  | Semi-Urban             |
+     +-------+---------+---------+--------+------------------------+
+
+
+Difficulty Tables
+-----------------
+The following tables will reflect how the difficulty settings change the
+various features of each level.  The double-dashed line means that there is
+no change in that statistic whereas a value will change this feature in the
+way described.  For example, If you have the difficulty set to EXTREME,
+mission number 2 will have 3 scuds at a time and will not end until 45 scuds
+have been destroyed by you or the ground!  At the end of your game you will
+be rewarded 0, 50,000, 100,000 or 200,000 points, depending on the difficulty
+level you have played.
+
+
+Combat Missions               Easy    Normal      Hard   Extreme
+----------------------------  ----    ------      ----   -------
+# Snipers at a time             --        --        +1        +1
+
+Scud Missions:                Easy    Normal      Hard   Extreme
+----------------------------  ----    ------      ----   -------
+Number of Scuds at a time       --        +1        +2        +2
+Total # of scuds in mission     --        --        --      x1.5
+
+                       Ordering Information
+
+Desert Storm Command Deluxe is available from the following authorized
+distributors:
+
+In the United States:
+--------------------
+MVP Software
+1035 Dallas SE
+Grand Rapids, MI 49507-1407
+phone: 800-968-9684 24-hour order line only
+       (616) 245-8376 information, technical support, or orders.
+fax: (616) 245-3204
+
+order price: $19.95 plus $3.00 shipping in the US, $4.00 shipping to
+Canada, $5.00 shipping everywhere else.  Michigan residents please add
+appropriate sales tax.
+
+In Australia:
+------------
+Budgetware
+9 Albermarle St
+Newtown NSW 2042
+phone: (02) 519-4233          Fax: (02) 516-4236
+
+order price: $A30.00 (includes shipping)
+
+In the United Kingdom:
+---------------------
+Testware Publishing
+46 The Avenue
+Harrogate, N Yorks  HG1 4QD
+phone: (0423) 886 415          Fax: (0423) 889 728
+
+order price: 20 pounds (includes shipping)
+
+In Denmark and all of Scandanavia:
+---------------------------------
+Pro-Soft
+Benloese Skel 4 G
+DK 4100 Ringsted
+
+phone: 53 61 90 42
+fax: 53 61 93 91
+
+order price: 139,00 kr. + VAT 25% + s/h 25,00
+
+In Japan:
+--------
+P. & A. Company Ltd
+302 Bellwins, 1367-23
+Nakagami, Akishima, Tokyo 196
+
+phone: 425-46-9141
+fax: 425-46-9142
+BBS: 425-46-9143
+
+3015 yen includes shipping and taxes
+
+Germany, Austria, and Switzerland
+---------------------------------
+JDS -- Software Vertrieb
+Jens Driese
+Postfach 1269
+D-26302
+
+phone: 04451-85743
+fax: 04451-860500
+CIS: 100273,2252
+BTX: DRIESE#
+
+price: 33 DM (includes taxes) plus 6 DM shipping
+
+The Netherlands
+---------------
+HaSa Software Applications
+PO Box 414
+9500 AK Stadskanaal
+
+phone: 5990 50161
+fax: 5990 50124
+BBS: 5990 50212 or 50314 or 50232
+CIS: 100115,542
+
+price: Call for current price
+
+Italy
+-----
+Systems Comunicazioni srl
+via Olanda
+6 - 20083 Gaggiano
+
+phone: (02) 9084 1814
+fax: (02) 9084 1682
+BBS: (02) 9084 1811
+
+price: Lire 42.000 IVA inclusa
+
+Spain
+-----
+Friendware S.L.
+Rafael Calvo, 40
+28010 Madrid
+
+phone: (91) 308 34 46			Fax: (91) 308 52 97
+CIS: 100413,1667
+
+price: 2.667 Pts
+
+                 DESERT STORM COMMAND DELUXE ORDER FORM
+
+Name ________________________________________________________________
+
+Address _____________________________________________________________
+
+City _______________________________ State ______ ZIP _______________
+
+Country (if outside USA) ____________________________________________
+
+CIRCLE HD DISK SIZE:    5-1/4"    -or-   3-1/2"         IMPORTANT!
+
+Price of Desert Storm Command Deluxe                            $19.95
+Shipping and Handling (US)                                        4.00
+Shipping and Handling (Canada)                                    5.00
+Shipping and Handling (all other countries)                       6.00
+Michigan residents add sales tax                                  1.44
+                                                                ------
+Make check payable to "MVP Software"           Total enclosed:  $
+Master Card/Visa information (credit card orders only)
+
+Card number __________________________________________
+
+Expiration number ____________________________________
+---------------------------------------------------------------------------
+VOLUNTARY QUESTIONS:  Please help us determine what features you would like
+====================  in future products.
+
+Circle what type of equipment you have:   8088    286    386    486    Pentium
+Circle the speed of your computer(Mhz): 12  16  20  25  33  40  50  66  ___ 
+Circle any that apply: Joystick  Mouse  Modem_______  SVGA card____________
+                                             (speed)              (type)
+
+Sound Capability:  Adlib   Sound Blaster   SB Pro   SB 16   SB AWE32
+    PC speaker only  Other ____________________________________
+
+Where did you get Desert Storm Command?
+    Friend   CompuServe   AOL   Prodigy   Ryan's Bar   Exec-PC   Channel 1
+    Invention Factory   Sound Advice   World Data Network   Novalink
+    BBS (name): _______________________
+    Shareware Distributor (name): _________________________________________
+
+Are you a game player?  Please answer the following questions about what you
+like and don't like in computer games.
+
+Approx # of commercial games owned: ____  #Registered shareware games: ____
+
+Circle preference:        Beautiful Graphics     Game Complexity 
+Circle preference:    Solo against computer   -OR-   Modem 2-Player
+Circle preference:    Strategy    Action    Simulation    Other_________
+Long term game playability:   Few Levels w/ hard difficulty   Lotsa Levels
+---------------------------------------------------------------------------
+Send this order form and your check to:
+
+MVP Software, 1035 Dallas S.E., Grand Rapids, MI  49507-1407
+
+US or Canada 24-hour order line: 800-968-9684.  Fax: 616-245-3204.
+Tech support, information, or overseas order line: 616-245-8376.
+

@@ -1,0 +1,32 @@
+
+; CUBE object
+
+cube 8 6
+
+; vertice list
+
+-20 20 20
+ 20 20 20
+ 20 20 -20
+ -20 20 -20
+ -20 -20 20
+ 20 -20 20
+ 20 -20 -20
+ -20 -20 -20
+
+; polygon list
+; cube has six sides all flat shaded
+
+0x109f 4 0 3 2 1
+0x109f 4 2 3 7 6
+0x109f 4 4 5 6 7
+0x109f 4 0 1 5 4
+0x109f 4 0 4 7 3
+0x109f 4 1 2 6 5
+
+
+
+
+
+
+

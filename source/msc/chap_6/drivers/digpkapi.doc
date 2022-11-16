@@ -1,0 +1,569 @@
+
+			 Version 3.4 DigPak
+
+			     written by
+
+			  John W. Ratcliff
+
+			 Copyright (c) 1994
+
+			The Audio Solution, Inc.
+
+Includes one set of sources that works in all memory models.  Full
+MIDPAK compatible support.  Also supports protected mode interface
+through 32 bit register passing.  Even though all DIGPAK drivers
+execute in real-mode, they work in flat-model throught the DIGPLAY
+linkable interface layer.
+
+Not all DIGPAK sound drivers are at the 3.4 level yet.	Ones not
+converted yet are, SoundBlaster 16, Gravis Ultrasound, and Turtle
+Beach Multisound.
+
+The set of digitized sound drivers hook into user interrupt vector 66h
+to provide a clean clear programmers interface. This document describes
+the two ways you can access the digitized sound package.  The first is
+the interrupt level interface.	The second is a link library interface
+that provides a set of C or assembly language callable functions to
+access not only the digitized sound drivers but also provides usefull
+support routines.  These glue code functions are located in the source
+file DIGPLAY.ASM.
+
+***********************************************************************
+*************** INT 66h Interface Specification ***********************
+***********************************************************************
+
+When invoking digplay functions to play sound you pass the address of
+a sound structure (SNDSTRUC) that contains the basic information
+describing the sound effect you wish to play.
+
+
+*** REAL MODE:
+
+typedef struct
+{
+	unsigned char far *sound; // Far address of audio data.
+	unsigned short	 sndlen;  // Length of audio sample.
+	short far *IsPlaying;	    // Address of play status flag.
+	short	  frequency;	    // Playback frequency.
+} SNDSTRUC;
+
+*** PROTECTED MODE:
+
+typedef struct
+{
+	unsigned char *sound;	// MUST BE OFFSET SEGMENT IN 1MB ADRESS SPACE!
+	unsigned short sndlen;	// Length of audio sample. < 64k
+	short *IsPlaying;	// Address of play status flag. REAL PTR OFFSET:SEGMENT!!
+	short	frequency;	// Playback frequency.
+} SNDSTRUC;
+
+********* DIGPAK functions ************************************
+
+Function #1: DigPlay, Play an 8 bit digitized sound.
+
+	INPUT:	AX = 688h    Command number.
+
+		DS:SI	     *REAL* Point to a sound structure that
+			     describes the sound effect to be played.
+
+		ESI	     *FLAT* If using 32 bit interface passing, ESI
+			     points to flat-model address in the first
+			     1mb of address space to the sound structure.
+			     Will get converted into a valid segment offset
+			     by DIGPAK driver.
+
+Function #2: SoundStatus, Check current status of sound driver.
+	      and report VERSION number of the driver, 3.1 and later.
+
+	INPUT:	AX = 689h
+	OUTPUT: AX = 0	     No sound is playing.
+		   = 1	     Sound effect currently playing.
+		DX = 0	     No sound is looping.
+		   = 1	     A sound effect is looping.
+		BX = version Starting with version 3.1, the BX register
+			     of the SoundStatus call will return the
+			     version number.  The version number is in
+			     decimal, and multiplied times 100.  Meaning
+			     a return of 310, is equal to version 3.10.
+			     Versions before 3.1, did not set the BX
+			     register to anything, so you should zero
+			     out the BX register before you check the
+			     version number.  If the BX register is still
+			     zero, then the DigPak driver loaded is less
+			     than 3.1.
+
+
+Function #3: MassageAudio, Preformat audio data into ouptut hardware format.
+
+	INPUT:	AX = 68Ah
+
+		DS:SI	     *REAL* Point to a sound structure that
+			     describes the sound effect to be played.
+
+		ESI	     *FLAT* If using 32 bit interface passing, ESI
+			     points to flat-model address in the first
+			     1mb of address space to the sound structure.
+			     Will get converted into a valid segment offset
+			     by DIGPAK driver.
+
+
+Function #4: DigPlay2, Play preformatted audio data.
+
+	INPUT:	AX = 68Bh
+
+		DS:SI	     *REAL* Point to a sound structure that
+			     describes the sound effect to be played.
+
+		ESI	     *FLAT* If using 32 bit interface passing, ESI
+			     points to flat-model address in the first
+			     1mb of address space to the sound structure.
+			     Will get converted into a valid segment offset
+			     by DIGPAK driver.
+
+
+Function #5: AudioCapabilities, Report capabilities of hardware device.
+
+	INPUT:	AX = 68Ch
+	OUTPU:	AX = Bit 0 -> On, supports background playback.
+			      Off, driver only plays as a foreground process.
+		     Bit 1 -> On, source data is reformatted for output device.
+			       Off, device handles raw 8 bit unsigned audio.
+		     Bit 2 -> On, Device plays back at a fixed frequency, but
+				  the audio driver will downsample input data
+				  to fit.
+			      Off, device plays back at user specified frequency.
+			      (NOTE: You can still playback an audio sample at
+				     whatever frequency you wish.  The driver
+				     will simply downsample the data to fit
+				     the output hardware.  Currently it does
+				     not support upsampling though.)
+		     Bit 3 -> On, this device uses the timer interrupt vector
+			      during sound playback.
+		     Bit 4 -> Driver supports timer sharing. (not
+			      available in flat model)
+		     Bit 5 -> Supports looped sounds and pending.
+		     Bit 6 -> Supports stereo panning.
+		     Bit 7 -> Supports 8 bit PCM stereo playback.
+		     Bit 8 -> Supports audio recording.
+		     Bit 9 -> supports DMA backfilling.
+
+		DX = If this device plays back at a fixed frequency the DX
+		     register will contain that fixed frequency playback rate.
+
+Function #6: OBSOLETE FUNCTION
+
+
+Function #7: OBSOLETE FUNCTION
+
+Function #8: StopSound, stop currently playing sound.
+
+	INPUT: AX = 68Fh
+	OUTPUT: None.
+
+	      Will cause any currently playing sound effect to be
+	      terminated.
+
+Function #9: OBSOLETE FUNCTION
+
+FUNCTION #10: OBSOLETE FUNCTION
+
+FUNCTION #11: OBSOLETE FUNCTION
+
+FUNCTION #12: SetTimerDivsorRate (not valid in protected mode)
+
+	INPUT: AX = 693h
+	       DX = Countdown timer divisor rate, so that timer based
+		    drivers can service application timer interrupts
+		    at their previous rate.  Service rate will be an
+		    aproximation, that is fairly close.  To reset timer
+		    divisor to default of 18.2 pass a 0 in the DX register.
+		    WARNING!!! If you make use of timer sharing, be sure
+		    to reset it back to the normal 18.2 time per second
+		    rate when you exit.
+
+FUNCTION #13: OBSOLETE FUNCTION
+
+FUNCTION #14: PostAudioPending
+
+	INPUT: AX = 695h
+
+		DS:SI	     *REAL* Pointer to a sound structure that
+			     describes the sound effect to be played.
+
+		ESI	     *FLAT* If using 32 bit interface passing, ESI
+			     points to flat-model address in the first
+			     1mb of address space to the sound structure.
+			     Will get converted into a valid segment offset
+			     by DIGPAK driver.
+
+	OUTPUT: AX = 0	Sound was started playing.
+		AX = 1	Sound was posted as pending to play.
+		AX = 2	Already a sound effect pending, this one not posted.
+
+FUNCTION #15: AudioPendingStatus
+
+	INPUT:	AX = 696h
+
+	OUTPUT: AX = 0 No sound is playing.
+		AX = 1 Sound playing, sound pending.
+		AX = 2 Sound playing, no sound pending.
+
+FUNCTION #16: SetStereoPan
+
+	 INPUT: AX = 697h
+		DX = stereo pan value. 0 full volume right.
+				      64 full volume both.
+				     127 full volume left.
+       OUTPUT: AX = 0 command ignored, driver doesn't support stereo panning.
+	       AX = 1 pan set.
+
+
+ FUNCTION #17: SetPlayMode
+
+	 INPUT: AX = 698h
+		DX = Play Mode function.
+			DX = 0 -> 8 bit PCM
+			   = 1 -> 8 bit Stereo PCM (left/right)
+			   = 2 -> 16 bit PCM
+			   = 3 -> 16 bit PCM stereo
+
+		Once the play mode has been changed, all DigPak functions
+		work exactly the same as before but expect data passed as
+		specified by this play mode.  8 bit PCM Stereo has left/right
+		channel pairs.	Supported by Stereo FX card and Sound Blaster
+		Pro.
+
+       OUTPUT: AX = 1 -> mode set.
+	       AX = 0 -> mode not supported by this driver.
+
+FUNCTION #18:	Report Pending Status Flag adddress and Semaphore address.
+
+	int far *ReportPendingAddress(void);
+
+	Reports the far address of the pending flag.  If this memory location
+	pointed to by this address is 1 that means a pending sound effect is
+	still pending.	When this becomes zero, then your application software
+	can post the next piece of audio to play.  It is preferable to use this
+	semaphore to know when to post the next buffer rather than to use the
+	AudioPendingStatus call.
+
+	int far *ReportSemaphoreAddress(void);
+
+	Report the address of the DigPak semaphore.  This returns a far
+	address to a word location inside DigPak.  When this is true,
+	then DigPak is currently active, and you shouldn't invoke any
+	DigPak function from a hardware interrupt at this time.
+
+	INPUT: AX=699h
+	OUTPUT: AX:DX -> form far Address of Pending status flag.
+		BX:DX -> form far address of digpak semaphore
+		(when using DIGPLAY.ASM in flat-model, this address
+		 returned will be converted into a valid flat-model
+		 address.)
+
+ FUNCTION #19: Set audio recording mode.
+
+	 INPUT: AX = 69Ah
+		DX = 0 turn audio recording ON.
+		   = 1 turn audio recording OFF.
+
+       OUTPUT: AX = 0 sound driver doesn't support audio recording.
+	       AX = 1 audio recording mode is set.
+
+FUNCTION #20:	OBSOLETE FUNCTION
+
+ FUNCTION #21: Set DMA back fill mode.
+
+	 INPUT: AX = 69Ch
+		DX = backfill mode 0 means turn it off.
+		     and a 1 means to turn it off.
+
+	 OUTPUT: AX = 1 -> back fill mode set.
+		      0 -> driver doesn't support DMA backfill.
+
+
+ FUNCTION #22: Report current DMAC count.
+
+	 INPUT: AX = 69Dh
+
+	 OUTPUT: AX = Current DMAC count. (counts down, not up)
+
+
+ FUNCTION #23: Verify DMA block, check to see if it crosses a 64k page
+	       boundary for the user.
+
+	 INPUT: AX = 69Eh
+		ES:BX -> *REAL*address of sound.
+		EBX   -> *FLAT* 32 bit flat model address in the first
+			 1mb of address space. DIGPAK will convert it
+			 into a valid offset:segment.
+		CX    -> length of sound effect.
+
+	 OUTPUT: AX = 1 Block is ok, DOESN'T cross 64k bounadary.
+		 AX = 0 block failed, DOES cross 64k boundary.
+
+ FUNCTION #24: Set PCM volume.
+
+	 INPUT: AX = 69Fh
+		BX = Left channel volume (or both if mono) 0-100
+		CX = Right channel volume (or both if mono) 0-100
+
+	 OUTPUT: AX = 1 Volume set
+		 AX = 0 Device doesn't support volume setting.
+
+FUNCTION #25: SetDPMIMode : Set 32 bit register addressing mode on/off
+
+	 INPUT; AX = 6A0h
+		DX = mode on/off 1/0
+
+	 OUTPUT: none.
+
+
+***********************************************************************
+** DigPlay, linkable interface to the Digitized Sound Package.	  *****
+***********************************************************************
+
+***********************************************************************
+** REAL MODE DIGPLAY.H linkable interface layer, all procedures are
+**		       prototyped and use segment names such that
+**		       they will link in any memory model.
+***********************************************************************
+
+
+#ifndef LOADABLE_DRIVERS
+#define LOADABLE_DRIVERS 1 // Conditional compilation, set to true if
+#endif
+
+/* Bit flags to denote audio driver capabilities. */
+/* returned by the AudioCapabilities call.				*/
+#define PLAYBACK 1    // Bit zero true if can play audio in the background.
+#define MASSAGE  2    // Bit one is true if data is massaged.
+#define FIXEDFREQ 4   // Bit two is true if driver plays at fixed frequency.
+#define USESTIMER 8   // Bit three is true, if driver uses timer.
+#define SHARESTIMER 16 // Bit 4, timer can be shared (BETA!!!!!)
+#define LOOPEND 32		// bit 5, support looped samples, and pending sounds (BETA!!!)
+#define STEREOPAN 64	// Bit 6, supports stereo panning.
+#define STEREOPLAY 128 // Bit 7, supports 8 bit PCM stereo playback.
+#define AUDIORECORD 256 // Bit 8, supports audio recording!
+#define DMABACKFILL 512  // Bit 9, support DMA backfilling.
+#define PCM16 1024			// Bit 10, supports 16 bit digital audio.
+#define PCM16STEREO 2048
+
+typedef struct
+{
+  char far *sound;     // address of audio data.
+  unsigned short sndlen; // Length of audio sample.
+  short far  *IsPlaying; // Address of play status flag.
+  short      frequency;  // Playback frequency.
+} SNDSTRUC;
+
+extern short  far cdecl DigPlay(SNDSTRUC far *sndplay); // 688h -> Play 8 bit digitized sound.
+extern short  far cdecl SoundStatus(void);  // 689h -> Report sound driver status.
+extern void far cdecl MassageAudio(SNDSTRUC far *sndplay); // 68Ah -> Preformat 8 bit digitized sound.
+extern void far cdecl DigPlay2(SNDSTRUC far *sndplay); // 68Bh -> Play preformatted data.
+extern short  far cdecl AudioCapabilities(void); // 68Ch -> Report audio driver capabilities.
+extern short  far cdecl DigPakIdentityString(char far *str); // 68Ch -> reports ID string of
+					      // sound driver. returns string length.
+extern void far cdecl StopSound(void); // 68Fh -> Stop current sound from playing.
+extern short  far cdecl PostAudioPending(SNDSTRUC far *sndplay);
+
+#define NOTPLAYING 0  // No sound is playing.
+#define PLAYINGNOTPENDING 1 // Playing a sound, but no sound is pending.
+#define PENDINGSOUND 2			// Playing, and a sound is pending.
+extern short  far cdecl AudioPendingStatus(void);
+
+#define FULLRIGHT 0
+#define FULLLEFT 127
+#define FRONTANDCENTER 64
+extern short far cdecl SetStereoPan(short panvalue); // 0-127, 0 full right.
+
+#define PCM_8_MONO 0
+#define PCM_8_STEREO 1
+#define PCM_16_MONO 2
+#define PCM_16_STEREO 3
+extern short far cdecl SetPlayMode(short playmode);
+// Return 0 if mode not available, 1 if mode set.
+
+extern short far cdecl SetRecordMode(short mode); // Set audio recording mode.
+
+extern short far * far cdecl PendingAddress(void); // Reports the far address of the pending
+// flag.	If this memory location pointed to by this address is 1 that means
+// a pending sound effect is still pending.  When this becomes zero, then your
+// application software can post the next piece of audio to play.  It is
+// preferable to use this semaphore to know when to post the next buffer
+// rather than to use the AudioPendingStatus call.
+
+extern short far * cdecl ReportSemaphoreAddress(void); // Reports the far address of the DigPak
+// semaphore.  If this semaphore is true, then DigPak is currently active
+// and you shouldn't post any DigPak calls.  This is EXTREMELY important if
+// you are trying to invoke DigPak functions via a hardware interrupt, where
+// you could potentially have interrupted DigPak itself.
+
+extern void far cdecl SetTimerDivisorRate(short rate); // Set the 8253 timer divisor rate.
+// If your program, has reprogrammed the 8253 timer to another rate, then
+// you must be sure to tell DigPak what that reprogrammed rate it.  Be
+// sure to set this BACK to zero when your program exits!!!
+
+extern short far cdecl ReportVersionNumber(void); // Report the DigPak version number.
+// Return code is times 100, meaning that version 3.1 would be returned
+// as the decimal number 310.  This function wasn't supported prior to
+// version 3.1 release, so it will be returned as 0, for versions prior
+// to 3.1.
+
+extern short far cdecl SetBackFillMode(short mode); // Turn DMA backfill mode on/off, return code
+// of 1 means mode was set.  Return code of 0 means driver doesn't support
+// DMA backfill.
+
+extern unsigned short far cdecl ReportDMAC(void); // Report current DMA counter.
+
+extern short far cdecl VerifyDMA(char far *data,short length); // Verify this buffer block
+// doesn't cross a 64k boundary.  Return code of 1 means the block is OK.
+// return code of 0 means the block can't be used, try another.
+
+extern void far cdecl NullSound(char far *sound,short sndlen,short null);
+
+/* Support routines */
+extern void far cdecl WaitSound(void); // Wait until sound playback completed.
+extern short  far cdecl CheckIn(void);	 // Is sound driver available? 0 no, 1 yes.
+
+/******************************************************************************/
+/* Warning, it you enable LOADABLE_DRIVERS you must prodivde memory allocation*/
+/* functions, and access to DOSCALLS.OBJ.				      */
+/******************************************************************************/
+extern short  far cdecl InitDP(short segment);	// initialize digpak driver.
+extern void far cdecl DeInitDP(short segment); // uninitialize digpak driver.
+
+
+***********************************************************************
+** FLAT MODEL DIGPLAY.H linkable interface layer, all procedures are
+**			prototyped and use segment names such that
+**			they will link in any memory model.
+***********************************************************************
+
+/* Bit flags to denote audio driver capabilities. */
+/* returned by the AudioCapabilities call.				*/
+#define PLAYBACK 1    // Bit zero true if can play audio in the background.
+#define MASSAGE  2    // Bit one is true if data is massaged.
+#define FIXEDFREQ 4   // Bit two is true if driver plays at fixed frequency.
+#define USESTIMER 8   // Bit three is true, if driver uses timer.
+#define SHARESTIMER 16 // Bit 4, timer can be shared (BETA!!!!!)
+#define LOOPEND 32		// bit 5, support looped samples, and pending sounds (BETA!!!)
+#define STEREOPAN 64	// Bit 6, supports stereo panning.
+#define STEREOPLAY 128 // Bit 7, supports 8 bit PCM stereo playback.
+#define AUDIORECORD 256 // Bit 8, supports audio recording!
+#define DMABACKFILL 512  // Bit 9, support DMA backfilling.
+#define PCM16 1024			// Bit 10, supports 16 bit digital audio.
+#define PCM16STEREO 2048
+
+typedef struct
+{
+  char *sound;		   // address of audio data.
+  unsigned short sndlen; // Length of audio sample.
+  short *IsPlaying; // Address of play status flag.
+  short frequency;	  // Playback frequency.
+} SNDSTRUC;
+
+extern short	  cdecl DigPlay(SNDSTRUC *sndplay); // 688h -> Play 8 bit digitized sound.
+extern short	  cdecl SoundStatus(void);	  // 689h -> Report sound driver status.
+extern void cdecl MassageAudio(SNDSTRUC *sndplay); // 68Ah -> Preformat 8 bit digitized sound.
+extern void cdecl DigPlay2(SNDSTRUC *sndplay); // 68Bh -> Play preformatted data.
+extern short	  cdecl AudioCapabilities(void); // 68Ch -> Report audio driver capabilities.
+extern void cdecl StopSound(void); // 68Fh -> Stop current sound from playing.
+extern short	  cdecl PostAudioPending(SNDSTRUC *sndplay);
+
+#define NOTPLAYING 0  // No sound is playing.
+#define PLAYINGNOTPENDING 1 // Playing a sound, but no sound is pending.
+#define PENDINGSOUND 2			// Playing, and a sound is pending.
+extern short	  cdecl AudioPendingStatus(void);
+
+#define FULLRIGHT 0
+#define FULLLEFT 127
+#define FRONTANDCENTER 64
+extern short	  cdecl SetStereoPan(short panvalue); // 0-127, 0 full right.
+																//			 64 full volume both.
+#define PCM_8_MONO 0
+#define PCM_8_STEREO 1
+#define PCM_16_MONO 2
+#define PCM_16_STEREO 3
+extern short cdecl SetPlayMode(short playmode);
+// Return 0 if mode not available, 1 if mode set.
+
+extern short cdecl SetRecordMode(short mode); // Set audio recording mode.
+
+extern short * cdecl PendingAddress(void); // Reports the far address of the pending
+// flag.	If this memory location pointed to by this address is 1 that means
+// a pending sound effect is still pending.  When this becomes zero, then your
+// application software can post the next piece of audio to play.  It is
+// preferable to use this semaphore to know when to post the next buffer
+// rather than to use the AudioPendingStatus call.
+
+extern short * cdecl ReportSemaphoreAddress(void); // Reports the far address of the DigPak
+// semaphore.  If this semaphore is true, then DigPak is currently active
+// and you shouldn't post any DigPak calls.  This is EXTREMELY important if
+// you are trying to invoke DigPak functions via a hardware interrupt, where
+// you could potentially have interrupted DigPak itself.
+
+extern short cdecl ReportVersionNumber(void); // Report the DigPak version number.
+// Return code is times 100, meaning that version 3.1 would be returned
+// as the decimal number 310.  This function wasn't supported prior to
+// version 3.1 release, so it will be returned as 0, for versions prior
+// to 3.1.
+
+extern short cdecl SetBackFillMode(short mode); // Turn DMA backfill mode on/off, return code
+// of 1 means mode was set.  Return code of 0 means driver doesn't support
+// DMA backfill.
+
+extern unsigned short cdecl ReportDMAC(void); // Report current DMA counter.
+
+extern short cdecl VerifyDMA(char *data,short length); // Verify this buffer block
+// doesn't cross a 64k boundary.  Return code of 1 means the block is OK.
+// return code of 0 means the block can't be used, try another.
+
+extern void cdecl NullSound(char *sound,short sndlen,short null);
+
+/* Support routines */
+extern void cdecl WaitSound(void); // Wait until sound playback completed.
+extern short	  cdecl CheckIn(void);	   // Is sound driver available? 0 no, 1 yes.
+
+extern void cdecl SetDPMIMode(short mode); // Set DPMI addressing mode for DIGPAK
+
+extern void cdecl DigPakIdentityString(char *str);
+
+extern short	  cdecl InitDP(char *digpak); // Bootstrap hardware.
+extern void cdecl DeInitDP(char *digpak); // Uninitialize DIGPAK
+
+
+***************************************************************************
+
+	      Written by John W. Ratcliff (c) 1994
+		       Compuserve: 70253,3237
+		       Genie: J.RATCLIFF3
+		       BBS: 1-314-939-0200
+		       Addresss:
+			  747 Napa Lane
+			  St. Charles, MO 63304
+
+A $500 per product license fee applies to all commercial software
+products distributed with ANY DIGPAK drivers.
+
+To pay a license, simply write a check for $500 payable to The Audio
+Solution, 747 Napa Lane, St. Charles, MO 63304 with a copy of your
+commerical product.  You will receive a signed license agreement from
+The Audio Solution shortly thereafter. This license fee applies
+specifically to the inclusion with your distribution disk any of the
+DIGPAK drivers from The Audio Solution These drivers are copyrighted
+works, created by me, to enhance the use of sound and music in DOS based
+commercial software.  The license fees collected are used to maintain
+the drivers and keep the BBS running.  There is a seperate license fee
+for the use and distribution of MIDPAK drivers.
+
+See accompaning documentation regarding license fees for MIDPAK
+distribution.  You would be ill-advised to distribute a commercial
+product containing either DIGPAK and/or MIDPAK drivers without having
+paid the distribution license fee.  Since your product would contain
+unlicensed copyrighted software from The Audio Solution, your product
+could be required to be immediately removed from retail distribution.  I
+doubt this is going to be a problem.  Clearly if your product is
+enhanced by the use of these drivers, your company can easily afford a
+nominal license fee of $500 in exchange for getting the use of several
+man-years of software engineering resources.

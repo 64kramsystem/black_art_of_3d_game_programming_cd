@@ -1,0 +1,193 @@
+_ambient_light....black18           _Bitmap_Allocate..black4
+_Bitmap_Delete....black4            _Bitmap_Get.......black4
+_Bitmap_Put.......black4            _Bsp_Delete.......black15
+_Bsp_Print........black15           _Bsp_Shade........black15
+_Bsp_Translate....black15           _Bsp_Traverse.....black15
+_Bsp_View.........black15           _Bsp_World_To_Camera..black15
+_Build_Bsp_Tree...black15           _Build_Look_Up_Tables..black18
+_char_ready.......black9            _clip_far_z.......black18
+_Clip_Line........black18           _clip_near_z......black18
+_Clip_Object_3D...black18           _Compute_Average_Z..black18
+_Compute_Object_Radius..black18     _Create_Double_Buffer..black4
+_Create_World_To_Camera..black18    _Create_Z_Buffer..black15
+_Cross_Product_3D..black18          _Delete_Double_Buffer..black4
+_Delete_Z_Buffer..black15           _Display_Double_Buffer..black4
+_Display_Double_Buffer_32..black18  _Dot_Product_3D...black18
+_double_buffer....black4            _double_buffer_height..black4
+_double_buffer_size..black4         _Draw_Bottom_Triangle..black18
+_Draw_Line........black18           _Draw_Object_Wire..black18
+_Draw_Poly_List...black18           _Draw_Poly_List_Z..black15
+_Draw_Rectangle...black3            _Draw_TB_Tri_3D_Z..black15
+_Draw_Top_Triangle..black18         _Draw_Triangle_2D..black18
+_Draw_Tri_3D_Z....black15           _Fill_Double_Buffer..black4
+_Fill_Double_Buffer_32..black18     _Fill_Screen......black3
+_Fill_Screen_Z....black3            _Fill_Z_Buffer....black15
+_FP_Div...........fpdiv             _FP_Mul...........fpmul
+_fquadcpy.........qcpy              _fquadset.........qset
+_fwordcpy.........black4            _Generate_Poly_List..black18
+_Get_Key..........black5            _Get_Scan_Code....black5
+_Get_Shift_State..black5            _Hang_Up..........black9
+_Initialize_Modem..black9           _Intersect_Lines..black15
+_Joystick.........black5            _Joystick_Available..black5
+_Joystick_Bios....black5            _Joystick_Buttons..black5
+_Joystick_Calibrate..black5         _Keyboard_Driver..black5
+_Keyboard_Install_Driver..black5    _Keyboard_Remove_Driver..black5
+_keys_active......black5            _Layer_Build......black4
+_Layer_Create.....black4            _Layer_Delete.....black4
+_Layer_Draw.......black4            _light_source.....black18
+_Line_H...........black3            _Line_V...........black3
+_Load_Palette_Disk..black18         _Local_To_World_Object..black18
+_Make_Connection..black9            _Make_Vector_3D...black18
+_Mat_Copy_4x4.....black18           _Mat_Identity_4x4..black18
+_Mat_Mul_1x4_4x4..black18           _Mat_Mul_4x4_4x4..black18
+_Mat_Print_1x4....black18           _Mat_Print_4x4....black18
+_Mat_Zero_4x4.....black18           _Modem_Control....black9
+_Modem_Result.....black9            _Modem_Send_Command..black9
+_modem_strings....black9            _mode_z_page......black4
+_Mouse_Control....black5            _Music_Load.......black6
+_Music_Play.......black6            _Music_Register...black6
+_Music_Resume.....black6            _Music_Status.....black6
+_Music_Stop.......black6            _Music_Unload.....black6
+_Objects_Collide..black18           _page_0_buffer....black4
+_page_1_buffer....black4            _PCX_Copy_To_Buffer..black4
+_PCX_Delete.......black4            _PCX_Get_Sprite...black4
+_PCX_Init.........black4            _PCX_Load.........black4
+_PCX_Show_Buffer..black4            _PLG_Get_Line.....black18
+_PLG_Load_Object..black18           _poly_clip_max_x..black18
+_poly_clip_max_y..black18           _poly_clip_min_x..black18
+_poly_clip_min_y..black18           _Poly_Compare.....black18
+_Position_Object..black18           _Print_Char.......black3
+_Print_Char_DB....black4            _Print_String.....black3
+_Print_String_DB..black4            _raw_scan_code....black5
+_Read_Color_Reg...black3            _Read_Palette.....black3
+_Read_Pixel.......black3            _Read_Pixel_DB....black4
+_Remove_Backfaces_And_Shade..black18  _Remove_Object..black18
+_rom_char_set.....black3            _Rotate_Object....black18
+_Save_Palette_Disk..black18         _Scale_Object.....black18
+_screen_heigth....black18           _Screen_Transition..black4
+_screen_width.....black18           _Serial_Close.....black9
+_serial_end.......black9            _Serial_Flush.....black9
+_Serial_ISR.......black9            _serial_lock......black9
+_Serial_Open......black9            _Serial_Print.....black9
+_Serial_Read......black9            _Serial_Ready.....black9
+_Serial_Read_Wait..black9           _serial_start.....black9
+_Serial_Write.....black9            _Set_Graphics_Mode..black3
+_Set_Mode_Z.......black3            _Set_Visual_Page_Mode_Z..black4
+_Set_Working_Page_Mode_Z..black4    _Sort_Poly_List...black18
+_Sound_Load.......black6            _Sound_Play.......black6
+_Sound_Status.....black6            _Sound_Stop.......black6
+_Sound_Translate..black6            _Sound_Unload.....black6
+_Sprites_Collide..black4            _Sprite_Delete....black4
+_Sprite_Draw......black4            _Sprite_Draw_Clip..black4
+_Sprite_Erase.....black4            _Sprite_Erase_Clip..black4
+_sprite_height....black4            _Sprite_Init......black4
+_Sprite_Under.....black4            _Sprite_Under_Clip..black4
+_sprite_width.....black4            _Timer_Program....black8
+_Timer_Query......black8            _Time_Delay.......black3
+_Translate_Object..black18          _Triangle_16Line..wline
+_Triangle_32Line..qline             _Triangle_Asm.....tri_fp
+_Triangle_Line....black18           _Triangle_QLine...black18
+_Vector_Mag_3D....black18           _video_buffer.....black3
+_viewing_distance..black18          _view_angle.......black18
+_view_point.......black18           _Wait_For_Connection..black9
+_Wait_For_Vertical_Retrace..black4  _World_To_Camera_Object..black18
+_Write_Color_Reg..black3            _Write_Palette....black3
+_Write_Pixel......black3            _Write_Pixel_DB...black4
+_Write_Pixel_Z....black3            _z_bank_size......black15
+_z_height.........black15           _z_height_2.......black15
+
+
+black3            Offset: 00000010H  Code and data size: 19b6H
+  _Draw_Rectangle   _Fill_Screen      _Fill_Screen_Z    _Line_H
+  _Line_V           _Print_Char       _Print_String     _Read_Color_Reg
+  _Read_Palette     _Read_Pixel       _rom_char_set     _Set_Graphics_Mode
+  _Set_Mode_Z       _Time_Delay       _video_buffer     _Write_Color_Reg
+  _Write_Palette    _Write_Pixel      _Write_Pixel_Z  
+
+black5            Offset: 00002320H  Code and data size: 17faH
+  _Get_Key          _Get_Scan_Code    _Get_Shift_State  _Joystick
+  _Joystick_Available                 _Joystick_Bios    _Joystick_Buttons
+  _Joystick_Calibrate                 _Keyboard_Driver  _Keyboard_Install_Driver
+  _Keyboard_Remove_Driver             _keys_active      _Mouse_Control
+  _raw_scan_code  
+
+black6            Offset: 00004780H  Code and data size: 158bH
+  _Music_Load       _Music_Play       _Music_Register   _Music_Resume
+  _Music_Status     _Music_Stop       _Music_Unload     _Sound_Load
+  _Sound_Play       _Sound_Status     _Sound_Stop       _Sound_Translate
+  _Sound_Unload   
+
+black8            Offset: 00006490H  Code and data size: bbbH
+  _Timer_Program    _Timer_Query    
+
+black4            Offset: 000072c0H  Code and data size: 3e9bH
+  _Bitmap_Allocate  _Bitmap_Delete    _Bitmap_Get       _Bitmap_Put
+  _Create_Double_Buffer               _Delete_Double_Buffer
+  _Display_Double_Buffer              _double_buffer    _double_buffer_height
+  _double_buffer_size                 _Fill_Double_Buffer
+  _fwordcpy         _Layer_Build      _Layer_Create     _Layer_Delete
+  _Layer_Draw       _mode_z_page      _page_0_buffer    _page_1_buffer
+  _PCX_Copy_To_Buffer                 _PCX_Delete       _PCX_Get_Sprite
+  _PCX_Init         _PCX_Load         _PCX_Show_Buffer  _Print_Char_DB
+  _Print_String_DB  _Read_Pixel_DB    _Screen_Transition
+  _Set_Visual_Page_Mode_Z             _Set_Working_Page_Mode_Z
+  _Sprites_Collide  _Sprite_Delete    _Sprite_Draw      _Sprite_Draw_Clip
+  _Sprite_Erase     _Sprite_Erase_Clip                  _sprite_height
+  _Sprite_Init      _Sprite_Under     _Sprite_Under_Clip
+  _sprite_width     _Wait_For_Vertical_Retrace          _Write_Pixel_DB
+
+black9            Offset: 0000cb10H  Code and data size: 19c9H
+  _char_ready       _Hang_Up          _Initialize_Modem
+  _Make_Connection  _Modem_Control    _Modem_Result     _Modem_Send_Command
+  _modem_strings    _Serial_Close     _serial_end       _Serial_Flush
+  _Serial_ISR       _serial_lock      _Serial_Open      _Serial_Print
+  _Serial_Read      _Serial_Ready     _Serial_Read_Wait
+  _serial_start     _Serial_Write     _Wait_For_Connection
+
+black15           Offset: 0000f1b0H  Code and data size: 5820H
+  _Bsp_Delete       _Bsp_Print        _Bsp_Shade        _Bsp_Translate
+  _Bsp_Traverse     _Bsp_View         _Bsp_World_To_Camera
+  _Build_Bsp_Tree   _Create_Z_Buffer  _Delete_Z_Buffer  _Draw_Poly_List_Z
+  _Draw_TB_Tri_3D_Z                   _Draw_Tri_3D_Z    _Fill_Z_Buffer
+  _Intersect_Lines  _z_bank_size      _z_height         _z_height_2
+
+qset              Offset: 00017b00H  Code and data size: caH
+  _fquadset       
+
+wline             Offset: 00017cd0H  Code and data size: 199H
+  _Triangle_16Line
+
+qline             Offset: 00017ff0H  Code and data size: 2a4H
+  _Triangle_32Line
+
+tri_fp            Offset: 00018510H  Code and data size: 2bbH
+  _Triangle_Asm   
+
+qcpy              Offset: 000189f0H  Code and data size: cdH
+  _fquadcpy       
+
+fpmul             Offset: 00018bc0H  Code and data size: c4H
+  _FP_Mul         
+
+fpdiv             Offset: 00018d80H  Code and data size: c9H
+  _FP_Div         
+
+black18           Offset: 00018f50H  Code and data size: 94a1H
+  _ambient_light    _Build_Look_Up_Tables               _clip_far_z
+  _Clip_Line        _clip_near_z      _Clip_Object_3D   _Compute_Average_Z
+  _Compute_Object_Radius              _Create_World_To_Camera
+  _Cross_Product_3D                   _Display_Double_Buffer_32
+  _Dot_Product_3D   _Draw_Bottom_Triangle               _Draw_Line
+  _Draw_Object_Wire                   _Draw_Poly_List   _Draw_Top_Triangle
+  _Draw_Triangle_2D                   _Fill_Double_Buffer_32
+  _Generate_Poly_List                 _light_source     _Load_Palette_Disk
+  _Local_To_World_Object              _Make_Vector_3D   _Mat_Copy_4x4
+  _Mat_Identity_4x4                   _Mat_Mul_1x4_4x4  _Mat_Mul_4x4_4x4
+  _Mat_Print_1x4    _Mat_Print_4x4    _Mat_Zero_4x4     _Objects_Collide
+  _PLG_Get_Line     _PLG_Load_Object  _poly_clip_max_x  _poly_clip_max_y
+  _poly_clip_min_x  _poly_clip_min_y  _Poly_Compare     _Position_Object
+  _Remove_Backfaces_And_Shade         _Remove_Object    _Rotate_Object
+  _Save_Palette_Disk                  _Scale_Object     _screen_heigth
+  _screen_width     _Sort_Poly_List   _Translate_Object
+  _Triangle_Line    _Triangle_QLine   _Vector_Mag_3D    _viewing_distance
+  _view_angle       _view_point       _World_To_Camera_Object

@@ -1,0 +1,140 @@
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:32	    Page 1
+wline.asm
+
+
+
+      1
+      2					 ; this	function draws a line from from	xs to xe using 16 bit dat movement
+      3
+      4
+      5	    0000			 .MODEL	MEDIUM		       ; use medium memory model C function names
+      6
+      7	    0000			 .CODE				 ; begin the code segment
+      8
+      9					 .386
+     10
+     11					 PUBLIC	_Triangle_16Line	  ; export function name to linker
+     12
+     13
+     14	    0000			 _Triangle_16Line PROC
+     15
+     16					 ARG dest:DWORD, xs:WORD, xe:WORD, color:WORD
+     17
+     18
+     19	    0000			 begin:
+     20
+     21	    0000  55			     push bp		       ; create	stack frame
+     22	    0001  8B EC			     mov bp,sp
+     23
+     24	    0003  57			     push di		       ; save this guy
+     25
+     26
+     27	    0004  C4 7E	06		     les di,dest	       ; point es:di to	start of line
+     28	    0007  03 7E	0A		     add di,xs
+     29
+     30	    000A  8B 4E	0E		     mov cx, color	       ; cx = color | color << 8
+     31	    000D  8A E9			     mov ch,cl
+     32
+     33	    000F			 process_left_end:
+     34
+     35	    000F  8B 46	0A		     mov ax,xs		       ; ax=xs & 0x01
+     36	    0012  25 0001		     and ax,01h
+     37
+     38	    0015			 test_l1:
+     39
+     40	    0015  3D 0001		     cmp ax,1		       ; if (ax==1)
+     41	    0018  75 08	90 90		     jne process_right_end
+     42
+     43	    001C  26: 88 0D		     mov es:[di], cl	       ; plot pixel
+     44	    001F  FF 46	0A		     inc xs		       ; xs++
+     45
+     46	    0022			 process_right_end:
+     47
+     48	    0022  C4 7E	06		     les di,dest	       ; point es:di to	start of line
+     49	    0025  03 7E	0C		     add di,xe
+     50
+     51	    0028  8B 46	0C		     mov ax,xe		       ; ax=xs & 0x01
+     52	    002B  25 0001		     and ax,01h
+     53
+     54	    002E			 test_r0:		       ; if (ax==0)
+     55
+     56	    002E  3D 0000		     cmp ax,0
+     57	    0031  75 08	90 90		     jne process_middle
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:32	    Page 2
+wline.asm
+
+
+
+     58
+     59	    0035  26: 88 0D		     mov es:[di],cl	       ; plot pixel
+     60
+     61	    0038  FF 4E	0C		     dec xe		       ; xe-=1
+     62
+     63	    003B			 process_middle:
+     64
+     65
+     66	    003B  C4 7E	06		     les di,dest	       ; point es:di to	start of line
+     67	    003E  03 7E	0A		     add di,xs
+     68
+     69	    0041  FC			     cld		       ; clear the direction of	movement
+     70
+     71	    0042  8B C1			     mov ax, cx		       ; move the color	data into eax
+     72
+     73	    0044  8B 4E	0C		     mov cx,xe		       ; compute number	of words to move  (xe-xs+1)/2
+     74	    0047  2B 4E	0A		     sub cx,xs
+     75	    004A  41			     inc cx
+     76	    004B  D1 E9			     shr cx,1		       ; divide	by 2
+     77
+     78	    004D  F3> AB		     rep stosw		       ; fill the region with data
+     79
+     80
+     81	    004F  5F			     pop di		       ; restore di
+     82	    0050  5D			     pop bp		       ; fixup stack
+     83
+     84	    0051  CB			     ret		       ; return	to caller
+     85
+     86	    0052			 _Triangle_16Line ENDP
+     87
+     88					 END
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:32	    Page 3
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "05/26/95"
+??filename			  Text	 "wline	  "
+??time				  Text	 "02:23:32"
+??version			  Number 0400
+@32Bit				  Text	 0
+@CodeSize			  Text	 1
+@Cpu				  Text	 0F0FH
+@DataSize			  Text	 0
+@FileName			  Text	 wline
+@Interface			  Text	 00h
+@Model				  Text	 4
+@WordSize			  Text	 4
+@code				  Text	 wline_TEXT
+@curseg				  Text	 wline_TEXT
+@data				  Text	 DGROUP
+@stack				  Text	 DGROUP
+_Triangle_16Line		  Far	 wline_TEXT:0000
+begin				  Near	 wline_TEXT:0000
+color				  Number [DGROUP:BP+000E]
+dest				  Number [DGROUP:BP+0006]
+process_left_end		  Near	 wline_TEXT:000F
+process_middle			  Near	 wline_TEXT:003B
+process_right_end		  Near	 wline_TEXT:0022
+test_l1				  Near	 wline_TEXT:0015
+test_r0				  Near	 wline_TEXT:002E
+xe				  Number [DGROUP:BP+000C]
+xs				  Number [DGROUP:BP+000A]
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+wline_TEXT			  16  0052 Word	  Public  CODE
+

@@ -1,0 +1,368 @@
+        ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+                               Impulse Software
+                                     and
+                                Absolute Magic
+                                   present
+
+                                  T U B E S
+
+        ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+
+        Tubes: The Story
+        ออออออออออออออออ
+
+             In a lab far far away in the Great White North...
+
+             Dr.  Lanny  B.  Brilliant  was  completing  his work on the
+        creation  of  8  new  elements  not yet included on the periodic
+        table.  After  going  over  his Nobel Prize acceptance speech in
+        his head...
+
+             Suddenly his future didn't seem so bright...
+
+             Lanny  hadn't  researched  his  new elements enough to have
+        discovered  they  were  highly unstable.  Before he could react,
+        they  were  everywhere.  He  had  nothing  for  the  Nobel Prize
+        committee to assess.
+
+             But  there is still hope!  Lanny knows he can stabilize the
+        atoms  if he bonds 3 or more atoms of the same element together,
+        forming a molecule chain.
+
+             Maybe you can help...
+
+
+        Tubes: The Game
+        อออออออออออออออ
+
+             The  object of Tubes is to keep the large beaker as free of
+        atoms  as  is  possible.  This is accomplished by lining up 3 or
+        more like coloured atoms in a row,  vertically, horizontally, or
+        diagonally.  Use  the  test  tube you control to catch the atoms
+        falling  from the dispenser tubes and place them into the beaker
+        at  your  discretion.  The  game  is  over  when  you've dropped
+        enough  atoms  to  exceed the drop limit,  or when you've filled
+        up the beaker with atoms.
+
+
+        Minimum System Requirements
+        อออออออออออออออออออออออออออ
+
+             Tubes will check to ensure your system meets the minimum
+        requirements, however, here they are:
+
+        - At least a 286 processor.  A 386, 486, or Pentium is fine.
+        - 420K of free conventional memory is the minimum.  Sound
+          will require an additional 65K and Music will require 25K.
+          Total memory requirements are 510K.
+        - A VGA card with at least 256K.  Super VGA cards are also fine.
+
+             Tubes also supports the following hardware:
+
+        Sound
+        -PC Speaker
+        -Sound Blaster
+
+        Music
+        - FM (Adlib)
+        - General Midi
+
+        Input Device
+        - Joystick
+        - Mouse
+
+             At this point you might as well run Tubes by typing "TUBES"
+        at the DOS prompt.
+
+             C:\TUBES\>TUBES <Press the ENTER Key>
+
+             Tubes will run the SetUp program so you may configure Tubes
+        for your system.
+
+             If you have any problems or wish to know more about  Tubes,
+        continue reading.
+
+
+        Setting Up Tubes
+        ออออออออออออออออ
+
+             Once  you  have  configured the game, you won't have to run
+        the  setup  program again, unless you wish to change any of your
+        previous device choices.
+
+             Sound Effects:
+
+             Sound  Blaster is the best selection for the sound effects,
+        and  will  enable  you  to  hear  the  outstanding digital sound
+        effects throughout the game.  If you do not have a Sound Blaster
+        card,  the  PC  Speaker can also play the digital sound effects.
+        This  method is very processor intensive and will require a very
+        fast computer,  at least  a 386 running at 25mhz.  There are two
+        quality modes.  "Good as it gets" will sound the best.  If Tubes
+        plays very badly, your computer probably can't keep up.  Try the
+        "Okay"  setting,  if  Tubes is still unplayable, then select "No
+        Sound."  This method will sound really bad if your computer does
+        not  use  a normal speaker (cone).  Notebooks and Laptops are an
+        example of this.
+
+             Music:
+
+             Only  FM  music  is available.  Those with Adlib compatible
+        cards  such as the Sound Blaster and it's many clones will allow
+        you to hear the fantastic sound track that accompanies the game.
+        There is no music available to users with no sound card.
+
+             Input:
+
+             The  recommended  input  method  is the joystick,  although
+        some may  prefer  the  keyboard.   The  mouse  is  provided  for
+        completeness, however it is not ideal for  this  type  of  game.
+        The  default  Keys  for  the  Keyboard  are the cursors keys for
+        movement,  CTRL  for  Button  A,  and  ALT for Button B.  Select
+        Keyboard to redefine your keys if you prefer.
+
+
+        Main Menu
+        อออออออออ
+
+             You  can  move  around  the  menus  with your input device.
+        Button  A  selects the highlighted option,  and Button B returns
+        to the previous menu.
+
+             Start Game:
+
+             Starts  the  game  of  Tubes.  After selecting this option,
+        you  are  then  asked  to choose between Wave and Endurance mode
+        which   are  the  two  styles  of  game  play  in  Tubes.  After
+        selecting  the  mode  of  play,  you  must choose the difficulty
+        level  -  101  is the easiest,  for beginning players because it
+        allows 9 drops, 201 allows  6  drops,  and 301 is for the expert
+        player  who  is  only  allowed 3 drops.  Atom speed and the rate
+        that they appear is also determined by the difficulty setting.
+
+             Continue Saved Game:
+
+             Starts a previously saved game from where you left off.
+
+             Preview Registered:
+
+             Lets  you  play five waves of the deluxe registered version
+        featuring the extremely helpful ANTI-MATTER and BONUS atoms..
+
+             Game Options:
+
+             Opens  another  menu  which  includes the options of Toggle
+        Sound and/or Music, and Define Input Device.
+
+             Instructions:
+
+             Lanny   the   scientist   takes   you  through  a  detailed
+        instructional  course  on  the  playing  of  Tubes.  Information
+        packed - a must read.
+
+             High Score:
+
+             Displays  the  high  score  list  for  both  Wave  Mode and
+        Endurance Mode.
+
+             Ordering Info:
+
+             Gives  the  registration  information  required to register
+        Tubes.  Consult ORDER.TXT for more information.
+
+             Credits:
+
+             Displays  information about the two fine young men who made
+        Tubes a reality.
+
+             Exit:
+
+             Exits the game, and returns you to your operating system.
+
+        Tubes & Windows
+        อออออออออออออออ
+
+             Tubes should always be played from DOS.  Tubes will  detect
+        a  multitasking environment when it starts up and will recommend
+        you run from DOS but it won't stop you.  The game will  give  up
+        time slices but it's recommended if  you  must  run  Tubes  from
+        Windows that you don't run anything else at the same time.
+
+             Windows and the digital PC SoundFX  option  should  not  be
+        used together.  Tubes should work, but will be unplayable during
+        a sound effect.
+
+
+        Hints 'n' Tips
+        ออออออออออออออ
+
+             Playing Endurance mode is a great way to learn how to  play
+        Tubes for the first time.
+
+             Hoard  Flashium  atoms  in  the test tube until they can be
+        used  most  effectively,  these are valuable atoms and shouldn't
+        be wasted.
+
+             Use  Anti-Matter  atoms  to destroy troublesome Xenon atoms
+        that accumulate in the beaker.
+
+             Try  to  create  a  4 or 5 atom chain when possible,  since
+        they  count  as  2  and  3  chains respectively,  and double the
+        points.
+
+        
+        Scoring
+        อออออออ
+
+                       Task                                Points
+
+         3 Atom Vertical/Horizontal/Diagonal Chain - 250/500/1000
+         4 Atom Vertical/Horizontal/Diagonal Chain - 500/1000/2000
+         5 Atom Vertical/Horizontal/Diagonal Chain - 1000/2000/4000
+         Catching Bonus Atom                       - 2500 x number caught
+         Multiple Chain                            - Chain Values x Number
+                                                     of chains
+
+        Problems
+        ออออออออ
+
+             Tubes generates three error messages:
+
+             "Run SETUP.EXE to configure Tubes for your System"
+
+             Tubes  hasn't  been  setup  for  your  system.   Normally,
+         Tubes will run the SetUp program  for  you,  if  it  can't  do
+         that  it  displays  this  message.   The  solution is  to  run
+         SETUP.EXE yourself then run TUBES.EXE again.
+
+
+             "Tubes requires <some number> bytes  of  free  memory  with
+         this SetUp!"
+
+             Tubes checks how much free  conventional  memory  you  have
+         when it first runs.  If you  don't  have  enough  Tubes  aborts
+         with this message.  The solution is  to  free  up  more  memory
+         or lower Tubes' memory requirements, for  example,  turn  sound
+         and/or music off.
+
+
+             "<Where ever it occurs> Resource Error!"
+
+             It could mean many things, but 99% of  the  time  it  means
+        there wasn't enough memory to  load  something  Tubes  requires.
+        Although rare, it is still  possible  to  get  this  error  even
+        though Tubes checks  to  ensure  you  have  enough  memory  when
+        it first runs.  The solution is to free up more memory or  lower
+        Tubes' memory  requirements,  for  example,  turn  sound  and/or
+        music off.
+
+
+        Shareware
+        อออออออออ
+
+             Tubes  is copyrighted software,  however you are encouraged
+        to  copy  and freely distribute the Shareware version as long as
+        all files are included.  Shareware allows you to  "try it before
+        you buy it".
+
+             Why  register?  Besides  getting  an  incredible registered
+        version of Tubes,  registration will ensure future games will be
+        released   and   with  the  same  high  quality.  You  are  also
+        supporting  the  entire Shareware concept,  without which,  many
+        excellent  programs  would  not  be available.   Neither Impulse
+        Software  nor  Absolute Magic receive a penny when  you purchase
+        a disk with Tubes from a Shareware Library,  or download it from
+        a commercial information service,  such as CompuServe, or from a
+        BBS.
+
+             Read  the info in the game for price and other registration
+        information.
+
+
+        Copyright Notice
+        ออออออออออออออออ
+
+             Tubes  is  Copyright  1994 by Absolute Magic.  Tubes is the
+        sole  property  of  Absolute  Magic.  All rights reserved.  Nice
+        and short.
+
+
+        About Tubes
+        อออออออออออ
+
+             Tubes was written in Borland Pascal  v7.  It   consists  of
+        approximately  15,000  lines  of  Pascal   code   and   compiles
+        completely in under 20 seconds.
+
+            Tubes uses a planar Mode 13h commonly referred to as Mode X,
+        all graphic routines were written with the  built  in  assembler
+        present in  Borland  Pascal.   I  experienced  great  difficulty
+        debugging the VGA graphics with planar modes being  undocumented
+        so I created a utility called UNCHAIN  that  fixed  the  problem
+        along with  other  VGA  related  problems  such  as  losing  the
+        palette.  It's free so if you also have problems, it's out there
+        somewhere.
+
+             All of the drivers  (Music, Sound FX, Input)  were  created
+        in Turbo Assembler's IDEAL  mode  and  are  loaded  at  run-time
+        as need.
+
+
+        About the Authors
+        อออออออออออออออออ
+
+             Absolute  Magic  is  the  figment  of our imagination.  The
+        name  was  lifted  from an ancient Egyptian war chant.  Absolute
+        Magic  has  been  entirely subsidized by the Canadian Government
+        due  to  its  commitment  to  the  environment.  This innovative
+        company  is  currently  working  on  a snow shovelling simulator
+        that is so real, you'll swear your back hurts!
+
+             If  you  absolutely  must  contact  us,   you   can   try
+        "absmagic@io.org" on the Internet.  We don't check there  often,
+        but we'll printout and frame your letter once we get it.
+
+
+        C O L I N  B U C K L E Y:
+
+        Birthplace: Hospital
+        Place of Residence: N/A (Witness Relocation Program)
+        Favorite Movies: Howard the Duck, The Sound of Music
+        Favorite Books: Anything by Kierkegaard
+        Favorite Foods: Brussels sprouts
+        Favorite Drinks: Shamrock shakes
+        Favorite Band: Abba
+        Favorite Sport: Gambling
+        Favorite Colour: Fuchsia
+        Favorite Roadsign: Yield
+        Hobbies: Surfing the Internet, Picking up trash on the Information
+                 Superhighway, using buzz-words
+        Turn-Ons: Trekkies
+        Turn-Offs: People who don't rewind videotapes, Correct spelling
+        Previous Occupation: Moonie
+        Future Game Ideas: Revenge of the Big-Ass Ants
+
+        C H R I S  B L A C K W E L L:
+
+        Birthplace: Toronto, Ontario, Canada
+        Place of Residence: Toronto, Ontario, Canada
+        Favorite Movies: Reservoir Dogs, Carlito's Way, Star Wars Trilogy,
+                          Evil Dead 2
+        Favorite Books: Cabal, Books of Blood, 2001, Anything by Harlan
+                         Ellison
+        Favorite Foods: Tuna Sandwiches
+        Favorite Drinks: Coke, Pink Squirrels
+        Favorite Bands:  Fudge Tunnel, Clutch, Fugazi, Helmet, Tool,
+                          Gush Underdrive
+        Favorite Sport:  Hockey
+        Favorite Colour:  N/A (Colour blind)
+        Favorite Roadsign: Merge
+        Hobbies:  Watching TV, Pinball, Complaining, Cursing, Being
+                  annoying
+        Turn-Ons: Body Shaping, Star Trek conventions
+        Turn-Offs: America's Funniest People, Rewinding videotapes
+        Previous Occupation: Totally Unemployable
+        Future Game Ideas: Space Invaders clone
+
+        ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ

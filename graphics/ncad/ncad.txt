@@ -1,0 +1,635 @@
+			     
+			     NORTHCAD-3D PRIMER
+
+Included on the CD-ROM of Black Art of 3D Game Programming is a fully
+functional copy of a program called NorthCAD-3D. It's a wireframe CAD
+program created by the CyberDesign Productions. The version of NorthCAD-3D 
+provided with this book is called NCVR, and is the command you type to run 
+the program. This version of NorthCAD has the built-in ability to directly 
+generate PLG files; no external conversion programs are needed. Although 
+this software is not "crippled" in any way, it doesn't have all the power 
+and functionality of Quest's full-blown package; if you find NorthCAD 
+useful, you should register your copy in order to receive the full version. 
+Registration information is included on the companion disk and in the 
+program itself.
+	
+Learning to use NorthCAD, or any other CAD package, is a gradual 
+process; don't expect to become an expert overnight! However, time spent 
+initially learning the package will more than pay for itself in the time it 
+saves you later on when you go to create virtual objects.
+
+NORTHCAD CONCEPTS
+
+NorthCAD has the ability to deal with a number of objects simultaneously. 
+It can also group those objects together, enabling you to manipulate them 
+all at once. For example, you might create a table composed of four legs 
+and a top. Each of those five objects would be independent of the others, 
+but would be grouped together as a table. You could move the table as a 
+unit, yet still be able to move the individual pieces around as needed.
+
+Entities
+
+Each NorthCAD object is made up of a set of entities. There are four types 
+of entities in NorthCAD: lines, surfaces, polygons, and arcs. The most 
+primitive of these are the lines and the surfaces; the higher-level entities 
+(polygons and arcs) are made up of sets of lines.
+
+NorthCAD uses a slightly different terminology from what you're used to 
+in the VR world. What NorthCAD calls a "surface," we would call a polygon; 
+in other words, a flat, multisided entity. NorthCAD supports three-sided 
+and four-sided polygons (surfaces). What NorthCAD calls a "polygon" might 
+be better described as a regular polygon (i.e., one in which all the sides 
+are the same length). NorthCAD polygons can have anywhere from 3 to 20 
+sides.
+
+Notice that a NorthCAD polygon is fundamentally different from a surface; 
+a surface is a solid entity, whereas a polygon is just a collection of 
+lines. An arc is like a polygon, but it doesn't necessarily extend all the 
+way around; in other words, an arc is like a section of a circle. Like 
+polygons, arcs are made up of line segments. 
+
+Any line (whether by itself or as part of an arc or a polygon) can have a 
+color assigned to it; so can any surface. Although NorthCAD supports up to 
+256 colors on a SuperVGA display, only 16 colors will be used in our 
+examples. As it turns out, 16 colors is more than enough; sticking to the 
+16-color modes also guarantees that you'll be able to run the examples on 
+your system, regardless of what kind of VGA card you have.
+
+Once you've created an arc or a polygon, each of its component lines can be 
+manipulated independently. You can change the colors of individual line 
+segments, or even delete them altogether. Similarly, you can delete 
+individual surfaces from an object created by revolution or extrusion; 
+more on this later.
+
+Lines, surfaces, arcs, and polygons are all fundamentally two-dimensional 
+constructs. How do you create useful three-dimensional objects from them? 
+Well, NorthCAD provides two very powerful techniques for doing this.
+
+Revolutions
+
+A revolution is an object created by taking a two-dimensional "profile" 
+and rotating it through the third dimension. In NorthCAD, you can rotate 
+the profile through any angle. The profile of an object can fold back on 
+itself. You can create donuts, if you want, by rotating a closed circle 
+around the vertical axis.     
+	
+When you revolve an object in NorthCAD, it takes the lines of which that 
+object is composed and turns them into surfaces in three-dimensional space. 
+NorthCAD is able to revolve any shape made out of lines (including arcs and 
+polygons). Because surfaces are not made out of lines, they cannot be 
+revolved or extruded.
+
+Extrusions
+
+In addition to revolutions, NorthCAD has another very powerful feature for 
+generating three-dimensional objects: extrusions. Whereas a revolution moves 
+a two-dimensional shape around an axis, an extrusion moves it along a line. 
+They're called extrusions because it's like plastic being extruded from a 
+machine; as the hot plastic flows through a two-dimensional outline, that 
+outline becomes the shape of the plastic's cross section.
+
+Extrusions are very, very useful. For example, if you want to create a 
+simple solid block, the easiest way would be to extrude a square. Creating 
+a fulcrum shape can be done by extruding a triangle.
+
+As we noted earlier, there's usually more than one way to accomplish a task. 
+For example, creating a multi-sided column could be done by extrusion (by 
+extruding a polygon) or by revolution (by revolving a vertical line around 
+the vertical axis, thereby sweeping out a cylinder shape). Which you choose 
+is up to you. 
+
+USING NORTHCAD-3D
+
+Let's quickly recap the key concepts of NorthCAD-3D. A drawing is made up 
+of one or more objects and/or groups of objects. Each object is made up of 
+entities, and each entity is a line, a surface, an arc, or a polygon. Arcs 
+and polygons are made up of lines, so the most primitive drawing entities 
+are lines and surfaces. Lines and surfaces can be individually recolored 
+or deleted. An object that is made up entirely of lines (no surfaces) can 
+be revolved or extruded to create a three-dimensional object made up of 
+surfaces.
+
+With these concepts firmly in mind, you're ready to begin actually using 
+NorthCAD. Run the program by typing (in the NorthCAD directory):
+
+ncvr
+
+No command-line parameters are needed or used. The first thing you should 
+see is a "preamble screen" that lists four alternatives.
+
+At the bottom right is a box marked Quit Program; we'll save that one for 
+last. To its left is a Program Information box; click on it to see some 
+useful information describing the program and how to order the professional 
+version.
+
+At the top right is a box marked Program Configuration; this will let you 
+change your resolution and number of available colors, as well as set the 
+directories you want to use. For now, just leave all that as is. (If you've 
+clicked on that box, click again with the right mouse button to cancel it).
+
+The box at the top left is marked 3-D Modeling Editor; click on it now to 
+enter the main part of NorthCAD-3D. Incidentally, the process of making 3D 
+objects (especially with a CAD program) is often referred to as modeling. 
+(In general, no makeup, runways, or fashion photographers are involved.)
+
+Once you've selected the 3-D modeler, you'll be asked to choose "drawing 
+files" or "library files." NorthCAD lets you keep objects in a separate 
+directory and treat them as a library of shapes you can bring in as needed. 
+For now, choose "drawing files." You could select an existing object 
+(several are included on the disk) but for now just click on the box marked 
+New. You'll be asked to enter a filename; for now, just type example1.
+
+Screen Layout
+
+You should now be in the main part of the NorthCAD program. There are three 
+main areas on the screen. The largest one, of course, is the drawing area; 
+for now it should be empty. The top part of the screen (above the green 
+line) is the "prompt" area; you'll be asked questions there, and most 
+informational messages will appear there. Finally, at the right of the 
+screen, is the menu panel.
+	
+The contents of the menu panel will change as you use different functions 
+within the program, but there are basically three parts to the panel: the 
+menu, the pan/zoom icons, and the information area. The menu consists of a 
+heading (which should initially be Main menu) and a number of buttons with 
+labels on them. The pan/zoom area consists of eight buttons that let you 
+pan in various directions, and three that let you zoom in and out. The 
+information section is right below the pan/zoom icons, and should initially 
+be empty.
+
+Setting Some Options
+
+These items will be explained in more detail soon, but for now let's just 
+dive in and get started. Begin by clicking on the menu item marked 
+Background. Choosing this item will present you with a selection of colors 
+to use for the background in the main drawing area; try clicking on a nice 
+light gray.
+	
+Now let's try the Settings menu. When you click on that item, the menu 
+changes, and you're now presented with a new set of choices. There are 
+several items at the top of the menu, then a blank, and then two more: 
+Draw menu and Main menu. Clicking on Main menu will take you back to the 
+menu you were on a moment ago, and Draw menu will (as you might guess) take 
+you into the drawing menu. For now, however, you're just going to set a new 
+graphics cursor size; click on Cursor Size and select 2 in response to the 
+prompt. Now click on Main menu.
+
+Setting the Working Object and Pen Color
+
+So far, so good. You've set the screen background color, and selected a 
+slightly larger-than-usual graphics cursor size. Now click on the Draw item 
+on the Main menu.
+	
+The large cross in the middle of the drawing area is the graphics cursor, 
+whose size you just set a moment ago. You'll notice that the menu has 
+changed again, and now there's some information in the information area. 
+There's also the text "NO NAME" above the menu: that means the object you're 
+currently editing has not yet been assigned a name. The color of that text 
+is also the current drawing color (initially, bright yellow).
+
+Let's change these. Start by giving the current object a name; click on Work 
+Object. This will present you with a menu of all the objects in your 
+drawing; at the moment, there are none, so all the entries in the menu will 
+be "[ ]", which means those slots are available for use. At the bottom of 
+this menu are two special entries: "List -->" and "<-- List"; these advance 
+you to the next page of available objects, or take you back to the previous 
+one. All of these slots should be empty; click on one of them. You'll be 
+prompted (on the prompt line at the top of the screen) to enter a name for 
+it. For now, just enter THING1.
+
+You'll be returned to the Main menu. Lo and behold, the name THING1 is now 
+displayed above the menu. Any entities (lines, surfaces, arcs, or polys) 
+that you draw at this point will be considered to be part of THING1, because 
+that's your current working object. As you accumulate more objects in your 
+drawing, you can switch between them using the Work Object menu item.
+Now click on Pen Color. You can choose any color you like, but selecting 
+the same light gray you used for the background would make things very 
+confusing! Instead, choose a nice bright blue; in 16-color mode, this will 
+be the blue column near the middle of the screen. You'll be returned to the 
+Main menu, and now THING1 is displayed in the shade of blue you selected. 
+The color of the object's name will always be the same as the current 
+drawing pen color.
+
+The Coordinate System and Viewing Directions
+
+The coordinate system used inside NorthCAD-3D is right-handed. The x-axis 
+points to the right, as always, but the y-axis points toward you and the 
+z-axis points upward (they're swapped, relative to what you're used to in 
+other systems). 
+	
+You can choose to look at your drawing from any of four possible directions: 
+from the left looking right (into the positive x direction), from the right 
+looking left (into the negative x direction), from above looking down (into 
+the negative z direction) or from the front looking back (into the positive 
+y direction). These four views are selected by the <F3>, <F4>, <F5>, and 
+<F6> function keys, respectively.
+	
+In addition, the <F2> function key will take you back to your previous 
+viewpoint and drawing plane (drawing planes are described later in the text). 
+Tapping <F2> repeatedly will allow you to toggle between two different 
+viewpoints on your drawing. The <F7> key will toggle perspective on and off; 
+with perspective on, entities that are closer to you will appear larger than 
+those farther away, and long lines running away from you will appear to 
+converge.
+	
+While we're talking about keys, let's look at three others. <F8> will toggle 
+the display of the coordinate axes on and off; when it's on, you'll see 
+dashed lines on the screen that intersect at the origin. <F10> will force 
+NorthCAD to redraw the entire screen; you should do this occasionally just 
+to make sure what's on the screen corresponds to "reality." Finally, <F1> 
+will display a help screen that tells you what all these keys do. <F9> will 
+be described in a moment.
+
+The Information Display
+
+It's time to take a closer look at the information at the bottom right of 
+the screen. You have the current x-, y-, and z-coordinates of the graphics 
+cursor. Try clicking on Lines and moving the graphics cursor; notice how the 
+coordinate values change as you move the mouse. Click the right mouse button, which you'll recall means "stop" or "cancel."
+	
+The x, y, and z have the letter a in front of them; this stands for 
+absolute, meaning that the values are the actual, absolute position 
+of the cursor in three-dimensional space. Later you'll see how to 
+change them to be the coordinates of the cursor relative to the previously 
+set point (in which case the letter a will be replaced by the letter r).
+
+The percentage of available memory that is being used to store your drawing 
+is indicated below the coordinates. This number should never get very large, 
+at least not for the simple objects you'll be creating here. The number of 
+drawing units that the graphics cursor will move for every step of the mouse 
+is indicated next. It should be set to 50 now, which means every time you 
+move the graphics cursor, its location will change by plus or minus 50. 
+(Incidentally, the entire drawing area is 3,000 units in each direction.) 
+If you press the <F9> function key (see, we came back to it!) you'll be 
+prompted to enter a new drawing increment value.
+
+Drawing Planes
+
+The final item in the information box is an indication of the "Draw Plane," 
+which should initially be Front-Back. The concept of a "drawing plane" is 
+very important in NorthCAD. Because your mouse can only move in two 
+dimensions and your drawing is in three, you need to determine which plane 
+you're drawing in at any given instant. Note that your drawing plane is 
+independent of your view direction, but when you set a view direction, it 
+automatically sets your drawing plane as well. If you select the left-right 
+view, your drawing plane will be Front-Back.
+	
+You can change the drawing plane by pressing the <P> key; this will cycle 
+through the various planes available. There are three such planes: 
+Front-Back, Top-Bottom, and Left-Right. Notice that your graphics cursor 
+changes as you cycle through these options; that's because the graphics 
+cursor is always oriented so as to lie in the current drawing plane. If you 
+change your drawing plane without changing your viewpoint (which is what the 
+<P> key does), you'll see the graphics cursor from a different angle. Seen 
+face-on, it's a cross; seen from any side, it's a line.
+	
+Initially, you probably don't want to use the <P> key; just switch your 
+viewpoint using <F3> through <F6>, and let NorthCAD automatically set your 
+drawing plane for you. Changing your drawing plane and turning on 
+perspective (and possibly rotating your viewpoint, which will be covered 
+later) can cause your graphics cursor to move in some seemingly 
+counter-intuitive ways.
+
+Your First NorthCAD-3D Drawing
+
+Okay, enough preparation; let's start drawing! Go to the Draw menu, make 
+sure your current work object is THING1 and that your current pen color is 
+bright blue. Press <F6> so you're looking at your drawing from the front 
+(with x to the right, z up, and y away from you). This should also set your 
+drawing plane to be Front-Back.
+	
+Click on Lines. The prompt at the top of the screen tells you to click on 
+a starting point for a line; just click anywhere in the drawing area. Now 
+move the cursor; notice how a bright yellow line seems to stretch from the 
+place where you first clicked to wherever you move the graphics cursor. 
+This "rubber band" effect helps you see where this line is going to go. 
+Click anywhere; the yellow line should be replaced with a blue one (the 
+color you selected earlier as your pen color), and from the end of this 
+blue line the yellow one will stretch out again as you move the cursor. 
+Repeat this procedure to form a segmented line on the screen. When you're 
+finished, click the right mouse button (which you may remember means 
+"stop"). 
+
+Adding Regular Polygons
+
+Enough lines; let's add some polygons. Click on the Polygons menu item; 
+you'll be prompted to enter the number of sides you want the poly to have. 
+For now, enter 12. You'll be prompted to select a point on the screen to 
+use as a center for the polygon; click anywhere. At this point, you should 
+have a "rubber banding" 12-sided polygon displayed in bright yellow. As you 
+move the graphics cursor, you can change the size and orientation of the 
+polygon; when it's placed the way you want it, click on the left mouse 
+button. If you change your mind and decide you don't want to draw it, click 
+with the right mouse button. 
+	
+Notice that every drawing operation repeats automatically; when you 
+draw the polygon, you're immediately prompted to enter another center point. 
+This lets you quickly create a large number of (in this case) 12-sided 
+regular polygons. When you get tired of creating them, click the right 
+mouse button to stop.
+
+Drawing Arcs
+
+Now let's add an arc. Select the Arc item from the menu. You're asked to 
+select a center point for the arc, just as you did for the polygon. Click 
+anywhere. You're then asked to select a starting point for the arc; you can 
+again click anywhere. You now have a rubber band outline of the arc you're 
+drawing; you can draw the arc either clockwise (which starts with a full 
+circle and gradually makes it smaller) or counterclockwise (which starts 
+with a "slice of pie" and lets you sweep out a full circle with it). When 
+the arc is the way you want it, click the left mouse button; to cancel it, 
+click the right mouse button.
+	
+Again, the operation repeats; when you click the left mouse button, you're 
+immediately given a chance to create more arcs. Notice that the distance 
+between the center and the starting point sets the radius of the arc. Also 
+notice that a complete 360 degree arc (i.e., a full circle) has ten sides. 
+If you want to create arcs with more (or fewer) sides, select the Main 
+menu, then the Settings menu, then the Arc Res (arc resolution) item. 
+You'll be prompted to enter a number from 6 to 20, which will be used for 
+all subsequent arcs. Go back to the Draw menu.
+	
+Try drawing arcs and polygons of various sizes and numbers of sides. Notice 
+that 360 degree arcs look the same as polygons; once you've drawn them, 
+there really is no difference. Both arcs and polygons are just collections 
+of line segments, in many ways no different from the first set of lines you 
+drew. However, NorthCAD does treat them as distinct entities, as you'll see 
+a little later.
+
+Moving Around in Your Drawing
+
+It's time now to look at a part of the menu panel you haven't really 
+explored yet: the pan/zoom icons. Try clicking on the vertical bar in the 
+middle of the top row of icons; notice how your entire drawing seems to 
+move down. Now try clicking on the other vertical bar, two rows below the 
+first one; the entire drawing moves back up. The other lines (the horizontal 
+ones at the sides and the slanting ones at the corners) all move the drawing 
+in various directions.
+	
+Below those buttons are two wider ones that have horizontal lines in them; 
+one has vertical bars at each end, one has them in the middle. These are 
+the "zoom" icons; they let you zoom in on your drawing to see more details, 
+or zoom out to see the big picture. Try them out now.
+	
+Whenever you try to move off the edge of the drawing, or zoom in or out too 
+far, you'll get a gentle beep as a reminder that you've reached the limits.
+
+Now try clicking on the square box in the middle; you'll be prompted to 
+select a zoom window. You can draw this zoom window anywhere on the screen; 
+once you click the left mouse button, the contents of that window will 
+expand to fill the whole screen. You can zoom in or out, or click on the 
+square box again and press <R> to reset your view.
+
+Using Files
+
+It's now time to save this wondrous work of art. Select Files from the Main 
+menu. Click on Save /DRW to save your drawing; the prompt line tells you 
+when it's done. If you had selected Save /LIB, your drawing would have been 
+saved to the library directory instead of the drawing directory.
+	
+The filename NorthCAD will use is the same one you gave when you first 
+entered the program; you can change it whenever you like by selecting the 
+New Filename item.
+	
+If you want to extract one object from your drawing and save it in its own 
+file, use Extract /DRW (or Extract /LIB) instead of Save. You'll be prompted 
+to select an object from the object list; at the moment, you probably only 
+have THING1 there.
+	
+The Merge items will merge files from the drawing or library directories 
+into your current drawing; nothing that you already have will be deleted, 
+but new objects will be added.
+	
+The final item in the Files menu is Create PLG, which (as you might well 
+imagine) you'll be using a lot. More about it later. For now, return to the 
+Main menu and select Quit; from there, Save & Quit. This will save your 
+drawing (again) and take you back to the initial screen. Now let's save 
+some settings.
+
+Saving Your Configuration
+
+Go into the 3D Modeling Editor again, but this time select the file 
+DEFAULTS.NC3 from the file list. This special file gets loaded automatically 
+whenever you run NorthCAD; it can be used to store various settings. Set 
+your background color as before, then go into the Settings menu and set 
+your arc resolution to 16 and your cursor size to 2. Go into the Draw menu 
+and set your pen color to be bright blue, as you did before. If you like, 
+you can set other values as well. Finally, select Quit and then Save & Quit. 
+All your default settings are now saved and will be used for all subsequent 
+drawings.
+
+Into the Third Dimension
+
+So far, everything you've drawn has been flat, composed of line segments 
+that all lie in the same two-dimensional plane. It's now time to start 
+giving your objects depth.
+	
+Again get into the 3D Modeling Editor; use a filename of EXAMPLE2. Notice 
+how your screen color is automatically set as you had it before, thanks to 
+the DEFAULTS.NC3 file. Go into the drawing editor; the pen color is blue, 
+and the cursor is a nice size. Create a current work object called cube, 
+then select an overhead viewpoint using the <F5> key. Also notice how your 
+drawing plane is now set to be top-bottom.
+	
+Draw a series of lines on the screen, arranged at right angles to form a 
+square. Before closing the square, press the <S> key; this means "snap," 
+and it'll make your cursor jump to the nearest existing point in your 
+drawing. That helps you guarantee that the square will really be closed. 
+Hold down <S>, and press the left mouse button to draw the final line. Then 
+click the right mouse button to indicate that you're done.
+	
+If you're having trouble drawing the square with lines, you can create a 
+polygon with four sides instead; the effect is the same, and you don't have 
+to worry about getting the edges to meet (they do automatically).
+	
+Let's try an extrusion. Click on Model to go to the modeling menu, then 
+select Extrude. You'll be prompted to choose an object to extrude; there 
+should be only one object in the menu, called cube; select it. Turn 
+perspective on using <F7>, then click on the Up item and Yes to confirm; 
+this will extrude the cube vertically (toward you because you're looking 
+down from above). Because perspective is on, you can see the sides of the 
+cube; try toggling it using <F7> a few times to see the difference.
+	
+Finally, select the Viewpoint item; this will show you a set of coordinate 
+axes that you can rotate in order to select a new viewing angle for the 
+drawing. The T, R, and F labels refer to the top, right, and front 
+directions respectively. Select a 3/4 view and click the mouse.
+	
+This cube looks like it's just a wireframe, but it's actually made up of a 
+number of surfaces, as we'll see in a moment. Choose Files from the Main 
+menu, and select Create PLG. Click on the New box, and enter example2. In 
+this case, you'll use the same name for the PLG file as for the NorthCAD 
+file, but they'll have different extensions and be in different directories; 
+in general, they can be unrelated filenames. The file will be saved to disk; 
+now return to the Main menu, select Quit then Save & Quit (to save the 
+NorthCAD file, which is different from creating the PLG file). From the 
+opening screen, select Quit Program to return to DOS, and then view the new 
+object by typing the following command:
+
+vrview example2.plg
+
+Notice that it's entirely painted in an unshaded blue, which makes it hard 
+to see; it also isn't a true cube, because it has no top or bottom yet. But 
+it's a start.
+
+Fixing the Cube
+
+Go back into NorthCAD-3D and load EXAMPLE2 again. You're now going to close 
+the box. Make sure you have a 3/4 view (use the Viewpoint menu item), then 
+go to the Draw menu. Use the <P> as needed to make sure the top-bottom 
+drawing plane is selected (we'll put a top and a bottom on the box). Select 
+the Surfaces item; this lets you draw three-sided or four-sided flat polys. 
+Notice how the graphics cursor is now being seen at an angle, because you're 
+not looking at it straight on or from the side.
+	
+Move the graphics cursor near one of the top corners of the box, hold down 
+the <S> key to snap the graphics cursor to the exact corner, and click the 
+left mouse button. Stretch the rubber band to one of the adjacent top 
+corners and click a second time, then move on to the next corner and click 
+again. Notice that you're prompted to press <3> if you want a simple 
+three-sided surface. In this case, you want four sides, so stretch the 
+rubber band to the fourth corner and click again. Be sure you select your 
+vertices in a consistent, counterclockwise order as you face the polygon. 
+You've now added a top to the box.
+	
+Because drawing operations repeat automatically, you're ready to draw 
+another surface. This time, click on one of the four bottom corners of the 
+cube, and repeat for the remaining three. When prompted to create yet 
+another surface, hit the right mouse button instead.
+	
+Return to the Main menu, then the File menu, and re-create the EXAMPLE2.PLG 
+file. Then return to the Main menu, and exit the program (using Quit & Save 
+to save the NorthCAD file).
+	
+You're now going to modify the cube using PLGX to eliminate duplicate 
+vertices and paint it a nice shade of green:
+
+plgx example2.plg cube.plg /v /p 0x1DEA
+
+Take a look at it with VRVIEW, being sure to spin it around to see that 
+it's now solid at top and bottom, and cosine-lit.
+
+Creating a Building from the Ground Up
+
+That sure was a lot of work to go through, just to make a cube. Wouldn't 
+it have been easier to create it by hand? Well, yes, but building that cube 
+in NorthCAD has also built the skills we need to create something far more 
+complex.
+	
+Begin a new drawing, called EXAMPLE3. Go into the draw page, make your 
+current object "building" and select the top-bottom viewpoint using <F5>. 
+You're about to draw the floorplan of a new building.
+	
+Create a simple floorplan. No need to worry too much about the dimensions, 
+but there is one very important thing to notice: any point where one wall 
+joins another along its length must be constructed by splitting the wall at 
+the point of contact.
+	
+Before you extrude this building, you're going to assign colors to some of 
+the walls; this is done from the Edit menu. Select Edit; there are a number 
+of items there that will let you erase individual lines, surfaces, entities, 
+objects, or groups. There's also an item called Edit Color; select it now.
+	
+The resulting menu lets you tell NorthCAD what it is you want to change the 
+color of; again, you can select any line, surface, entity, object, or group. 
+In this case, select Chg Object and choose BUILDING. Confirm with Yes, and 
+then pick a color; the entire set of lines making up the building will now 
+be assigned that color. In this case, choose bright green (near the middle 
+of the 16 colors).
+	
+Now you're going to alter specific line segments. Select Chg Line, and click 
+on the line you want to alter; change its color, then repeat for other line 
+segments. Try to make perpendicular lines different colors.
+	
+Go to the Model menu and select Extrude. Notice that you can set the 
+extrusion distance; set it to 1200. Also notice that you can extrude in 
+any direction; in this case, you want to extrude Up. Once you've done this, 
+use the Viewpoint command to examine the building from all angles. Select a 
+3/4 view.
+	
+You're about to paint a wall. Again choose Edit and Edit Color, but this 
+time select Chg Surface. You'll need to pick two edges on a single surface, 
+in order to uniquely identify the surface you want to change. Assign a new 
+color to it.
+	
+Save the resulting drawing as a PLG file called EXAMPLE3. This time, have 
+PLGX use a color conversion file to translate the colors:
+
+plgx example3.plg tmp.plg /v /k northcad.ccv
+
+This tells PLGX to "Konvert" the input file to the output file using the 
+list of colors in the file NORTHCAD.CCV. That file has 16 lines in it, each 
+corresponding to one of the 16 colors used by NorthCAD. Each line has a 
+surface specifier that the color should correspond to. Note that the file 
+can actually have up to 256 entries, to support the 256-color modes of 
+NorthCAD.
+	
+The building is almost complete, but there's no roof or floor yet. Go back 
+into NorthCAD and load EXAMPLE4 again. Select a 3/4 view, and draw a set of 
+three-sided and four-sided surfaces to cover the open tops of the hallways 
+in the building.
+	
+Repeat the procedure to add a floor; to avoid confusion, choose a different 
+pen color than the one you used for the ceiling. You can save some time by 
+imitating the "tiling" of the ceiling in the floor. Notice how useful it is 
+that the surface-drawing command auto-repeats.
+	
+When you're done, create the EXAMPLE3.PLG file again and then Save and Quit. 
+Convert, using PLGX as before, and view it using VRVIEW.
+
+More About Extrusions
+
+Any two-dimensional set of lines, arcs, and polygons can be extruded. Try 
+extruding a polygon to form a column; notice how the ends are open, so it's 
+more of a tube than a solid column. Extrude an arc to form an alcove, or a 
+triangle (three-sided poly) to form a fulcrum. 
+
+You Say You Want a Revolution...
+
+Extrusion is one way to turn a flat shape into a solid; revolution is the 
+other. Start a new drawing, called example4. Go into the Draw menu and 
+select the Front-Back view using <F6>. Turn on the display of the coordinate 
+axes using <F8>. As always, start by creating a current working object; in 
+this case, call it column1.
+	
+Draw a vertical line (parallel to the z-axis) some distance away from the 
+z-axis itself. Now choose Revolve from the Model menu; pick column1 as the 
+object to revolve. Use Sections to specify the number of steps the 
+revolution should go through; pick 16 for now. Click on Revolve, and confirm 
+by clicking on Yes. Use the Viewpoint item to see your creation from various 
+angles.
+	
+What you've done is revolve a line around the z-axis to sweep out a 
+hollow tube. Of course, you could have done the same thing by extruding a 
+16-sided polygon, but there's an advantage to doing it this way: you can 
+close the cylinder at either or both ends automatically.
+	
+To see how this works, start by moving your new creation out of the way. 
+Select Move from the Model menu, then Object and column1. Move the column to 
+the right a ways. Press <F6> to return to the Front-Back view, then go to 
+the Draw menu and create a new working object called column2.
+	
+Instead of a single line, create a "bracket" shape that hooks onto the 
+z-axis; use the Lines item to create a cylinder shape. Notice how the 
+horizontal lines end at the vertical z-axis. Go through the menus and 
+Revolve column2. Shift your viewpoint to a 3/4 view, and notice how the top 
+and bottom of this new column2 are made up of triangles that join at the 
+z-axis. Save this drawing as a PLG file called EXAMPLE5, convert it using 
+PLGX as before, and view it in VRVIEW. Notice that one of the cylinders is 
+just a tube, and the other is solid. 
+
+SUMMARY
+
+NorthCAD-3D simplifies object creation, which is perhaps one of the most 
+time-consuming tasks of world-building. Try using NorthCAD to build some 
+common items to enhance your collection of objects and get some practice 
+with this powerful software. Obviously, we've just scratched the surface of 
+what you can do with this program. Again, we encourage you to register to 
+receive the full version, which will also include more detailed 
+documentation so you can push NorthCAD-3D to its very impressive limits.
+
+(Thank you to Bernie Roehl, who wrote the preceding material on using 
+NorthCAD-3D. This material appeared in a different version in his Waite 
+Group Press book "Playing God: Creating Virtual Worlds with REND386," 
+copyright 1994 by The Waite Group, Inc.)
+	

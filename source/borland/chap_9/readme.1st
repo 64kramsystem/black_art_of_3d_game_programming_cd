@@ -1,0 +1,36 @@
+
+
+STARBLAZER NOTES
+
+To play Starblazer execute BLAZER.EXE. To enable sound FX and music you
+must first load in MIDPAK and DIGPAK with the TSRs MIDPAK.COM and
+SOUNDRV.COM. These are generated from the programs SETM.EXE and SETD.EXE
+from the MIDPAK/DIGPAK development directory.
+
+Starblazer needs to be told to use sound fx and or music with commands line
+parmeters. To enable sound use the command line parameter 's' and to enable
+music use 'm'. For example, to enable music and sound, you would type
+
+blazer m s <ENTER>
+
+To enable sound fx only,
+
+blazer s <ENTER>
+
+To disable both sound and music,
+
+blazer <ENTER>
+
+
+Problems:
+
+If the music doesn't sound right then try copying my instrument patches within
+the PATCHES sub-directory on top of the file MIDPAK.AD, then re-install
+MIDPAK.COM.
+
+If you have trouble linking modem-2-modem with a friend, try editing the
+file BLAZE.MOD. It is the extra initialization string sent to the modem.
+
+
+
+

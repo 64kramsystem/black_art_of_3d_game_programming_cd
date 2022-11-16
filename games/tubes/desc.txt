@@ -1,0 +1,5 @@
+Tubes, by Impulse Software, is a challenging game that will keep you hopping and thinking!  
+The object of Tubes is to keep the large beaker as free of atoms as is possible.  This is accomplished by lining up 3 or more like coloured atoms in a row, vertically, horizontally, or diagonally.  
+Use the test tube you control to catch the atoms falling from the dispenser tubes and place them into the beaker at your discretion.  The game is over when you've dropped enough atoms to exceed the drop limit, or when you've filled up the beaker with atoms.  Keep your eyes on the atoms and decide which you're going to go after and which you aren't.  
+The fate of the experiment rests on YOU! 
+

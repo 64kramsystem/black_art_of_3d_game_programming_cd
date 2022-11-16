@@ -1,0 +1,1537 @@
+
+                        N O R T H C A D  -  3 D
+                                   
+                    ProSeries Modeler Version 9.5VR
+                    Rend386 Virtual Reality Release
+                                   
+                         User Reference Guide
+               Copyright (c) 1987-1993 THE QUEST COMPANY
+                   Distributed by WAITE GROUP PRESS
+                           -----------------
+
+
+
+                           TABLE OF CONTENTS
+
+INTRODUCTION AND SYSTEM REQUIREMENTS
+
+     Introduction
+     System Requirements
+     Disk Contents
+
+INSTALLING AND SETTING UP THE PROGRAM
+
+     Installing NorthCAD-3D:
+          Floppy Disk Systems
+          Hard Disk Systems
+     Program Configuration
+
+HOW TO OPERATE THE PROGRAM
+
+     3-D Modeling Editor
+     Mouse Operation:
+          Left and Right Mouse Buttons
+          The Mouse and Orthographic Viewpoints
+          Drawing Snap
+     The Graphics Screen:
+          Command Menu
+          Pan & Zoom Icons
+          Settings Area
+     Keyboard Reference
+
+3-D DESIGN: THE BASIC CONCEPTS
+
+     3-D Space: The Drawing Environment
+     Movement On The Drawing Planes
+     Drawing Plane Selection
+     Drawing Planes
+     Drawing Hierarchy
+     Quick Start Guidelines
+
+COMMANDS AND MENU REFERENCE
+
+     Command and Menu Reference
+
+APPENDICES
+
+     Appendix A: The DEFAULTS.NC3 File
+     Appendix B: Using Library Files
+     Appendix C: About The NorthCAD-3D Program
+     Appendix D: Drawing Reference
+     Appendix E: Error Messages
+
+
+
+
+   -----------------------------------------------------------------
+           *     INTRODUCTION AND SYSTEM REQUIREMENTS     *
+   -----------------------------------------------------------------
+
+INTRODUCTION
+------------
+
+Welcome to NorthCAD-3D!
+
+Distributed as part of the book "Playing God: Building Virtual Worlds
+With Rend386" by WAITE GROUP PRESS, this program enables you to create
+three-dimensional objects and images for use with the Rend386 Virtual
+Reality software.
+
+NorthCAD-3D is completely menu driven, easy to learn and use, and
+features the ability to create and manipulate objects from any
+viewpoint around your drawing.
+
+So, without further delay, let's begin turning your imagination into
+Virtual Reality.
+
+
+
+SYSTEM REQUIREMENTS
+-------------------
+
+NorthCAD-3D Version 9.5VR requires the following:
+
+IBM Compatible 286, 386, 486, or Pentium
+
+DOS 3.3 or later
+
+Mouse (Microsoft compatible)
+
+Hard Disk or High Density Floppy
+
+640K RAM (approx. 510K Free)
+
+VGA or SuperVGA color display system.
+(Supported SuperVGA chipsets: TSENG ET3000, TSENG ET4000, ATI,
+Paradise,  Video 7, and Trident, as well as current VESA drivers).
+
+Optional: Math Coprocessors are supported, but not required.
+
+
+
+DISK CONTENTS
+-------------
+
+Filename       Description
+
+NCVR.EXE       The NorthCAD-3D Main Program
+NC3DVR.EXE     NorthCAD-3D Sub Module
+CONFIG1.CFG    Configuration File
+CONFIG2.CFG    Configuration File
+CONFIG3.CFG    Configuration File
+CONFIG4.CFG    Configuration File
+CONFIG5.CFG    Configuration File
+CONFIG6.CFG    Configuration File
+CONFIG7.CFG    Configuration File
+NCVR.DOC       Version 9.5VR Reference Guide
+DEFAULTS.NC3   Drawing Template File
+FBPLANE.NC3    Sample Drawing File (tutorial)
+LRPLANE.NC3    Sample Drawing File (tutorial)
+TBPLANE.NC3    Sample Drawing File (tutorial)
+OFFICE1.NC3    Sample Drawing File
+CHESS.NC3      Sample Drawing File
+TOPS.NC3       Sample Drawing File
+ARCHES.NC3     Sample Drawing File
+BLIMP.NC3      Sample Drawing File
+CUBE.NC3       Library File
+OCTAGON.NC3    Library File
+PENTAGON.NC3   Library File
+TRIANGLE.NC3   Library File
+PYRAMID.NC3    Library File
+TRPEZOID.NC3   Library File
+TRPZOID2.NC3   Library File
+TILES_CL.NC3   Library File
+TILES_CM.NC3   Library File
+
+
+ACKNOWLEDGMENTS
+----------------
+
+Portions Copyright (c) Genus Microprogramming, Inc. 1988-1993
+NorthCAD-3D is a trademark of The Quest Company.
+IBM and PS/2 are trademarks of International Business Machines Corp.
+MS-DOS and Windows are trademarks of Microsoft Corp.
+Pentium is a trademark of the Intel Corp.
+
+
+
+   -----------------------------------------------------------------
+         * *     INSTALLING AND SETTING UP THE PROGRAM     * *
+   -----------------------------------------------------------------
+
+INSTALLING THE PROGRAM (MANUALLY)
+---------------------------------
+
+NOTE: The following instructions for installing the software should
+only be used if you've been unable to install the program as described
+in the accompanying book.
+
+FLOPPY DISK SETUP
+
+Review the list of files for the NorthCAD-3D program.  They are listed
+at the beginning of this document.  Copy all of the listed files from
+the disk that came with the book to a diskette with 720K or greater
+storage capacity.  Then proceed to the section: PROGRAM CONFIGURATION
+
+HARD DISK SETUP
+
+Be sure you are in the root directory of your hard disk.
+
+     C> CD\
+
+Next, create a sub directory for the NorthCAD-3D program files:
+
+     C> MD NCVR
+
+Go to this new directory.
+
+     C> CD NCVR
+
+Review the list of files for the NorthCAD-3D program.  They are listed
+at the beginning of this document. Copy all of the listed files with
+the extensions EXE, CFG, and DOC from the disk that came with the book
+to the NCVR directory.
+
+Next, create a two subdirectories from the NCVR directory:
+
+     C> MD DRAWINGS
+
+     C> MD LIBRARY
+
+Go to the drawings directory.
+
+     C> CD DRAWINGS
+
+Now copy all of the listed files that are described as being a "Sample
+Drawing File" to this directory.  Next, copy the file: DEFAULTS.NC3 to
+this directory as well.
+
+Next, go to the library directory.
+
+     C> CD C:\NCVR\LIBRARY
+
+Then copy all of the listed files that are described as being a
+"Library File" to this directory.  And finally, copy the file:
+DEFAULTS.NC3 to this directory too.
+
+Return to the NCVR directory, and proceed to the next section, Program
+Configuration.
+
+NOTES: RUNNING NORTHCAD-3D UNDER WINDOWS 3.1
+--------------------------------------------
+
+NorthCAD-3D is still a DOS program, however, it can be run under
+Windows as a DOS application.  An Icon file: NORTHCAD.ICO has been
+included if you care to set up a program group for NorthCAD-3D.
+
+A couple of things to remember: Be sure you load your mouse driver from
+DOS prior to starting Windows.  And, set the "start-up" directory for
+the program group (Properties-Options in Windows) to the directory
+where the NorthCAD-3D program files are located.  Other than that,
+there aren't any special requirements for running NorthCAD-3D under
+Windows.
+
+
+
+PROGRAM CONFIGURATION
+---------------------
+
+Start the NorthCAD-3D program by typing NCVR at the DOS prompt.
+
+After the main screen appears, move the mouse cursor over the PROGRAM
+CONFIGURATION Menu Banner, and click the Left Mouse Button.
+
+Next, select the RESOLUTION/COLOR Banner.  Then select the color and
+resolution mode you wish to use when designing 3-D drawings.  Then
+select SAVE.
+
+You'll also need to configure the file directories NorthCAD-3D will use
+to load and retrieve your drawing and library files, as well as where
+to save the Rend386 Virtual Reality files.  Select the PROGRAM
+CONFIGURATION Banner again, and this time select the FILE DIRECTORY
+Banner.
+
+Make the necessary CHANGEs to the drive and path specifications.  For
+example, if you've installed the program onto a Floppy Disk, enter the
+appropriate drive letter and colon punctuation mark.  For example:  B:
+
+If you've installed the program onto your Hard Disk, then enter the
+appropriate drive letter, colon, backslash, and path.  For example
+C:\NCVR\DRAWINGS
+
+Then select SAVE.
+
+The program is now configured and ready for operation.
+
+
+
+
+   -----------------------------------------------------------------
+            * * *     HOW TO OPERATE THE PROGRAM     * * *
+   -----------------------------------------------------------------
+
+3-D MODELING EDITOR
+------------------
+
+Always start the NorthCAD-3D program from the Main Program Module:
+NCVR.EXE
+
+Then, from the opening screen in the Main Program Module, select the 3-
+D MODELING EDITOR Menu Banner.  You can either pick a file from the
+directory list for editing or viewing, or you can select NEW to begin a
+new drawing.
+
+If you select NEW, you'll be prompted to enter a filename.  Enter a
+filename 1-8 characters in length. (It's unnecessary to add the NC3
+extension).
+
+
+MOUSE OPERATION
+---------------
+
+LEFT AND RIGHT MOUSE BUTTONS: The LEFT MOUSE BUTTON operates similar to
+the ENTER Key on the keyboard.  When you wish to select a menu item,
+enter a data point, or when prompted to press Enter, you can click your
+Left Mouse Button.  The RIGHT MOUSE BUTTON is similar to using the
+ESCAPE key.  To exit a drawing command or to cancel an input prompt,
+simply click your Right Mouse Button.
+
+THE MOUSE AND ORTHOGRAPHIC VIEWPOINTS
+
+When using any of the drawing commands, the graphics cursor is moved by
+sliding your mouse in any direction.  Because the exact direction the
+cursor moves on screen is influenced by your current 3-D viewpoint, you
+might find drawing from Orthographic Viewpoints more convenient, and
+easier to control while you're learning the software.  When drawing
+from viewpoints other than Orthographic, users often find larger cursor
+sizes helpful (see the SETTINGS command).
+
+DRAWING SNAP
+
+The program uses Drawing Snap which always moves the graphics cursor by
+the distance of the Drawing Unit increment, and enables you to remain
+in scale with each mouse movement.  The drawing increment can be
+adjusted with the F9 Key from the Draw Menu of the modeling editor, or
+while using any of the drawing commands.
+
+
+THE GRAPHICS SCREEN
+-------------------
+
+The graphics screen consists of the graphics viewport and the menu
+panel.  The menu panel consists of a column of buttons and icons down
+the far right-hand side of the graphics screen.  They're grouped into
+three (3) main sections: the Command Menu, the Pan and Zoom Icons, and
+the Settings Area.
+
+COMMAND MENU
+
+The name of the menu being displayed is located in the top button on
+the menu panel.  (It's non-functional, so don't worry if nothing
+happens when you click on it).
+
+Below the name of the menu, are Twelve (12) Menu Buttons.  Here, the
+program displays any active commands that you may select.  To select
+any of the commands, point to the button with the mouse cursor and
+click the Left Mouse Button.  The command will either perform the
+specified design task, prompt you for a keyboard entry, or display a
+sub menu.
+
+PAN AND ZOOM ICONS
+
+Located just below the last menu button are the Pan and Zoom Icons.
+These icon buttons control the viewing size and target location of the
+drawing in the viewport.  Buttons are selected by pointing to them with
+the mouse cursor, and clicking the Left Mouse Button.
+
+The icon layout and operation is as follows:
+
+                               PAN ICONS
+                                   
+               Up & Left          Up          Up & Right
+               Left         Window Pan/Zoom        Right
+               Down & Left       Down       Down & Right
+                                   
+                                   
+                              ZOOM ICONS
+                                   
+                 Zoom Out                     Zoom In
+
+The Pan icons are used to move your view in the direction of the icon
+arrows.  The increment of movement is controlled dynamically by the
+program and will Pan your view by One-Third (1/3) the viewport
+distance.  If you attempt to Pan farther than the limits of 3-D space,
+the program will sound a short Beep and will not continue to pan
+farther than is possible.
+
+The center Pan icon, known as the Pan and Zoom Window command, enables
+you to select your own portion of the drawing to view.  Using your
+mouse, pick a point on the screen for one of the corners, then extend a
+rubber-banding rectangle to the desired size.  You can also press the
+"R" Key while the Pan and Zoom Window command is active in order to
+reset both Pan and Zoom back to Normal.  You can zoom into an area of
+the drawing as small as 400 drawing units across.
+
+The Zoom In and Out Icons are used to increase or decrease the viewing
+size of the drawing.  They don't scale your drawing, they magnify the
+view.  Each pick of the Zoom icons adjusts the view by 800 drawing
+units (400 units on each side).  Viewing sizes range from +-3300 units
+on each axis, down to +-400 units.  If you attempt to Zoom greater than
+is allowed, the program will sound a short Beep.
+
+SETTINGS AREA
+
+The last panel of the menu provides for the display of various command
+and operation settings.  When appropriate, the program displays the
+current settings in effect for the command or menu you're using.
+
+
+KEYBOARD REFERENCE
+------------------
+
+The following function key commands are available in the 3-D Modeling
+Editor.
+
+F1   ON-LINE KEYBOARD REFERENCE.  The graphics viewport is cleared, and
+     a listing of keyboard commands is displayed.  The reference
+     includes both function keys and letter keys.  To exit, press the
+     Escape Key, or click the right mouse button.
+
+F2   PREVIOUS VIEWPOINT AND DRAWING PLANE.  Redraws your drawing using
+     the last VIEWPOINT command values, and sets the Drawing Plane to
+     the one last used from that viewpoint.  This function key command
+     can be used to return to your previous 3-D viewpoint after having
+     used any of the Orthographic View keys.  This gives you the
+     ability to jump from view to view, then back to your 3-D view
+     again, without having to use the Viewpoint command or manually
+     reset your drawing plane.
+
+F3   LEFT ORTHOGRAPHIC VIEW AND DRAWING PLANE.  Redraws your drawing
+     using the left Orthographic viewpoint.  Additionally, the Left-
+     Right Drawing Plane is automatically selected, since it's the most
+     likely plane to be used when drawing from this viewpoint.
+
+F4   RIGHT ORTHOGRAPHIC VIEW AND DRAWING PLANE.  Redraws your drawing
+     using the right Orthographic viewpoint.  Additionally, the Left-
+     Right Drawing Plane is automatically selected, since it's the most
+     likely plane to be used when drawing from this viewpoint.
+
+F5   TOP ORTHOGRAPHIC VIEW AND DRAWING PLANE.  Redraws your drawing
+     using the top Orthographic viewpoint.  Additionally, the Top-
+     Bottom Drawing Plane is automatically selected, since it's the
+     most likely plane to be used when drawing from this viewpoint.
+
+F6   FRONT ORTHOGRAPHIC VIEW AND DRAWING PLANE.  Redraws your drawing
+     using the front Orthographic viewpoint.  Additionally, the Front-
+     Back Drawing Plane is automatically selected, since it's the most
+     likely plane to be used when drawing from this viewpoint.
+
+F7   PERSPECTIVE ON/OFF.  Toggles Perspective Mode On and Off.  When
+     Perspective Mode is On, the drawing is displayed using 3-Point
+     Perspective.  Horizontal lines, as well as vertical lines, are
+     automatically adjusted to slope to unseen vanishing points.
+
+F8   AXES GRID ON/OFF.  Toggles the display of an Axes Grid On and Off.
+     When the Axes Grid is On, a line is drawn along each Axes (X, Y,
+     and Z), and is useful when aligning your drawing to the center of
+     the view rotation point located at (0,0,0).
+
+F9   DRAWING UNITS & VIEWPOINT DEGREE INCREMENTS. While on the Draw
+     Menu, or during any of the drawing commands, pressing the F9 Key
+     enables you to specify a new drawing unit increment.  The current
+     Drawing Unit is displayed below the Draw Menu in the Settings
+     Area.  Values can range from 1 to 500.  While using the VIEWPOINT
+     command, the F9 Key enables you to specify a new degree increment.
+     The current degree increment will be displayed in the Settings
+     Area.  Values can range from 1 to 45.
+
+F10  REDRAW.  Clears the viewport and redraws your drawing.  This
+     command can be used to clean up lines that may have become
+     partially erased during a Move or Scale command operation.
+
+F11  ABSOLUTE/RELATIVE COORDINATES.  Toggles the display of either
+     Absolute or Relative coordinates.  Absolute coordinates display
+     the true X,Y,Z position of the graphics cursor in 3-D space.
+     Relative coordinates display the distance from the last point
+     entered.  Relative coordinates can assist you in tracking
+     distances, whereas Absolute coordinates can be used to find
+     specific coordinate locations.  On the Draw Menu, the X,Y,Z
+     coordinates are displayed in the Settings Area.  The "A" prefix
+     signifies Absolute, and an "R" prefix signifies Relative.
+
+F12  SAVE DRAWING FILE. Saves the current drawing to disk.  This key
+     simply provides a fast alternative from having to go to the Files
+     Menu to save your file.  This key can be used from any menu, but
+     note that confirmation messages are not displayed.
+
+P    CHANGE DRAWING PLANE.  While on the Draw Menu, or during any of
+     the drawing commands, this key allows you to cycle the selection
+     of the Drawing Plane.  The three Drawing Planes are: LEFT-RIGHT,
+     FRONT-BACK, and TOP-BOTTOM.  This key can also be used to manually
+     override the Drawing Plane selections set by the Orthographic
+     Keys, or when drawing from a 3-D viewpoint set by the VIEWPOINT
+     command.  On the Draw Menu, the current Drawing Plane is displayed
+     in the Settings Area.
+
+S    SNAP TO NEAREST POINT.  While on the Draw Menu, or during any of
+     the drawing commands, the "S" Key automatically repositions the
+     graphics cursor to the nearest endpoint of a line segment, or
+     surface vertex.  (The Snap Zone range can be set from the Settings
+     Menu).  The Snap command also enables you to quickly change the
+     coordinates of your current drawing plane, since the drawing plane
+     coordinates are also shifted to those of the new snap point.  And
+     Snap is an excellent method for getting back "in scale" with a
+     drawing you have just moved or scaled.
+
+
+
+
+   -----------------------------------------------------------------
+        * * * *     3-D DESIGN: THE BASIC CONCEPTS     * * * *
+   -----------------------------------------------------------------
+
+3-D SPACE: THE DRAWING ENVIRONMENT
+
+In order to create true three-dimensional images it's necessary to have
+the ability to specify locations in space for each element you're
+constructing.  To identify these locations, a coordinate system is used
+to indicate their position.
+
+In two-dimensional drawings, positions are indicated by distances along
+the width and length of the design.  The width is known as the X-axis
+and the length is known as the Y-axis.
+
+As you move into the world of three-dimensional design, one more
+coordinate axis is needed to indicate the designs' height.  Thus, the
+coordinate axis for height is the Z-axis.
+
+Consequently, a coordinate format of X,Y,Z will specify the exact
+position in width, length, and height.
+
+MOVEMENT ON THE DRAWING PLANES
+
+In NorthCAD-3D, and most other CAD programs, specifying the values for
+each of these positions is accomplished by moving a graphics cursor
+displayed on your computer screen to the desired location.  The
+movement of the graphics cursor is controlled by moving your mouse, or
+pressing the cursor keys.
+
+However, the mouse and cursor keys only give you two-dimensional
+movement capabilities, so the graphics cursor can not travel in more
+than two directions at a time.  You must therefore selectively choose
+which two directions you want to be able to move.  Each direction
+correlates with a particular axis, so you essentially have three pairs
+of axis on which you can choose to travel.  The axis pair combinations
+are the X-Y Axes, Y-Z Axes, X-Z Axes.  Each one of the 3 combinations
+is referred to as a Drawing Plane.
+
+To make it easier to visualize which drawing plane the cursor will
+travel on, NorthCAD-3D uses names for each of these planes that
+correspond to the sides of your image.  They are the LEFT-RIGHT PLANE,
+FRONT-BACK PLANE, and the TOP-BOTTOM PLANE.
+
+DRAWING PLANE SELECTION
+
+As you create a design using any of the drawing commands, you can
+change drawing planes as needed to position the graphics cursor.  An
+easy method of determining which drawing plane to select, is to
+visualize the side of your image the cursor must travel on in order to
+get to your desired location.  Since the drawing planes are named after
+the sides of an image, simply select the plane with the corresponding
+side.
+
+To make it even easier, NorthCAD-3D also has a feature for automatic
+drawing plane selection.  As noted above, drawing planes are similar to
+the corresponding sides of a drawing.  The program has therefore linked
+the Orthographic Viewpoint Keys (F3-F6) to the selection of a drawing
+plane.  For example, if you press the F3 Key you'll get a Left View of
+your drawing, and the drawing plane will automatically be changed to
+Left-Right.
+
+The program also enables users to manually control drawing plane
+selection without changing their viewpoints.  This allows the creation
+of drawings from viewpoints anywhere around your drawing.  While on the
+Draw Menu, or while using any of the drawing commands, the "P" Key can
+be used to cycle the drawing plane selection. (Note however, that some
+drawing commands can only be used on a single plane at a time, and will
+lock the plane after you have entered the first coordinate of the
+command).
+
+Included with the program are three tutorial sample drawing files. Each
+file illustrates one of the three drawing planes:
+
+     The FBPLANE.NC3 file shows the Front-Back Drawing plane.
+     The LRPLANE.NC3 file shows the Left-Right Drawing plane.
+     The TBPLANE.NC3 file shows the Top-Bottom Drawing plane.
+
+(For simplicity, only the Left, Right, Up, and Down movements have been
+illustrated).
+
+When viewing the three tutorial illustration files, use the VIEWPOINT
+command to pick new viewpoints.  Note the direction of the arrows - the
+arrows indicate the path the graphics cursor will take when either
+Left, Right, Up, or Down, mouse movement occurs when using that
+particular drawing plane.
+
+Using the concepts described above, and trying out a drawing of your
+own, you'll quickly discover how the correlation between the drawing
+planes and your viewpoint give you the freedom to accurately create
+images from any location in 3-D space. More specific descriptions for
+each of the three drawing planes can be found below.
+
+
+DRAWING PLANES
+--------------
+
+FRONT-BACK sets the movement of the graphics cursor to move in relation
+to the Front or Back side of the drawing, and in relation to your
+viewpoint.  Left and Right mouse movement (or cursor keys) will move
+the graphics cursor along the Width of your drawing (the X-axis), while
+Forward or Backward mouse movement moves the graphics cursor along the
+Height of the drawing (the Z-axis).  The current Y coordinate value
+remains locked in place.
+
+LEFT-RIGHT sets the movement of the graphics cursor to move in relation
+to the Left or Right side of the drawing, and in relation to your
+viewpoint.  Left and Right mouse movement will move the graphics cursor
+along the Length of your drawing (the Y-axis), while Forward or
+Backward mouse movement moves the graphics cursor along the Height of
+the drawing (the Z-axis).  The current X coordinate value remains
+locked in place.
+
+TOP-BOTTOM sets the movement of the graphics cursor to move in relation
+to the Top or Bottom side of the drawing, and in relation to your
+viewpoint.  Left and Right mouse movement will move the graphics cursor
+along the Width of your drawing (the X-axis), while Forward or Backward
+mouse movement moves the graphics cursor along the Length of the
+drawing (the Y-axis).  The current Z coordinate value remains locked in
+place.
+
+
+NOTES: Appropriate Drawing Planes can be automatically selected by
+using the Orthographic Viewpoint Keys (F3-F6).
+
+The "P" Key is used to set the Drawing Plane manually, or to override
+an automatic selection.
+
+The current Drawing Plane is displayed below the Draw Menu in the
+Settings Area.
+
+
+DRAWING HIERARCHY
+-----------------
+
+Elements within a drawing file all belong to a particular drawing
+hierarchy which determines their level of creation, editing, and
+manipulation control. Knowing the levels that you can control will help
+you get the most versatility out of the software. The hierarchy of
+elements in a NorthCAD-3D drawing are listed below from the lowest
+level to the highest level.
+
+
+                     LINE SEGMENTS  AND  SURFACES
+                                   .
+                                   .
+                                   .
+                               ENTITIES
+                                   .
+                                   .
+                                   .
+                                OBJECTS
+                                   .
+                                   .
+                                   .
+                           GROUPS OF OBJECTS
+                                   .
+                                   .
+                                   .
+                               THE WORLD
+
+
+LINE SEGMENTS AND SURFACES are the smallest elements in a drawing file.
+A line segment can be either a line that you've drawn with the LINES
+command, or it can also be part of another drawing entity such as an
+Arc - which is composed of a series of short line segments.
+Additionally, a surface can be either a surface that you've drawn with
+the SURFACE command, or it can be part of an object you've Extruded or
+Revolved - which creates surfaces from drawing entities.
+
+Line Segment and Surface control primarily consists of the ability to
+erase them from the drawing or change their color. But as simple as
+this sounds, it actually gives you tremendous versatility in creating
+complex and interesting objects.
+
+For example, assume you want to create a yellow sphere with a green
+stripe around it, and you also want a few holes in the sphere so
+objects placed inside the sphere can also be seen. To create this
+object, you would simply draw a yellow Arc, change the color of one of
+the line segments that make up the arc to the color green, then use the
+Revolve command to turn the Arc into a sphere, and finally erase a few
+of the surfaces from the sphere with the Erase Surface command and the
+object is finished. In this example, having the capability to edit a
+line segment on the Arc, allows you to skip having to edit every
+surface around the sphere in order to change its color, and being able
+to actually edit down to the surface level of the sphere enables you to
+create an object that might otherwise have been to time consuming to
+design.
+
+
+ENTITIES are drawing elements that have been created with any of the
+Drawing commands. For instance, a Polygon is a drawing entity. An
+individual line drawn with the LINE command, or a single surface drawn
+with the SURFACE command can also be considered to be an entity, even
+though their hierarchy level is also lower.
+
+Entities are used to form the objects that you'll later EXTRUDE or
+REVOLVE into 3-D objects.  For example, a Polygon can be extruded to
+form a tube, or it can be revolved to form a torus (donut).
+Additionally, two or more entities can be used together to form the
+shape for an extrusion, such as connecting a line to each end of an arc
+in order to create a beveled edge. And since NorthCAD-3D functions down
+to the line segment level, you can also "snap" to any of the line
+segments in an entity in order to attach another entity at that point.
+
+
+OBJECTS are collections of drawing entities that you've designated to
+be part of a drawing item, for example a chair or a lamp. Objects can
+also be created by combining other objects together to form a new
+object, but they are always a collection of drawing entities.
+
+When you're creating objects with any of the drawing commands, every
+entity is being assigned to a specific object. This object is selected,
+and named, by you with the WORK OBJECT command on the Draw Menu. Every
+entity you draw thereafter is assigned to this current object. When you
+wish to work on a new object, or continue with a previous one, you'll
+simply select it again with the WORK OBJECT command.
+
+The name of the current object is displayed above the Draw Menu, so you
+don't need to worry about remembering which object you're working on.
+However, whenever you enter the Draw Menu, it's always a good idea to
+check the name of the current object, just to be sure it's the one you
+want to be working on. In case you forget though, or need to make
+changes, there are commands located on the Object Menu that allow you
+to redesignate entities from one object to another.
+
+
+GROUPS OF OBJECTS are collections of objects that you've designated as
+being a single controllable item.  For instance, an airplane can be
+composed of numerous objects, but all the objects can be linked to form
+a Group so you can control them as one item.  You can also make changes
+to any of the objects within the group, without affecting the other
+objects.
+
+For example, the engine on the plane could be made up of several
+different objects, including a propeller. While the propeller and all
+the engine parts, as well as all the other objects that make up the
+plane, belong to a single group, you can still rotate the propeller to
+a new angle without affecting the other parts of the plane. Likewise,
+with group control you have the power to rotate the entire plane in one
+operation, and still maintain the original alignment of all the
+objects.
+
+
+THE WORLD consists of everything in the drawing - Groups, Objects,
+Entities, Line Segments and Surfaces. The World is the highest level in
+the drawing hierarchy, and changes at this level affect everything in
+the drawing. For example, changing the background color or selecting a
+new viewpoint are operations that work at the world level.
+Additionally, there are options on the Move and Scale menus that can
+also be used at the world level.
+
+
+THE QUICK START GUIDELINES FOR CREATING DRAWINGS
+------------------------------------------------
+
+In case you're in a hurry to get started, and don't plan on reading
+much of the manual, the following guidelines might help you stay out of
+trouble.
+
+Whenever you enter the Draw Menu, learn to get into the habit of
+checking which object is being worked on.  The name of the current Work
+Object is displayed above the Draw Menu on the right hand side of the
+screen.  It's also printed using the current drawing color.
+
+If you haven't selected a Work Object, the program displays "No Name"
+instead.  Before you begin drawing, pick the WORK OBJECT command, and
+select the name of the object you want all the subsequent drawing
+entities assigned to.  If it's a new drawing, the [] symbols refer to
+empty and available objects.  Select the first available [] and you'll
+be prompted to enter a name for the object.  When the Draw Menu
+reappears, notice that the name of your current Work Object is now
+displayed above the menu.
+
+Whenever you wish to draw in a different color, select the PEN COLOR
+command.
+
+The size of the Graphics cursor, not to be confused with the mouse
+cursor, can be adjusted on the SETTINGS menu.  The sizes range from a
+small target cursor to a full screen cross hair cursor.
+
+The distance the graphics cursor travels each time the mouse is moved,
+or a cursor key is pressed can be adjusted on the Draw Menu, or while
+any of the drawing commands are active, by simply pressing the F9 KEY.
+
+Most users create their 3-D objects using either the Extrude or Revolve
+commands.  The drawing commands are used to draw the object's contours,
+then they're extruded or revolved.
+
+However, Do Not Extrude or Revolve Surfaces.  The entity is already a
+surface, and extruding a surface only results in creating a new single
+surface.
+
+The Revolve command rotates around the Height axis (Z-axis) at the Zero
+(0) coordinate.  If you desire a symmetrical cylindrical object.  You
+should therefore, draw your contour object using a Y-Coordinate of Zero
+(0).  Any other Y-Coordinate results in some rather interesting shapes
+- which is also why we let you use other coordinates.
+
+The Revolve and Extrude commands use confirmation menus after each
+operation, so you can either accept or reject the new extrusion.  This
+allows you to experiment quite easily with other settings.
+
+
+
+
+   -----------------------------------------------------------------
+        * * * * *     COMMAND AND MENU REFERENCE     * * * * *
+   -----------------------------------------------------------------
+
+
+COPY MENU
+
+    Commands on this menu enable you to copy either an individual
+    OBJECT or a GROUP of objects. The copy will become a new object in
+    the drawing, so you'll also be prompted to enter a name for the new
+    object.
+
+    SAME creates a copy in the same position as the original. You won't
+    be able to tell it's there until you move it, and when you do, the
+    underlying object will become temporarily erased when you do move
+    it. (Use the F10 Key to redraw it).
+    
+    The LEFT, RIGHT, FORWARD, BACKWARD, UP and DOWN commands will
+    create the copy in the respective direction.  The distance from the
+    original is controlled by the OFFSET.
+               
+
+DRAW MENU
+
+    Commands on this menu enable you to create specific drawing
+    entities such as SURFACES, LINES, POLYGONS, and ARCS. Except for
+    SURFACES, any object created using these commands can be either
+    Extruded or Revolved into 3-D objects made of surfaces.  Each
+    drawing command automatically repeats after the entity has been
+    created.  To exit, press Escape, or click the right mouse button.
+
+    WORK OBJECT sets the current object designation. All entities drawn
+    are designated as belonging to the current object.  The Current
+    Work Object is displayed above the Draw Menu.  To specify a current
+    work object, select the name from the displayed list.  If you wish
+    to start on a new object, select the [] symbols.  These symbols
+    represent new and available objects.  You'll then be prompted to
+    enter a name for your new object.
+               
+    PEN COLOR allows you to select the current drawing color. In case
+    you forget which color you're using, the name of the current Work
+    Object is always printed in the current drawing color.
+               
+    Below the Draw Menu, the Settings Area displays the current X,Y,Z
+    Coordinate location of the graphics cursor.  An "a" prefix
+    signifies that the coordinates are being displayed in Absolute
+    values - the true coordinate location in 3D space.  An "r" prefix
+    signifies the coordinates are being displayed in Relative values -
+    the distance from the last point entered.  The F11 Key, or the "C"
+    Key toggles the coordinate type.
+               
+    MEM% displays the percentage of drawing memory currently being
+    used.  This display will be updated after each use of a drawing
+    command.  With Version 9.5VR, you can create files as large as 1000
+    surfaces.
+               
+    UNIT displays the current drawing unit increment.  The F9 Key can
+    be used to specify a new increment while either on the Draw Menu,
+    or during the use of any of the drawing commands.
+               
+    DRAWING PLANE indicates on which of the three drawing planes the
+    cursor is traveling on.  The "P" Key can be used to toggle the
+    selection, and can be pressed while on the Draw Menu, or during any
+    of the drawing commands.  Note however, that except for the
+    SURFACES and LINES commands, after you set the first point for each
+    drawing entity, the drawing plane will lock to that plane until the
+    single entity has been drawn.
+               
+
+EDIT MENU
+
+    This menu gives you the commands required to either erase drawing
+    elements or change their color.  To ERASE a LINE segment, SURFACE,
+    or ENTITY, you'll be prompted to select the item - point to it on
+    the screen with the mouse cursor, and click the left button.  For
+    surfaces, you'll also be prompted to pick an additional edge, this
+    enables the program to identify the desired surface more
+    accurately. To erase an OBJECT or GROUP, you'll simply select its'
+    name from the menu.  And ERASE ALL allows you to erase everything
+    in the drawing all at one time.
+
+    All or the Erase commands display a confirmation menu before the
+    item is actually deleted.  Additionally, the item will be
+    highlighted on screen for identification.
+               
+    EDIT COLOR enables you to select and change the color of any LINE
+    segment, SURFACE, ENTITY, OBJECT, or GROUP.
+
+
+EXTRUDE MENU
+
+    The EXTRUDE commands enable a 2D object constructed of either
+    Lines, Polygons, or Arcs to be automatically expanded into a 3D
+    object made of surfaces.  You'll first be prompted to select the
+    name of the object you wish to extrude, after which you can then
+    select the direction for the extrusion.  Extrusions can be either
+    Relative or Absolute.
+    
+    A RELATIVE extrusion will extrude a surface a given distance from
+    the line segment being extruded.  This method enables you to create
+    angle extrusions from objects that have been rotated.  The length
+    of each line segment is determined by the DISTANCE value.
+    
+    The ABSOLUTE extrusion method will extrude a surface directly to a
+    specific coordinate value.  When using an Absolute extrusion, the
+    DISTANCE value becomes an  actual coordinate value.  This lets you
+    create objects for example, with irregular heights, yet extrude
+    them to a common coordinate length.
+               
+
+FILES MENU
+
+    The Files Menu contains the commands for the saving and retrieval
+    of various file types.  NEW FILENAME lets you change the name of
+    the file you are working on.  The next time you save the file,
+    it'll be saved using this new filename.  Any saves made using the
+    previous filename still remain on disk under the old filename.
+
+    MERGE \DRW is used to retrieve a drawing file from the Drawings
+    Directory, and merge it with the current drawing.  MERGE \LIB does
+    the same thing, only it lets you merge files from the Library
+    Directory.  The Merge commands treat the incoming file as a new
+    object, and will automatically assign it to a new object
+    designation.  The name given to the object will be that of the
+    filename.
+               
+    EXTRACT \DRW and EXTRACT \LIB is used to save a selected object or
+    group of objects to a separate file in the respective directory.
+               
+    SAVE \DRW and SAVE \LIB will save the current drawing to disk in
+    the respective directory.  The F12 Key can also be used to save
+    your file from any other menu in the program.
+               
+    CREATE .PLG will create a Rend386 Virtual Reality file of the
+    current drawing.  The file will be saved into the directory you
+    have previously specified as your Rend386 files directory.
+
+
+GROUP MENU
+
+    The commands on the Group Menu allow you to link objects together
+    in order to control them as one item.  LINK OBJECTS is used to pick
+    your objects and link them to a group.  Like objects, groups are
+    also given names.  To start a new group, select the [] symbols,
+    then enter a name for the new group.
+
+    The UNLINK OBJ command enables you to unlink a selected object, or
+    objects, from a chosen group without affecting the other objects
+    already part of that group designation.
+
+    RENAME lets you change the name of a group.  You simply select the
+    name of the group you wish to change, then enter the new name.
+               
+    RESET GROUP unlinks all objects from a chosen group, and resets the
+    group name to the [] symbols.  RESET ALL unlinks all objects from
+    ALL of the groups, and resets all group names to the [] symbols.
+               
+    IDENTIFY will temporarily highlight a selected group in your
+    drawing.  This command allows you to see which objects are part of
+    the selected group.
+               
+
+MAIN MENU
+
+    This is the opening menu of the 3D Drawing Editor.  (The majority
+    of the commands on this menu access other submenus).
+
+    VIEWPOINT enables you to select a 3-D viewpoint.  By moving the
+    mouse, position your viewpoint in reference to the axes tripod,
+    then click the left mouse button.  The F9 Key can be used to change
+    the degree increments if desired.
+               
+    MODEL displays the Modeling Menu, which contains the commands for
+    positioning and manipulating objects.  DRAW displays the Draw Menu,
+    which contains the commands for creating entities such as Surfaces,
+    Polygons, and Arcs.  EDIT displays the Edit Menu.  The commands to
+    erase items from the drawing are located on this menu, as well as
+    commands for changing their color.
+               
+    FILES displays the Files Menu.  Here you'll find commands
+    pertaining to file operations, such as merging, extracting, and
+    saving drawing files.  The command for translating your drawing to
+    a Rend386 .PLG file is also on this submenu.
+               
+    OBJECTS displays the Objects Menu which contains the commands for
+    redesignating entities and permanently combining objects.  GROUPS
+    displays the Group Menu.  This menu contains the commands which
+    enable you to link and unlink objects with each other for
+    manipulation.
+               
+    SETTINGS displays the Settings Menu.  Commands which set some of
+    the drawing variables are located on this menu.  BACKGROUND allows
+    you to specify a color for the image background.  QUIT will display
+    a confirmation menu for exiting the 3D Drawing Editor.
+               
+
+MODEL MENU
+
+    This menu contains the commands for positioning and manipulating
+    objects.
+
+    VIEWPOINT enables you to select a 3-D viewpoint.  By moving the
+    mouse, position your viewpoint in reference to the axes tripod,
+    then click the left mouse button.  The F9 Key can be used to change
+    the degree increments if desired.
+               
+    MOVE initiates access to the Move Menu.  You'll first be asked to
+    pick the item you want to move.  Items you can move include:
+    Objects, Groups, a specific Endpoint, the entire drawing, or
+    Endpoints selected with a rubber-banding window.
+               
+    SCALE initiates access to the Scale Menu.  You'll first be asked to
+    pick the item you want to scale.  Items you can scale include:
+    Objects, Groups, and the entire drawing.
+               
+    ROTATE initiates access to the Rotate Menu.  You can rotate either
+    an Object, or a Group.
+               
+    EXTRUDE initiates access to the Extrude Menu, where you can turn 2D
+    objects into 3D objects made of surfaces.
+               
+    REVOLVE initiates access to the Revolve Menu, where you can turn 2D
+    contour objects into 3D cylindrical objects made of surfaces.
+               
+    COPY initiates access to the Copy Menu, where you can make copies
+    of objects or groups of objects.
+               
+
+MOVE MENU
+
+    This menu gives you control over repositioning various items in
+    your drawing.  First you'll be asked to choose what you would like
+    to move.  You can select either an individual OBJECT or GROUP, as
+    well as EVERYTHING in the drawing.  Additionally, the ENDPOINT
+    option allows you to pick a single point (usually a surface vertex)
+    to move.  WINDOW PTS lets you pick several points to move together
+    at one time.  Using a rubber-banding rectangle, you draw a boundary
+    around the points you want to move.  Only the selected points
+    within the rectangle will move during each move operation.
+
+    The LEFT, RIGHT, FORWARD, BACKWARD, UP, and DOWN commands will move
+    the item in the respective direction.  The distance of each
+    movement can be selected by the INCREMENT, or you can use the two
+    default distances of 200 or 500.
+               
+    If you wish to select another item to move, the MOVE ITEM command
+    will take you back to the first Move Menu where you can choose the
+    next item.  SCALE ITEM enables you to jump directly to the Scale
+    Menu, and continue manipulating the same object or group you were
+    using on the Move Menu.  Note however, the Scale Item option only
+    appears on the Move Menu if you're moving Objects or Groups, and
+    not endpoints.
+               
+    Notes: Only the item being moved is redrawn after each movement, so
+    lines of other objects may at times become partially erased.  Issue
+    a Redraw with the F10 Key to clean up the drawing when desired.
+               
+    The center of 3-D drawing space is at X,Y,Z coordinate: 0,0,0 and
+    the drawing space plus contingency space extends 7,000 units in
+    each direction.  Try to keep your drawing within the boundaries of
+    -3300 to +3300, since this is the maximum size of the viewport.
+
+
+OBJECTS MENU
+
+    LINK ENTITY gives you the ability to reassign entities to another
+    object.  As you create a drawing, the entities are assigned to the
+    current Work Object.  This command lets you separate entities out
+    of one object and assign them to another, whether to an existing
+    object or a new object.  You'll first be prompted to pick the
+    entity for redesignation, then to select the name of the object you
+    want the entity assigned.  You can also select the [] symbols if
+    you want the entity to become part of a new object.
+
+    RENAME lets you change the name of a previous object.  Select the
+    name of the object you wish to change, then enter the new name for
+    the object.
+               
+    COMBINE allows you to permanently combine multiple objects into a
+    single object designation.  First, you'll select the destination
+    object, then you'll select the object you wish to combine with the
+    destination object.  After selecting the object, the name of the
+    freed object is reset to the [] symbols.  (Note: if you want to
+    temporarily combine objects in order to simply manipulate them as a
+    whole, use the Group commands, not the Object Combine command).
+               
+    IDENTIFY will temporarily highlight a selected object in your
+    drawing.  This command is a good way to familiarize yourself with
+    the objects in a file that you haven't worked on in awhile, or was
+    obtained from another designer.
+               
+               
+REVOLVE MENU
+
+    The Revolve function enables a 2D object constructed of either
+    Lines, Polygons, or Arcs to be used as a contour for the creation
+    of a 3D cylindrical object.  Surfaces are automatically generated
+    by rotating the contour around the Z-axis.
+
+    REVOLVE executes the function.  The program will generate surface
+    extrusions using the current values for Sweep, Sections, Spiral,
+    and Expansion.
+               
+    SWEEP sets the degree of rotation for the extrusion.  For example,
+    360 will create a completely cylindrical object.  Sweep values
+    beyond 360 are intended for use when Spiral and/or Expansion
+    settings are also being used.
+               
+    SECTIONS specifies the number of surface sections to create during
+    the Sweep.  This gives you control over the surface resolution of
+    the object.
+               
+    SPIRAL lets you set a unit increment that's used for a vertical
+    offset during the creation of new surfaces.  As each new section is
+    created, Spiral shifts the next section higher than the previous.
+    This effect creates objects that resemble a spring.
+               
+    EXPANSION sets a unit increment that's used for a horizontal offset
+    during the creation of the new surfaces.  As new sections are
+    created, Expansion shifts the next section farther out from the
+    previous section.  This effect creates objects that resemble a
+    coil.
+               
+               
+ROTATE MENU
+
+    Individual Objects or Groups of Objects can be independently
+    rotated along any axis.  After you select the item you wish to
+    rotate, the rotate commands will be displayed.  Each time you
+    select one of the Rotate commands, the program will calculate the
+    item's center point, and rotate it around this point.  After each
+    rotation, the degree display below the menu will also be updated to
+    reflect the direction, and the degrees, the object has be rotated
+    during this command operation.
+
+    ROTATE LEFT rotates the item around its height axis to the left.
+    Whereas, ROTATE RIGHT rotates the item to the right.
+               
+    TIP UP rotates the item around its width axis in an upward
+    direction.  Whereas, TIP DOWN rotates it downward.
+               
+    TILT LEFT rotates the item around its length axis to the left.
+    Whereas, TILT RIGHT rotates it to the right.
+               
+    INCREMENT lets you to specify the rotation degree increment.
+    ROTATE ITEM lets you select a different item for rotation.
+               
+    Note: Like the Move and Scale commands, only the item being rotated
+    is redrawn after each rotate operation.  Lines of other objects may
+    at times become partially erased.  Issue a Redraw with the F10 Key
+    to clean up the drawing as needed.
+               
+
+SCALE MENU
+
+    This menu gives you control over the scaling of various items in
+    your drawing.  First you'll be asked to choose the item you want to
+    scale, you can select either an individual OBJECT or GROUP, as well
+    as EVERYTHING in the drawing.
+
+    The SMALLER and LARGER commands will scale the item respectively.
+    The factor by which the item is scaled is set by the INCREMENT, or
+    you can use the two default scale factors of .99 or .75.
+               
+    You can also control the Scale Type.  ALL SIDES is used to indicate
+    that all the sides of the item are to be scaled by the same scale
+    factor simultaneously.  HEIGHT ONLY indicates only the height (Z-
+    axis) is to be scaled.  WIDTH ONLY is used to indicate that only
+    the width (X-axis) is to be scaled.  And LENGTH ONLY indicates that
+    only the length (Y-axis) is to be scaled.
+               
+    If you wish to select another item to scale, the SCALE ITEM command
+    will take you back to the first Scale Menu where you can choose the
+    another item.  MOVE ITEM enables you to jump directly to the Move
+    Menu, and continue manipulating the same object or group you're
+    using on the Scale Menu.
+               
+    Notes: Only the item being scaled is redrawn after each scale
+    operation, so lines of other objects may at times become partially
+    erased.  Issue a Redraw with the F10 Key to clean up the drawing
+    when desired.
+               
+    NOTES: The scale commands are used to alter the actual coordinate
+    data, don't confuse this command with the Zoom command, which does
+    not alter any of the drawing coordinates.
+               
+
+SETTINGS MENU
+
+    This menu provides you with some custom drawing options. ARC RES
+    enables you to set the line segment resolution for Arc entities.
+    The resolution represents the number of line segments around the
+    circumference.  The resolution setting is not global, so you can
+    therefore change resolution based on the priority and visibility of
+    the object you're creating.
+
+    CURSOR SIZE allows you to pick one of five graphics cursor sizes.
+    User preference will more likely determine which one you use. Note
+    however, that the larger the cursor, the greater the demand on
+    video processing.  This is especially true for systems running
+    1024x768 256 color displays.
+               
+    SNAP ZONE sets the zone around the graphics cursor and the mouse
+    cursor that's tested during Snap and pick functions.  The more
+    entities in the drawing, the more time it takes to process the
+    drawing database for possible selection.  The Snap Zone lets you
+    tell the program, based on your own preference, and perhaps the
+    speed of your computer, how large an area to test.  Items not in
+    the zone are not tested, thereby saving calculation time.  The
+    range can be between 250 and 1000, and represents the distance in
+    each direction from cursor.
+               
+    Note: The setting variables are saved with each file.  You can
+    therefore use different settings for certain types of drawings.
+               
+
+
+
+   -----------------------------------------------------------------
+            * * * * * * *     APPENDICES     * * * * * * *
+   -----------------------------------------------------------------
+
+APPENDIX A: THE DEFAULTS.NC3 FILE
+---------------------------------
+
+Whenever a new drawing is started, NorthCAD-3D automatically loads a
+template file to initialize the default settings for the new file.
+DEFAULTS.NC3 is that template file.
+
+The file is just like any other drawing file, and that's what makes it
+so useful.  If you find yourself always using certain settings and
+option values at the start of a new drawing, you can simply change the
+settings in this file, and they'll be used as the new defaults.  To
+make changes to the template file:
+
+     Load the template file directly from the file listing menu,
+     just as if you were loading an existing drawing file.
+
+     Make your desired changes to the settings.
+
+     Save the file to both the Drawings and Library Directories
+     
+     Exit back to the main program module.
+
+The next time you start a NEW drawing, the settings in the template
+file will be used to initialize the new drawing.
+
+If you discover that you're always merging in the same library file
+after you start a new drawing, you can also make that automatic too.
+Just merge the library file into the template file and save the
+template file the same way as described above.  Whatever objects are in
+the template file will also be included in the start of your new
+drawing file.  You can therefore start new drawings that already have
+your commonly used library objects in them and ready to use.
+
+NOTE: If you change drawing or library file directories, be sure to
+copy the template file to the new directory, it must remain accessible
+to the program whenever a new drawing or library file is started.
+
+
+
+
+APPENDIX B: USING LIBRARY FILES
+-------------------------------
+
+NorthCAD-3D lets you use standard graphic elements of objects over and
+over again without having to redraw them each time they are needed.  By
+creating separate files containing specific shapes and objects, you can
+merge them into your drawing whenever you need them.
+
+This concept of using graphics Libraries greatly reduces the time
+required to draw your images, as well as increase your ability to
+construct more creative and elaborate 3D drawings.
+
+To create files that can be used as Library files, you can use any one,
+or all, of these methods:
+
+METHOD 1: Start a new drawing and create your desired graphic element
+using the Drawing and/or Modeling commands.  Then, save the file to the
+Library Directory.
+
+METHOD 2:  Start a new drawing and create your desired graphic element
+by not only using the drawing commands, but also some of your
+previously completed Library files.  Merging, and then combining them
+with your drawing, you can create even more sophisticated objects to
+use solely as Library files.  Then, as in Method 1, save the drawing to
+the Library Directory, and use the file specifically as a library file.
+
+METHOD 3: Use the EXTRACT command to save objects you create while
+working on a current drawing, thereby building your collection of
+Library files as you work.
+
+
+
+
+APPENDIX C: ABOUT THE NORTHCAD-3D PROGRAM
+-----------------------------------------
+
+Version 9.5VR was developed by THE QUEST COMPANY specifically for
+distribution with the book "Playing God: Building Virtual Worlds With
+Rend386" by WAITE GROUP PRESS.  This version of the NorthCAD-3D
+ProSeries Modeler enables you to create three-dimensional drawings
+which can be saved directly to the Rend386 PLG file format.
+
+WAITE GROUP PRESS has sole distribution rights to this version.  Any
+other distribution or duplication of this program is prohibited.
+
+The developer of NorthCAD-3D also publishes a more enhanced "all-
+purpose release" of this program.  It's available directly from THE
+QUEST COMPANY.  The all-purpose release includes these additional
+features:
+
+     More memory capacity (approx. 4000 surfaces instead of 1000).
+     Higher surface resolution capability for the REVOLVE command.
+     A render command for displaying drawings is solid form.
+     Circle and Curve drawing commands.
+     Mirror Copy command.
+     More Object designations allowed (100 instead of 50).
+     Printer support for over 400 b/w and color printers.
+     Ability to save views as PCX Files.
+     DXF File Import and Export.
+     Includes the Rend386 PLG file translator.
+     Includes POV-Ray and VIVID ray-trace program file translators.
+     Printed Manual.
+
+
+For more information, please call or write.
+
+HOW TO ORDER: Fill out the order form below, and send it along with
+your payment to the address below.  Payment may be made by VISA,
+MASTERCARD, Check, or Money Order.
+
+                           THE QUEST COMPANY
+                         3117 W. Holland Ave.
+                           Fresno, CA 93722
+                                   
+                          Ph. (209) 222-5301
+                  9:00 AM - 5 PM (Pacific Time Zone)
+                   Monday - Friday, except Holidays
+
+
+
+ORDER FORM: NORTHCAD-3D All Purpose Release
+-------------------------------------------
+
+NORTHCAD-3D ProSeries Modeler Version 11                        $79.95
+
+ADD Shipping and Handling: (check one)
+____ U.S. destination - Priority Mail (2nd day delivery) $ 5.00
+____ Canada or Mexico destination - AIR MAIL             $ 6.00
+____ Overseas destination - AIR MAIL                     $10.00
+                                                                _______
+
+California Residents Only: ADD Sales Tax     $6.20              _______
+
+                                   TOTAL ....................  $_______
+
+
+Payment may be by Check or Money Order in U.S. Dollars payable on a
+U.S. Bank.  Make Check or Money Order payable to: The Quest Company.
+VISA and MASTERCARD is accepted. Sorry no C.O.D.'s. Purchase Orders
+must be accompanied with payment.
+
+
+Desired Disk Size: (Circle)    5.25 1.2mb     3.5 1.44mb     3.5 720K
+
+
+SHIP TO:
+
+Name:    __________________________________________________
+
+Address: __________________________________________________
+
+         __________________________________________________
+
+         __________________________________________________
+
+         __________________________________________________
+
+         __________________________________________________
+
+
+If payment is by VISA or MASTERCARD, please provide the following
+information:
+
+Card Number: ___________________________________ Exp. Date ______
+
+Name as it appears on card _________________________________
+
+Signature or Initials_______________________________________
+
+Daytime Telephone _______________________________
+
+
+
+
+APPENDIX D: DRAWING REFERENCE
+-----------------------------
+
+This reference describes Version 9.5VR drawing specifications.
+
+Database
+X,Y,Z Vector & Surface Boundary Coordinate System. Object oriented.
+Resolution and Display Independent.
+
+Maximum Surfaces
+1000 surfaces.
+
+Contingency Drawing Space
+-7000 to +7000 drawing units along each axis
+
+Normal Drawing Space, Maximum Viewport
+-3300 to +3300 drawing units along each axis. Viewport height depends
+on the aspect ratio for the display.
+
+Maximum Drawing Colors
+16 color modes: 16.  256 color modes: 128.
+
+Viewpoint Control
+User controlled, 360 Degrees. 4 defined Orthographic views.
+
+Drawing File Storage
+Binary Format. X,Y,Z Vector and Surface Boundary database. NC3 Format.
+
+Filename Extensions
+Drawing Files:           "NC3"
+Library Files:           "NC3"
+Rend386 Files:           "PLG"
+
+
+
+APPENDIX E: ERROR MESSAGES
+--------------------------
+
+The following is a list of error messages used by NorthCAD-3D.
+
+Bad Filename
+
+     The filename contains characters that are invalid. Consult your
+     DOS manual. Also, you don't need to include the filename
+     extensions when entering a filename.  Also, check for proper
+     syntax of the directory and path.
+
+Configuration File: CONFIG1.CFG not found
+through
+Configuration File: CONFIG7.CFG not found
+
+     The CONFIGn.CFG files contain program settings and configuration
+     information, and must be kept in the same directory as the program
+     files.
+
+Device unavailable
+
+     An attempt was made to access a device that is either not "on-
+     line" or does not exist. For example, setting a directory
+     specification to "D:" when in fact, a D drive is not in the
+     computer.
+
+Disk is full, unable to save file
+
+     NorthCAD-3D attempted to write a file on a disk which contains
+     insufficient free space. Replace the disk with another that
+     contains more free space and retry the command.
+
+Disk media error
+
+     An attempt was made to write or read a file from your disk.  This
+     error indicates your disk may be defective. Consult your DOS
+     manual for procedures to check your disk.
+
+Disk not ready
+
+     An attempt was made to write or read a file from your disk.  Check
+     to be sure the drive door is closed properly.
+
+Disk write protect
+
+     An attempt was made to save a file to your disk and encountered a
+     write protect label, remove it and retry the command.
+
+File not found
+
+     The file you specified could not be found.  Retry the command and
+     be sure the file is listed in the directory.  If you're starting a
+     new drawing or library file, be sure that the template file:
+     DEFAULTS.NC3 is in both the Drawing Directory, and the Library
+     Directory.
+
+File: DEFAULTS.NC3 not found
+
+     When starting a new drawing, the default settings in the drawing
+     file: DEFAULTS.NC3 are loaded into memory and become the initial
+     drawing template for your new drawing. A copy of DEFAULTS.NC3 must
+     be kept in both your Drawings Directory and Library Directory.
+
+Graphics display configuration error
+
+     The program is not configured properly for your display adapter
+     and monitor.  Check to be sure you have set the appropriate
+     resolution and color configuration, and that your display adapter
+     uses one of the supported SVGA chipsets.
+
+Incompatible File
+
+     The specified file is not NorthCAD-3D Version 9.5VR compatible.
+
+Internal error 101, 102, 103, 104, 105, or 106
+
+     An error has occurred which may require more in-depth technical
+     support than the User Guide can solve.
+
+Invalid Directory
+
+     The directory specification is not correct. Check to be sure the
+     proper syntax is being used, see program configuration for more
+     information about specifying directories.
+
+Maximum drawing memory
+
+     You have executed a command that would exceed the current maximum
+     memory limits of the program on your system.  The percentage of
+     memory currently used can be found in the Settings Area, just
+     below the Draw Menu, next to the MEM% display.  NorthCAD-3D uses
+     conventional RAM, and the total size of your drawing is dependent
+     upon how much free RAM is available.  You can free up RAM by
+     loading your DOS "high" and removing memory resident software
+     prior to running NorthCAD-3D.
+
+Modeling Program Module: NC3DVR.EXE not found.
+
+     The 3-D Modeling Module must reside on the same disk, or in the
+     same directory, as the Main Program Module: NCVR.EXE
+
+Temporary work file: TEMPFILE.WRK not found
+
+     NorthCAD-3D maintains a temporary work file for the transfer
+     between one program module to another.  This error will likely
+     occur if you try to run the Modeling Module on its own.  Operate
+     the NorthCAD-3D program only through the Main Program Module:
+     NCVR.EXE.
+
+
+END OF NCVR.DOC

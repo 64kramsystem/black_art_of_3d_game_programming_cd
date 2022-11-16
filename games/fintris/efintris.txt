@@ -1,0 +1,351 @@
+
+
+
+ S
+ H
+ A
+ R
+ E
+ W                             FINTRIS V1.26
+ A                              -----------
+ R                           25th February 1994
+ E
+                      (c) Tommi Tarkiainen 1993,1994
+ V                          All rights reserved
+ E
+ R
+ S
+ I
+ O
+ N
+
+
+
+
+ HARDWARE REQUIREMENTS
+ ---------------------
+ This game requires PC compatible machine with a VGA-card ( MCGA should work
+ just fine ). You must have at least 460,000 bytes of free conventional
+ memory ( 430,000 bytes if you have at least 250kB EMS memory ). Fintris was
+ created using a 486/33, but it has been tested on several 386 and 286
+ machines and it worked just fine. Mouse is supported. In the registered
+ version there is also Soundblaster support included.
+
+
+ BACKGROUND
+ ----------
+ When I started designing Fintris I had two primary goals in mind. First
+ I wanted to create a tetris with great graphics and second I wanted to add
+ more variety to the ordinary tetris concept.
+
+ This is my first game and I would like here what you have got to say about it.
+ ALL COMMENTS ARE WELCOME WHETHER THEY ARE POSITIVE OR NEGATIVE.
+
+ So what's so special about Fintris? Well, first of all there are THREE
+ DIFFERENT GAME MODES: single, simultaneous and duel. There are THREE DIFFERENT
+ BLOCK SETS: simple, normal and complex. Then there's GOOD LOOKING GRAPHICS and
+ last but not the least MANA!
+
+
+ BUGS
+ ----
+ Fintris has been thoroughly tested. At the moment there are no known bugs in it.
+ This, however, doesn't guarantee that there would be no bugs and there probably
+ are a few. If you find one (or more) you can send me a letter and I will try to
+ remove it ASAP.
+
+
+ LICENSE
+ -------
+ The FINTRIS software may not be circulated in any incomplete or modified form,
+ nor sold for profit, without written permission of the author. If you
+ distribute this software to others, you are required to distribute the ENTIRE
+ package consisting of the files mentioned the distribution list ( see section
+ FILES INCLUDED ).
+
+
+ DISCLAIMER
+ ----------
+ The Shareware version for evaluation is provided AS IS.
+ Tommi Tarkiainen MAKES NO WARRANTY OF ANY KIND, EXPRESSED OR
+ IMPLIED, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF
+ MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
+ THE AUTHOR WILL NOT BE LIABLE FOR ANY SPECIAL, INCIDENTAL,
+ CONSEQUENTIAL, INDIRECT OR SIMILAR DAMAGES DUE TO LOSS OF
+ DATA OR ANY OTHER REASON, EVEN IF THE AUTHOR HAS BEEN ADVISED
+ OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL THE
+ AUTHOR'S LIABILITY FOR ANY DAMAGES EVER EXCEED THE PRICE PAID
+ FOR THE LICENSE TO USE THE SOFTWARE, REGARDLESS OF THE FORM
+ OF THE CLAIM.
+
+
+ REGISTRATION
+ ------------
+ FINTRIS IS A SHAREWARE GAME. This means that IT ISN'T PUBLIC DOMAIN NOR IS IT
+ FREE. The shareware version of the game is intended for evalution purposes
+ only. If you like the game you should register it. Fintris is not crippleware.
+ The shareware version doesn't lack any features. There is, however, a
+ configuration utility included in the registered version of the game. Another
+ difference between the shareware version and registered one are the usual
+ shareware messages that urge you to register this great software and in that
+ way support the further development of quality software.
+
+ The registration fee is $11 ( this includes $4 for shipping, handling and media
+ costs ) outside Finland or 50 mk ( this includes 15 mk for shipping etc. ) in
+ Finland. By registering you are supporting further software development under
+ shareware concept. When you register you will get the registered version
+ of Fintris. You can get updates to Fintris for free after you have registered.
+ The registered version of Fintris includes custom configurations and doesn't
+ have the shareware messages. Custom configurations include keyboard
+ definition ( You can choose what keys to use in the game. ) and menu setup (
+ You can set the default menu settings. For example if you wan't to play with
+ mana on and on level 4 you can set these values as defaults from the
+ configuration utility. When you start the game next time all you have to do is
+ to press P/ENTER/SPACE ( Play ) and that's it. ). In the future you can
+ register Software Illusions software for a lower price as a registered user.
+ At the moment there aren't any other Software Illusions software available
+ except VELORIS, which is a tetris clone for Amiga. There is at least one
+ game project under development. Though we haven't decided yet what it is
+ going to be.
+
+
+ HOW TO REGISTER ( THIS IS FOR THE NON-REGISTERED USERS ONLY )
+ -------------------------------------------------------------
+ All you have to do is to send me a letter with the registration fee, your
+ name, address and to specify the type of diskette ( eg. 3«" HD ) you want your
+ registered version of Fintris to be delivered. My address can be found at end
+ of this document.
+
+
+ WHAT IS MANA ?
+ --------------
+ Mana is a sort of energy that you can use to activate cannons and manipulate
+ the block queue. You will get more mana when you collapse two or more rows
+ simultaneously. Mana increases by itself over time but very slowly so you
+ gain mana mainly by collapsing rows. In the beginning you won't have very
+ large amount of mana so you should use it sparingly.
+
+ The following operations can be accomplished with mana. REMOVING A ROW can be
+ done by firing the cannon. This is the most mana consuming operation use it
+ wisely. DUPLICATING A BLOCK is the second most expensive mana operation. When
+ you press block duplication button the next block will be the same as the one
+ before it. Note that the block that was in the block queue next before
+ duplication will come after the duplicate. And last but not the least is
+ BLOCK REMOVAL. This operation is the least expensive of all. When you press
+ block removal button the current block will be removed.
+
+ When mana is in use you don't get as points from collapsing rows and dropping
+ blocks as when mana is off. This is due to the fact that it is a lot easier
+ to play when mana is on. So you get points a bit more slowly than without mana,
+ but you can continue playing longer than usually. It's possible to get a lot
+ of points very quickly by manipulating the block queue. Block duplication can
+ prove especially useful in this.
+
+ To get the most out of mana you will have to adopt a new playing style.
+ Here are a couple of tips for you to get started with. Use cannons only
+ when it's absolutely necessary. Use block duplication to get blocks with which
+ you can collapse as many rows as possible. Use block removal to remove the
+ blocks that don't fit your pile.
+
+ Here are some statistics to help you with your mana usage.
+
+ Number of rows collapsed simultaneously        Mana gained
+ ---------------------------------------        -----------
+ 4 rows                                                  11
+ 3 rows                                                   4
+ 2 rows                                                   1
+
+ Action                                    Mana consumption
+ ------                                     ----------------
+ Fire cannon                                              6
+ Duplicate current block                                  5
+ Remove current block                                     3
+
+ A WORD OR TWO FROM THE AUTHOR OF THE TITLE MUSIC ( written by Kalle Salminen )
+ ------------------------------------------------------------------------------
+
+ The title music of Fintris was composed, arranged and performed by Kalle
+ Salminen.
+
+ I composed the piece using Amiga's Pro Tracker. Samples originate from
+ various sources. I digitized some of the samples from Korg 01/W FD
+ synthetisizer. The samples were digitized using Sound Blaster V1.0 ( it's
+ sampling rate is 13kHz ). That's why the resulting sound quality is so far
+ from quality of the original one.
+
+ Even though the title music is techno I mainly compose different kind of music.
+ I strive for a similar style as Jean-Michel Jarre's, Vangelis' and Kitaro's.
+ If you want to have music composed for your game ( preferably a commercial
+ one ) you can contact me for more information ( my address is at the end of
+ this passage ). Movie style music will cost much more than techno which I can
+ compose for small fee. You can also send me note sheets and I will try to make
+ a Sound Tracker module out of them for a nominal fee. I'll use as good samples
+ as possible, naturally. You should also remember to tell the maximum size
+ of the module you want.
+
+ One more thing. Please, try to be patient and listen the title music at least
+ through, because there's something like melody in it too.
+
+ You can send mail to this address:
+
+                Kalle Salminen
+                Toritunkatu 4
+                33580 Tampere
+                FINLAND
+
+
+ KEYS
+ ----
+ MAIN MENU:
+        Key     Comment
+        ---     -------
+        P       Play game
+        <ENTER> Same as above
+        <SPACE> Same as above
+        M       Switch mana ON/OFF      ( See paragraph "WHAT IS MANA" for more
+                                          information on subject )
+        H       Highscore table
+        S       Switch simple blockset ON/OFF
+        C       Switch complex blockset ON/OFF
+        r       Change the direction of block rotation (applies to both players)
+        R       Change the direction of block rotation (applies to player 2 only)
+        f       Change the falling speed of the block (applies to both players)
+        F       Change the falling speed of the block (applies to player 2 only)
+        V       Version number
+        A       About Fintris
+        U       The name of the registered user
+        <F1>    One player mode
+        <F2>    Two player mode
+        <F3>    Duel mode ( two players against each other )
+        1-9     Choose level
+        <ESC>   Quit
+
+ DURING GAME:
+        Key     Comment
+        ---     -------
+        P       Pause game ( Press <ENTER> to continue game )
+        1       Player 1: Fire cannon                           (default)
+        2       Player 1: Drop block                            (default)
+        3       Player 1: Move cannon downwards                 (default)
+        4       Player 1: Move block leftwards                  (default)
+        5       Player 1: Rotate block                          (default)
+        6       Player 1: Move block rightwards                 (default)
+        7       Player 1: Move cannon upwards                   (default)
+        8       Player 1: Remove current block                  (default)
+        9       Player 1: Duplicate current block               (default)
+        0       Player 1: Show next block                       (default)
+        N       Player 2: Fire cannon                           (default)
+        <SPACE> Player 2: Drop block                            (default)
+        .       Player 2: Move cannon downwards                 (default)
+        J       Player 2: Move block leftwards                  (default)
+        K       Player 2: Rotate block                          (default)
+        L       Player 2: Move block rightwards                 (default)
+        U       Player 2: Move cannon upwards                   (default)
+        I       Player 2: Remove current block                  (default)
+        O       Player 2: Duplicate current block               (default)
+        <ENTER> Player 2: Show next block                       (default)
+        <ESC>   Abort game
+
+  All keys except "P" (Pause) and "ESC" (abort) can be defined with the
+  configuration utility ( CONFIG.EXE ) that comes with the registered
+  version of the game.
+
+
+ FILES INCLUDED
+ --------------
+ Filename         Description
+ --------         -----------
+ FINTRIS.EXE      The main program
+ CONFIG.FIN       The configuration file ( This file can be deleted. It is
+                                           automatically created when the game
+                                           begins. )
+ SCORE.DAT        Highscore table ( Same as above. When deleted the highscore
+                                    table is reset. )
+ DEFAULT1.KEY     Default player 1 keyboard layout
+ DEFAULT2.KEY     Default player 2 keyboard layout
+ FINBACK.DAT      Graphics file
+ FINBEG.DAT       Graphics file
+ FINEND.DAT       Graphics file
+ FINMENU.DAT      Graphics file
+ FINSTAT.DAT      Graphics file
+ FINTEXT.DAT      Graphics file
+ FINTRIS.DAT      Graphics file
+ SILOGO.DAT       Graphics file
+ TOPTEN.DAT       Graphics file
+ TOPTEXT.DAT      Graphics file
+ EFINTRIS.TXT     Document file in English
+ SFINTRIS.TXT     Same in Finnish
+ FILE_ID.DIZ      Short description of the game
+
+
+ The following files can only be found in the REGISTERED version:
+
+ Filename         Description
+ --------         -----------
+ CONFIG.EXE       The configuration program
+                  ( NOT INCLUDED IN SHAREWARE VERSION )
+ ECONFIG.TXT      Documentation for the configuration program
+                  ( NOT INCLUDED IN SHAREWARE VERSION )
+ SCONFIG.TXT      Same as above, but in Finnish
+                  ( NOT INCLUDED IN SHAREWARE VERSION )
+ FINMUZ.DAT       Title music played through Soundblaster
+                  ( NOT INCLUDED IN SHAREWARE VERSION )
+ SOUNDFX.DAT      Sound effects played during the game
+                  ( NOT INCLUDED IN SHAREWARE VERSION )
+
+
+ CREDITS
+ -------
+ Design and programming:
+                Tommi Tarkiainen
+ Software Illusions logo:
+                Miikka Vilermo
+                Tommi Tarkiainen
+ Title music ( included only in the registered version ):
+                Kalle Salminen
+ Technical advice:
+                Antti Leinonen
+                Kalle Salminen
+ Additional ideas:
+                Kalle Salminen
+                Timo Haanp„„
+                Miikka Vilermo
+                Pasi Perttil„
+ Beta testing:
+                Erkko Lehtonen  ( Special thanks to Erkko for exhaustive game
+                                  testing )
+                Teppo Lehtonen
+                Timo Haanp„„
+                Kalle Salminen
+                Miikka Vilermo
+                Pasi Perttil„
+                Juha Tarkiainen
+                Hannu Tarkiainen
+                Matti Koskinen
+                and many others
+
+
+ SOURCE CODE AVAILABILITY
+ ------------------------
+ YES, you can get source code for Fintris. Fintris was programmed using
+ assembly language and C. The low level graphics routines are completely
+ assembly language, the game itself is done using C-language.
+ But because of the hard work involved in graphics routines and others, I
+ am forced to ask a fairly large amount of money for them. If you are
+ interested you can contact me at the address below.
+
+
+ HOW TO CONTACT THE AUTHOR
+ -------------------------
+ You can contact me through mail at the following address. All ideas, bug
+ reports and other comments are welcome.
+
+ Tommi Tarkiainen
+ Pienkodinkatu 10
+ 33560 Tampere
+ FINLAND
+
+ I can be contacted also through e-mail at:
+
+ t150430@cc.tut.fi
+

@@ -1,0 +1,26 @@
+
+COMPILATION DETAILS
+
+The source code KKR.C might be too large and cause problems with various
+versions of the Borland compiler, therefore, I have also added a set of three
+files to the Borland version of Kill or Be Killed. These three files are basically
+the original KRK.C source code broken up into a header and two main C
+files. The files are:
+
+
+KRK.C =
+
+
+   KRKM0.C - The main module that contains the globals and the main().
+   KRKM0.H - The header portion needed for the above file.
+   KRKM1.C - A support module with various game related functions.
+
+   KRKM0.EXE - The executable made of the modules.
+
+Also, when compiling, I suggest that you set the ide and linker so that the
+code has NO debug information in it. This will not only make the .EXE
+smaller, but it will execute faster.
+
+
+
+

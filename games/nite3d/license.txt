@@ -1,0 +1,150 @@
+
+			N I T E M A R E  - 3 D
+
+                   EPISODE 1 - A House of Horrors
+
+
+  	Copyright 1994, David P. Gray, Gray Design Associates
+         		All Rights Reserved
+
+	    Member, Association of Shareware Professionals
+
+	        David P. Gray, Gray Design Associates
+		P.O. Box 333, Northboro, MA 01532, USA
+	     CIS: 73607,2105 or 73607.2105@compuserve.com
+
+
+
+DISTRIBUTION POLICY OVERVIEW
+============================
+
+BBS and diskette (but not CD-ROM) mail order distributors are granted
+automatic permission to distribute the shareware version of Nitemare-3D.
+Most other classes of distributor, especially those involved with CD-ROM
+and retail distribution of shareware MUST obtain written permission first.
+
+Nitemare-3D is protected by U.S. Copyright laws and international treaty.
+Distribution of Nitemare-3D (both shareware and registered) is strictly
+controlled and any breaches of copyright will be vigorously enforced.
+
+
+
+DISTRIBUTION LICENSE
+====================
+
+As the exclusive copyright holder for this software David P. Gray authorizes
+distribution of the shareware version of this product only in accordance with
+all of the following restrictions:
+
+1.  DOCUMENTATION.  This software package and all related program files
+    and documentation files, including VENDOR.DOC, LICENSE.TXT and ORDER.TXT
+    may NOT be modified in any way and must be distributed as a complete
+    package.  Vendors may add their own batch/documentation/program files for
+    the purpose of user installation.
+
+2.  PRICE.  No price or other compensation may be charged for this software
+    package.  A distribution fee may be charged for the cost of the packaging,
+    shipping and handling as long as the total does not exceed US$6.00 in the
+    U.S. and Canada, or US$10.00 internationally.
+
+3.  BUNDLING.  This software package may not be sold as part of any commercial
+    software or hardware packaging offer, without written permission from
+    David P. Gray.  We invite any manufacturer wishing to bundle this software
+    with their own products to contact David P. Gray.
+
+4.  ENTICEMENT.  This software is not to be used as an enticement to purchase
+    another product without written permission from David P. Gray.
+
+5.  TRANSLATION.  This software package including all documentation may not
+    be translated in any form whatsoever without written permission from
+    David P. Gray.
+
+6.  PERMISSION.  Certain types of distribution require written permission as
+    detailed below.  Unlawful distribution without the required permission
+    constitutes a breach of copyright and will be vigorously enforced.
+
+	CD-ROM distributors, either mail-order or in a retail setting MUST
+       	obtain written permission from David P. Gray.
+
+	DISKETTE distributors in a retail setting MUST obtain written
+	permission from David P. Gray.
+
+	BBS OPERATORS are granted automatic permission and do not need to
+	contact David P. Gray.
+
+	MAIL-ORDER floppy diskette vendors are granted automatic permission
+	and do not need to contact David P. Gray.
+
+	PUBLISHERS wishing to include this software package in a magazine must
+    	obtain the latest version directly from David P. Gray.
+
+	Nonprofit organizations and other non-commercial distributors such as
+    	Computer clubs and Special Interest Groups are granted automatic
+    	permission and do not need to contact David P. Gray.
+
+	Flea market, shoe box and swap meeting type vendors are granted
+	automatic permission and do not need to contact David P. Gray.
+
+
+
+END-USER LICENSE
+================
+
+This is the first of three episodes.  Episode ONE is shareware.  The other
+TWO episodes are not.  The final two episodes must be purchased directly
+from David P. Gray.  Do not copy or distribute the registered versions.
+
+1.  Grant of License.  David P. Gray hereby grants you the right to
+    evaluate Nitemare-3D, Episode One, which is the shareware version
+    of this program, for a period of 30 days.  After this period you are
+    required to either cease using the program or purchase the program.
+    See the online Help in the game for details of how to purchase it.
+
+2.  Licensee shall not use, copy, rent, lease, sell, modify, decompile,
+    disassemble, otherwise reverse engineer, or transfer the licensed program
+    except as provided in this license.  Any such unauthorized use shall
+    result in immediate and automatic termination of this license.
+
+3.  Individuals are allowed to pass on copies of the shareware version of
+    this program to other individuals and to upload to BBSs.
+
+
+
+THIRD PARTY EPISODES
+====================
+
+The sale and distribution of third party episodes which work with this
+shareware version is prohibited and violates the copyright of this game.
+Distribution of such episodes would be in direct competition with our own.
+
+Anyone wishing to produce or distribute third party episodes for the
+registered version of the game may do so provided the following points
+are made clear to customers:
+
+1.  The registered version of the game is required.
+2.  The episodes are not connected with David P. Gray.
+3.  No technical support is provided by David P. Gray.
+
+Please note that no technical assistance or toolkit is available from
+David P. Gray for third party episode development.
+
+
+
+DISCLAIMER OF WARRANTY
+======================
+
+This software is provided "AS IS" and the author makes no warranty of any
+kind, expressed or implied, including without limitation, any warranties of
+merchantability and/or fitness for a particular purpose.  The user must
+assume the entire risk of using the program.
+
+In no event will the author be liable for incidental, consequential, indirect
+or other damages including any lost profits or lost savings arising from the
+use of, or inability to use the software even if the author has been advised
+of the possibility of such damages, or for any claim by any other party.  And
+in no event shall the liability for any damages ever exceed the price paid for
+the software, regardless of the form and/or extent of the claim.
+
+
+
+-----------------------------------------------------------------------------

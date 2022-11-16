@@ -1,0 +1,83 @@
+
+    They're ugly. They're stupid. They're weak. They're so unfriendly that
+they can't even get along with each other. Unfortunately, there are a lot of
+them, and they're all out to get you!
+
+    You managed to get stuck in an anti-aircraft bunker in a strategic area,
+without any troop reinforcements. You know that the enemy is going to be
+coming in droves, so you're glad that you have a huge supply of ammo to
+defend yourself.
+
+SYSTEM REQUIREMENTS:
+    286 required, 386 STRONGLY recommended.
+    VGA graphics card.
+    640k, with 535k free from the DOS prompt.
+    AdLib, Sound Source, and SoundBlaster optional.
+    EMS optional.
+    Mouse optional.
+
+THE GAME:
+    Your bunker is at the bottom of the screen. You control the position of
+the gun with either the keyboard (using the left & right arrow keys to move,
+and the spacebar to shoot) or the mouse.
+
+    The enemy aircraft will be coming across the top of the screen, dropping
+paratroopers as they go. You need to prevent the paratroopers from landing,
+because if three of them land, they'll be able to invade your bunker and
+overpower you! (Fortunately for you, they bicker amongst themselves so much
+that if they land right next to each other, one of them will kill the other.)
+
+    You can shoot the planes. You can shoot the paratroopers. You can shoot
+the paratroopers' chutes off, and watch them plummet helplessly to the
+ground (killing any paratroopers that happen to be underneath). Basically,
+if it moves, shoot it...
+
+    Be extremely careful with the smart bombs - they're deadly!
+
+SCORING:
+    Paratroopers are worth 2 points.
+    Big planes are worth 5 points.
+    Little planes are worth 10 points.
+    Smart bombs are worth 10 points.
+
+    Every time you shoot, you lose a point, so be sure to aim carefully.
+
+INTERMISSIONS:
+    After you've beaten back enough of the enemy troops, there'll be a chance
+for your compatriots to supply a few things to satisfy basic human needs.
+Enjoy the reprieve while you can!
+
+SETUP:
+    While the demo loop is running, simply press the "SPACE" key. This will
+take you into the control panel.
+
+    When in the control panel, use the up and down arrow keys to move between
+the selections, and the "SPACE" or "ENTER" keys to make a selection.
+
+    The first selection is the device to use for sound effects. You can
+choose to turn off the sound, use the PC speaker, or, if you have one, use a
+Sound Source or SoundBlaster.
+
+    If you're using the Sound Source or SoundBlaster, you can choose how
+many digital sound effects can happen at once (one, four, or eight). More
+sound effects sound better, but will make the game run slower. If your
+machine is slower than a 16MHz 386SX, choose "one." If your machine is faster
+than a 16MHz 386SX, I'd recommend "eight."
+
+    If you have an AdLib, SoundBlaster, or compatible, you can turn music
+on or off with the next selection.
+
+    The next two items depend on whether or not you're currently in a game.
+When you first go into the control panel, the choices are:
+    o Start game
+    o Back to demo
+
+    Once you've started a game, they change to:
+    o Stop game
+    o Back to game
+
+    No matter what, there will be another item labeled "Quit to DOS," which
+allows you to do just that.
+
+CONCLUSION:
+    What are you waiting for? Go to it!

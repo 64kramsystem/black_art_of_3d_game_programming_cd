@@ -1,0 +1,54 @@
+______________________________________________________________________________
+
+                      I M P U L S E   G A M E S   I N C.
+
+                              LICENSE AGREEMENT
+______________________________________________________________________________
+
+For the purposes of this document, Software refers to a playable demo or
+shareware version of the program being distributed with this document.
+
+The following Agreement is a legal agreement between you, the "End User" of
+this Software, and the publisher of the Software, Impulse Games, Inc.
+
+1. End Users of this Software are licensed to use this Software on a trial
+   basis for a period of no more than thirty (30) days from initial receipt.
+   After this period, the End User must either purchase the complete
+   product, or discontinue use of the Software.
+
+2. The Software may be distributed freely on Bulletin Board Services, On-Line
+   Services, and any other method that does not charge more than a nominal
+   fee ($1) to cover handling costs for access to the Software.
+   Those wishing to charge a fee for this Software shall be governed under
+   the terms set forth in the included document, "VENDINFO.DIZ".
+
+3. COPYRIGHT NOTICE:
+
+   This Software is protected by United States copyright laws and
+   international treaty provisions.  Copying any part or the "look and feel"
+   of this Software is strictly forbidden.
+
+4. LIMITED WARRANTY AND DISCLAIMER:
+
+   THIS SOFTWARE IS PROVIDED "AS-IS".  IMPULSE GAMES DOES NOT WARRANT
+   THAT THE OPERATION OF THIS SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE.
+   IMPULSE GAMES WARRANTS THE MEDIUM THIS SOFTWARE WAS SHIPPED ON TO BE
+   FREE FROM DEFECTS FOR NINETY (90) FROM DATE OF RECEIPT AND WILL REPLACE
+   ANY DEFECTIVE DISK OR CD-ROM WITHIN THAT TIME PERIOD.
+
+   UNDER NO CIRCUMSTANCES WILL IMPULSE GAMES BE LIABLE FOR ANY DAMAGES,
+   INCLUDING LOSS OF DATA, LOST REVENUE, COST OF COVER, OR OTHER SPECIAL,
+   INCIDENTAL, CONSEQUENTIAL, OR INDIRECT DAMAGES ARISING FROM THE USE OR
+   ATTEMPTED USE OF THIS SOFTWARE OR ACCOMPANYING DOCUMENTATION, HOWEVER
+   CAUSED AND ON ANY THEORY OF LIABILITY.  THIS LIMITATION WILL APPLY EVEN
+   IF IMPULSE GAMES HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   THE SOLE REMEDY FOR LOSS OR DAMAGE FROM USE OF THIS SOFTWARE, INDIRECTLY
+   OR OTHERWISE, SHALL BE LIMITED TO REFUND OF THE PURCHASE PRICE.
+   NO OTHER WARRANTIES ARE MADE RELATING TO THIS SOFTWARE, WHETHER EXPRESS,
+   IMPLIED, OR STATUTORY.
+
+   SOME STATES DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE
+   EXCLUSIONS MAY NOT APPLY TO YOU.  THIS WARRANTY GIVES YOU SPECIFIC LEGAL 
+   RIGHTS.  YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM STATE TO STATE.
+   THIS AGREEMENT SHALL BE GOVERNED BY THE LAWS OF THE STATE OF INDIANA.
+______________________________________________________________________________

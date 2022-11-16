@@ -1,0 +1,74 @@
+ This file contains a list of problems that you might have with Night Raid,
+and what you can do about them.
+
+    Problem: The game hangs on the startup screen.
+    Solution: Some of Night Raid's device detection code is conflicting
+with something in your system. The following are command line switches that
+disable certain attempts at detection. Use use them, start Night Raid by
+typing "NITERAID /xxx" ("NTR /xxx" for the shareware version), where "xxx" 
+is one of the following:
+    GRAPHICS        Disables VGA card detection.
+    NOMOUSE         Disables Mouse/mouse driver detection.
+    NOADLIB         Disables AdLib and SoundBlaster detection.
+    NOSOUNDBLASTER  Disables SoundBlaster detection.
+    NOSOUNDSOURCE   Disables Sound Source detection.
+
+    Problem: The game pauses every once and awhile.
+    Solution: Night Raid is having a hard time fitting everything it needs
+into memory. Try making more memory available to the game by removing any
+TSRs you don't need, or using an EMS emulator (such as EMM386.SYS) to make
+more memory available to Night Raid. To make Night Raid use the EMS, use
+"NITERAID /USEEMS" to start the game.
+
+    Problem: The game hangs during play, or the sounds stop playing.
+    Solution: Night Raid can make heavy demands on the system -
+simultaneously reading from the disk and playing multiple sound effects from
+EMS. Some EMS setups have a difficult time with this. If you're using EMS,
+try running Night Raid without it. Some SoundBlaster cards may have
+problems with Night Raid's autodetection, or problems may crop up if you
+have set your SoundBlaster up in a non-standard way - see the section below
+on setting the "BLASTER" environment variable.
+
+	Problem: I'm using OS/2, and Night Raid interferes with printing.
+	Solution: This is probably because of the Sound Source autodetection.
+Use "NITERAID /NOSOUNDSOURCE" to avoid the autodetection.
+
+    Problem: The colors are really messed up.
+    Solution: Some video cards manage to get by Night Raid's test code. Use
+"NITERAID /SLOWPALETTE" to start the game.
+
+    Problem: Night Raid doesn't recognize my Sound Source.
+    Solution: If you're using your Sound Source with a Tandy machine, use
+"NITERAID /SSTANDY". If you're not using a Tandy, try using "NITERAID /SS?",
+where the '?' represents the LPT port you have the Sound Source attached to.
+For example, if you have your Sound Source attached to LPT2, then you'd use
+"NITERAID /SS2". Note that, if you're using a Tandy, and the "/SSTANDY"
+switch by itself doesn't work, you'll have to use both "/SSTANDY" AND "/SS?".
+
+    Problem: Night Raid doesn't recognize my AdLib or SoundBlaster card.
+    Solution: Night Raid's AdLib detection relies on bus speed, which works
+on almost all systems. However, it may not work on some REALLY fast systems.
+Start Night Raid with "NITERAID /ADLIB".
+
+    Problem: Night Raid doesn't recognize my SoundBlaster card.
+    Solution: Odds are that you have changed the SoundBlaster's settings, so
+Night Raid can't find the card. To fix this, you need to tell Night Raid
+about the non-default settings.
+
+    You do this by setting the "BLASTER" environment variable up to contain
+the appropriate information. To set the enviroment variable up, either
+include the following in your AUTOEXEC.BAT file or type it on the command
+line before running Night Raid:
+SET BLASTER=Axxx Ix Dx
+
+Axxx represents the the address of the SoundBlaster/SB Pro. For the SB, it's
+either A210,A220,A230,A240,A250 or A260. For the SB Pro, it's either A220 or
+A240. Default is A220.
+
+Ix represents the IRQ number used by the SB/SB Pro. For the SB, it's either
+I2, I5, or I7. IRQ 10 (only available on a machine with AT BIOS and the SB
+Pro) is not supported. Default is I7.
+
+Dx represents the DMA channel used by the SB/SB Pro. D0, D1, or D3 are
+acceptable values. Default is D1.
+

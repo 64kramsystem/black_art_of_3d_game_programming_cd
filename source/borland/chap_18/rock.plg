@@ -1,0 +1,32 @@
+
+; rock object
+
+rock 8 5
+
+; vertice list
+
+-35 120  35
+ 35 120  35
+ 35 100 -35
+-35 100 -35
+
+ -50 0  50
+  50 0  50
+  50 0 -50
+ -50 0 -50
+
+; polygon list
+; rock has five sides all flat shaded
+
+32  4 0 3 2 1
+34  4 2 3 7 6
+36  4 0 1 5 4
+38  4 0 4 7 3
+40  4 1 2 6 5
+
+
+
+
+
+
+

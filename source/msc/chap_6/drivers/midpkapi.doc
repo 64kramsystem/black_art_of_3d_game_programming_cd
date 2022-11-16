@@ -1,0 +1,351 @@
+
+			      MIDPAK
+
+			    written by
+
+			  John W. Ratcliff
+
+			  Copyright (c) 1994
+
+			  The Audio Solution
+
+
+The MIDI driver MIDPAK hooks into user interrupt vector 66h to provide a
+clean clear programmers interface. This document describes the two ways
+you can access the midi sound package.	The first is the interrupt
+level interface.  The second is a link library interface that provides a
+set of C or assembly language callable functions to access not only the
+digitized sound drivers but also provides usefull support routines.
+These glue code functions are located in the source file MIDPAK.ASM.
+
+MIDPAK uses the same interupt vector as DIGPAK.  DIGPAK describes the
+complete set of Digitized sound drivers provided by THE Audio Solution.
+MIDPAK is fully compatible with DIGPAK.  If your application needs to
+play back both MIDI music and digitized sound you simply first load the
+digitized sound driver you need, and then load the MIDPAK midi driver on
+top of it.  The MIDPAK driver detects the presence of the DIGPAK sound
+driver and re-routes all calls through it.  If the digitized sound
+hardware does not support independent playback of digitized sound (DMA
+support: SoundBlaster, and ProAudio Spectrum do.) then MIDI music
+playback will shut down while the digitized sound effect is playing.
+MIDI music playback will continue once the digitized sound effect has
+completed.  This is completely transparent to the running application.
+
+MIDPAK uses the set of MIDI sound drivers developed by Miles Design
+Incorporated.  These drivers vary in size and can be noted by the
+extension of .ADV.  MIDPAK will always load the sound driver MUSIC.ADV
+when started.  The application should copy the apropriate sound driver
+over as MUSIC.ADV before loading MIDPAK.
+
+MIDPAK does not play .MID files directly.  You must convert the MIDI
+file (with the extension of .MID) into an eXtended MIDI file (.XMI)
+by using the program MIDIFORM or the MENU utility.  The Miles
+eXtended MIDI drivers support MIDI channels 2-9 melodic and channel 10
+for percussions.
+
+***********************************************************************
+*************** INT 66h Interface Specification ***********************
+***********************************************************************
+
+Function #1: UnloadMidPak, removes the MIDPAK tsr from memory, NOT TO BE
+		      USED by APPLICATION software!
+
+	INPUT:	AX = 700h	Command number.
+	OUTPUT: 		None.
+
+
+Function #2: DigPakAvailable, determine whether or not a digpak sound driver
+			      as available, underneath the MIDPAK driver.
+
+	INPUT: AX = 701h	Command number.
+	OUTPUT:AX = 0		Digpak is not available.
+	       AX = 1		Digpak is available.
+
+Function #3: PlaySequence, plays a sequence from the currently registered
+			   xmidi file.
+
+	INPUT: AX = 702h	Command number.
+	       BX = SEQ 	Sequence number, numbered starting from zero.
+
+	OUTPUT:AX = 1		Sequence is being played.
+	       AX = 0		Sequence not available.
+
+Function #4: SegueSequence, register a new sequence to be segueded in at the
+			next trigger event, with the activation
+			code specified.  If the activation code passed is
+			a -1, then this sequence will be changed to at the
+			next trigger.
+
+	INPUT:	AX = 703h	Command number.
+		BX = SEQ	Sequence number to segue to.
+		CX = ACT	Activation event code, -1 means next trigger.
+
+
+Function #5, RegisterXmidi, Register an XMIDI file by address for playback.
+
+	INPUT:	AX = 704h	Command number.
+		BX = Offset	Offset portion of far address of XMIDI data.
+		CX = Segment	Segment portion of far address of XMIDI data.
+		SI = Low len	Low word of length of XMIDI data.
+		DI = High len	High word of length of XMIDI data.
+
+	OUTPUT: AX = 0		Unable to register XMIDI data.
+		AX = 1		XMIDI file registered resident.  This means
+				that the XMIDI file was able to be held
+				entirely in MIDPAK's internal buffer area.
+				The application can throw away the memory
+				associated with this XMIDI file because
+				MIDPAK has made a copy of it for itself.
+				This is very useful in virtual memory
+				environments where the application program
+				does not always have fixed addresses in
+				memory.  It also allows MIDPAK to play
+				back MIDI files in the background from DOS.
+
+		AX = 2		XMIDI file was registered to the appilcation.
+				The caller is responsible for making sure that
+				this fixed memory address is always contains
+				the data as passed.
+
+Function #6:	MidiStop, stop playing current MIDI sequence.
+
+	INPUT	AX = 705h	Command.
+
+	OUTPUT: None.
+
+Function #7:	Unsed
+
+Function #8:	ReportTriggerCount -> returns trigger event counter, 
+					and last event code.
+
+	INPUT:	AX = 707h	Command number.
+
+	OUTPUT: AX = COUNT	Count of # of callbacks, since last reset.
+		DX = ID 	Event ID of last callback.
+				See callback trigger in XMIDI spec.
+
+Function #9:	ResetTriggerCount -> reset's the trigger event counter to zero.
+
+	INPUT:	AX = 708h	Command number.
+
+	OUTPUT: None.
+
+Function #10:	OBSOLETE FUNCTION.
+
+
+Function #11:	OBSOLETE FUNCTION
+
+Function #12:	ResumePlaying -> resume playing stopped sequence.
+
+	INPUT:	AX = 70Bh	Command number.
+
+Function #13:	SequenceStatus -> report sequence status.
+
+	INPUT:	AX = 70Ch	Command number.
+	OUTPUT: AX = Status.
+		SEQ_STOPPED 0		// equates for SequenceStatus()
+		SEQ_PLAYING 1		// Sequence is currently playing.
+		SEQ_DONE 2		// A sequence is DONE playing.
+
+Function #14:	RegisterXmidiFile( register by filename)
+
+	INPUT:	AX = 70Dh	Command number.
+		BX = Offset	Offset portion of filename address.
+		CX = Segment	Segment portion of filename address.
+
+Function #15:	RelativeVolume->
+
+	INPUT:	AX = 70Eh	Command number.
+
+	OUTPUT: AX = VOL	Current relative volume.
+
+Function #16:	SetRelativeVolume->
+
+	INPUT:	AX = 70Fh	Command number.
+
+
+Function #17:	BootstrapMidPak
+
+	INPUT:	AX = 710h	Command number.
+		BX:CX -> segment,offset of ADV driver.
+		DX:SI -> segment,offset of AD file.
+
+Function #18: PollMidPak
+
+	INPUT:	AX = 711h
+
+	This function is used in conjunction with PMIDPAK.COM.	PMIDPAK is
+	the polled version of MIDPAK.  Normal MIDPAK steals either the timer
+	interrupt or the real-time clock interrupt and services it as a rate
+	of 120 hertz.  However, some more advanced application want to service
+	the hardware interrupts themselves, may want to play back the music
+	at a different quantization rate, or may want to sync the service
+	rate to graphics routines, to avoid any potential of their graphics
+	routines being interrupted by the music.
+
+	After MIDPAK is installed it restores the timer interrupt vector and
+	is aquiecent until the application program invokes int 66h with the
+	command 0711h.	You should invoke this interrupt at 120 hertz or
+	to the quantization rate you used when running MIDIFORM.  When
+	running MIDIFORM you can specify a quantization rate for your music
+	other than the default of 120 hertz.  As you lower the quantization
+	rate you will here some degradation in the quality of the music
+	since ASDR will not be responding as quickly.  Reducing it to say
+	60 hertz won't make much of a noticable difference, but reducing it
+	to 15 to 30 hertz will cause noticable degradation.  Obviously running
+	many channels of MIDI music out of an FM synthesis device like an
+	Adlib is going to take some CPU.  By re-quantiziing your music and
+	servicing MIDPAK at the rate you are comforatble with, you can
+	balance machine resources nicely yourself.
+
+Function #19: MidpakClock
+
+	INPUT:	AX = 712h
+
+	OUTPUT: AX:DX Current heartbeat count since MidPak startup.
+		120 hertz heart beat, application can use this for
+		timing.
+		BX:CX -> forms the far address pointing to this
+			 heartbeat counter.
+			 BX-> is the offset portion.
+			 CX-> is the segment portion.
+
+	This function reports the heartbeat counter for MidPak.  Starting
+	at zero since MidPak startup, this value is the long word result of
+	the heartbeat counter for MidPak.  A 120 hertz timer that your
+	application software can use for timing (in a polled fashion).
+
+
+Function #20: TriggerCountAddress
+
+	INPUT:	AX = 713h
+
+	OUTPUT: AX:DX form for address to point to the integer TriggerCount.
+		      This is the counter that gets incremented each time
+		      a Controller 119 is encountered in the midi file.
+
+
+Function #21: EventIDAddress
+
+	INPUT:	AX = 714h
+
+	OUTPUT: AX:DX form an address to point to the integer EventID,
+		      with is the EventID of the last controller 119
+		      trigger event encountered.
+
+Function #22: Undocumented
+
+Function #23: ReportSequenceNumber
+
+	INPUT:	AX = 716h
+
+	OUTPUT: Report currently playing sequence number.
+
+
+extern short	 cdecl CheckMidiIn(void); // Returns 1 if MIDPAK is installed, 0 if not.
+extern short	 cdecl DigPakAvailable(void);	  // Returns 1 if DIGPAK is installed, 0 if not.
+
+/****************************************************************************/
+/* These flags are returned by the XMIDI registration call.		      */
+/****************************************************************************/
+#define FAILURE_TO_REGISTER 0	 // Xmidi file registration failed.
+#define REGISTERED_RESIDENT 1   // Resident driver holds midi file now.
+				    // The application can throw away the memory
+				    // if it wants to.
+#define REGISTERED_APPLICATION 2  // Driver didn't have a big enough buffer
+				      // area reserved to hold the audio data
+				      // so the application is responsible for
+				      // keeping the memory for this sequence
+				      // while it is registered.
+
+extern short	 cdecl PlaySequence(short seqnum); // Play a particular sequence number from
+				      // the currently registered xmidi file.
+
+#define NEXT_CALLBACK -1	 // Activation on next callback.
+
+extern short	 cdecl SegueSequence(short seqnum,short activate);
+				    // Switch sequence to this sequence when next
+				    // callback trigger event is hit with the
+				    // event number equal to activate.	     If activate
+				    // is set to -1 then the next event causes the
+				    // segue to occur.
+
+extern short	 cdecl RegisterXmidi(char	  *xmidi,long int size);
+				    // Registers an extended midi file for playback.
+				    // This call will register all sequences.
+
+extern short	 cdecl MidiStop(void);	  // Stop playing current sequence.
+
+extern long int  cdecl ReportCallbackTrigger(void); // Low word is trigger count.
+					       // High word is last event ID.
+
+extern void  cdecl ResetCallbackCounter(void);	 // Reset callback counter to zero.
+
+extern void  cdecl ResumePlaying(void); 	 // Resume playing last sequence.
+
+#define SEQ_STOPPED 0		  // equates for SequenceStatus()
+#define SEQ_PLAYING 1
+#define SEQ_DONE 2
+extern short	  cdecl SequenceStatus(void);	  // Report current sequence play status.
+
+extern short	  cdecl RelativeVolume(short vol); // Report current volume.
+
+extern void  cdecl SetRelativeVolume(short vol,short time); // Set volume, over time period.
+
+#define NOBUFFER 1		  // No resident buffer available.
+#define FILENOTFOUND 2		  // The file was not found.
+#define FILETOBIG 3		  // The file exceeds the reserved buffer size.
+#define REGISTRATIONERROR 4	 // Error registering the XMI file.
+
+extern short	  cdecl RegisterXmidiFile(char *fname); // Register by filename.
+
+extern void  cdecl PollMidPak(void); // Poll MidPak for music processing.
+
+extern long int  cdecl MidPakClock(void); // Return MIDPAK heartbeat count (120hz)
+
+extern long int  * cdecl MidPakClockAddress(void); // Return address of midpak clock.
+
+extern short	 *  cdecl TriggerCountAddress(void); // Report address of trigger count.
+
+extern short	 *  cdecl EventIDAddress(void); // Report address of event id.
+
+extern short	 cdecl ReportSequenceNumber(void);
+
+extern short	 cdecl InitMP(char *midpak,char *adv,char	  *ad); // Init MIDI driver.
+extern void cdecl DeInitMP(char *midpak); // Unload a previously loaded sound driver.
+
+
+***************************************************************************
+
+	      Written by John W. Ratcliff (c) 1994
+		       Compuserve: 70253,3237
+		       Genie: J.RATCLIFF3
+		       BBS: 1-314-939-0200
+		       Addresss:
+			  747 Napa Lane
+			  St. Charles, MO 63304
+
+A $500 per product license fee applies to all commercial software
+products distributed with ANY MIDPAK drivers.
+
+To pay a license, simply write a check for $500 payable to The Audio
+Solution, 747 Napa Lane, St. Charles, MO 63304 with a copy of your
+commerical product.  You will receive a signed license agreement from
+The Audio Solution shortly thereafter. This license fee applies
+specifically to the inclusion with your distribution disk any of the
+MIDPAK drivers from The Audio Solution These drivers are copyrighted
+works, created by me, to enhance the use of sound and music in DOS based
+commercial software.  The license fees collected are used to maintain
+the drivers and keep the BBS running.  There is a seperate license fee
+for the use and distribution of MIDPAK drivers.
+
+See accompaning documentation regarding license fees for DIGPAK
+distribution.  You would be ill-advised to distribute a commercial
+product containing either DIGPAK and/or MIDPAK drivers without having
+paid the distribution license fee.  Since your product would contain
+unlicensed copyrighted software from The Audio Solution, your product
+could be required to be immediately removed from retail distribution.  I
+doubt this is going to be a problem.  Clearly if your product is
+enhanced by the use of these drivers, your company can easily afford a
+nominal license fee of $500 in exchange for getting the use of several
+man-years of software engineering resources.

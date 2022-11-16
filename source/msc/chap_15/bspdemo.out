@@ -1,0 +1,46 @@
+
+Printing BSP tree:
+
+Traversing back sub-tree...
+Traversing back sub-tree...
+Reached NULL node returning...
+
+
+Wall ID #1
+Vertices...
+Vertex 0: (-30.000000,20.000000,356.000000)
+Vertex 1: (4.000000,20.000000,378.000000)
+Vertex 2: (4.000000,-20.000000,378.000000)
+Vertex 3: (-30.000000,-20.000000,356.000000)
+Normal (0.543251,0.000000,-0.839570)
+End wall data
+
+Traversing front sub-tree..
+Reached NULL node returning...
+
+
+Wall ID #0
+Vertices...
+Vertex 0: (-26.000000,20.000000,328.000000)
+Vertex 1: (-2.000000,20.000000,342.000000)
+Vertex 2: (-2.000000,-20.000000,342.000000)
+Vertex 3: (-26.000000,-20.000000,328.000000)
+Normal (0.503871,0.000000,-0.863779)
+End wall data
+
+Traversing front sub-tree..
+Traversing back sub-tree...
+Reached NULL node returning...
+
+
+Wall ID #2
+Vertices...
+Vertex 0: (20.000000,20.000000,314.000000)
+Vertex 1: (44.000000,20.000000,332.000000)
+Vertex 2: (44.000000,-20.000000,332.000000)
+Vertex 3: (20.000000,-20.000000,314.000000)
+Normal (0.600000,0.000000,-0.800000)
+End wall data
+
+Traversing front sub-tree..
+Reached NULL node returning...

@@ -1,0 +1,5 @@
+Cannon Fodder, by MVP Software, is an action-packed war game that will test all your skills.  You begin at Boot Hill with recruits lining up to join your efforts. 
+Once your mission has begun, use the mouse to guide your pointer around the screen. Move your troops and seek out the enemy. In early missions they'll only have guns.  In later missions, you may find grenades or bazookas. 
+Your bullets are "smart" and will not harm allies; however, grenades and bazookas will. Find the enemy and attack! You can split up your troops to cover as much area as possible, but don't spread your troops too thin.  You can select which troopers are in each group, as well as what weapons they have. 
+It's going to be a fight to the finish. The enemy can be tricky, so watch out! 
+

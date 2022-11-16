@@ -1,0 +1,193 @@
+
+              StarMines II - The Planet of Mines - v 1.1
+
+               Copyright (C) 1992-1993 by Jari Karjala.
+
+
+This program is distributed as CardWare. This means that you can give
+unmodified copies to your friends (and fiends), but I want to see how
+widely the game is played. Therefore: if you like the game, send me a
+postcard (a local view would be nice) to the snail mail address below.
+
+
+
+Game idea
+---------
+
+You start with your small scout ship at the level 1 of the Planet of
+Mines. You can advance levels by flying through transportals.
+
+Try to collect as many Bonusoids as possible while avoiding or
+shooting the alien objects.
+
+Luckily, you have unlimited fuel and ammunition supplies.  You can
+shoot everything, but perhaps you should not...
+
+
+
+System requirements
+-------------------
+
+At least a fast 286 system with 300 kBytes free RAM and a register
+compatible VGA card. 
+
+The program uses an undocumented 256 color mode (resolution 320x240)
+and split-screen display. If it does not work with your VGA card,
+please let me know.
+
+Sound Blaster is supported if the BLASTER environment variable is set
+correctly (your sound card installation program usually does this).
+For example, BLASTER=A220 I7 D1 T3, where Axxx means the I/O address
+(usually 220), Ix means the interrupt (IRQ) number (must be 1-7), D
+the DMA channel (must be 1-3) and Tx means the Sound Blaster type
+(not used by StarMines II). If the game crashes in a Sound Blaster
+system, try starting it with the /Q option (see below).
+
+If the BLASTER variable is not set, the PC speaker is used for sound
+effects. If they game seems too sluggish, try disabling sound
+effects.
+
+The game has been tested under MS-DOS 5.0/6.0, DR-DOS 6.0 as well as
+the full-screen DOS session of Windows 3.1, OS/2 1.3, 2.0, 2.1 beta
+and Windows NT beta (Sound Blaster has not been tested under all
+these systems). I don't recommend running the game in a DOS session
+since it degrades performance. Switching out of the DOS session while
+the game is active may result a system crash if the video driver
+cannot handle non-standard VGA modes.
+
+The following settings should be used if the game is played in an
+OS/2 2.0 DOS session: HW_TIMER off, VIDEO_RETRACE_EMULATION off,
+VIDEO_FASTPASTE off.
+
+
+
+Controls (US keyboard) 
+----------------------
+
+'z' or 'left'   rotate counter-clockwise
+'x' or 'right'  rotate clockwise
+'m' or 'up'     thrust
+',' or 'space'  shoot
+'s'             stop motion (kind of cheat!)
+
+I recommend using the letter keys, they are much easier than the
+cursor keys! 
+
+If the scrollers seem to run too fast (can't you read them?), you can
+use the 'Pause' key as usual to stop the scroll. It also works during
+the game (useful if you want to take a photo of the screen:-).
+
+
+
+Command line options
+--------------------
+
+/C      Always keep the player in the Center of the viewport (equals
+        to Options Centering ON). It may make the playing easier.
+
+/F      Display Frames per second statistics (target 20 fps). The
+        count is average on the current level. It is not shown
+        immediately after level change to get a more accurate
+        reading. 
+        
+/N      No startup menu, start game immediately.
+
+/Q      Be Quiet (equals to Options Sound OFF).
+
+/Sx     Synchronise to ever x'th frame, default 3, which means 60/3=20
+        frames per second. This option disables sound. /S1 combined 
+        with /F and /T is useful for measuring CPU/VGA performance of
+        your computer. My 486/33+Trident8900 can scroll at 50-60 frames
+        per second, depending on the level complexity (a bit too fast
+        for normal play:-). This option can also be used to slow down
+        the game if it seems to be too fast...
+
+/T      Activate Test level with a background map of varying
+        complexity and a maze with many sprites. Good for speed
+        testing, but could be useful for practise, too.
+
+/V      Fly in Vacuum (equals to Options Friction OFF). This makes
+        the controls more like the original StarMines (most people
+        think this is quite a bit harder). Either way, StarMines II
+        is no physical world simulator:-)
+
+The options /C, /Q and /V (which are also available in the options
+menu) are saved in sm2.cfg file when exiting. 
+
+
+
+Programming Info
+----------------
+
+The original StarMines was created and released as a demo of my
+Sprite Toolkit (STK110) in 1990-1991. This toolkit supports only
+monochrome EGA and Hercules, but it includes the C source code for
+the sprite library, sprite editor and the StarMines game. It is
+available on several anonymous FTP sites (try nic.funet.fi if you
+cannot find it on any site nearer to you). 
+
+Even though the Sprite Toolkit is monochrome, I do recommend it if
+you are interested in action game programming. You'll see that the
+graphics portion of a game is very small part of the total code.
+
+If you are interested in Mode X VGA programming, take a look at the
+articles by Michael Abrash (Dr Dobb's Journal, August-September 1991)
+and the XLIB library by Themie Gouthas, also available on anonymous
+FTP. (I did not use Themie's code as is in StarMines II, but it did
+give me ideas.)
+
+
+
+Hacker Info
+-----------
+
+Once again, I included some interesting tricks to examine. For
+example, try forging yourself into the hall of fame. There are also
+certain ways of CHEATing... (which seem to fail with some keyboards!)
+
+If you are interested in the source code of StarMines II or if you
+want to design more levels and/or aliens, you are welcome to contact
+me (I cannot quarantee a reply, though).
+
+
+
+Disclaimer Info
+---------------
+
+This program is provided "as is" without any kind of warranty. I
+assume no responsibility on how you use it. If you manage to lose
+your computer, job, mind or blow up the universe by playing StarMines
+II, don't blame me!
+
+
+
+Version Info
+------------
+
+Version 1.1 
+        - Sound Blaster support
+        - More colorful radar
+        - Frames per Second display during game (option /f)
+        - Added new cheat keys
+        - Added new levels
+        - Added a test level (/t)
+        - Bug fixes
+
+Version 1.0
+        - Initial release
+
+
+
+Contact Info
+------------
+
+Internet mail: 
+        jka@niksula.hut.fi -or- jka@nic.funet.fi -or- jka@tuura.icl.fi
+
+Snail mail:
+        Jari Karjala
+        Veropellontie 11
+        00740 Helsinki
+        Finland
+
+Don't forget to send your postcard!

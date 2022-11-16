@@ -1,0 +1,39 @@
+
+1. Within these directories you will find the Microsoft C\C++ and MASM version of
+all the code. I used MSC 7.0 and VC\C++ 1.5 to compile the code along with
+MASM 6.11.
+
+
+2. You should setup your version of the Microsoft compiler so that the following
+settings are selected:
+
+
+MEDIUM MEMORY MODEL
+80386 CODE
+DOS STANDARD EXE
+
+(no debug for Starblazer and Kill or Be Killed)
+
+3. When compiling programs you will always need the library modules that are
+included such as BLACK3.C, BLACK4.C etc. When building a demo or game, simply
+look at the header section and make sure that you have the header files along
+with either the .C or .OBJ's for the needed library modules.
+
+4. Here are the compile and link lines I used for the Microsoft C\C++ Ver 7.0.
+
+To compile, I used:
+
+cl -AM -FPi87 -c -Fc -Gs -G2 -W4 %1.c
+
+which says,"compile only, use medium memory model, output listing, no stack probes,
+286 instructions, warning level to highest"
+
+To link, I used:
+
+link /ST:12000 %1,,,blacklib,,
+
+which says,"link the current object to the library BLACKLIB.LIB and make an
+executable named %1.EXE"
+
+
+

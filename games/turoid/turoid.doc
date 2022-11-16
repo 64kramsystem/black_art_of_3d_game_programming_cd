@@ -1,0 +1,269 @@
+
+- - - - -     TUROID 1.20     - - - - -
+        Copyright (c) 1994 by Jason Truong
+
+Jason Truong
+12167 Achilles Street
+Norwalk, CA  90650-1824
+U.S.A.
+
+Internet: truong@wintermute.fullerton.edu
+           
+
+- - - - - SHAREWARE
+
+Turoid is a shareware.  This game is freely distributed provided
+that it is distributed in its original, unmodified form with all
+accompanying files left intact.	 The distribution charges must not exceed
+the reasonable price of the media, shipping, and handling charges.
+
+This evaluation copy has only two levels.  To order
+the complete copy (with 25 levels), print out the file "order.frm" and
+return the completed form with a Check or Money Order to "Jason Truong"
+at the address above.  Please feel free to add any comments or suggestions
+in the space provided.
+
+Turoid Level Editor (TLE) is also available.  The editor lets you
+create your own level set.  To order TLE, check the appropriate box in
+the "order.frm" and add $5.00 to the total amount.  Note:  The
+evaluation copy of TLE does not have a "Save" feature.
+
+
+
+- - - - - INTRODUCTION
+
+Turoid is a break-out type game.  The purpose of the game is to
+destroy all the green, orange, and white bricks on the screen.  The concept
+is similar to other ball-paddle games, but with many different features.
+For example, in Turoid, you can have up to 64 balls simultaneously on
+the screen, bonus shoot'em up levels, and a Level Editor.  In short,
+Turoid is like other break-out games, but DIFFERENT.
+
+
+
+- - - - - SYSTEM REQUIREMENT
+
+Turoid is graphics intensive.  The faster your computer the better.
+Here's the minimum configuration:
+
+	* 286 processor
+	* VGA/MCGA video card
+	* a mouse
+	
+	Recommended
+
+	* 386sx or higher
+	* Adlib or compatible sound cards (SoundBlaster, ProAudio...)
+
+
+
+- - - - - GAME FILES
+
+The following files should come with the game:
+
+	  File			Description
+	  ----			-----------
+	* turoid.exe 		The game executable
+	* tle.exe		Turoid Level Editor
+	* turoid.doc		This file
+	* score.tur		Holds high score table
+	* order.frm		Order (registration) form
+	* file_id.diz		BBS description file
+	* avemaria.mus		Game score
+	* canonind.mus		Game score
+	* nightbea.mus		Game score
+	* quentin.mus		Game score
+
+
+- - - - - RUNNING THE GAME
+
+When you have copied all the necessary files into a directory, type
+"TUROID" at the prompt to start the game.  When Turoid starts, it first
+looks in the default directory for the file "turoid.scr" to load the high
+score table.  Make sure that you consistently start Turoid from the
+same directory so the high score table can be appropriately updated.
+
+To play Turoid with your custom level set, include the file name
+of your levels at the command line.  For example, if the file name for
+your levels is called "mylevel.tle", type:
+
+	>TUROID MYLEVEL.TLE
+
+Every level set has its own high score table and the file name that
+stores the high score table will be the same as the file name of your level
+set, but with different extension.  For example, if the file name for
+your levels is called "mylevel.tle" or "mylevel" (with no extension), its
+high score table is stored in the file "mylevel.scr". 
+
+
+
+- - - - - PLAYING THE GAME
+
+When you start Turoid, the first screen that you see is the
+Introduction screen.  This screen shows the title (TUROID) and the
+high score table.  Here you can:
+
+	* Click the left mouse button (or hit Return) to start a new game.
+	* Click the right mouse button for Help.
+	* Press the ESC key to quit Turoid.
+	* Press Key 1..9 to set Mouse Sensitivity with 9 being most sensitive.
+	  5 is the default value.
+        * S to switch sound On/Off
+        * B to switch background snow On/Off
+
+Press the left mouse and start a new game.  At the bottom of the
+game screen is a status bar.  It shows the number of remaining paddle,
+the current level, and your total score.
+
+To start the level, you first position the paddle with the mouse
+(note that the paddle move accordingly) by moving the mouse left or
+right.  Click
+        
+        * Left mouse button to shoot the ball to the left.
+        * Right mouse button to shoot the ball to the right.
+
+The ball will bounce back against the surrounding walls except the bottom
+wall.  You try to prevent the ball from hitting the bottom wall by catching
+the ball with the paddle.  If there are no ball left on the screen, the
+paddle will die.  You have four paddles for each game.
+
+	If the ball hit a brick, one of the following occurs:
+
+	* If the brick is green, then this brick is immediately destroyed.
+	  Green brick is the weakest brick and it only requires one hit
+	  to be destroyed.
+	* If the brick is orange, two hits are required before it can be
+	  destroyed.
+	* If the brick is white, three hits are required.
+	* Yellow bricks can not be destroyed unless you have special balls
+	  (Power or Super ball, I'll explain later).
+	* If the brick is purple, the ball inside will fall down.  Try to
+	  avoid this falling purple ball.  If your paddle is hit
+	  twice with these falling ball, it is destroyed.  The paddle
+	  shakes after it's been hit once.
+	* If the brick is gold, this is a special brick and many things can
+	  occur:
+	  	
+		* Four surrounding bricks fall down.
+ 		  Again, try to avoid these falling bricks.
+		* The brick becomes 4 balls.
+		* The brick becomes 16 balls.
+		* The ball turns into a special Power ball (white ball).
+		  The Power ball destroys any brick with only one hit.
+		* The ball turns into a special Super ball (yellow ball).
+		  Super ball is like the Power ball but it does not bounce
+		  back.  It only bounces back against the surrounding walls.
+		* A circle around the ball.  Move the ball to a new location
+		  with the mouse.  Click the left mouse button to release
+		  the ball.  The ball is automatically released after five
+		  seconds if you don't manually release it.
+		* None of the above happens and the gold ball inside fall
+		  down (slowly).  This is the ball that you want to catch.
+		  Contained in each ball is a hidden special feature.  Try
+		  to catch it with the paddle.  The following are possible
+		  special features:
+
+		  	* The paddle expands and become wider.  Longer paddle
+			  makes ball catching easier.
+			* The paddle reduces and become shorter.  Shorter
+			  paddle means harder to catch the ball.
+			* Paddle's color change to red and makes any ball
+			  that you catch stick to the paddle.  This allows
+			  you to move the ball to a new location.  Click
+			  the left mouse button to release any sticking
+			  balls.
+			* Paddle changes to a laser paddle.  Click or hold
+			  down the left mouse to shoot.  There are two types
+			  of laser.  The faster ones are harder to get.
+			* Slow down all balls on the screen.  This is
+			  helpful sometimes since each ball speed up after
+			  a certain period of time.
+			* Reduce paddle shaking.  Notice that the special
+			  ball also shakes as it falls down.  Try to catch it
+			  if you've been hit by a falling brick.
+			* Gain one more paddle (very rare).
+			* Skip to next level (very rare).
+
+Remember that the only falling object that you want to catch is the
+gold ball.
+
+Although there six types of bricks, your task is to only destroy
+the green, orange, and white bricks.  You complete the level when all of
+these bricks are destroyed.
+
+During the game, the following keys are active:
+
+	* ESC key returns to the Introduction screen.
+	* S key to switch sound On/Off.
+        * B key to switch background snow On/Off.
+	* Space Bar (or p) pauses the game.  Click the left mouse button
+	  or any key to continue.
+	* Key 1..9 to set Mouse Sensitivity with 9 being most sensitive.
+
+After you finish all levels (or you ran out of paddles), the game
+returns to the Introduction screen.
+
+If you qualify for the high score table, you'll be asked to enter
+your name in the Introduction screen.  The appropriate line in the high
+score table will flash if you qualify.  Enter your name and hit return.
+
+
+- - - - - BONUS LEVEL
+
+At the end of every level is a bonus level.  If there are some
+bricks (yellow, gold, or purple bricks) remaining from the last level,
+they will fall down.  Again try to avoid these falling bricks.  After all
+the bricks have fallen, the paddle will change into a short laser paddle.
+
+Bonus balls will jump out from either the left or the right walls.
+Try to shoot them down and avoid them from hitting you.  Each bonus ball
+will bounce five times before it self-destructs.  Each bonus ball
+destroyed is worth 20 points.  
+
+At the bottom of the screen shows you the number of bonus balls
+you have destroyed so far.
+	
+
+- - - - - TECHNICAL INFORMATION
+
+This game was written using Themie Gouthas' public domain
+XLIB library (version 04c).  Although the library is fairly complete, I
+made some minor changes and added some functions to fit my own need.
+
+The screen mode I used was double-buffered 320x240 mode with
+splitscreen at the bottom for the status bar.
+
+I'd like to thank Themie (and his contributors) for his generosity
+and released his library to the public.
+
+For music and sound, I used Ezra Dreisbach's FMPLAY module and 
+Keven A. Lee's ADLIB module.  Thanks very much guys.
+
+
+- - - - - BUG REPORT
+
+This game has been tested greatly and there should not be any bug.
+But if you "catch" any, please report them to my home address given above
+or to my Internet address at "truong@wintermute.fullerton.edu".
+
+
+- - - - - RELEASE HISTORY
+
+Version		Date		Comment
+1.0		8-24-93		First release of Turoid.  
+1.10		9-7-93		Minor bug fixes and added musical scores for
+				the Game Over and Congratulation screens.
+1.20            1-20-94         Minor bug fixes and added more colored balls,
+                                ability to shoot ball left and right, and
+                                ability to switch background snow On/Off.
+
+- - - - - DISCLAIMER
+
+This game is provided "as is".  I'm not responsible for any damages
+resulted from playing or using the files of the game.
+
+
+
+Please register!
+  
+

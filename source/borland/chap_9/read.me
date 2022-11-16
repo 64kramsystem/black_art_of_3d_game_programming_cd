@@ -1,0 +1,27 @@
+
+COMPILATION DETAILS
+
+The source code BLAZER.C might be too large and cause problems with various
+versions of the Borland compiler, therefore, I have also added a set of four
+files to the Borland version of Starblazer. These four files are basically
+the original BLAZER.C source code broken up into a header and three main C
+files. The files are:
+
+
+BLAZER.C =
+
+
+   BLAZEM0.C - The main module that contains the globals and the main().
+   BLAZEM1.C - A support module with various low level functions for the game.
+   BLAZEM2.C - A support module with all of the game related functions.
+   BLAZEM0.H - The header portion needed for the above files.
+
+   BLAZEM0.EXE - The executable made of the modules.
+
+Also, when compiling, I suggest that you set the ide and linker so that the
+code has NO debug information in it. This will not only make the .EXE
+smaller, but it will execute faster.
+
+
+
+

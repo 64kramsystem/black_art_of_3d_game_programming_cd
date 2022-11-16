@@ -1,0 +1,2207 @@
+
+ Volume in drive E is BA3DGAME   
+
+Directory of E:\BA3DGAME
+
+.            <DIR>     08-04-95   9:52a
+..           <DIR>     08-04-95   9:52a
+GAMES        <DIR>     08-04-95   9:52a
+GRAPHICS     <DIR>     08-04-95   9:57a
+SOUND        <DIR>     08-04-95   9:57a
+SOURCE       <DIR>     08-04-95   9:57a
+DIR      TXT         0 08-04-95  11:48a
+INSTALL  EXE     49636 06-27-95   1:30p
+        8 file(s)      49636 bytes
+
+Directory of E:\BA3DGAME\GAMES
+
+.            <DIR>     08-04-95   9:52a
+..           <DIR>     08-04-95   9:52a
+AQUANOID     <DIR>     08-04-95   9:52a
+BLAKE        <DIR>     08-04-95   9:52a
+BOPPIN       <DIR>     08-04-95   9:53a
+CANNON       <DIR>     08-04-95   9:53a
+DOOM19       <DIR>     08-04-95   9:53a
+DSC          <DIR>     08-04-95   9:53a
+DUKE2        <DIR>     08-04-95   9:53a
+FINTRIS      <DIR>     08-04-95   9:53a
+GOBMAN       <DIR>     08-04-95   9:54a
+HERETIC      <DIR>     08-04-95   9:54a
+HEXXAGON     <DIR>     08-04-95   9:54a
+HOCUS        <DIR>     08-04-95   9:54a
+JACKFLSH     <DIR>     08-04-95   9:54a
+JETPACK      <DIR>     08-04-95   9:54a
+MONSTERB     <DIR>     08-04-95   9:54a
+MTOWERS      <DIR>     08-04-95   9:55a
+NITE3D       <DIR>     08-04-95   9:55a
+NITERAID     <DIR>     08-04-95   9:55a
+RAPTOR       <DIR>     08-04-95   9:55a
+RIPTID       <DIR>     08-04-95   9:55a
+ROTT         <DIR>     08-04-95   9:55a
+STALKER      <DIR>     08-04-95   9:56a
+STARMINE     <DIR>     08-04-95   9:56a
+TUBES        <DIR>     08-04-95   9:56a
+TUROID       <DIR>     08-04-95   9:56a
+WACKY        <DIR>     08-04-95   9:56a
+WOLF3D       <DIR>     08-04-95   9:57a
+GUNNER       <DIR>     08-04-95  11:03a
+       30 file(s)          0 bytes
+
+Directory of E:\BA3DGAME\GAMES\AQUANOID
+
+.            <DIR>     08-04-95   9:52a
+..           <DIR>     08-04-95   9:52a
+ACCESS   AQA       440 06-22-95  12:55p
+AQUA     EXE    171008 12-28-94  12:00a
+CHAR     AQA     31003 12-28-94  12:00a
+COLOR    AQA       775 06-22-95  12:35p
+DATA     AQA      8610 12-28-94  12:00a
+GRAFIK   AQA     28427 12-28-94  12:00a
+HISCORE  AQA       432 12-28-94  12:00a
+KONTERFY AQA     14095 12-28-94  12:00a
+README   EXE     36710 12-28-94  12:00a
+RNTY     AQA      6495 12-28-94  12:00a
+SETINFO  AQA      1282 12-28-94  12:00a
+SETUP    EXE    107280 12-28-94  12:00a
+START    BAT        39 12-28-94  12:00a
+TITLE    AQA     17867 12-28-94  12:00a
+       16 file(s)     424463 bytes
+
+Directory of E:\BA3DGAME\GAMES\BLAKE
+
+.            <DIR>     08-04-95   9:52a
+..           <DIR>     08-04-95   9:52a
+AUDIOHED BS1      1280 02-11-94   2:00p
+AUDIOT   BS1    162268 02-11-94   2:00p
+BS-HELP  EXE     17323 02-11-94   2:00p
+BSTONE   BAT       101 02-11-94   2:00p
+BS_AOG   EXE    137680 02-11-94   2:00p
+CATALOG  EXE     29003 02-01-94  12:00a
+CONFIG   BS1       744 05-05-95   9:24a
+DESC     TXT       764 01-14-94   2:44p
+IANIM    BS1     18977 02-11-94   2:00p
+JAMERR   EXE     20786 02-11-94   2:00p
+JM_ERROR H        9883 02-11-94   2:00p
+MAPHEAD  BS1       834 02-11-94   2:00p
+MAPTEMP  BS1     90786 02-11-94   2:00p
+ORDER    FRM      6228 02-01-94  12:00a
+SANIM    BS1    276784 02-11-94   2:00p
+SETBLAST EXE     73724 02-11-94   2:00p
+SETUP    DTA       830 06-10-94   4:25p
+VGADICT  BS1      1024 02-11-94   2:00p
+VGAGRAPH BS1    623655 02-11-94   2:00p
+VGAHEAD  BS1       633 02-11-94   2:00p
+VSWAP    BS1   1996008 02-11-94   2:00p
+       23 file(s)    3469315 bytes
+
+Directory of E:\BA3DGAME\GAMES\BOPPIN
+
+.            <DIR>     08-04-95   9:53a
+..           <DIR>     08-04-95   9:53a
+APOGEE   BAT       399 02-17-95   3:47p
+BOP-HELP EXE     17645 12-10-94   1:10p
+BOPPIN   CFG        50 05-05-95   9:47a
+BOPSW    EXE    635091 12-10-94   1:10p
+BOPSW    RES   1017838 12-10-94   1:10p
+CATALOG  EXE     73954 11-01-94  12:00a
+DEALERS  EXE      9194 11-01-94  12:00a
+DESC     TXT       921 03-15-95   6:25a
+ORDER    FRM      5992 11-01-94  12:00a
+SETUP    DTA       985 03-15-95   5:25p
+SETUP    EXE     21576 12-10-94   1:10p
+SWCBBS   EXE      5766 11-01-94  12:00a
+VENDOR   DOC      7787 12-10-94   1:10p
+       15 file(s)    1797198 bytes
+
+Directory of E:\BA3DGAME\GAMES\CANNON
+
+.            <DIR>     08-04-95   9:53a
+..           <DIR>     08-04-95   9:53a
+CANEXIT  COM     21067 09-21-94   3:10p
+CANNON   COM      1655 09-28-94   5:38p
+CANNON   DOC     12799 02-06-95   1:55a
+CFODDER  EXE     76552 09-27-94   4:48p
+CF_ENG   DAT   1243768 08-15-94   5:47p
+DESC     TXT       776 03-15-95   6:28a
+FILE_ID  DIZ       393 02-06-95   1:59a
+LICENSE  DOC      2242 09-21-94   7:34p
+ORDER    FRM      2833 01-16-95  10:04a
+READ     ME       3977 02-06-95   1:58a
+SETUP    DAT       105 05-05-95   9:53a
+SETUP    DTA       858 03-15-95   5:25p
+SETUP    EXE     12701 08-11-94   5:09p
+SYSOP    DOC      3171 12-14-94  11:05a
+VENDOR   DOC      6833 02-06-95   2:00a
+       17 file(s)    1389730 bytes
+
+Directory of E:\BA3DGAME\GAMES\DOOM19
+
+.            <DIR>     08-04-95   9:53a
+..           <DIR>     08-04-95   9:53a
+DEFAULT  CFG       769 06-22-95  12:21p
+DM       DOC      6397 02-01-95   1:09a
+DM       EXE     33640 02-01-95   1:09a
+DMFAQ66A TXT    120201 02-01-95   1:09a
+DMFAQ66B TXT    140594 02-01-95   1:09a
+DMFAQ66C TXT     76898 02-01-95   1:09a
+DMFAQ66D TXT     34572 02-01-95   1:09a
+DOOM     EXE    709905 02-01-95   1:09a
+DOOM1    WAD   4196020 02-01-95   1:09a
+DWANGO   DOC     10623 02-01-95   1:09a
+DWANGO   EXE     65021 02-01-95   1:09a
+DWANGO   STR      2536 02-01-95   1:09a
+HELPME   TXT      4690 02-01-95   1:09a
+IPXSETUP EXE     18051 02-01-95   1:09a
+MODEM    CFG        67 02-01-95   1:09a
+MODEM    NUM        67 02-01-95   1:09a
+MODEM    STR      3405 02-01-95   1:09a
+ORDER    FRM      4617 02-01-95   1:09a
+README   TXT     21631 02-01-95   1:09a
+SERSETUP EXE     20257 02-02-95   6:14p
+SETUP    EXE     45884 02-01-95   1:09a
+       23 file(s)    5515845 bytes
+
+Directory of E:\BA3DGAME\GAMES\DSC
+
+.            <DIR>     08-04-95   9:53a
+..           <DIR>     08-04-95   9:53a
+DESC     TXT       652 03-15-95   5:51p
+DSC      DAT     14101 06-15-94   5:35p
+DSC      DOC     21413 01-16-95  10:51a
+DSC      EXE     46303 09-09-94   9:24a
+DSC      SAV        11 06-02-95   7:59a
+DSC      SCR       330 06-17-94  11:44a
+DSC1     DAT      6305 06-15-94   5:35p
+DSC4     DAT    119833 06-15-94   5:35p
+DSCB     DAT    261603 06-15-94   5:35p
+DSCI     DAT     94656 06-15-94   5:35p
+DSCM     DAT     51058 06-15-94   5:35p
+DSCP     DAT    137287 06-15-94   5:35p
+DSCS     DAT    473524 06-15-94   5:35p
+DSCW     DAT     95428 06-15-94   5:35p
+FILE_ID  DIZ       399 12-14-94  11:27a
+LICENSE  DOC      4382 06-17-94   1:21a
+ORDER    FRM      2852 01-16-95  10:47a
+SETUP    DTA       720 03-15-95   5:51p
+SYSOP    DOC      3763 12-14-94  11:27a
+VENDOR   DOC      3350 01-16-95  10:48a
+       22 file(s)    1337970 bytes
+
+Directory of E:\BA3DGAME\GAMES\DUKE2
+
+.            <DIR>     08-04-95   9:53a
+..           <DIR>     08-04-95   9:53a
+CATALOG  EXE     28859 12-01-93   1:00p
+DN2-HELP EXE     10795 12-01-93   1:00p
+LICENSE  DOC      6602 12-01-93   1:00p
+NUKEM2   -GT        36 05-05-95   8:32a
+NUKEM2   -NM       144 05-05-95   8:32a
+NUKEM2   -V1       190 05-05-95   8:32a
+NUKEM2   CMP   3075327 12-01-93   1:00p
+NUKEM2   EXE     59290 12-01-93   1:00p
+NUKEM2   F1      98960 12-01-93   1:00p
+NUKEM2   F2      38622 12-01-93   1:00p
+NUKEM2   F3      52427 12-01-93   1:00p
+NUKEM2   F4     240848 12-01-93   1:00p
+NUKEM2   F5      33911 12-01-93   1:00p
+ORDER    FRM      5984 12-01-93   1:00p
+SETUP    DTA       982 01-30-94   2:01p
+       17 file(s)    3652977 bytes
+
+Directory of E:\BA3DGAME\GAMES\FINTRIS
+
+.            <DIR>     08-04-95   9:53a
+..           <DIR>     08-04-95   9:53a
+CONFIG   FIN        46 05-05-95  10:29a
+DEFAULT1 KEY        10 12-01-93   1:47a
+DEFAULT2 KEY        10 11-13-93  11:40a
+EFINTRIS TXT     15354 12-25-93  10:43a
+FILE_ID  DIZ       391 10-13-93   4:38p
+FINBACK  DAT     47997 10-24-93   5:42a
+FINBEG   DAT     62081 08-23-93   7:09p
+FINEND   DAT     56880 08-23-93   7:09p
+FINMENU  DAT     56955 04-08-93  11:35a
+FINSTAT  DAT     50048 12-20-93   8:29a
+FINT     EXE    370155 04-12-94   5:02p
+FINTEXT  DAT     45439 11-02-93   3:55p
+FINTRIS  DAT     46949 10-22-93  10:07p
+FINTRIS  EXE     79554 12-25-93  10:31a
+INSTALL  EXE      6523 04-12-94   5:04p
+README   BAT       140 10-16-93  10:58a
+SFINTRIS TXT     15956 12-25-93  10:45a
+SILOGO   DAT     18553 04-08-93  11:35a
+TOPTEN   DAT     58087 04-08-93  11:35a
+TOPTEXT  DAT     47869 07-25-93  10:50p
+       22 file(s)     978997 bytes
+
+Directory of E:\BA3DGAME\GAMES\GOBMAN
+
+.            <DIR>     08-04-95   9:54a
+..           <DIR>     08-04-95   9:54a
+FILE_ID  DIZ       177 08-28-93   5:37p
+GOBMAN   EXE    165594 04-09-92  11:04a
+GOBMAN   HIS       150 05-19-95   9:16a
+REG      FRM       753 04-09-92   9:49a
+        6 file(s)     166674 bytes
+
+Directory of E:\BA3DGAME\GAMES\GUNNER
+
+.            <DIR>     08-04-95  11:03a
+..           <DIR>     08-04-95  11:03a
+ALTERNAT 16      18386 10-06-93   3:07a
+CT-VOICE 15       3894 07-23-92   4:40p
+CT-VOICE 16      18560 01-19-93  10:25p
+CT-VOICE 20       3894 07-23-92   4:39p
+CT-VOICE PRO      5108 07-23-92   4:38p
+GNR      CFG         7 08-04-95  11:04a
+GNRBOOM  VOC      6416 02-01-95   6:40p
+GNRDECIS VOC     44571 05-06-90   1:52p
+GNRENTER VOC      2727 12-12-94   9:19p
+GNRGALAX PCX     60904 02-25-95   1:40p
+GNRGMOVR VOC     12973 05-06-90   1:51p
+GNRINTRO PCX     60179 03-18-95  12:55p
+GNRINTRO VOC     15275 01-09-95  10:55p
+GNROBJEC PCX     17138 02-10-95   4:17p
+GNRSETUP EXE     23835 02-18-95  10:01a
+GNRSHOT  VOC      3375 01-10-95   8:41p
+GNRWARP  VOC      4894 03-05-95   3:37p
+GNRWINDO PCX      6598 03-12-95  11:34a
+GNRWOOSH VOC     16722 02-01-95   9:34p
+GUNNER   EXE     65932 03-18-95  12:48p
+READ     BAK      2958 06-08-95   6:18a
+READ     ME       2978 07-01-95   1:37p
+       24 file(s)     397324 bytes
+
+Directory of E:\BA3DGAME\GAMES\HERETIC
+
+.            <DIR>     08-04-95   9:54a
+..           <DIR>     08-04-95   9:54a
+DM       EXE     33678 12-24-94  12:17a
+DM       TXT      6397 12-24-94  12:17a
+DWANGO   EXE     65021 12-24-94  12:17a
+DWANGO   STR      2536 12-24-94  12:17a
+DWANGO   TXT     10623 12-24-94  12:17a
+FILE_ID  DIZ       445 12-15-94   9:42a
+HELPME   TXT      4659 12-26-94   5:59p
+HERETIC  CFG       896 06-22-95  12:34p
+HERETIC  EXE    717239 12-24-94  12:17a
+HERETIC1 WAD   5120300 12-24-94  12:17a
+IPXSETUP EXE     17971 12-24-94  12:17a
+LICENSE  DOC      7685 12-24-94   5:41p
+MODEM    CFG        50 12-24-94  12:17a
+MODEM    NUM        33 12-24-94  12:17a
+MODEM    STR      3048 12-24-94  12:17a
+ORDER    FRM      4476 12-12-94  11:50a
+README   TXT     30466 12-24-94  12:17a
+SERSETUP EXE     20257 12-24-94  12:17a
+SETUP    EXE     47094 12-24-94  12:17a
+VENDOR   DOC       556 12-24-94   5:47p
+       22 file(s)    6093430 bytes
+
+Directory of E:\BA3DGAME\GAMES\HEXXAGON
+
+.            <DIR>     08-04-95   9:54a
+..           <DIR>     08-04-95   9:54a
+BOARD1   HXG      1690 05-05-95   4:25a
+BOARD2   HXG      1690 05-05-95   4:25a
+BOARD3   HXG      1690 05-05-95   4:25a
+BOARD4   HXG      1690 05-05-95   4:25a
+BOARD5   HXG      1690 05-05-95   4:25a
+CONFIG   HXG        22 05-05-95   4:25a
+FILE_ID  DIZ       352 03-20-93   3:10p
+GO       BAT        10 03-22-93   4:27p
+GRAPHICS HXG    626202 03-30-94   5:03p
+HEXX     EXE     42598 05-23-93   4:32p
+HEXX     ICO       766 03-20-93   3:10p
+HEXX     PIF       545 03-20-93   3:10p
+HEXXAGON DOC     11799 03-20-93   3:10p
+LICENSE  DOC      6869 03-20-93   3:10p
+OMBUDSMN ASP       917 03-20-93   3:10p
+ORDERFRM DOC      2414 05-05-93   8:01a
+PACKING  LST       813 05-05-93   8:00a
+SETUP    DTA       824 01-30-94   2:19p
+SYSOPS   DOC      2157 03-20-93   3:10p
+VENDOR   DOC      8055 03-20-93   3:10p
+       22 file(s)     712793 bytes
+
+Directory of E:\BA3DGAME\GAMES\HOCUS
+
+.            <DIR>     08-04-95   9:54a
+..           <DIR>     08-04-95   9:54a
+CATALOG  EXE     60555 06-01-94  12:00a
+DEALERS  EXE      8827 06-01-94  12:00a
+HOCUS    DAT   2871773 06-01-94   1:00p
+HOCUS    EXE    178592 06-01-94   1:00p
+HOCUS    SAV       990 06-02-95   7:44a
+HOCUSG   BAT        42 06-01-94   1:00p
+HP-HELP  EXE     17275 06-01-94   1:00p
+ORDER    FRM      5833 06-01-94  12:00a
+SETUP    EXE     18176 06-01-94   1:00p
+ULTRAMID EXE     34696 06-01-94   1:00p
+ULTRAMID INI      6314 06-01-94   1:00p
+__HPGRVS EXE    152768 06-01-94   1:00p
+       14 file(s)    3355841 bytes
+
+Directory of E:\BA3DGAME\GAMES\JACKFLSH
+
+.            <DIR>     08-04-95   9:54a
+..           <DIR>     08-04-95   9:54a
+JACK     CNT   2645110 02-03-95   3:14p
+DEMO     DAT    375920 02-01-95  12:19p
+FILE_ID  DIZ       436 08-04-95  11:33a
+JACK     DOC     10278 08-04-95  11:33a
+LICENSE  DOC      4509 08-04-95  11:33a
+ORDER    FRM      2839 08-04-95  11:33a
+SYSOP    DOC      3706 08-04-95  11:33a
+VENDOR   DOC      3364 08-04-95  11:33a
+JACK     EXE     57118 03-20-95   6:18p
+JACK     CNF        23 08-04-95  11:33a
+       12 file(s)    3103303 bytes
+
+Directory of E:\BA3DGAME\GAMES\JETPACK
+
+.            <DIR>     08-04-95   9:54a
+..           <DIR>     08-04-95   9:54a
+FILE_ID  DIZ       356 04-02-93   4:45p
+HISTORY  TXT      1302 04-03-93  11:58a
+JETDEMO  DAT      2306 04-02-93   6:30p
+JETLEV   DAT      5062 03-10-93   3:58p
+JETPACK  EXE     67303 04-03-93   1:22p
+JETPACK0 DAT     43559 04-03-93   1:21p
+JETPACK1 DAT     30487 03-29-93  12:44p
+JETPACK2 DAT     33739 04-02-93   8:54p
+JETPACK3 DAT     38840 03-04-93   4:53p
+JETPACK4 DAT     21048 03-04-93   4:53p
+JETPACK5 DAT     17686 03-04-93   4:53p
+JETSOUND DAT     48263 03-06-93   1:15a
+LICENSE  TXT      7402 04-02-93   4:25p
+MANUAL   DOC     12772 04-03-93  10:23a
+OMBUDSMN ASP       916 01-12-93   1:49p
+ORDERFRM DOC      2408 03-16-93  11:02p
+SCLM     DAT     54508 02-28-93   2:04p
+SETUP    DTA       505 01-30-94   2:22p
+SYSOPS   TXT      2157 03-13-93   3:08p
+TROUBLE  DOC      2372 04-03-93  10:25a
+VENDOR   TXT      8729 04-03-93  10:20a
+       23 file(s)     401720 bytes
+
+Directory of E:\BA3DGAME\GAMES\MONSTERB
+
+.            <DIR>     08-04-95   9:54a
+..           <DIR>     08-04-95   9:54a
+BASHLITE DAT    479252 07-28-93   2:10p
+BASHLITE EXE     67633 07-28-93   2:10p
+CATALOG  EXE     28715 08-03-93   1:00p
+CONFIG   MB1        22 05-05-95   8:28a
+DESC     TXT       980 02-11-94   7:04p
+LICENSE  DOC      5188 09-01-93  12:00a
+ORDER    FRM      3321 08-03-93   1:00p
+SCORE    MB1       290 05-05-95   8:28a
+SETUP    DTA      1049 02-11-94   7:05p
+       11 file(s)     586450 bytes
+
+Directory of E:\BA3DGAME\GAMES\MTOWERS
+
+.            <DIR>     08-04-95   9:55a
+..           <DIR>     08-04-95   9:55a
+CATALOG  EXE     64080 07-15-94  12:00a
+DEALERS  EXE      8932 07-15-94  12:00a
+MT-HELP  EXE     16273 07-15-94   1:10p
+ORDER    FRM      5913 07-15-94  12:00a
+SWCBBS   EXE      5635 07-15-94  12:00a
+SWMYSTUS DAT   2281633 07-15-94   1:10p
+TOWERS   CFG       143 06-02-95   8:07a
+TOWERS   EXE    102400 07-15-94   1:10p
+VENDOR   DOC      7748 07-15-94   1:10p
+       11 file(s)    2492757 bytes
+
+Directory of E:\BA3DGAME\GAMES\NITE3D
+
+.            <DIR>     08-04-95   9:55a
+..           <DIR>     08-04-95   9:55a
+CONFIG   SAV        16 06-22-95  12:58p
+DEMO     1        2206 04-15-94   9:18p
+DEMO     DAT      2206 04-15-94   9:18p
+FILE_ID  DIZ       429 06-08-95  12:58p
+GAME     PAL      1924 04-20-94   8:47p
+IMG      1     1975616 06-05-94   4:42p
+LICENSE  TXT      6266 02-18-95  11:57p
+MAP      1       90626 06-07-94   3:49p
+N3D      EXE     74441 05-24-95   2:43p
+NITE3D   BSF     15513 06-08-95  12:58p
+ORDER    TXT      1391 06-08-95  12:58p
+SND      DAT    548930 06-05-94  10:55a
+TECHNOTE TXT      6583 12-08-94   9:23p
+UIF      DAT    526520 05-10-94  10:07p
+VENDOR   DOC      3171 02-19-95  12:10p
+       17 file(s)    3255838 bytes
+
+Directory of E:\BA3DGAME\GAMES\NITERAID
+
+.            <DIR>     08-04-95   9:55a
+..           <DIR>     08-04-95   9:55a
+CONFIG   NRD       478 05-05-95   8:36a
+FILE_ID  DIZ       346 06-01-93   3:29p
+GRAPHICS NRD    791301 03-16-93   7:33p
+LICENSE  DOC      6873 03-22-93   2:44p
+NITERAID DOC      3381 03-22-93   2:46p
+NTR      EXE     60419 03-22-93   2:36p
+OMBUDSMN ASP       917 03-20-93   3:10p
+ORDERFRM DOC      2433 03-22-93   2:43p
+PACKING  LST       705 06-01-93   3:33p
+PROBLEMS TXT      3915 03-22-93   2:20p
+SYSOPS   DOC      2157 03-20-93   3:10p
+VENDOR   DOC      8009 06-01-93   3:28p
+       14 file(s)     880934 bytes
+
+Directory of E:\BA3DGAME\GAMES\RAPTOR
+
+.            <DIR>     08-04-95   9:55a
+..           <DIR>     08-04-95   9:55a
+INSTALL  EXE     34064 10-01-94   1:20p
+RAP_1BBS _1     994304 10-01-94   1:20p
+RAP_1BBS _2     993642 10-01-94   1:20p
+FILE_ID  DIZ       498 10-01-94   1:20p
+        6 file(s)    2022508 bytes
+
+Directory of E:\BA3DGAME\GAMES\RIPTID
+
+.            <DIR>     08-04-95   9:55a
+..           <DIR>     08-04-95   9:55a
+CATALOG  COM     48666 07-26-94  10:04a
+CATALOG  DAT    156605 07-26-94  10:04a
+CONFIG   RIP         3 06-01-95  10:36a
+DESC     TXT      1258 03-15-95   7:44a
+FILE_ID  DIZ       522 07-26-94  10:04a
+FOREIGN  DOC      5690 07-26-94  10:04a
+HIGH     SCR       160 05-05-95  10:03a
+LICENSE  DOC      2685 07-26-94  10:04a
+ORDER    FRM      2337 07-26-94  10:04a
+README   TXT      2369 07-26-94  10:04a
+RIPTIDE  DAT   1401102 07-26-94  10:04a
+RIPTIDE  EXE    304201 07-26-94  10:04a
+SETUP    DTA      1330 03-15-95   5:25p
+VENDOR   DOC       712 07-26-94  10:04a
+       16 file(s)    1927640 bytes
+
+Directory of E:\BA3DGAME\GAMES\ROTT
+
+.            <DIR>     08-04-95   9:55a
+..           <DIR>     08-04-95   9:55a
+BATTLE   ROT      7317 05-08-95  11:16a
+CATALOG  EXE     73960 02-01-95  12:00a
+CONFIG   ROT      3330 05-08-95  11:16a
+DEALERS  EXE     20749 02-01-95  12:00a
+DEMO1_3  DMO     27028 02-15-95   1:20p
+DEMO2_3  DMO     34360 02-15-95   1:20p
+DESC     TXT       965 03-15-95   5:44p
+HUNTBGIN RTC     54258 02-15-95   1:20p
+HUNTBGIN RTL    103316 02-15-95   1:20p
+HUNTBGIN WAD   6437253 02-15-95   1:20p
+MODEM    PCK      2179 02-15-95   1:20p
+ORDER    FRM      5679 02-01-95  12:00a
+README   EXE     31256 02-15-95   1:20p
+REMOTE1  RTS    110484 02-15-95   1:20p
+ROTT     EXE   1052529 02-15-95   1:21p
+ROTTHELP EXE     64307 02-15-95   1:20p
+ROTTIPX  EXE     16562 02-15-95   1:20p
+ROTTSER  EXE     21809 02-15-95   1:20p
+SCORES   ROT       476 05-08-95  11:16a
+SETUP    DTA      1037 03-15-95   5:44p
+SETUP    EXE     32766 02-15-95   1:20p
+SETUP    ROT       662 05-05-95  10:15a
+SNDSETUP EXE      6194 02-15-95   1:20p
+SOUND    ROT      1259 05-08-95  11:16a
+SWCBBS   EXE      5766 02-01-95  12:00a
+VENDOR   DOC      8478 02-15-95   1:20p
+       28 file(s)    8123979 bytes
+
+Directory of E:\BA3DGAME\GAMES\STALKER
+
+.            <DIR>     08-04-95   9:56a
+..           <DIR>     08-04-95   9:56a
+DESC     TXT       873 03-15-95   4:34p
+FILE_ID  DIZ       440 10-20-94   7:05a
+LICENSE  DOC      2114 10-25-94   8:10p
+MANUAL   DOC      6637 12-04-94   3:30p
+ORDER    DOC      2961 10-20-94   6:43a
+SETUP    DTA       946 03-15-95   5:25p
+STALKER  EXE    252587 12-04-94   3:13p
+STALKER  RSC   2869978 12-04-94   2:28p
+       10 file(s)    3136536 bytes
+
+Directory of E:\BA3DGAME\GAMES\STARMINE
+
+.            <DIR>     08-04-95   9:56a
+..           <DIR>     08-04-95   9:56a
+FILE_ID  DIZ       440 09-01-93   7:21p
+INSTALL  COM      7243 10-01-93   6:08p
+README   BAT       140 08-21-93   4:00p
+SM2      CFG         7 05-19-95   9:13a
+SM2      EXE     37808 09-01-93   7:21p
+SM2      SFL    376107 09-01-93   7:21p
+SM2      TXT      6586 09-01-93   7:21p
+SM2V11   EXE    149846 10-01-93   6:01p
+       10 file(s)     578177 bytes
+
+Directory of E:\BA3DGAME\GAMES\TUBES
+
+.            <DIR>     08-04-95   9:56a
+..           <DIR>     08-04-95   9:56a
+CATALOG  TXT     16310 11-20-94   6:35p
+DESC     TXT       692 03-15-95   5:13p
+DRIVERS  RES      7452 11-20-94   6:35p
+FILE_ID  DIZ       363 11-20-94   6:35p
+LICENSE  TXT      2905 11-20-94   6:35p
+MANUAL   TXT     14779 11-20-94   6:35p
+ORDERFRM TXT      3914 11-20-94   6:35p
+README   DAT       255 11-20-94   6:35p
+README   EXE      7344 11-20-94   6:35p
+SETUP    CFG        65 03-01-95   1:22p
+SETUP    DTA       767 03-15-95   5:25p
+SETUP    EXE     13406 11-20-94   6:35p
+TUBES    EXE     47766 11-20-94   6:35p
+TUBES    RES    502894 11-20-94   6:35p
+VENDINFO DIZ      8906 11-20-94   6:35p
+       17 file(s)     627818 bytes
+
+Directory of E:\BA3DGAME\GAMES\TUROID
+
+.            <DIR>     08-04-95   9:56a
+..           <DIR>     08-04-95   9:56a
+AVEMARIA MUS      6975 08-28-93   3:30p
+CANONIND MUS     14776 07-26-93   1:41a
+FILE_ID  DIZ       433 01-23-94  10:11p
+NIGHTBEA MUS     12029 08-16-93   8:27p
+ORDER    FRM      1648 01-17-94  11:19p
+QUENTIN  MUS      3191 08-28-93   1:28p
+TLE      DOC      5283 01-15-94   9:11p
+TLE      EXE     68096 01-17-94  11:11p
+TUROID   DOC     10220 01-15-94   9:09p
+TUROID   EXE    117168 01-17-94  11:11p
+TUROID   SCR       200 01-17-94  11:12p
+       13 file(s)     240019 bytes
+
+Directory of E:\BA3DGAME\GAMES\WACKY
+
+.            <DIR>     08-04-95   9:56a
+..           <DIR>     08-04-95   9:56a
+APOGEE   BAT       396 10-17-94  12:00a
+CATALOG  EXE     68891 10-17-94  12:00a
+DEALERS  EXE      9307 10-17-94  12:00a
+MODEM    PCK      5211 10-17-94   1:10p
+ORDER    FRM      5906 10-17-94  12:00a
+SETUP    EXE    391343 10-17-94   1:10p
+SWCBBS   EXE      5766 10-17-94  12:00a
+VENDOR   DOC      7856 10-17-94  12:00a
+WACKY    CFG      2778 05-19-95   9:23a
+WACKY    DAT   4398948 10-17-94   1:10p
+WACKY    DTT        96 10-23-94   2:29a
+WACKY1   HI       6624 10-23-94   2:30a
+WACKY1   TIM      3600 10-23-94   2:30a
+WACKY2   HI       6624 10-23-94  10:16p
+WACKY2   TIM      3600 10-23-94  10:16p
+WW       EXE    650437 10-17-94   1:10p
+WW-HELP  EXE     17801 10-17-94   1:10p
+       19 file(s)    5585184 bytes
+
+Directory of E:\BA3DGAME\GAMES\WOLF3D
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+AUDIOHED WL1      1156 06-01-92   1:10p
+AUDIOT   WL1    132613 06-01-92   1:10p
+CATALOG  TXT     54907 05-24-92   2:27p
+CONFIG   WL1       522 05-05-95   5:23a
+GAMEMAPS WL1     27450 06-22-92   4:17p
+MAPHEAD  WL1       402 06-22-92   4:17p
+ORDER    FRM      2564 05-22-92   2:37p
+README   WL1       976 06-01-92   1:10p
+SETUP    DTA       609 01-30-94   3:05p
+V1       1           3 06-01-92   1:10p
+VGADICT  WL1      1024 06-01-92   1:10p
+VGAGRAPH WL1    296826 06-01-92   1:10p
+VGAHEAD  WL1       462 06-01-92   1:10p
+VSWAP    WL1    742912 06-01-92   1:10p
+WOLF3D   EXE     97605 06-01-92   1:10p
+       17 file(s)    1360031 bytes
+
+Directory of E:\BA3DGAME\GRAPHICS
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+NCAD         <DIR>     08-04-95   9:57a
+NEOPAINT     <DIR>     08-04-95   9:57a
+        4 file(s)          0 bytes
+
+Directory of E:\BA3DGAME\GRAPHICS\NCAD
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+DRAWINGS     <DIR>     08-04-95   9:57a
+CONFIG1  CFG        74 06-20-94   1:12p
+CONFIG2  CFG      2570 07-20-93  11:00a
+CONFIG3  CFG      3588 07-20-93  11:00a
+CONFIG4  CFG       672 07-20-93  11:00a
+CONFIG5  CFG       196 07-20-93  11:00a
+CONFIG6  CFG       196 07-20-93  11:00a
+CONFIG7  CFG       196 07-20-93  11:00a
+NC3DVR   EXE    125729 07-20-93  11:00a
+NCAD     CCV       343 10-27-93   2:21p
+NCADLIGH CCV       336 02-21-94   9:57p
+NCVR     BAK     65465 07-20-93  11:00a
+NCVR     DOC     65435 06-08-95   6:11a
+NCVR     EXE     44353 07-20-93  11:00a
+NORTHCAD CCV       343 10-27-93   2:21p
+NORTHCAD ICO       766 07-20-93  11:00a
+NCAD     TXT     34611 08-03-95  10:52a
+READNCAD BAT        24 08-02-95   4:38p
+       20 file(s)     344897 bytes
+
+Directory of E:\BA3DGAME\GRAPHICS\NCAD\DRAWINGS
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+ARCH     NC3      2608 02-21-94   3:31p
+CHESS    NC3      8188 07-20-93  11:00a
+DEFAULTS NC3      1564 01-04-94  10:00a
+FBPLANE  NC3      2536 07-20-93  11:00a
+LRPLANE  NC3      2608 07-20-93  11:00a
+TBPLANE  NC3      2536 07-20-93  11:00a
+TOPS     NC3      8836 07-20-93  11:00a
+        9 file(s)      28876 bytes
+
+Directory of E:\BA3DGAME\GRAPHICS\NEOPAINT
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+FILE_ID  DIZ       451 07-10-95   5:00p
+INSTALL  EXE     37025 07-10-95   5:00p
+NP1      CMP     12563 07-10-95   5:00p
+NP2      CMP    280932 07-10-95   5:00p
+NP3      CMP    174532 07-10-95   5:00p
+NP4      CMP     59874 07-10-95   5:00p
+NP5      CMP     43624 07-10-95   5:00p
+NP6      CMP     37610 07-10-95   5:00p
+NP7      CMP     46665 07-10-95   5:00p
+       11 file(s)     693276 bytes
+
+Directory of E:\BA3DGAME\SOUND
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+BMASTER      <DIR>     08-04-95   9:57a
+DIAMOND      <DIR>     08-04-95   9:57a
+        4 file(s)          0 bytes
+
+Directory of E:\BA3DGAME\SOUND\BMASTER
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+BMASTER  D15      6821 06-25-93   4:23p
+BMASTER  D20      6821 06-25-93   4:20p
+BMASTER  DOC     35943 06-25-93   9:55a
+BMASTER  DRV      7800 06-25-93   8:15p
+BMASTER  EXE    390110 06-25-93  11:57a
+BMASTER  HLP      1388 06-25-93  11:10a
+BMSTR    BAT       105 08-01-93  12:00a
+BM_ARC   EXE    306904 08-01-93  12:00a
+FILE_ID  DIZ       297 06-22-93   1:57p
+FOSTER   VC      64539 08-01-93  12:00a
+READ     ME       1255 12-15-92   3:05p
+REGISTER FRM      2158 12-15-92   3:08p
+STEP1    VOC     26071 06-25-93  12:00a
+STEP2    VOC     18119 06-25-93  12:00a
+WHATS    NEW     16015 06-22-93  12:01p
+       17 file(s)     884346 bytes
+
+Directory of E:\BA3DGAME\SOUND\DIAMOND
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+INSTALL  COM      6546 04-20-95   8:59a
+STK102   EXE    337967 04-20-95  10:10a
+        4 file(s)     344513 bytes
+
+Directory of E:\BA3DGAME\SOURCE
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+BORLAND      <DIR>     08-04-95   9:57a
+MSC          <DIR>     08-04-95  10:00a
+        4 file(s)          0 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+CHAP_11      <DIR>     08-04-95   9:57a
+CHAP_12      <DIR>     08-04-95   9:57a
+CHAP_13      <DIR>     08-04-95   9:57a
+CHAP_14      <DIR>     08-04-95   9:58a
+CHAP_15      <DIR>     08-04-95   9:58a
+CHAP_16      <DIR>     08-04-95   9:58a
+CHAP_17      <DIR>     08-04-95   9:58a
+CHAP_18      <DIR>     08-04-95   9:58a
+CHAP_2       <DIR>     08-04-95   9:58a
+CHAP_3       <DIR>     08-04-95   9:58a
+CHAP_4       <DIR>     08-04-95   9:58a
+CHAP_5       <DIR>     08-04-95   9:58a
+CHAP_6       <DIR>     08-04-95   9:58a
+CHAP_7       <DIR>     08-04-95   9:59a
+CHAP_8       <DIR>     08-04-95   9:59a
+CHAP_9       <DIR>     08-04-95   9:59a
+LIBRARY      <DIR>     08-04-95   9:59a
+READ     ME        681 05-28-95   6:03a
+       20 file(s)        681 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_11
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+BLACK11  C       90020 05-21-95   4:42a
+BLACK11  H       11711 05-21-95   4:42a
+BLACK11  OBJ     49896 05-21-95   4:44a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   H        4460 12-10-94   5:24p
+CUBEW    PLG       260 01-25-95   4:50a
+LINEDEMO C        1125 01-24-95   8:17a
+LINEDEMO EXE    170292 05-21-95   4:50a
+LINEDEMO OBJ      2116 05-21-95   4:50a
+PYRAMIDW PLG       213 01-25-95   4:49a
+STANDARD PAL      2347 01-17-95   6:55a
+WIREDEMO C        4381 02-06-95   4:25a
+WIREDEMO EXE    174393 05-21-95   4:45a
+WIREDEMO OBJ      4818 05-21-95   4:44a
+       20 file(s)     547100 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_12
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+BLACK11  H       11711 05-21-95   4:42a
+BLACK12  DOC    158720 02-08-95   1:59a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   H        4460 12-10-94   5:24p
+CUBE     PLG       321 01-23-95   7:06a
+GOURDEMO C        3305 01-31-95   5:24a
+GOURDEMO EXE    153425 05-21-95   5:03a
+GOURDEMO OBJ      3143 05-21-95   5:03a
+SOLIDEMO C        4907 01-31-95   5:58a
+SOLIDEMO EXE    161125 05-21-95   5:00a
+SOLIDEMO OBJ      5506 05-21-95   5:00a
+STANDARD PAL      2347 01-17-95   6:55a
+TEXTDEMO C        2900 01-31-95   5:30a
+TEXTDEMO EXE    154671 05-21-95   5:05a
+TEXTDEMO OBJ      3918 05-21-95   5:05a
+TEXTURES PCX     31947 01-20-95  10:20a
+TRIDEMO  C        1248 01-31-95   5:41a
+TRIDEMO  EXE    149264 05-21-95   4:58a
+TRIDEMO  OBJ      2155 05-21-95   4:58a
+       25 file(s)     886141 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_13
+
+.            <DIR>     08-04-95   9:57a
+..           <DIR>     08-04-95   9:57a
+BLACK11  H       11711 05-21-95   4:42a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   H        4460 12-10-94   5:24p
+CUBE     PLG       321 01-23-95   7:06a
+SOL2DEMO C        5433 02-06-95   9:17a
+SOL2DEMO EXE    161420 05-21-95   5:08a
+SOL2DEMO OBJ      6041 05-21-95   5:07a
+STANDARD PAL      2347 01-17-95   6:55a
+       14 file(s)     222801 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_14
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+BLACK11  H       11711 05-21-95   4:42a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   H        4460 12-10-94   5:24p
+CUBE     PLG       321 01-23-95   7:06a
+OBJECTS  C        6116 02-07-95   6:20a
+OBJECTS  EXE    167817 05-21-95   5:10a
+OBJECTS  OBJ      6394 05-21-95   5:10a
+STANDARD PAL      2347 01-17-95   6:55a
+       14 file(s)     230234 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_15
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+BLACK11  H       11711 05-21-95   4:42a
+BLACK15  C       50706 05-22-95   5:42a
+BLACK15  H        3761 05-22-95   5:43a
+BLACK15  OBJ     28719 05-22-95   5:44a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   H        4460 12-10-94   5:24p
+BSPBUTT  PCX      5981 02-20-95   5:53a
+BSPDEMO  C       25081 02-22-95   2:56a
+BSPDEMO  EXE    154464 02-22-95   2:57a
+BSPDEMO  OBJ     12510 05-22-95   6:07a
+BSPDEMO  OUT      1112 02-21-95  10:12a
+BSPINT   PCX     14450 02-20-95   5:53a
+BSPPOINT PCX      3548 02-17-95   4:09a
+CUBE     PLG       321 01-23-95   7:06a
+SOLZDEMO C        7634 02-22-95   3:03a
+SOLZDEMO EXE    191827 05-22-95   5:49a
+SOLZDEMO OBJ      9980 05-22-95   5:49a
+SORTDEMO C        7296 04-06-95   3:13a
+SORTDEMO EXE    193687 05-22-95   5:47a
+SORTDEMO OBJ      9493 05-22-95   5:47a
+STANDARD PAL      2347 01-17-95   6:55a
+TEST     PAL      2389 01-17-95   6:26a
+ZDEMO    C        1542 02-14-95   5:41a
+ZDEMO    EXE    179564 05-22-95   5:44a
+ZDEMO    OBJ      2452 05-22-95   5:44a
+       31 file(s)     956103 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_16
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+BLACK11  H       11711 05-21-95   4:42a
+BLACK15  H        3761 05-22-95   5:43a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   H        4460 12-10-94   5:24p
+QUAKE    PCX     69034 05-09-95  12:03p
+VOXEL    C       10147 05-12-95   7:02a
+VOXEL    EXE    113120 05-22-95   6:20a
+VOXEL    OBJ      7481 05-22-95   6:20a
+VOXOPT   C       10211 05-28-95   5:31a
+VOXOPT   EXE    113404 05-28-95   5:37a
+VOXOPT   OBJ      7437 05-28-95   5:36a
+VOXTERR  PCX     37062 05-09-95   5:05a
+VOXTERR1 PCX     54116 05-09-95  11:39a
+VOXTERR2 PCX     54116 05-09-95  11:28a
+VOXTERR3 PCX     54116 05-09-95  11:23a
+VOXTERR4 PCX     54116 05-09-95  11:25a
+VOXTERR5 PCX     54116 05-09-95  11:26a
+VOXTERR6 PCX     54116 05-09-95  11:27a
+VOXTERR7 PCX     54116 05-09-95  11:28a
+VOXTEXT  PCX     18612 05-09-95   4:13a
+VOXTEXT2 PCX      6893 05-09-95   5:58a
+VOXTILE  C       14121 05-11-95   6:05a
+VOXTILE  EXE    114941 05-22-95   6:22a
+VOXTILE  OBJ      9200 05-22-95   6:22a
+       30 file(s)     961475 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_17
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+BBLACKLI TXT        26 05-24-95   6:27a
+BLACK15  H        3761 05-22-95   5:43a
+BLACK17  C       91037 05-26-95   2:15a
+BLACK17  H       12348 05-25-95   4:54a
+BLACK17  OBJ     44575 05-26-95   2:26a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   H        4460 12-10-94   5:24p
+BLAZE3D  C       13795 04-08-95   1:51a
+BLAZE3D  EXE    187105 05-26-95   2:30a
+BLAZE3D  OBJ     11774 05-26-95   2:29a
+BLZ3DCOC PCX      6879 04-08-95  12:50a
+CUBE     PLG       327 04-06-95   4:42a
+DART     PLG       186 03-31-95   5:55a
+DIAMOND  PLG       256 04-06-95   4:49a
+FPDIV    ASM      1009 05-26-95   2:21a
+FPDIV    LST      2400 05-26-95   2:24a
+FPDIV    OBJ       224 05-26-95   2:24a
+FPMUL    ASM       832 05-26-95   2:21a
+FPMUL    LST      2088 05-26-95   2:24a
+FPMUL    OBJ       212 05-26-95   2:24a
+PYRAMID  PLG       204 04-06-95   4:49a
+QCPY     ASM       857 05-26-95   2:19a
+QCPY     LST      2339 05-26-95   2:23a
+QCPY     OBJ       219 05-26-95   2:23a
+QLINE    ASM      3288 05-26-95   2:23a
+QLINE    LST      8092 05-26-95   2:23a
+QSET     ASM       811 05-26-95   2:20a
+QSET     LST      2148 05-26-95   2:23a
+QSET     OBJ       216 05-26-95   2:23a
+STANDARD PAL      2347 01-17-95   6:55a
+TD       TR         90 05-25-95   4:35a
+TDCONFIG TD        741 05-26-95   1:21a
+TRI_FP   ASM      3621 05-26-95   2:22a
+TRI_FP   LST      7751 05-26-95   2:23a
+TRI_FP   OBJ       404 05-26-95   2:23a
+WLINE    ASM      1876 05-26-95   2:21a
+WLINE    LST      4368 05-26-95   2:23a
+WLINE    OBJ       286 05-26-95   2:23a
+       44 file(s)     454020 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_18
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+BARRIER  PLG       388 04-21-95   4:04a
+BCCDOS   CFG        46 05-26-95   2:52a
+BLACK15  H        3761 05-22-95   5:43a
+BLACK18  C      104495 05-26-95   2:37a
+BLACK18  H       12429 05-26-95   2:34a
+BLACK18  OBJ     28438 05-28-95   4:54a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   H        4460 12-10-94   5:24p
+KFIGSH1  PCX      8429 04-29-95   4:48a
+KFIGSH2  PCX     16929 04-29-95   3:36a
+KFIGSH3  PCX     16747 04-29-95   3:37a
+KRK      C      143355 04-29-95   5:39a
+KRK      EXE     90731 04-29-95   5:40a
+KRKBAK   PCX     18619 04-15-95   7:04a
+KRKBUTT  PCX      5247 04-26-95   6:23a
+KRKCP    PCX      7544 04-21-95   4:39a
+KRKDIS   PCX      4929 04-20-95   6:45a
+KRKEMIS2 VOC      2308 04-22-95  12:27p
+KRKEX1   VOC      8814 04-26-95  10:38a
+KRKEX2   VOC      5080 04-27-95   4:07a
+KRKFIRST PCX     23141 04-21-95   5:24a
+KRKFNT   PCX      5065 04-14-95   5:25a
+KRKHUD   VOC      7560 04-22-95  10:36a
+KRKINS   PCX     15175 04-26-95   6:47a
+KRKKEY   VOC       787 12-15-94   1:26a
+KRKM0    C       37059 05-27-95   5:27a
+KRKM0    EXE     94928 05-28-95   4:55a
+KRKM0    H       18191 05-27-95   5:25a
+KRKM0    OBJ     14883 05-28-95   4:55a
+KRKM1    C       92711 05-27-95   5:24a
+KRKM1    OBJ     25067 05-28-95   4:55a
+KRKMIS   VOC      3233 04-22-95  11:45a
+KRKMUS   XMI     39086 04-21-95  12:39p
+KRKPOW   VOC      9795 04-26-95   7:54a
+KRKREDP  PCX      8617 04-15-95   3:53a
+KRKREDPC PCX     15653 04-26-95   6:28a
+KRKSCN   VOC      8595 04-22-95  10:34a
+KRKTAC   VOC      4798 04-22-95  10:40a
+MISSILE  PLG       151 04-18-95  10:08a
+PLANETS  FLI   1552734 04-12-95   7:03p
+PYLONS   PLG       409 04-18-95   6:37a
+READ     ME        822 05-28-95   5:30a
+README   1ST      2217 04-29-95   6:29a
+ROCK     PLG       298 04-18-95   5:44a
+SLIDER   PLG       532 04-21-95   4:04a
+STATION  PLG       496 04-20-95   4:24a
+TALLON   PLG       607 04-21-95   4:07a
+TELE     PLG       554 04-17-95   8:20a
+TOWER    PLG       361 04-19-95   6:35a
+WAITE    PCX     68401 05-03-94   7:42p
+       56 file(s)    2565743 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_2
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+CGA      BGI      6332 11-17-94   4:50a
+GUESS    C        1726 05-20-95   2:35a
+GUESS    EXE     45529 05-20-95   2:36a
+GUESS    OBJ      1473 05-20-95   2:35a
+LIGHT    C        4236 05-20-95   3:45a
+LIGHT    EXE     67521 05-20-95   3:44a
+LIGHT    OBJ      2381 05-20-95   3:44a
+        9 file(s)     129198 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_3
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+BLACK3   C       14727 05-20-95   3:55a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK3   OBJ      7707 05-20-95   4:00a
+MODE13   C        2803 10-05-94   8:21p
+MODE13   EXE     55424 05-20-95   3:56a
+MODE13   OBJ      3752 05-20-95   3:56a
+MODEZ    C        1082 10-05-94   8:36p
+MODEZ    EXE     49243 05-20-95   4:00a
+MODEZ    OBJ      2069 05-20-95   4:00a
+       11 file(s)     141881 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_4
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+ALIEN    C        5746 10-19-94   3:32p
+ALIEN    EXE     81194 05-20-95   4:33a
+ALIEN    OBJ      5998 05-20-95   4:33a
+ALIENIMG PCX      3529 10-17-94  11:39p
+ALIENWLD PCX     21628 10-17-94  11:52p
+ANDRE    PCX     19357 10-19-94   3:30p
+ANTIMG   PCX      3481 10-19-94   4:19p
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   C       47142 05-20-95   4:12a
+BLACK4   H        8652 11-28-94   5:48a
+BLACK4   OBJ     20878 05-20-95   4:19a
+MUSHROOM PCX      9693 10-19-94   3:39p
+PCXDEMO  C        1403 10-19-94   3:32p
+PCXDEMO  EXE     78503 05-20-95   4:20a
+PCXDEMO  OBJ      2698 05-20-95   4:20a
+SPEED    C        4193 10-25-94   9:32p
+SPEED    EXE     79224 05-20-95   4:30a
+SPEED    OBJ      3487 05-20-95   4:30a
+SPEED    PCX      5762 10-25-94   8:54p
+SPHERES  C        2348 10-19-94   5:31p
+SPHERES  EXE     85238 05-20-95   4:36a
+SPHERES  OBJ      3272 05-20-95   4:36a
+SYNC     C        1158 10-19-94   5:44p
+SYNC     EXE     76623 05-20-95   4:45a
+SYNC     OBJ      1867 05-20-95   4:44a
+WORMIMG  PCX      4078 10-19-94   3:59p
+WORMS    C        4125 10-19-94   4:25p
+WORMS    EXE     80130 05-20-95   4:40a
+WORMS    OBJ      4838 05-20-95   4:40a
+       31 file(s)     671319 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_5
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   C       18063 05-20-95   4:54a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK5   OBJ      7399 05-20-95   4:54a
+FALCON   PCX      6134 11-02-94  11:12p
+FRONTIER PCX     11217 11-02-94  11:21p
+GRASS    PCX     57865 11-02-94   8:12a
+HAMMER   PCX      4013 11-02-94   7:43a
+JOYTEST  C        5504 11-03-94  12:37a
+JOYTEST  EXE     92064 05-20-95   4:58a
+JOYTEST  OBJ      5700 05-20-95   4:58a
+KEYPAD   PCX     10743 11-02-94   7:27a
+KEYTEST  C        4012 11-02-94   7:28a
+KEYTEST  EXE     85728 05-20-95   4:55a
+KEYTEST  OBJ      3652 05-20-95   4:55a
+MOREANTS PCX      3659 11-02-94   8:16a
+MOUSETST C        7781 11-02-94   9:12a
+MOUSETST EXE     87469 05-20-95   5:02a
+MOUSETST OBJ      5772 05-20-95   5:01a
+       22 file(s)     442995 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_6
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+DRIVERS      <DIR>     08-04-95   9:58a
+MUSIC        <DIR>     08-04-95   9:59a
+3D       VOC      8840 11-09-94   9:39a
+3DIGI    C        5194 05-21-95  12:26a
+3DIGI    EXE     66991 05-21-95  12:27a
+3DIGI    OBJ      4504 05-21-95  12:27a
+3DLEFT   VOC     17056 11-09-94   9:44a
+3DRIGHT  VOC     17494 11-09-94   9:43a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   C       10689 05-21-95  12:10a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK6   OBJ      6010 05-21-95  12:12a
+BLAZEMUS XMI     31386 12-15-94   2:09a
+CORRECT  VOC      5530 11-07-94   8:03a
+DIGIDEMO C        6539 05-21-95  12:19a
+DIGIDEMO EXE     72362 05-21-95  12:20a
+DIGIDEMO OBJ      5432 05-21-95  12:20a
+EQUAL    VOC      6780 11-07-94   8:03a
+MIDIDEMO C        4782 11-11-94   2:33a
+MIDIDEMO EXE     53653 05-21-95  12:12a
+MIDIDEMO OBJ      3852 05-21-95  12:11a
+N1       VOC      2750 11-07-94   6:53a
+N10      VOC      2883 11-07-94   7:06a
+N100     VOC      5566 11-07-94   7:19a
+N11      VOC      3350 11-07-94   7:07a
+N12      VOC      3419 11-07-94   7:08a
+N13      VOC      3757 11-07-94   7:09a
+N14      VOC      3456 11-07-94   7:10a
+N15      VOC      3487 11-07-94   7:10a
+N16      VOC      4656 11-07-94   7:11a
+N17      VOC      4921 11-07-94   7:12a
+N18      VOC      2800 11-07-94   7:13a
+N19      VOC      3240 11-07-94   7:14a
+N2       VOC      1699 11-07-94   6:55a
+N20      VOC      2101 11-07-94   7:14a
+N3       VOC      1603 11-07-94   6:56a
+N30      VOC      2235 11-07-94   7:15a
+N4       VOC      1672 11-07-94   6:57a
+N40      VOC      2398 11-07-94   7:15a
+N5       VOC      2948 11-07-94   6:58a
+N50      VOC      2754 11-07-94   7:16a
+N6       VOC      3784 11-07-94   6:59a
+N60      VOC      3000 11-07-94   7:17a
+N7       VOC      2425 11-07-94   7:00a
+N70      VOC      2799 11-07-94   7:18a
+N8       VOC      2199 11-07-94   7:01a
+N80      VOC      2520 11-07-94   7:18a
+N9       VOC      2529 11-07-94   7:02a
+N90      VOC      1744 11-07-94   7:19a
+PLUS     VOC      4634 11-07-94   8:02a
+SOURCES  ZIP    300266 11-15-94   6:10a
+WHAT     VOC      5865 11-07-94   8:02a
+WRONG    VOC     11132 11-07-94   8:05a
+       57 file(s)     760956 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_6\DRIVERS
+
+.            <DIR>     08-04-95   9:58a
+..           <DIR>     08-04-95   9:58a
+ADLIB    ADD        36 10-25-93   6:12p
+ADLIB    ADV     14693 07-07-92   1:00p
+ADLIB    COM      3168 12-17-92   9:51p
+ADLIBG   ADD        28 10-19-93   8:11p
+ADLIBG   ADV     16175 07-07-92   1:00p
+ADLIBG   COM      5536 01-28-94   6:09p
+AGU16    DES       170 05-10-93  10:28p
+AGU16    XMI      7224 05-10-93  10:25p
+ARIA     COM      4704 01-28-94   6:10p
+ARIAXMID ADD        44 05-25-93   4:59a
+ARIAXMID ADV     44836 03-26-93   6:26p
+BIGMOUTH COM      2624 12-17-92   9:52p
+CMIDPAK  COM     13456 01-27-94  11:07p
+COOL!    DES       225 12-16-93  11:00a
+COOL!    SND      8705 12-16-93  11:00a
+CREDITS  DES       240 12-16-93  11:00a
+CREDITS  XMI      6038 12-16-93  11:00a
+CVXSND   COM      3328 01-28-94   6:10p
+DESERT   DES       230 12-16-93  11:00a
+DESERT   XMI     23762 12-16-93  11:00a
+DIGISP   COM      2912 08-03-93  12:16a
+DIGPKAPI DOC     23268 01-04-94  12:52a
+DIGVESA  COM      6224 01-06-94   8:26p
+EARTH    DES       223 11-04-93  11:49p
+EARTH    XMI     37256 03-11-93   7:02a
+ECHOII   COM      3216 08-03-93  12:17a
+ENTN     XMI      7700 01-05-94   1:13a
+FAT      OPL      3622 02-22-93  11:37p
+FUNK     XMI      5592 01-05-94   1:13a
+GENMID   ADD        43 01-07-94   8:28p
+GENMID   ADV     10590 03-16-92   8:00p
+GF166    COM      5504 10-26-93  11:52p
+GF1MIDI  ADD        47 10-19-93   7:00p
+GF1MIDI  ADV     10816 06-25-93   8:24p
+GM2      BNK     24273 08-24-92   9:41p
+GROV     XMI     12280 01-05-94   1:13a
+GU23     DES       162 05-10-93  10:28p
+GU23     XMI      6112 05-10-93  10:25p
+IBM1BIT  COM      3248 08-03-93  12:17a
+IBMBAK   COM      3344 08-03-93  12:16a
+IBMSND   COM      3200 08-03-93  12:16a
+ISLD     XMI      6384 01-05-94   1:13a
+LANTSND  COM      3488 08-03-93  12:17a
+LSIZE    COM      3328 01-28-94   6:10p
+MAJESTY  DES       244 12-16-93  11:00a
+MAJESTY  XMI     11324 12-16-93  11:00a
+MARIO    DES       190 12-16-93  11:00a
+MARIO    XMI     11956 12-16-93  11:00a
+MENU     EXE     49326 01-04-94   2:21a
+MIDIFORM EXE     81392 02-21-93   9:46p
+MIDPKAPI DOC     13836 01-03-94   7:11p
+MPLAY    EXE     11696 01-24-92   5:14a
+MT32MPU  ADD        34 11-09-93   6:53p
+MT32MPU  ADV     10590 03-16-92   8:00p
+MULTISND ADD        49 09-28-93  12:49a
+MULTISND ADV      7178 07-20-93  12:53a
+MULTISND COM     13680 01-06-94   8:27p
+NEWS     DES       163 12-16-93  11:00a
+NEWS     XMI      9740 12-16-93  11:00a
+NOSOUND  COM      3280 01-28-94   6:10p
+PAS16    COM      5440 01-28-94   6:09p
+PASFM    ADD        35 10-25-93   6:51p
+PASFM    ADV     15160 07-07-92   1:00p
+PASOPL   ADD        45 01-06-94   8:20p
+PASOPL   ADV     16251 07-07-92   1:00p
+PAUDIO   COM      5376 01-28-94   6:09p
+PCSPKR   ADD        38 11-10-94   4:09a
+PCSPKR   ADV      8306 03-16-92   8:00p
+PEND     EXE     30522 01-03-94  10:50p
+PEND     SND     64768 12-08-93  10:04p
+PLAY     EXE     32239 07-13-92  11:47p
+PMIDPAK  COM     13312 01-31-94   5:18p
+READ     ME         47 06-03-94   4:36p
+README   PRN     40167 03-08-94  11:56p
+REMOVE   BAT        75 01-03-94   9:39p
+SB16     COM      4824 01-25-94   6:28p
+SBCLONE  COM      4576 01-28-94   6:10p
+SBFM     ADD        43 11-10-94   4:10a
+SBFM     ADV     14743 07-07-92   1:00p
+SBLASTER COM      4560 01-28-94   6:10p
+SBP1FM   ADD        43 11-05-94   1:45a
+SBP1FM   ADV     15153 07-07-92   1:00p
+SBP2FM   ADD        40 11-05-94   1:45a
+SBP2FM   ADV     16263 07-07-92   1:00p
+SBPRO    COM      4704 01-28-94   6:10p
+SC32MPU  ADD        37 03-08-94  11:56p
+SC32MPU  ADV     10590 03-16-92   8:00p
+SEA      DES       234 12-16-93  11:00a
+SEA      XMI      6434 12-16-93  11:00a
+SEGUE    EXE     28158 01-03-94  11:01p
+SENSAT   ADD        38 05-18-93   5:07p
+SENSAT   ADV     15991 02-14-93  12:03a
+SETD     DES       170 11-04-93  10:20p
+SETD     EXE     47204 01-03-94   6:05p
+SETD     SND     47616 10-25-93   6:25p
+SETM     DES       221 11-04-93  10:19p
+SETM     EXE     42458 01-04-94  10:50p
+SETM     XMI     15986 03-16-93   8:09p
+SETUP    BAT       446 01-06-94   8:21p
+SHYA!    DES       224 12-16-93  11:00a
+SHYA!    SND      4224 12-16-93  11:00a
+SKY      DES       238 12-16-93  11:00a
+SKY      XMI      6710 12-16-93  11:00a
+SMIDPAK  COM     13456 01-27-94  10:53p
+SMSND    COM      3104 08-03-93  12:16a
+SNDSYS   COM      6115 01-06-94   8:25p
+SOURCE   COM      3424 01-28-94   6:10p
+STFX     COM      4592 01-28-94   6:10p
+TANEXTX  COM      3472 08-03-93  12:17a
+TANSLTL  COM      3200 01-28-94   6:10p
+TEST     EXE     28769 01-03-94  10:50p
+TEST     SND     47616 10-25-93   6:25p
+TEST     XMI     15986 03-16-93   8:09p
+TEST1    SND      8705 12-16-93  11:00a
+TEST16   EXE     28904 01-03-94  11:02p
+TEST2    SND      4224 12-16-93  11:00a
+TITLE    DES       189 05-10-93   6:25p
+TITLE    XMI     10130 03-11-93   7:02a
+TMIDPAK  COM     13312 01-31-94   5:18p
+VMSND    COM      3104 08-03-93  12:16a
+WSS      ADD        48 05-18-93   5:07p
+WSS      ADV     15991 02-14-93  12:03a
+      124 file(s)    1300782 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_6\MUSIC
+
+.            <DIR>     08-04-95   9:59a
+..           <DIR>     08-04-95   9:59a
+2001     MID      2738 08-01-93  12:00a
+AIR      MID      9356 08-01-93  12:00a
+AMERICA  MID      7023 08-01-93  12:00a
+AVEMARIA MID      5909 08-01-93  12:00a
+BATTLE   MID     14483 08-01-93  12:00a
+CAMPTOWN MID     11207 08-01-93  12:00a
+CHORALE  MID      2108 08-01-93  12:00a
+DECKHALL MID     15790 08-01-93  12:00a
+DIXIE    MID     14106 08-01-93  12:00a
+DREAMER  MID      7518 08-01-93  12:00a
+EZWINNER MID     18882 08-01-93  12:00a
+GEORGIA  MID     10779 08-01-93  12:00a
+INVNO11  MID      3598 08-01-93  12:00a
+INVNO12  MID      4361 08-01-93  12:00a
+INVNO13  MID      3601 08-01-93  12:00a
+JEANIE   MID      7690 08-01-93  12:00a
+JINGLE   MID     17540 08-01-93  12:00a
+JOHNNY   MID     15500 08-01-93  12:00a
+JOYWORLD MID     10932 08-01-93  12:00a
+KATHLEEN MID     12108 08-01-93  12:00a
+MAGGIE   MID     10663 08-01-93  12:00a
+MAPLE    MID     18457 08-01-93  12:00a
+NELLY    MID     13470 08-01-93  12:00a
+NOEL     MID      5086 08-01-93  12:00a
+OLDFOLKS MID      7510 08-01-93  12:00a
+POLONASE MID     20279 08-01-93  12:00a
+PRELUDE  MID      3640 08-01-93  12:00a
+REUBEN   MID     15406 08-01-93  12:00a
+REVERIE  MID      5088 08-01-93  12:00a
+SONATAC  MID     34186 08-01-93  12:00a
+SWANLAKE MID      2515 08-01-93  12:00a
+       33 file(s)     331529 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_7
+
+.            <DIR>     08-04-95   9:59a
+..           <DIR>     08-04-95   9:59a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+CRITBACK PCX      7667 11-17-94   4:34a
+CRITTERS C        5526 11-17-94   5:09a
+CRITTERS EXE     90911 05-21-95  12:50a
+CRITTERS OBJ      5220 05-21-95  12:50a
+FLOATER  C        4278 11-17-94   7:50a
+FLOATER  EXE     82741 05-21-95  12:39a
+FLOATER  OBJ      5074 05-21-95  12:39a
+FLOATSPD PCX      3728 11-17-94   7:05a
+JUMPBAK  PCX      7308 11-17-94   5:35a
+JUMPER   C        5884 11-17-94   6:50a
+JUMPER   EXE     80754 05-21-95  12:42a
+JUMPER   OBJ      5484 05-21-95  12:42a
+JUMPSPD  PCX      4697 11-17-94   5:34a
+LOCKALN  PCX      4699 11-16-94  10:59a
+LOCKBAK  PCX     50651 11-16-94   6:01a
+LOCKCRT  PCX      4139 11-16-94   6:20a
+LOCKON   C        9400 11-17-94   2:37a
+LOCKON   EXE     88022 05-21-95  12:44a
+LOCKON   OBJ      6495 05-21-95  12:44a
+LOSTBACK PCX      5335 11-17-94   3:08a
+LOSTNSPC C        4101 11-17-94   3:35a
+LOSTNSPC EXE     80062 05-21-95  12:47a
+LOSTNSPC OBJ      4857 05-21-95  12:47a
+LOSTSHIP PCX      3624 11-17-94   3:18a
+       30 file(s)     599927 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_8
+
+.            <DIR>     08-04-95   9:59a
+..           <DIR>     08-04-95   9:59a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   C        1433 05-21-95  12:53a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK8   OBJ      1802 05-21-95  12:54a
+JELLY    C        3939 05-21-95  12:58a
+JELLY    EXE     81038 05-21-95  12:58a
+JELLY    OBJ      4810 05-21-95  12:58a
+JELLY    PCX      3997 11-23-94   6:05a
+TIMER    C        2771 11-25-94   6:49a
+TIMER    EXE     47365 05-21-95   1:01a
+TIMER    OBJ      2495 05-21-95   1:01a
+VBLANK   C        2973 05-21-95   1:06a
+VBLANK   EXE     52170 05-21-95   1:07a
+VBLANK   OBJ      2606 05-21-95   1:07a
+VOLCANO  C        7500 11-23-94   8:25a
+VOLCANO  EXE     84289 05-21-95  12:54a
+VOLCANO  OBJ      5716 05-21-95  12:54a
+VOLCANO  PCX     23044 11-23-94   8:17a
+       23 file(s)     359016 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_9
+
+.            <DIR>     08-04-95   9:59a
+..           <DIR>     08-04-95   9:59a
+PATCHES      <DIR>     08-04-95   9:59a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK4   H        8652 11-28-94   5:48a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK9   C       14505 05-21-95   1:13a
+BLACK9   H        4460 12-10-94   5:24p
+BLACK9   OBJ      7491 05-21-95   1:17a
+BLAZE    MOD        25 01-04-95   9:47a
+BLAZE9   PCX      3892 11-28-94   2:37a
+BLAZEALN PCX      3541 12-01-94   5:49a
+BLAZEBT1 PCX      3627 11-28-94  11:38a
+BLAZEBT2 PCX      4070 12-05-94   1:16a
+BLAZEBT3 PCX      4081 12-05-94   4:46a
+BLAZECON PCX     24648 12-05-94   1:25a
+BLAZEDEM PCX      6338 12-01-94  11:26a
+BLAZEDIS PCX      3682 11-28-94  11:46a
+BLAZEEXP PCX      4492 12-01-94   4:08a
+BLAZEFNT PCX      5065 12-02-94   6:38a
+BLAZEFUL PCX      3797 12-02-94   3:23a
+BLAZEHDS PCX      6759 12-02-94   5:06a
+BLAZEHU1 PCX      5031 12-02-94   7:54a
+BLAZEHU2 PCX      3523 12-14-94   7:43a
+BLAZEHU3 PCX      3307 12-02-94   5:06a
+BLAZEINS PCX     17373 12-05-94   1:13a
+BLAZEINT PCX     30394 11-28-94   4:46a
+BLAZELAS PCX      8435 11-29-94   2:40a
+BLAZEM0  C       74491 05-26-95   4:36a
+BLAZEM0  EXE     84520 05-27-95   7:42a
+BLAZEM0  H       22145 05-26-95   4:32a
+BLAZEM0  OBJ     25107 05-27-95   7:42a
+BLAZEM1  C       56040 05-26-95   4:32a
+BLAZEM1  OBJ     14049 05-27-95   7:42a
+BLAZEM2  C       57819 05-26-95   4:32a
+BLAZEM2  OBJ     18153 05-27-95   7:42a
+BLAZEMAS PCX      4837 11-29-94   2:40a
+BLAZEMUS XMI     31386 12-15-94   2:09a
+BLAZER   C      205364 05-21-95   2:23a
+BLAZER   EXE     65101 01-31-95   1:24p
+BLAZER   MAK      1755 05-21-95   2:31a
+BLAZESAS PCX      3655 11-29-94   2:41a
+BLAZESHB PCX      9501 11-30-94   4:48a
+BLAZESHL PCX     20139 11-30-94   9:44a
+BLAZESHP PCX     19971 11-30-94   5:00a
+BLAZESHR PCX     20119 11-30-94   9:50a
+BLAZETAC PCX      5844 11-30-94   9:25a
+BLAZEWRM PCX      6956 12-01-94   7:12a
+BLZABRT  VOC      3102 12-15-94   1:04a
+BLZANS   VOC     13523 12-14-94   1:33p
+BLZBIOS  VOC      7711 12-15-94   1:03a
+BLZCLK   VOC      6829 12-14-94  12:16p
+BLZCON   VOC      5785 12-15-94   1:05a
+BLZDIAL  VOC      2738 12-15-94   1:06a
+BLZENTR  VOC      5965 12-15-94   1:07a
+BLZEXP   VOC      5038 12-15-94  12:53a
+BLZEXP1  VOC      5038 12-15-94  12:53a
+BLZEXP2  VOC      8806 12-15-94  12:51a
+BLZEXP2A VOC     30652 12-14-94  12:37p
+BLZKEY   VOC       787 12-15-94   1:26a
+BLZLAS   VOC      1756 12-14-94  12:28p
+BLZLOS   VOC      8005 12-15-94  10:55a
+BLZMISS  VOC     10237 12-15-94   1:00a
+BLZNRG   VOC      8998 12-15-94  12:57a
+BLZSCN   VOC      7604 12-15-94  12:55a
+BLZSEL   VOC     10800 12-15-94   1:01a
+BLZSHLD  VOC      7499 12-15-94  12:58a
+BLZTAC   VOC      7153 12-15-94  12:56a
+BLZWIN   VOC      8837 12-15-94  10:52a
+READ     BAK       860 05-26-95   4:44a
+READ     ME        916 05-28-95   5:31a
+README   1ST       976 05-26-95   4:45a
+TERM1    C        2595 05-21-95   2:15a
+TERM1    EXE     71942 05-21-95   1:17a
+TERM1    OBJ      2590 05-21-95   1:17a
+TERM2    C        6055 05-21-95   2:15a
+TERM2    EXE     72992 05-21-95   2:16a
+TERM2    OBJ      3905 05-21-95   2:53a
+WAITE    PCX     68401 05-03-94   7:42p
+       81 file(s)    1344651 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\CHAP_9\PATCHES
+
+.            <DIR>     08-04-95   9:59a
+..           <DIR>     08-04-95   9:59a
+MIDPAK   AD       3622 02-20-93   1:07p
+        3 file(s)       3622 bytes
+
+Directory of E:\BA3DGAME\SOURCE\BORLAND\LIBRARY
+
+.            <DIR>     08-04-95   9:59a
+..           <DIR>     08-04-95   9:59a
+BLACK11  OBJ     49896 05-21-95   4:44a
+BLACK15  H        3761 05-22-95   5:43a
+BLACK15  OBJ     28719 05-22-95   5:44a
+BLACK17  H       12348 05-25-95   4:54a
+BLACK17  OBJ     44575 05-26-95   2:26a
+BLACK18  H       12429 05-26-95   2:34a
+BLACK18  OBJ     28438 05-28-95   4:54a
+BLACK3   H        5074 10-05-94   7:43p
+BLACK3   OBJ      7707 05-20-95   4:00a
+BLACK4   H        8652 11-28-94   5:48a
+BLACK4   OBJ     20878 05-20-95   4:19a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK5   OBJ      7399 05-20-95   4:54a
+BLACK6   H        3050 05-21-95  12:10a
+BLACK6   OBJ      6010 05-21-95  12:12a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK8   OBJ      1802 05-21-95  12:54a
+BLACK9   H        4460 12-10-94   5:24p
+BLACK9   OBJ      7491 05-21-95   1:17a
+BLACKLIB LIB     87040 05-26-95   3:36a
+BLACKLIB TXT      4420 05-28-95   5:50a
+QCPY     OBJ       219 05-26-95   2:23a
+QSET     OBJ       216 05-26-95   2:23a
+READ     BAK       135 05-28-95   5:43a
+READ     ME        155 05-28-95   5:45a
+TRI_FP   OBJ       404 05-26-95   2:23a
+WLINE    OBJ       286 05-26-95   2:23a
+       29 file(s)     359856 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+CHAP_11      <DIR>     08-04-95  10:00a
+CHAP_12      <DIR>     08-04-95  10:00a
+CHAP_13      <DIR>     08-04-95  10:00a
+CHAP_14      <DIR>     08-04-95  10:00a
+CHAP_15      <DIR>     08-04-95  10:00a
+CHAP_16      <DIR>     08-04-95  10:00a
+CHAP_17      <DIR>     08-04-95  10:00a
+CHAP_18      <DIR>     08-04-95  10:00a
+CHAP_2       <DIR>     08-04-95  10:00a
+CHAP_3       <DIR>     08-04-95  10:00a
+CHAP_4       <DIR>     08-04-95  10:00a
+CHAP_5       <DIR>     08-04-95  10:00a
+CHAP_6       <DIR>     08-04-95  10:00a
+CHAP_7       <DIR>     08-04-95  10:01a
+CHAP_8       <DIR>     08-04-95  10:01a
+CHAP_9       <DIR>     08-04-95  10:01a
+LIBRARY      <DIR>     08-04-95  10:01a
+READ     ME       1131 05-28-95   6:04a
+       20 file(s)       1131 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_11
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+BLACK11  C       90174 04-06-95   4:43a
+BLACK11  H       11630 01-31-95   5:35a
+BLACK11  OBJ     57681 04-06-95   4:44a
+CUBEW    PLG       260 01-25-95   4:50a
+LINEDEMO C        1125 01-24-95   8:17a
+LINEDEMO EXE    119376 01-24-95   8:18a
+LINEDEMO OBJ      6346 01-24-95   8:18a
+PYRAMIDW PLG       213 01-25-95   4:49a
+STANDARD PAL      2347 01-17-95   6:55a
+WIREDEMO C        4381 02-06-95   4:25a
+WIREDEMO EXE    127320 02-06-95   4:25a
+WIREDEMO OBJ      8392 02-06-95   4:25a
+       14 file(s)     429245 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_12
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+BLACK12  DOC    158720 02-08-95   1:59a
+CUBE     PLG       321 01-23-95   7:06a
+GOURDEMO C        3305 01-31-95   5:24a
+GOURDEMO EXE    120004 01-31-95   5:25a
+GOURDEMO OBJ      7497 01-31-95   5:25a
+SOLIDEMO C        4907 01-31-95   5:58a
+SOLIDEMO EXE    127484 01-31-95   5:58a
+SOLIDEMO OBJ      8815 01-31-95   5:58a
+STANDARD PAL      2347 01-17-95   6:55a
+TEXTDEMO C        2900 01-31-95   5:30a
+TEXTDEMO EXE    119616 01-31-95   5:30a
+TEXTDEMO OBJ      7379 01-31-95   5:30a
+TEXTURES PCX     31947 01-20-95  10:20a
+TRIDEMO  C        1248 01-31-95   5:41a
+TRIDEMO  EXE    118984 01-31-95   5:41a
+TRIDEMO  OBJ      6552 01-31-95   5:41a
+       18 file(s)     722026 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_13
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+CUBE     PLG       321 01-23-95   7:06a
+SOL2DEMO C        5433 02-06-95   9:17a
+SOL2DEMO EXE    127660 02-06-95   9:17a
+SOL2DEMO OBJ      9108 02-06-95   9:17a
+STANDARD PAL      2347 01-17-95   6:55a
+        7 file(s)     144869 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_14
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+CUBE     PLG       321 01-23-95   7:06a
+OBJECTS  C        6116 02-07-95   6:20a
+OBJECTS  EXE    127908 02-07-95   6:20a
+OBJECTS  OBJ      9473 02-07-95   6:20a
+STANDARD PAL      2347 01-17-95   6:55a
+        7 file(s)     146165 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_15
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+BLACK15  C       51177 02-22-95   2:56a
+BLACK15  H        3718 02-22-95   2:56a
+BLACK15  OBJ     35125 02-22-95   2:56a
+BSPBUTT  PCX      5981 02-20-95   5:53a
+BSPDEMO  C       25081 02-22-95   2:56a
+BSPDEMO  EXE    154464 02-22-95   2:57a
+BSPDEMO  OBJ     15010 02-22-95   2:57a
+BSPDEMO  OUT      1112 02-21-95  10:12a
+BSPINT   PCX     14450 02-20-95   5:53a
+BSPPOINT PCX      3548 02-17-95   4:09a
+CUBE     PLG       321 01-23-95   7:06a
+SOLZDEMO C        7634 02-22-95   3:03a
+SOLZDEMO EXE    151744 02-22-95   3:04a
+SOLZDEMO OBJ     13709 02-22-95   3:04a
+SORTDEMO C        7296 04-06-95   3:13a
+SORTDEMO EXE    122004 04-06-95   4:45a
+SORTDEMO OBJ     13224 02-22-95   9:38a
+STANDARD PAL      2347 01-17-95   6:55a
+TEST     PAL      2389 01-17-95   6:26a
+ZDEMO    C        1542 02-14-95   5:41a
+ZDEMO    EXE    147984 02-22-95   3:01a
+ZDEMO    OBJ      6790 02-22-95   3:01a
+       24 file(s)     786650 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_16
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+QUAKE    PCX     69034 05-09-95  12:03p
+VOXEL    C       10147 05-12-95   7:02a
+VOXEL    EXE     72544 05-11-95   1:39a
+VOXOPT   BAK     10209 05-12-95   7:21a
+VOXOPT   C       10212 05-28-95   5:32a
+VOXOPT   EXE     32815 05-28-95   5:32a
+VOXOPT   OBJ      4324 05-28-95   5:32a
+VOXTERR  PCX     37062 05-09-95   5:05a
+VOXTERR1 PCX     54116 05-09-95  11:39a
+VOXTERR2 PCX     54116 05-09-95  11:28a
+VOXTERR3 PCX     54116 05-09-95  11:23a
+VOXTERR4 PCX     54116 05-09-95  11:25a
+VOXTERR5 PCX     54116 05-09-95  11:26a
+VOXTERR6 PCX     54116 05-09-95  11:27a
+VOXTERR7 PCX     54116 05-09-95  11:28a
+VOXTEXT  PCX     18612 05-09-95   4:13a
+VOXTEXT2 PCX      6893 05-09-95   5:58a
+VOXTILE  C       14121 05-11-95   6:05a
+VOXTILE  EXE     74904 05-11-95   1:37a
+       21 file(s)     739689 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_17
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+BLACK17  C       91131 04-06-95   5:04a
+BLACK17  H       12263 03-29-95  12:13p
+BLACK17  OBJ     52445 04-06-95   5:05a
+BLAZE3D  C       13795 04-08-95   1:51a
+BLAZE3D  EXE    122712 04-08-95   1:51a
+BLZ3DCOC PCX      6879 04-08-95  12:50a
+CUBE     PLG       327 04-06-95   4:42a
+DART     PLG       186 03-31-95   5:55a
+DIAMOND  PLG       256 04-06-95   4:49a
+FPDIV    ASM       907 03-29-95  12:29p
+FPDIV    OBJ       443 03-29-95  12:08p
+FPMUL    ASM       725 03-29-95  12:29p
+FPMUL    OBJ       426 03-29-95  12:07p
+PYRAMID  PLG       204 04-06-95   4:49a
+QCPY     ASM       645 03-29-95  12:30p
+QCPY     OBJ       443 03-28-95   5:24a
+QLINE    ASM      3096 03-29-95  12:31p
+QLINE    OBJ      1291 03-28-95   5:18a
+QSET     ASM       657 03-29-95  12:30p
+QSET     OBJ       440 03-28-95   5:17a
+STANDARD PAL      2347 01-17-95   6:55a
+TRI_FP   ASM      3419 03-29-95  12:33p
+TRI_FP   OBJ      1225 03-28-95   5:18a
+WLINE    ASM      1659 03-29-95  12:31p
+WLINE    OBJ       780 03-28-95   5:18a
+       27 file(s)     318701 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_18
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+BARRIER  PLG       388 04-21-95   4:04a
+BLACK18  C      104481 04-26-95   8:47a
+BLACK18  H       12348 04-26-95   8:47a
+BLACK18  OBJ     59109 04-26-95   8:49a
+BLACKLIB LIB    167557 04-26-95   8:50a
+KFIGSH1  PCX      8429 04-29-95   4:48a
+KFIGSH2  PCX     16929 04-29-95   3:36a
+KFIGSH3  PCX     16747 04-29-95   3:37a
+KRK      C      143355 04-29-95   5:39a
+KRK      EXE     90731 04-29-95   5:40a
+KRKBAK   PCX     18619 04-15-95   7:04a
+KRKBUTT  PCX      5247 04-26-95   6:23a
+KRKCP    PCX      7544 04-21-95   4:39a
+KRKDIS   PCX      4929 04-20-95   6:45a
+KRKEMIS2 VOC      2308 04-22-95  12:27p
+KRKEX1   VOC      8814 04-26-95  10:38a
+KRKEX2   VOC      5080 04-27-95   4:07a
+KRKFIRST PCX     23141 04-21-95   5:24a
+KRKFNT   PCX      5065 04-14-95   5:25a
+KRKHUD   VOC      7560 04-22-95  10:36a
+KRKINS   PCX     15175 04-26-95   6:47a
+KRKKEY   VOC       787 12-15-94   1:26a
+KRKMIS   VOC      3233 04-22-95  11:45a
+KRKMUS   XMI     39086 04-21-95  12:39p
+KRKPOW   VOC      9795 04-26-95   7:54a
+KRKREDP  PCX      8617 04-15-95   3:53a
+KRKREDPC PCX     15653 04-26-95   6:28a
+KRKSCN   VOC      8595 04-22-95  10:34a
+KRKTAC   VOC      4798 04-22-95  10:40a
+MISSILE  PLG       151 04-18-95  10:08a
+PLANETS  FLI   1552734 04-12-95   7:03p
+PYLONS   PLG       409 04-18-95   6:37a
+README   1ST      2217 04-29-95   6:29a
+ROCK     PLG       298 04-18-95   5:44a
+SLIDER   PLG       532 04-21-95   4:04a
+STATION  PLG       496 04-20-95   4:24a
+TALLON   PLG       607 04-21-95   4:07a
+TELE     PLG       554 04-17-95   8:20a
+TOWER    PLG       361 04-19-95   6:35a
+WAITE    PCX     68401 05-03-94   7:42p
+       42 file(s)    2440880 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_2
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+GUESS    C        1808 09-30-94   4:01p
+GUESS    EXE     21242 09-30-94   4:01p
+LIGHT    C        4478 09-30-94   4:01p
+LIGHT    EXE     43070 09-30-94   4:02p
+        6 file(s)      70598 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_3
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+BLACK3   C       14811 10-13-94  10:21p
+BLACK3   H        5074 10-05-94   7:43p
+BLACK3   OBJ      8949 10-13-94  10:19p
+MODE13   C        2803 10-05-94   8:21p
+MODE13   EXE     26070 10-14-94   2:23p
+MODE13   OBJ      5055 10-14-94   2:22p
+MODEZ    C        1082 10-05-94   8:36p
+MODEZ    EXE     18810 10-14-94   2:23p
+MODEZ    OBJ      3834 10-14-94   2:23p
+       11 file(s)      86488 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_4
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+ALIEN    C        5746 10-19-94   3:32p
+ALIEN    EXE     49310 10-19-94   4:17p
+ALIEN    OBJ      7523 10-19-94   4:17p
+ALIENIMG PCX      3529 10-17-94  11:39p
+ALIENWLD PCX     21628 10-17-94  11:52p
+ANDRE    PCX     19357 10-19-94   3:30p
+ANTIMG   PCX      3481 10-19-94   4:19p
+BLACK4   C       47556 11-30-94   8:17a
+BLACK4   H        8652 11-28-94   5:48a
+BLACK4   OBJ     22586 12-17-94   8:10a
+MUSHROOM PCX      9693 10-19-94   3:39p
+PCXDEMO  C        1403 10-19-94   3:32p
+PCXDEMO  EXE     47342 10-19-94   3:07p
+PCXDEMO  OBJ      5114 10-19-94   3:07p
+SPEED    C        4193 10-25-94   9:32p
+SPEED    EXE     48058 10-25-94   9:32p
+SPEED    OBJ      5708 10-25-94   9:32p
+SPEED    PCX      5762 10-25-94   8:54p
+SPHERES  C        2348 10-19-94   5:31p
+SPHERES  EXE     70620 10-19-94   5:31p
+SPHERES  OBJ      6151 10-19-94   5:31p
+SYNC     C        1158 10-19-94   5:44p
+SYNC     EXE     47338 10-19-94   5:44p
+SYNC     OBJ      4917 10-19-94   5:44p
+WORMIMG  PCX      4078 10-19-94   3:59p
+WORMS    C        4125 10-19-94   4:25p
+WORMS    EXE     48206 10-19-94   4:25p
+WORMS    OBJ      6548 10-19-94   4:25p
+       30 file(s)     512130 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_5
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+BLACK5   C       18223 11-03-94  12:17a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK5   OBJ      9285 11-28-94   8:46a
+FALCON   PCX      6134 11-02-94  11:12p
+FRONTIER PCX     11217 11-02-94  11:21p
+GRASS    PCX     57865 11-02-94   8:12a
+HAMMER   PCX      4013 11-02-94   7:43a
+JOYTEST  C        5504 11-03-94  12:37a
+JOYTEST  EXE     74076 11-03-94  12:37a
+JOYTEST  OBJ      7468 11-03-94  12:37a
+KEYPAD   PCX     10743 11-02-94   7:27a
+KEYTEST  C        4012 11-02-94   7:28a
+KEYTEST  EXE     54186 11-02-94   7:24a
+KEYTEST  OBJ      6028 11-02-94   7:24a
+MOREANTS PCX      3659 11-02-94   8:16a
+MOUSETST C        7781 11-02-94   9:12a
+MOUSETST EXE     55398 11-02-94   9:13a
+MOUSETST OBJ      7451 11-02-94   9:12a
+       20 file(s)     355537 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_6
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+DRIVERS      <DIR>     08-04-95  10:00a
+MUSIC        <DIR>     08-04-95  10:01a
+3D       VOC      8840 11-09-94   9:39a
+3DIGI    C        5329 11-09-94  10:00a
+3DIGI    EXE     45964 11-09-94  10:01a
+3DIGI    OBJ      6442 11-09-94  10:01a
+3DLEFT   VOC     17056 11-09-94   9:44a
+3DRIGHT  VOC     17494 11-09-94   9:43a
+BLACK6   C       10824 11-14-94   3:05a
+BLACK6   H        3237 11-11-94   6:32a
+BLACK6   OBJ      7415 11-28-94   8:47a
+CORRECT  VOC      5530 11-07-94   8:03a
+DIGIDEMO C        6560 11-09-94   1:05a
+DIGIDEMO EXE     55528 11-15-94   6:07a
+DIGIDEMO OBJ      7253 11-15-94   6:07a
+EQUAL    VOC      6780 11-07-94   8:03a
+MIDIDEMO C        4782 11-11-94   2:33a
+MIDIDEMO EXE     28612 11-15-94   6:08a
+MIDIDEMO OBJ      5799 11-15-94   6:08a
+N1       VOC      2750 11-07-94   6:53a
+N10      VOC      2883 11-07-94   7:06a
+N100     VOC      5566 11-07-94   7:19a
+N11      VOC      3350 11-07-94   7:07a
+N12      VOC      3419 11-07-94   7:08a
+N13      VOC      3757 11-07-94   7:09a
+N14      VOC      3456 11-07-94   7:10a
+N15      VOC      3487 11-07-94   7:10a
+N16      VOC      4656 11-07-94   7:11a
+N17      VOC      4921 11-07-94   7:12a
+N18      VOC      2800 11-07-94   7:13a
+N19      VOC      3240 11-07-94   7:14a
+N2       VOC      1699 11-07-94   6:55a
+N20      VOC      2101 11-07-94   7:14a
+N3       VOC      1603 11-07-94   6:56a
+N30      VOC      2235 11-07-94   7:15a
+N4       VOC      1672 11-07-94   6:57a
+N40      VOC      2398 11-07-94   7:15a
+N5       VOC      2948 11-07-94   6:58a
+N50      VOC      2754 11-07-94   7:16a
+N6       VOC      3784 11-07-94   6:59a
+N60      VOC      3000 11-07-94   7:17a
+N7       VOC      2425 11-07-94   7:00a
+N70      VOC      2799 11-07-94   7:18a
+N8       VOC      2199 11-07-94   7:01a
+N80      VOC      2520 11-07-94   7:18a
+N9       VOC      2529 11-07-94   7:02a
+N90      VOC      1744 11-07-94   7:19a
+PLUS     VOC      4634 11-07-94   8:02a
+SOURCES  ZIP    300266 11-15-94   6:10a
+WHAT     VOC      5865 11-07-94   8:02a
+WRONG    VOC     11132 11-07-94   8:05a
+       53 file(s)     648037 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_6\DRIVERS
+
+.            <DIR>     08-04-95  10:00a
+..           <DIR>     08-04-95  10:00a
+ADLIB    ADD        36 10-25-93   6:12p
+ADLIB    ADV     14693 07-07-92   1:00p
+ADLIB    COM      3168 12-17-92   9:51p
+ADLIBG   ADD        28 10-19-93   8:11p
+ADLIBG   ADV     16175 07-07-92   1:00p
+ADLIBG   COM      5536 01-28-94   6:09p
+AGU16    DES       170 05-10-93  10:28p
+AGU16    XMI      7224 05-10-93  10:25p
+ARIA     COM      4704 01-28-94   6:10p
+ARIAXMID ADD        44 05-25-93   4:59a
+ARIAXMID ADV     44836 03-26-93   6:26p
+BIGMOUTH COM      2624 12-17-92   9:52p
+CMIDPAK  COM     13456 01-27-94  11:07p
+COOL!    DES       225 12-16-93  11:00a
+COOL!    SND      8705 12-16-93  11:00a
+CREDITS  DES       240 12-16-93  11:00a
+CREDITS  XMI      6038 12-16-93  11:00a
+CVXSND   COM      3328 01-28-94   6:10p
+DESERT   DES       230 12-16-93  11:00a
+DESERT   XMI     23762 12-16-93  11:00a
+DIGISP   COM      2912 08-03-93  12:16a
+DIGPKAPI DOC     23268 01-04-94  12:52a
+DIGVESA  COM      6224 01-06-94   8:26p
+EARTH    DES       223 11-04-93  11:49p
+EARTH    XMI     37256 03-11-93   7:02a
+ECHOII   COM      3216 08-03-93  12:17a
+ENTN     XMI      7700 01-05-94   1:13a
+FAT      OPL      3622 02-22-93  11:37p
+FUNK     XMI      5592 01-05-94   1:13a
+GENMID   ADD        43 01-07-94   8:28p
+GENMID   ADV     10590 03-16-92   8:00p
+GF166    COM      5504 10-26-93  11:52p
+GF1MIDI  ADD        47 10-19-93   7:00p
+GF1MIDI  ADV     10816 06-25-93   8:24p
+GM2      BNK     24273 08-24-92   9:41p
+GROV     XMI     12280 01-05-94   1:13a
+GU23     DES       162 05-10-93  10:28p
+GU23     XMI      6112 05-10-93  10:25p
+IBM1BIT  COM      3248 08-03-93  12:17a
+IBMBAK   COM      3344 08-03-93  12:16a
+IBMSND   COM      3200 08-03-93  12:16a
+ISLD     XMI      6384 01-05-94   1:13a
+LANTSND  COM      3488 08-03-93  12:17a
+LSIZE    COM      3328 01-28-94   6:10p
+MAJESTY  DES       244 12-16-93  11:00a
+MAJESTY  XMI     11324 12-16-93  11:00a
+MARIO    DES       190 12-16-93  11:00a
+MARIO    XMI     11956 12-16-93  11:00a
+MENU     EXE     49326 01-04-94   2:21a
+MIDIFORM EXE     81392 02-21-93   9:46p
+MIDPKAPI DOC     13836 01-03-94   7:11p
+MPLAY    EXE     11696 01-24-92   5:14a
+MT32MPU  ADD        34 11-09-93   6:53p
+MT32MPU  ADV     10590 03-16-92   8:00p
+MULTISND ADD        49 09-28-93  12:49a
+MULTISND ADV      7178 07-20-93  12:53a
+MULTISND COM     13680 01-06-94   8:27p
+NEWS     DES       163 12-16-93  11:00a
+NEWS     XMI      9740 12-16-93  11:00a
+NOSOUND  COM      3280 01-28-94   6:10p
+PAS16    COM      5440 01-28-94   6:09p
+PASFM    ADD        35 10-25-93   6:51p
+PASFM    ADV     15160 07-07-92   1:00p
+PASOPL   ADD        45 01-06-94   8:20p
+PASOPL   ADV     16251 07-07-92   1:00p
+PAUDIO   COM      5376 01-28-94   6:09p
+PCSPKR   ADD        38 11-10-94   4:09a
+PCSPKR   ADV      8306 03-16-92   8:00p
+PEND     EXE     30522 01-03-94  10:50p
+PEND     SND     64768 12-08-93  10:04p
+PLAY     EXE     32239 07-13-92  11:47p
+PMIDPAK  COM     13312 01-31-94   5:18p
+READ     ME         47 06-03-94   4:36p
+README   PRN     40167 03-08-94  11:56p
+REMOVE   BAT        75 01-03-94   9:39p
+SB16     COM      4824 01-25-94   6:28p
+SBCLONE  COM      4576 01-28-94   6:10p
+SBFM     ADD        43 11-10-94   4:10a
+SBFM     ADV     14743 07-07-92   1:00p
+SBLASTER COM      4560 01-28-94   6:10p
+SBP1FM   ADD        43 11-05-94   1:45a
+SBP1FM   ADV     15153 07-07-92   1:00p
+SBP2FM   ADD        40 11-05-94   1:45a
+SBP2FM   ADV     16263 07-07-92   1:00p
+SBPRO    COM      4704 01-28-94   6:10p
+SC32MPU  ADD        37 03-08-94  11:56p
+SC32MPU  ADV     10590 03-16-92   8:00p
+SEA      DES       234 12-16-93  11:00a
+SEA      XMI      6434 12-16-93  11:00a
+SEGUE    EXE     28158 01-03-94  11:01p
+SENSAT   ADD        38 05-18-93   5:07p
+SENSAT   ADV     15991 02-14-93  12:03a
+SETD     DES       170 11-04-93  10:20p
+SETD     EXE     47204 01-03-94   6:05p
+SETD     SND     47616 10-25-93   6:25p
+SETM     DES       221 11-04-93  10:19p
+SETM     EXE     42458 01-04-94  10:50p
+SETM     XMI     15986 03-16-93   8:09p
+SETUP    BAT       446 01-06-94   8:21p
+SHYA!    DES       224 12-16-93  11:00a
+SHYA!    SND      4224 12-16-93  11:00a
+SKY      DES       238 12-16-93  11:00a
+SKY      XMI      6710 12-16-93  11:00a
+SMIDPAK  COM     13456 01-27-94  10:53p
+SMSND    COM      3104 08-03-93  12:16a
+SNDSYS   COM      6115 01-06-94   8:25p
+SOURCE   COM      3424 01-28-94   6:10p
+STFX     COM      4592 01-28-94   6:10p
+TANEXTX  COM      3472 08-03-93  12:17a
+TANSLTL  COM      3200 01-28-94   6:10p
+TEST     EXE     28769 01-03-94  10:50p
+TEST     SND     47616 10-25-93   6:25p
+TEST     XMI     15986 03-16-93   8:09p
+TEST1    SND      8705 12-16-93  11:00a
+TEST16   EXE     28904 01-03-94  11:02p
+TEST2    SND      4224 12-16-93  11:00a
+TITLE    DES       189 05-10-93   6:25p
+TITLE    XMI     10130 03-11-93   7:02a
+TMIDPAK  COM     13312 01-31-94   5:18p
+VMSND    COM      3104 08-03-93  12:16a
+WSS      ADD        48 05-18-93   5:07p
+WSS      ADV     15991 02-14-93  12:03a
+      124 file(s)    1300782 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_6\MUSIC
+
+.            <DIR>     08-04-95  10:01a
+..           <DIR>     08-04-95  10:01a
+2001     MID      2738 08-01-93  12:00a
+AIR      MID      9356 08-01-93  12:00a
+AMERICA  MID      7023 08-01-93  12:00a
+AVEMARIA MID      5909 08-01-93  12:00a
+BATTLE   MID     14483 08-01-93  12:00a
+CAMPTOWN MID     11207 08-01-93  12:00a
+CHORALE  MID      2108 08-01-93  12:00a
+DECKHALL MID     15790 08-01-93  12:00a
+DIXIE    MID     14106 08-01-93  12:00a
+DREAMER  MID      7518 08-01-93  12:00a
+EZWINNER MID     18882 08-01-93  12:00a
+GEORGIA  MID     10779 08-01-93  12:00a
+INVNO11  MID      3598 08-01-93  12:00a
+INVNO12  MID      4361 08-01-93  12:00a
+INVNO13  MID      3601 08-01-93  12:00a
+JEANIE   MID      7690 08-01-93  12:00a
+JINGLE   MID     17540 08-01-93  12:00a
+JOHNNY   MID     15500 08-01-93  12:00a
+JOYWORLD MID     10932 08-01-93  12:00a
+KATHLEEN MID     12108 08-01-93  12:00a
+MAGGIE   MID     10663 08-01-93  12:00a
+MAPLE    MID     18457 08-01-93  12:00a
+NELLY    MID     13470 08-01-93  12:00a
+NOEL     MID      5086 08-01-93  12:00a
+OLDFOLKS MID      7510 08-01-93  12:00a
+POLONASE MID     20279 08-01-93  12:00a
+PRELUDE  MID      3640 08-01-93  12:00a
+REUBEN   MID     15406 08-01-93  12:00a
+REVERIE  MID      5088 08-01-93  12:00a
+SONATAC  MID     34186 08-01-93  12:00a
+SWANLAKE MID      2515 08-01-93  12:00a
+       33 file(s)     331529 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_7
+
+.            <DIR>     08-04-95  10:01a
+..           <DIR>     08-04-95  10:01a
+CRITBACK PCX      7667 11-17-94   4:34a
+CRITTERS C        5526 11-17-94   5:09a
+CRITTERS EXE     69736 11-17-94   5:10a
+CRITTERS OBJ      7639 11-17-94   5:09a
+FLOATER  C        4278 11-17-94   7:50a
+FLOATER  EXE     52014 11-17-94   7:50a
+FLOATER  OBJ      6698 11-17-94   7:50a
+FLOATSPD PCX      3728 11-17-94   7:05a
+JUMPBAK  PCX      7308 11-17-94   5:35a
+JUMPER   C        5884 11-17-94   6:50a
+JUMPER   EXE     49146 11-17-94   6:50a
+JUMPER   OBJ      7125 11-17-94   6:50a
+JUMPSPD  PCX      4697 11-17-94   5:34a
+LOCKALN  PCX      4699 11-16-94  10:59a
+LOCKBAK  PCX     50651 11-16-94   6:01a
+LOCKCRT  PCX      4139 11-16-94   6:20a
+LOCKON   C        9400 11-17-94   2:37a
+LOCKON   EXE     55766 11-17-94   2:37a
+LOCKON   OBJ      8219 11-17-94   2:37a
+LOSTBACK PCX      5335 11-17-94   3:08a
+LOSTNSPC C        4101 11-17-94   3:35a
+LOSTNSPC EXE     48426 11-17-94   3:36a
+LOSTNSPC OBJ      6542 11-17-94   3:35a
+LOSTSHIP PCX      3624 11-17-94   3:18a
+       26 file(s)     432348 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_8
+
+.            <DIR>     08-04-95  10:01a
+..           <DIR>     08-04-95  10:01a
+BLACK8   C        1436 11-23-94   5:30a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK8   OBJ      3618 11-23-94   6:26a
+JELLY    C        3941 11-23-94   6:36a
+JELLY    EXE     48662 11-23-94   6:36a
+JELLY    PCX      3997 11-23-94   6:05a
+TIMER    C        2771 11-25-94   6:49a
+TIMER    EXE     23458 11-25-94   6:50a
+VBLANK   C        2988 11-23-94   7:12a
+VBLANK   EXE     25486 11-23-94   7:12a
+VOLCANO  C        7500 11-23-94   8:25a
+VOLCANO  EXE     49970 11-23-94   8:26a
+VOLCANO  PCX     23044 11-23-94   8:17a
+       15 file(s)     198669 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_9
+
+.            <DIR>     08-04-95  10:01a
+..           <DIR>     08-04-95  10:01a
+PATCHES      <DIR>     08-04-95  10:01a
+BLACK9   C       14538 12-18-94   1:32p
+BLACK9   H        4460 12-10-94   5:24p
+BLACK9   OBJ      9875 01-31-95   1:21p
+BLAZE    MOD        25 01-04-95   9:47a
+BLAZE9   PCX      3892 11-28-94   2:37a
+BLAZEALN PCX      3541 12-01-94   5:49a
+BLAZEBT1 PCX      3627 11-28-94  11:38a
+BLAZEBT2 PCX      4070 12-05-94   1:16a
+BLAZEBT3 PCX      4081 12-05-94   4:46a
+BLAZECON PCX     24648 12-05-94   1:25a
+BLAZEDEM PCX      6338 12-01-94  11:26a
+BLAZEDIS PCX      3682 11-28-94  11:46a
+BLAZEEXP PCX      4492 12-01-94   4:08a
+BLAZEFNT PCX      5065 12-02-94   6:38a
+BLAZEFUL PCX      3797 12-02-94   3:23a
+BLAZEHDS PCX      6759 12-02-94   5:06a
+BLAZEHU1 PCX      5031 12-02-94   7:54a
+BLAZEHU2 PCX      3523 12-14-94   7:43a
+BLAZEHU3 PCX      3307 12-02-94   5:06a
+BLAZEINS PCX     17373 12-05-94   1:13a
+BLAZEINT PCX     30394 11-28-94   4:46a
+BLAZELAS PCX      8435 11-29-94   2:40a
+BLAZEMAS PCX      4837 11-29-94   2:40a
+BLAZEMUS XMI     31386 12-15-94   2:09a
+BLAZER   C      205376 12-18-94   1:31p
+BLAZER   EXE     65101 01-31-95   1:24p
+BLAZESAS PCX      3655 11-29-94   2:41a
+BLAZESHB PCX      9501 11-30-94   4:48a
+BLAZESHL PCX     20139 11-30-94   9:44a
+BLAZESHP PCX     19971 11-30-94   5:00a
+BLAZESHR PCX     20119 11-30-94   9:50a
+BLAZETAC PCX      5844 11-30-94   9:25a
+BLAZEWRM PCX      6956 12-01-94   7:12a
+BLZABRT  VOC      3102 12-15-94   1:04a
+BLZANS   VOC     13523 12-14-94   1:33p
+BLZBIOS  VOC      7711 12-15-94   1:03a
+BLZCLK   VOC      6829 12-14-94  12:16p
+BLZCON   VOC      5785 12-15-94   1:05a
+BLZDIAL  VOC      2738 12-15-94   1:06a
+BLZENTR  VOC      5965 12-15-94   1:07a
+BLZEXP   VOC      5038 12-15-94  12:53a
+BLZEXP1  VOC      5038 12-15-94  12:53a
+BLZEXP2  VOC      8806 12-15-94  12:51a
+BLZEXP2A VOC     30652 12-14-94  12:37p
+BLZKEY   VOC       787 12-15-94   1:26a
+BLZLAS   VOC      1756 12-14-94  12:28p
+BLZLOS   VOC      8005 12-15-94  10:55a
+BLZMISS  VOC     10237 12-15-94   1:00a
+BLZNRG   VOC      8998 12-15-94  12:57a
+BLZSCN   VOC      7604 12-15-94  12:55a
+BLZSEL   VOC     10800 12-15-94   1:01a
+BLZSHLD  VOC      7499 12-15-94  12:58a
+BLZTAC   VOC      7153 12-15-94  12:56a
+BLZWIN   VOC      8837 12-15-94  10:52a
+README   1ST       976 05-26-95   4:45a
+TERM1    C        2574 12-14-94   2:40a
+TERM1    EXE     17099 12-16-94   3:49a
+TERM1    OBJ      1174 12-16-94   3:49a
+TERM2    C        6034 12-14-94   2:34a
+TERM2    EXE     42940 12-14-94   2:37a
+TERM2    OBJ      5533 12-14-94   2:37a
+WAITE    PCX     68401 05-03-94   7:42p
+       65 file(s)     875432 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\CHAP_9\PATCHES
+
+.            <DIR>     08-04-95  10:01a
+..           <DIR>     08-04-95  10:01a
+MIDPAK   AD       3622 02-20-93   1:07p
+        3 file(s)       3622 bytes
+
+Directory of E:\BA3DGAME\SOURCE\MSC\LIBRARY
+
+.            <DIR>     08-04-95  10:01a
+..           <DIR>     08-04-95  10:01a
+BLACK11  H       11630 01-31-95   5:35a
+BLACK11  OBJ     57681 04-06-95   4:44a
+BLACK15  H        3718 02-22-95   2:56a
+BLACK15  OBJ     35125 02-22-95   2:56a
+BLACK17  H       12263 03-29-95  12:13p
+BLACK17  OBJ     38420 05-25-95   4:07a
+BLACK18  H       12348 04-26-95   8:47a
+BLACK18  OBJ     59109 04-26-95   8:49a
+BLACK3   H        5074 10-31-94  10:53a
+BLACK3   OBJ      8949 12-17-94   8:10a
+BLACK4   H        8652 11-28-94   5:48a
+BLACK4   OBJ     22586 12-17-94   8:10a
+BLACK5   H       12494 11-02-94   8:36a
+BLACK5   OBJ      9285 12-17-94   8:10a
+BLACK6   H        3237 11-11-94   6:32a
+BLACK6   OBJ      2619 12-16-94   9:58a
+BLACK8   H        1798 11-23-94   6:12a
+BLACK8   OBJ      3618 12-17-94   8:10a
+BLACK9   H        4460 12-10-94   5:24p
+BLACK9   OBJ      9875 01-31-95   1:21p
+BLACKLIB LIB    167557 05-25-95   4:08a
+BLACKLIB TXT     11155 05-28-95   5:50a
+QCPY     OBJ       443 03-28-95   5:24a
+QLINE    OBJ      1291 03-28-95   5:18a
+QSET     OBJ       136 05-26-95  12:48a
+READ     ME        155 05-28-95   5:45a
+TRI_FP   OBJ      1225 03-28-95   5:18a
+WLINE    OBJ       780 03-28-95   5:18a
+       30 file(s)     505683 bytes
+
+Total files listed:
+     1881 file(s)   90281236 bytes
+                   754679808 bytes free

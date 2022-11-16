@@ -1,0 +1,6 @@
+Boppin' is a fun, addictive puzzle game disguised as an arcade game.  Each screen is a unique puzzle with varied graphics. 
+The game is easy to learn, and the built-in instructions are easy to understand.  The idea on each level is to grab "bopping blocks" and use them to complete patterns on the level.  
+Certain patterns will free a video game character that you might recognize from dozens of other arcade/action games (i.e. Space Invaders and Pac Man).  The object of the game is to solve all of the levels and then defeat the end-of-level boss. 
+Each episode has a lead-in story and different endings depending on how well you did.  After episode four there is a special ending that wraps up the entire story.  Defeating the ending boss for each episode is made easier by doing well (by accumulating points) on the all the levels for that episode. 
+Spend hours boppin' your way to the top of the scoreboard! 
+

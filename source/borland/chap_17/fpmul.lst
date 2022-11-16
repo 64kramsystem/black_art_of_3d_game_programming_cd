@@ -1,0 +1,70 @@
+Turbo Assembler	 Version 4.0	    05/26/95 02:24:01	    Page 1
+fpmul.asm
+
+
+
+      1
+      2					 ; this	function uses 64 bit math to multiply two 32 bit fixed point numbers
+      3					 ; in 16:16 format
+      4
+      5	    0000			 .MODEL	MEDIUM		    ; use medium memory	model C	function names
+      6
+      7					 .386
+      8
+      9	    0000			 .CODE			      ;	begin the code segment
+     10
+     11					 PUBLIC	_FP_Mul		      ;	export function	name to	linker
+     12
+     13
+     14	    0000			 _FP_Mul PROC
+     15
+     16					 ARG multiplier:DWORD, multiplicand:DWORD
+     17
+     18	    0000  55			     push bp	      ;	create stack frame
+     19	    0001  8B EC			     mov bp,sp
+     20
+     21	    0003  66| 8B 46 0A		     mov eax,multiplicand    ; move into eax multiplicand
+     22	    0007  66| F7 6E 06		     imul multiplier	     ; multiply	by multiplier, result edx:eax
+     23	    000B  66| C1 E8 10		     shr eax,16		     ; need to shift upper 16 bits of eax to right
+     24								     ; so that result is in dx:ax instead of edx:eax
+     25
+     26	    000F  5D			     pop bp		     ; fixup stack
+     27	    0010  CB			     ret		     ; return to caller
+     28
+     29	    0011			 _FP_Mul ENDP
+     30
+     31					 END
+Turbo Assembler	 Version 4.0	    05/26/95 02:24:01	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "05/26/95"
+??filename			  Text	 "fpmul	  "
+??time				  Text	 "02:24:01"
+??version			  Number 0400
+@32Bit				  Text	 0
+@CodeSize			  Text	 1
+@Cpu				  Text	 0F0FH
+@DataSize			  Text	 0
+@FileName			  Text	 fpmul
+@Interface			  Text	 00h
+@Model				  Text	 4
+@WordSize			  Text	 2
+@code				  Text	 fpmul_TEXT
+@curseg				  Text	 fpmul_TEXT
+@data				  Text	 DGROUP
+@stack				  Text	 DGROUP
+_FP_Mul				  Far	 fpmul_TEXT:0000
+multiplicand			  Number [DGROUP:BP+000A]
+multiplier			  Number [DGROUP:BP+0006]
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+fpmul_TEXT			  16  0011 Word	  Public  CODE
+

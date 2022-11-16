@@ -1,0 +1,148 @@
+//==========================================================================//
+
+                          STALKER 1: PATH OF FIRE
+
+              Version 3.0 from MM Software Productions
+
+ Created by : MM Software Productions      Music : Chuck Hanson
+//==========================================================================//
+
+DESCRIPTION:
+
+
+      This is the brief instruction of THE STALKER game 
+      (the first episode - PATH OF FIRE)
+
+      There is a map. This map corresponds to levels from number 
+      1 to 12.
+      When player goes through any level he returns to the map.
+      The map indicates the current location of a player and further route.
+      A player can select the next level according to a route (sometimes he 
+      has a choice where to go). Each map can have few different (random) 
+      routes.
+
+         From each level, a player can press F1 to see Help.
+
+         Each level has three zones :
+                    1. Zone where Stalker can move   
+                    2. Radiation zone
+                    3. Exit
+         On each level coordinates of these zones are different.  
+
+
+         When Stalker enters a radiation zone, the screen starts flickering.
+         This indicates a danger situation for the Stalker.
+         If the Stalker stays too long in the radiation zone, he will fall 
+         and lose part of his life. He should get out of this zone 
+         as soon as possible.            
+           
+         The Stalker has a machine gun and bullets;  however, there is a 
+         limit of bullets.
+    
+         There are few different types of obstacles that the Stalker
+         should overcome on each level :
+                
+            1. A live moving enemy. They are trying to get as close
+               as possible to the Stalker. When they get close to the
+               Stalker they try to kill him in different ways
+               (bite him, stab him, etc).
+               
+               There are two type of enemies : 
+                             -  one chasing
+                             -  one moving in specific directions
+
+                          
+                          Page   - 2 -
+
+
+               The Stalker can shoot them if he has bullets. If he kills
+               an enemy, he gets points. If he kills more enemies,
+               he gets more points.
+               To kill some, enemies Stalker needs to shoot them twice.
+               Some enemies he has to shoot them three times,
+               for others - just once.
+               Each level contains different enemies.       
+                
+            2. There are zones where Stalker will be limited to a certain
+               period of time (For example - holes, swamps, etc).
+               When Stalker enters such area, specific music starts to
+               play and Stalker starts to drown. He has a limited time to
+               get out from this area before he drowns. 
+               If Stalker drowns he would lose half of his health and 
+               Stalker would return to the map and start this level from
+               the very beginning.
+   
+            3. There are two different types of key. 
+               
+               If Stalker picks up the first type of key, he would be able
+               to open a box with bullets (to get more bullets) or box
+               with drugs (to get more health). 
+               But he can only open one box.
+               
+               Second type of key - "Exit" key - appears when Stalker 
+               gets a big number of points (it means he killed a specific 
+               number of enemies on this level, and in a place where the last 
+               enemy was killed, a key appears). When Stalker picks up this 
+               key, he can go through Exit zone back to the map and then to 
+               the next level.
+
+             4. There are "catch" stones. It means if Stalker steps into
+                an area of these stones, he can not get out.
+                He can get away from these "catch" stones if he jumps
+                left or right.
+                
+             5. There are things that Stalker can pick up with "random" effects.
+                "Random" effect means that Stalker does not know what happens
+                when he picks up these things. One time he can pick up 
+                something and get points. Another time he can pick up 
+                the same thing and lose part of his health. 
+                Sometimes he can get a key.
+             
+             6. There is the "deadly" ball. Some enemies shoot this "deadly" 
+                ball at Stalker. Stalker has to elude this ball
+                as fast as possible. If this ball hits Stalker he will
+                lose part of his life.
+
+
+                          Page   - 3 -
+
+         Playing Technique : 
+            
+            Player can use :
+
+            Arrows :
+                     - left to move Stalker left
+                     - right to move Stalker right
+                     - up to move Stalker up
+                     - down to move Stalker down
+            
+            Combination of keys (pressing  at the same time) :
+                     - arrows up and right to jump right
+                     - arrows up and left to jump left
+                     - Alt and arrow up to jump up
+            
+            To shoot, a player should press at the same time -
+                   Space bar and :
+                   - arrows left to shoot left
+                   - arrows right to shoot right
+                   - Home button to shoot left-up
+                   - PageUp button to shoot right-up
+                   - End button to shoot left-down
+                   - PageDown button to shoot right-down
+            (For a burst of a machine-gun fire a player should keep
+             pressing any combination of these buttons)
+
+            To pick up anything, Stalker should enter into the area of
+            the object, for example, a key, a box with bullets,  etc.
+
+            To return to the map  from any level, a player should press 
+            Esc button.
+            To quit the game, a player should press Esc button from a map.
+            To turn off/on sound, a player should press 'S' key.
+            To pause a game, a player should press 'P' key.
+
+
+            Music works in two modes :
+                  - with any Sound Blaster compatible card (if any)
+                  - regular speaker
+

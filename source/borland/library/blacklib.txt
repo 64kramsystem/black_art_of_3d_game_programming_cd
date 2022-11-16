@@ -1,0 +1,106 @@
+Publics by module
+
+black15 	size = 8901
+	_Bsp_Delete                       _Bsp_Print
+	_Bsp_Shade                        _Bsp_Translate
+	_Bsp_Traverse                     _Bsp_View
+	_Bsp_World_To_Camera              _Build_Bsp_Tree
+	_Create_Z_Buffer                  _Delete_Z_Buffer
+	_Draw_Poly_List_Z                 _Draw_TB_Tri_3D_Z
+	_Draw_Tri_3D_Z                    _Fill_Z_Buffer
+	_Intersect_Lines                  _fp_out
+	_z_bank_1                         _z_bank_2
+	_z_bank_size                      _z_buffer
+	_z_height                         _z_height_2
+
+black3  	size = 1138
+	_Draw_Rectangle                   _Fill_Screen
+	_Fill_Screen_Z                    _Line_H
+	_Line_V                           _Print_Char
+	_Print_String                     _Read_Color_Reg
+	_Read_Palette                     _Read_Pixel
+	_Set_Graphics_Mode                _Set_Mode_Z
+	_Time_Delay                       _Write_Color_Reg
+	_Write_Palette                    _Write_Pixel
+	_Write_Pixel_Z                    _rom_char_set
+	_video_buffer                   
+
+black4  	size = 4718
+	_Bitmap_Allocate                  _Bitmap_Delete
+	_Bitmap_Get                       _Bitmap_Put
+	_Create_Double_Buffer             _Delete_Double_Buffer
+	_Display_Double_Buffer            _Fill_Double_Buffer
+	_Layer_Build                      _Layer_Create
+	_Layer_Delete                     _Layer_Draw
+	_PCX_Copy_To_Buffer               _PCX_Delete
+	_PCX_Get_Sprite                   _PCX_Init
+	_PCX_Load                         _PCX_Show_Buffer
+	_Print_Char_DB                    _Print_String_DB
+	_Read_Pixel_DB                    _Screen_Transition
+	_Set_Visual_Page_Mode_Z           _Set_Working_Page_Mode_Z
+	_Sprite_Delete                    _Sprite_Draw
+	_Sprite_Draw_Clip                 _Sprite_Erase
+	_Sprite_Erase_Clip                _Sprite_Init
+	_Sprite_Under                     _Sprite_Under_Clip
+	_Sprites_Collide                  _Wait_For_Vertical_Retrace
+	_Write_Pixel_DB                   _double_buffer
+	_double_buffer_height             _double_buffer_size
+	_fwordcpy                         _mode_z_page
+	_page_0_buffer                    _page_1_buffer
+	_sprite_height                    _sprite_width
+
+black5  	size = 1808
+	_Get_Key                          _Get_Scan_Code
+	_Get_Shift_State                  _Joystick
+	_Joystick_Available               _Joystick_Bios
+	_Joystick_Buttons                 _Joystick_Calibrate
+	_Keyboard_Driver                  _Keyboard_Install_Driver
+	_Keyboard_Remove_Driver           _Mouse_Control
+	_Old_Keyboard_ISR                 _joystick_1_max_x
+	_joystick_1_max_y                 _joystick_1_min_x
+	_joystick_1_min_y                 _joystick_1_neutral_x
+	_joystick_1_neutral_y             _joystick_2_max_x
+	_joystick_2_max_y                 _joystick_2_min_x
+	_joystick_2_min_y                 _joystick_2_neutral_x
+	_joystick_2_neutral_y             _keyboard_state
+	_keys_active                      _raw_scan_code
+
+black6  	size = 882
+	_Music_Load                       _Music_Play
+	_Music_Register                   _Music_Resume
+	_Music_Status                     _Music_Stop
+	_Music_Unload                     _Sound_Load
+	_Sound_Play                       _Sound_Status
+	_Sound_Stop                       _Sound_Translate
+	_Sound_Unload                   
+
+black8  	size = 70
+	_Timer_Program                    _Timer_Query
+	_ending_time                      _starting_time
+
+black9  	size = 2429
+	_Hang_Up                          _Initialize_Modem
+	_Make_Connection                  _Modem_Control
+	_Modem_Result                     _Modem_Send_Command
+	_Old_Serial_ISR                   _Serial_Close
+	_Serial_Flush                     _Serial_ISR
+	_Serial_Open                      _Serial_Print
+	_Serial_Read                      _Serial_Read_Wait
+	_Serial_Ready                     _Serial_Write
+	_Wait_For_Connection              _char_ready
+	_modem_strings                    _old_int_mask
+	_open_port                        _serial_buffer
+	_serial_ch                        _serial_end
+	_serial_lock                      _serial_start
+
+qcpy    	size = 25
+	_fquadcpy                       
+
+qset    	size = 22
+	_fquadset                       
+
+tri_fp  	size = 180
+	_Triangle_Asm                   
+
+wline   	size = 82
+	_Triangle_16Line                

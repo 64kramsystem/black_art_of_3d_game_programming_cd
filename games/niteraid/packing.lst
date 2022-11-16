@@ -1,0 +1,16 @@
+
+This file contains a list of all files required for redistributing Night Raid
+
+Name              Size  Description
+------------    ------  ----------------------------------------------------
+NTR      EXE     59981  Main program.
+GRAPHICS NTR    791301  Program data file.
+NITERAID DOC      3381  Program documentation.
+PROBLEMS TXT      3915  Troubleshooting information.
+ORDERFRM DOC      2433  Order form.
+LICENSE  DOC      6873  License agreement.
+VENDOR   DOC      8009  Vendor agreement.
+OMBUDSMN ASP       917  ASP statement.
+SYSOPS   DOC      2157  Information for SysOps.
+PACKING  LST       705  This file.
+FILE_ID  DIZ       346  Package description for bulletin board systems.

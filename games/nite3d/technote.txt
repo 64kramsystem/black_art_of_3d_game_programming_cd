@@ -1,0 +1,168 @@
+		Nitemare-3D Tech Notes
+		======================
+
+This file contains technical notes in the form of frequently
+asked questions on running Nitemare-3D.
+
+
+1.  What exactly do I get when I register?
+
+The complete trilogy package including the program and
+all three episodes, four cheat functions, a 30-page
+hint booklet and a full page map viewer.
+
+Episodes 2 and 3 continue from the end of episode one
+and contain stunning new artwork, sounds and monsters
+including some fiendish 3D style robots and aliens.
+Each episode contains 10 levels.
+
+These episodes are jam-packed with puzzles and to give
+you as much enjoyment as possible a 30-page hint booklet
+is included.  This explains how to set the four cheat
+modes to tailor your game preference, either emphasizing
+the puzzle-solving or monster-bashing.  It also includes
+a complete walkthrough of every puzzle in every level so
+you can complete the game with as much or as little help
+as you need.
+
+The full page map viewing utility allows you to browse
+all 30 levels and shows every single wall, object, monster,
+secret panel, door, etc. in the game.
+
+Please see the online instructions or print the ORDER.TXT
+order form for details of how to order the trilogy.
+
+
+2.  How do I get to the secret level 5?
+
+There is a secret level 5 in episode one, accessed from level
+4 which would otherwise bypass it straight to level 6.  Here
+is a hint to find the secret level entrance:
+
+Having completed the rest of level 4, find the pile of boxes
+at 8,24.  [Use the position readout on the status display].
+Go into the small room nearby which contains two adjacent dumb
+waiters.  Enter either dumb waiter and notice how you fall out
+of the other one without getting anywhere.  The secret is to
+obstruct one of the dumb waiters (either will do) which will
+prevent you from inadvertantly emerging from the other in the
+same room.  Then you will be able to proceed to a secret ante-
+chamber which leads to a second transportation booth which
+leads to the secret level 5.
+
+
+3.  How much memory does Nitemare-3D require?
+
+At least 500Kb conventional memory.  Note that this amount
+must be available, not just installed.  To find out how
+much is available, run the DOS "mem" command.  If not
+enough is available, try unloading some TSRs or drivers.
+If you are running DOS 6.0 or higher, it includes a handy
+utility called "memmaker" which will automatically maximize
+your available conventional ram.  Nitemare-3D keeps many
+often-used images in conventional ram so the more you
+have available, the more efficiently the game will run.
+
+Nitemare-3D also needs some extended memory.  It can run
+without it but you will find it runs slower.  Any amount
+up to 2Mb will be used.  For best results this should be
+available extended memory but you may also allocate
+all extended memory to a disk cache such as SMARTDRV with
+only a negligable loss of speed.  (This is because the disk
+cache is effectively using the extended memory the same way
+Nitemare-3D would be using it).
+
+
+4.  Is my sound card supported?
+
+Music is supported on any Adlib or Sound Blaster compatible
+sound card but digitized sound effects are only supported
+on true Sound Blaster compatible cards.  Some cards, such
+as the PAS 16, require you to set the card in SB-emulation
+mode and you should consult your sound card manual.  The
+emulation setting is usually IRQ 7, DMA 1, I/O Port 220H.
+
+
+5.  Why can't I vary the music volume?
+
+Only Sound Blaster Pro or later compatible cards include the
+mixer chip which allows this function from within the game.
+The same goes for the stereo sound effects.
+
+
+6.  I'm having trouble running the game in Windows.
+
+The game is not designed to run under Windows, however you
+may be able to get it to run.  PC speaker sound is not
+available when run from within Windows.  The game will run
+slower and jerkily under Windows.  There may be sound card
+problems running from within Windows.  In general, don't!
+See the discussion below on use of startup switches.
+
+
+7.  I'm having trouble running the game in DOS.
+
+To allow for various troublesome combinations of hardware,
+the following switches can be used singly or in combination
+when starting the game, e.g. "n3d -t -x -s"
+
+-t	Disable timer interrupts and use DOS time functions.
+	This is enabled by default when running from within
+	Windows but it is possible the game will not detect
+	that it is running from within Windows and you can
+	try this switch.  It may also be required from DOS
+	if there are conflicts with your real time clock
+	setup.
+
+-x	Disable use of extended memory.
+	The game attempts to use up to 2Mb of extended memory
+	if available.  If you suspect this is causing a
+	problem then use this switch to force it to ignore
+	any extended memory.
+
+-p	Force PC speaker sound.  If you are able to get music
+	but no digitized sound from your sound card, you
+	may be able to force PC speaker sound.  Note that PC
+	speaker sound is not possible under Windows and the
+	rendering of digitized sounds through the PC speaker
+	gives very poor results, anyhow.  Do not attempt to
+	use the -t switch with the -p switch since this can
+	cause the game to freeze.
+
+-q      Force detection of SoundBlaster compatible DSP.  This
+	switch may be able to force detection of a sound card
+	that is not auto-detected.  If you have a Sound Blaster
+	compatible card but the game produces sound through
+	the PC speaker try this switch to see if you can get
+	digitized sound through your sound card.  You must include
+	the port number and IRQ number after this switch.  Example:
+	    n3d -q 220 7
+	will assume the DSP is on port 220(hex), IRQ 7 (decimal).
+	[Use the -o switch to check the results in DEBUG.TXT]
+
+-s	Disable detection of sound cards.
+	It is possible that the auto-detection function used
+	to detect sound card hardware can cause the game to
+	lock up during start up.  Use this switch to avoid
+	this problem but be aware that sound, music and the
+	joystick will be unavailable since they are all
+	handled by the same third-party sound functions.
+
+-o	Enable debug output.
+	This causes a small text file called DEBUG.TXT to
+	be written when the game starts.  It should look
+	similar to this:
+
+	Initializing...
+	Bootstrap ok
+	SB DSP detected at IRQ 7
+	Sound card ok
+	Timer ok
+	Display ok
+	Memory ok
+	Keyboard ok
+	Mouse ok
+	Initialize complete!
+
+	Examination of your DEBUG.TXT after an unsuccsessful
+	startup may indicate the problem.

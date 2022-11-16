@@ -1,0 +1,74 @@
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:22	    Page 1
+qset.asm
+
+
+
+      1
+      2					 ; this	function fills a region	of memory using	32 bit stores
+      3
+      4	    0000			 .MODEL	MEDIUM			 ; use medium memory model C function names
+      5
+      6					 .386
+      7
+      8	    0000			 .CODE				 ; begin the code segment
+      9
+     10					 PUBLIC	_fquadset		  ; export function name to linker
+     11
+     12	    0000			 _fquadset PROC
+     13
+     14					 ARG dest:DWORD, data:DWORD, count:DWORD
+     15
+     16	    0000  55			 push bp	 ; create the stack frame
+     17	    0001  8B EC			 mov bp,sp
+     18	    0003  57			 push di	 ; save	this just in case
+     19
+     20	    0004  FC			 cld		 ; clear the direction of movement
+     21
+     22	    0005  C4 7E	06		 les di, dest	 ; point es:di at destination
+     23	    0008  66| 8B 4E 0E		 mov ecx, count	 ; move	into ecx number	of quads
+     24	    000C  66| 8B 46 0A		 mov eax, data	 ; move	the data into eax
+     25	    0010  F3> 66| AB		 rep stosd	 ; fill	the region with	data
+     26
+     27	    0013  5F			 pop di		 ; restore di
+     28	    0014  5D			 pop bp		 ; fixup stack
+     29
+     30	    0015  CB			 ret		 ; return to caller
+     31
+     32	    0016			 _fquadset ENDP
+     33
+     34					 END
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:22	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "05/26/95"
+??filename			  Text	 "qset	  "
+??time				  Text	 "02:23:22"
+??version			  Number 0400
+@32Bit				  Text	 0
+@CodeSize			  Text	 1
+@Cpu				  Text	 0F0FH
+@DataSize			  Text	 0
+@FileName			  Text	 qset
+@Interface			  Text	 00h
+@Model				  Text	 4
+@WordSize			  Text	 2
+@code				  Text	 qset_TEXT
+@curseg				  Text	 qset_TEXT
+@data				  Text	 DGROUP
+@stack				  Text	 DGROUP
+_fquadset			  Far	 qset_TEXT:0000
+count				  Number [DGROUP:BP+000E]
+data				  Number [DGROUP:BP+000A]
+dest				  Number [DGROUP:BP+0006]
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+qset_TEXT			  16  0016 Word	  Public  CODE
+

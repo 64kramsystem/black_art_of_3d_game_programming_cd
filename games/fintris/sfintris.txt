@@ -1,0 +1,363 @@
+
+
+
+ S
+ H
+ A
+ R
+ E
+ W                             FINTRIS V1.26
+ A                              -----------
+ R                               25.2.1994
+ E
+ |                     (c) Tommi Tarkiainen 1993,1994
+ V                       Kaikki oikeudet pid„tet„„n
+ E
+ R
+ S
+ I
+ O
+
+
+
+
+
+ LAITTEISTOVAATIMUKSET
+ ---------------------
+ T„m„ peli vaatii PC-yhteensopivan koneen, jossa on VGA-grafiikkakortti
+ ( pit„isi toimia MCGA:llakin ). Vapaata perusmuistia on oltava ainakin
+ 460000 tavua ( 430000 tavua, jos k„yt”ss„ on v„hint„„n 250kB EMS-muistia ).
+ Fintris on tehty 486/33 koneella, mutta sit„ on testattu my”s useammassa
+ 386- ja 286-koneessa. Ohjelma tukee hiirt„. Rekister”idyss„ versiossa my”s
+ SoundBlaster-tuki!
+
+
+ TAUSTAA
+ -------
+ Sunnitellessani Fintrist„ minulla oli kaksi ensisijaista tavoitetta. Ensiksikin
+ halusin tehd„ Tetris-kloonin, jossa olisi my”s grafiikkaa ja toiseksi halusin
+ vaihtelua tavalliseen tetrikseen.
+
+ T„m„ on ensimm„inen pelini ja haluaisin kuulla Sinun mielipiteesi siit„.
+ Kaikki kommentit ovat tervetulleita, olivatpa ne sitten kielteisi„ tai
+ my”nteisi„.
+
+ Mit„ erikoista Fintriksess„ sitten on? Ensinn„kin siin„ on KOLME ERILAISTA
+ PELIMOODIA: yksinpeli, kaksinpeli ja kaksintaistelu. Fintriksess„ on KOLME
+ ERILAISTA PALIKKA SETTIŽ: yksinkertaiset-, tavalliset- ja monimutkaiset
+ palikat. Siin„ on my”s PAREMMAT GRAFIIKAT kuin useimmissa muissa tetris-
+ klooneissa ja viel„ kaiken t„m„n lis„ksi on MANA.
+
+
+ BUGIT
+ -----
+ Fintris on perusteellisesti testattu. T„ll„ hetkell„ ei ole tiedossa yht„„n
+ bugia. T„m„ ei kuitenkaan takaa sit„ etteik” bugeja olisi ja niit„
+ todenn„k”isesti on viel„. Jos l”yd„t Fintriksest„ bugin, olisin
+ kiitollinen, jos ilmoittaisit asiasta. Yrit„n poistaa bugit niin nopeasti kuin
+ mahdollista.
+
+
+ LISENSSI
+ --------
+ FINTRIS-ohjelmistoa ei saa levitt„„ vajavaisena tai niin, ett„ sit„ on
+ muutettu, eik„ sit„ saa myyd„ ilman tekij„n kirjallista lupaa. Jos levit„t
+ t„t„ ohjelmaa muille, sinun t„ytyy tehd„ se niin, ett„ kaikki tiedostot, jotka
+ on mainittua kappaleesssa "FINTRIS-TIEDOSTOT", ovat mukana.
+
+
+ VASTUUVAPAUS
+ ------------
+ OHJELMAN TEKIJŽ TOMMI TARKIAINEN EI TAKAA OHJELMAN VIRHEETT™MYYTTŽ JA TŽTEN
+ SANOUTUU IRTI KAIKESTA VASTUUSTA MAHDOLLISTEN VAHINKOJEN TAI HŽIRI™IDEN OSALTA,
+ JOITA TŽMŽ OHJELMA SAATTAA AIHEUTTAA KŽYTT™YMPŽRIST™SSŽSI.
+
+
+ REKISTER™INTI
+ -------------
+ FINTRIS ON SHAREWARE-PELI. T„m„ tarkoittaa sit„ ETTEI SE OLE PUBLIC DOMAINIA
+ EIKŽ SIIS ILMAINEN. Pelin Shareware-versio on tarkoitettu vain ja ainoastaan
+ kokeilua varten. Jos pid„t pelist„, Sinun olisi rekister”it„v„ se. Fintris on
+ kokonainen peli, siit„ ei puutu mit„„n ominaisuuksia. Kuitenkin ne, jotka
+ rekister”iv„t Fintriksen saavat konfiguraatio-ohjelman kaupanp„„lle. Lis„ksi
+ rekister”idyst„ versiosta on poistettu Shareware-ilmoitukset.
+
+ Rekister”imismaksu on 50 mk ( t„m„ sis„lt„„ 15 mk posti-, ym. kuluja ) Suomessa
+ asuvalle ja $11 ( $4 menee kuluihin ) Suomen ulkopuolella. Rekister”im„ll„ tuet
+ laadukkaiden Shareware-ohjelmien valmistusta. Rekister”ity„si saat
+ rekister”idyn version Fintriksest„, jossa on konfiguraatio-ohjelma ja josta
+ Shareware-ilmoitukset on poistettu. Olet my”s oikeutettu ilmaisiin p„ivityksiin,
+ kun olet rekister”itynyt k„ytt„j„. P„ivitt„minen tapahtuu k„yt„nn”ss„ siten
+ ett„ l„het„t minulle levykkeen, jolle uusi versio tulisi kopioida, ja rahaa
+ tai postimerkkej„, jotta voin l„hett„„ levykkeen takaisin. Minulle ei tarvitse
+ maksaa p„ivityksist„ ( ellei v„ltt„m„tt„ halua ;) ).
+
+ Konfiguraatio-ohjelmalla voit m„„ritell„ n„pp„imet, joita haluat k„ytt„„ pelatessasi. Voit my”s asettaa p„„valikon
+ valinnat mieleisiksesi, jolloin asetukset ( esim. MANA ) ovat sellaiset kuin
+ Sin„ haluat joka kerta, kun k„ynnist„t ohjelman. Jos esimerkiksi haluat pelata
+ 4. tasolla ja yksinkertaiset palikat p„„ll„, voit asettaa ne konfiguraatio-
+ ohjelmasta oletusarvoiksi. Kun sitten k„ynnist„t pelin 4. taso ja
+ yksinkertaiset palikat ovat automaattisesti p„„ll„, eik„ Sinun tarvitse muuta
+ kuin painaa P/SPACE/ENTER-n„pp„int„ aloittaaksesi pelin. Tulevaisuudessa voit
+ my”s rekister”id„ muita Software Illusions - ohjelmia alennetuun hintaan, kun
+ olet rekister”itynyt k„ytt„j„. T„ll„ hetkell„ tosin ei muita Software
+ Illusions - ohjelmia ole saatavilla. Amigalle on tulossa VELORIS-niminen
+ Tetris-klooni, jonka on tehnyt Kalle Salminen. Lis„ksi PC:lle on kehitteill„
+ jonkinlainen peli. Emme ole viel„ kuitenkaan saaneet p„„tetty„ millainen se
+ tulee olemaan.
+
+
+ MITEN REKISTER™IDŽ FINTRIS ?
+ ----------------------------
+ Sinun ei tarvitse tehd„ mit„„n muuta kuin l„hett„„ minulle kirje, jossa on
+ rekister”imismaksu, nimesi, osoitteesi ja kertoa levykkeen, jolla Fintris
+ l„hetet„„n Sinulle, koko ja tyyppi ( esim. 3«" HD ). Osoitteen l”yd„t t„m„n
+ tiedoston lopusta.
+
+
+ MITŽ MANA ON ?
+ --------------
+ Mana on er„„nlaista energiaa, jota voi k„ytt„„ tykin aktivoimiseen ja palikka-
+ jonon k„sittelyyn. Manaa saa, kun pudottaa kaksi, kolme tai nelj„ rivi„
+ palikoita. Mana kasvaa my”s itsest„„n ajan mittaan, mutta vain eritt„in
+ hitaasti, joten p„„asiassa manaa saa pudottamalla rivej„. Alussa ei ole paljoa
+ manaa k„yt”ss„, joten sit„ tulisi k„ytt„„ s„„steli„„sti.
+
+ Manalla voidaan suorittaa seuraavia teht„vi„: POISTAA RIVI ampumalla tykill„.
+ T„m„ toiminto kuluttaa eniten manapisteit„. PALIKAN MONISTAMINEN on toiseksi
+ manaa kuluttavin toiminto. Painettuasi palikan monistus n„pp„int„ seuraava
+ palikka tulee olemaan samanlainen kuin sit„ edelt„nyt palikka. Palikka, joka
+ olisi normaalisti tullut seuraavana tulee monistetun palikan j„lkeen.
+ Kolmas ja viimeinen toiminto on PALIKAN POISTO, joka vaatii kaikkein v„hiten
+ manaa. Voit poistaa tippumassa olevan palikan painamalla palikanpoisto
+ n„pp„int„.
+
+ Manan ollessa p„„ll„ pisteit„ ei tule pudotuksista yht„ paljon kuin, jos mana
+ olisi pois p„„lt„. T„m„ sen takia, ett„ mana helpottaa pelaamista melko paljon.
+ Toisinsanoen pisteit„ tulee hitaammin, mutta peli kest„„ todenn„k”isesti
+ kauemmin. On mahdollista saada paljon pisteit„ k„sittelem„ll„ palikkajonoa.
+ Palikan monistus on siin„ eritt„in k„tev„.
+
+ Saadaksesi mahdollisimman paljon etua manasta sinun tulee omaksua uudenlainen
+ pelityyli. T„ss„ on muutamia vinkkej„, jotta p„„sisit alkuun. K„yt„ tykkej„
+ vain, kun se on aivan v„ltt„m„t”nt„. K„yt„ palikan monistusta saadaksesi
+ mahdollisimman monta rivi„ tiputettua kerralla. Poista sellaiset palikat, jotka
+ eiv„t sovi pinoon.
+
+ Seuraavassa on joitakin numerotietoja avuksesi manan k„yt”ss„.
+
+ Kerralla tiputettujen rivien m„„r„             Manan lis„ys
+ ----------------------------------             ------------
+ 4 rivi„                                                  11
+ 3 rivi„                                                   4
+ 2 rivi„                                                   1
+
+ Toiminto                                      Manan kulutus
+ --------                                      -------------
+ Tykill„ ampuminen                                         6
+ Palikan monistus                                          5
+ Palikan poisto                                            3
+
+
+ SANANEN, JOS TOINENKIN MUSIIKIN TEKIJŽLTŽ  ( kirjoittanut Kalle Salminen )
+ --------------------------------------------------------------------------
+
+ Fintriksen musiikin on s„velt„nyt, sovittanut ja esitt„nyt Kalle Salminen.
+
+ Olen tehnyt musiikin k„ytt„en Amigan Pro Tracker -ohjelmaa. Samplet ovat
+ per„isin lukuisista eri l„hteist„. Osan sampleista olen digitoinut Korg 01/W FD
+ syntetisaattorista. Samplet on samplattu Sound Blasterin ikivanhalla
+ versiolla ( n„ytteenottotaajuus 13kHz ), joten lopputulos
+ on ik„v„ kyll„ turhan kaukana esikuvastaan, mutta parempia sampleja en
+ saanut mitenk„„n aikaan. En nimitt„in omista itse „„nendigitoijaa, ett„
+ voisin digitoida samplet suoraan kotona. Parannus on ehk„ t„h„nkin pikku
+ ongelmaan jopa aivan l„hitulevaisuudessa tulossa.
+
+ Vaikka Fintriksen alkumusiikki onkin teknoa teen p„„asiallisesti muunlaista
+ musiikkia.  Pyrin saman tapaiseen musiikkityyliin, kuin esimerkiksi
+ Jean-Michel Jarre, Vangelis ja Kitaro. Jos haluat peliisi (mieluiten
+ kaupalliseen ohjelmaan) musiikin, voit kysell„ sit„ minulta ( osoite kappaleen
+ lopussa ). "Elokuvamusiikki" maksaa tietysti raskaasti enemm„n kuin teknomusa,
+ jota voin tehd„ aivan pient„ maksua vastaan. Voit my”s l„hett„„ valmiit nuotit
+ minulle, jos kappaleen s„vellysty” on jo tehty. Voin yritt„„ tunkea sit„ Sound
+ Tracker -moduleksi pient„ nimellist„ maksua vastaan. K„yt„n tietysti
+ mahdollisimman hyvi„ sampleja. Muista mainita my”s modulen maksimaalinen koko.
+
+ Viel„ er„s pyynt”: yritt„k„„ jaksaa kuunnella Fintriksen alussa oleva
+ musiikki edes kerran, sill„ kappaleesta ly”tyy kyll„ my”s jotain melodian
+ tapaista.
+
+ Kirjoittaa voit osoitteeseen:
+
+                Kalle Salminen
+                Toritunkatu 4
+                33580 Tampere
+                FINLAND
+
+
+ NŽPPŽIMET
+ ---------
+ PŽŽVALIKKO:
+        N„pp„in Selitys
+        ------- -------
+        P       Aloita peli
+        <ENTER> Sama kuin edellinen
+        <SPACE> Sama kuin edellinen
+        M       Mana p„„lle/pois        ( Kappaleesta "MITŽ MANA ON ?" l”yd„t
+                                          lis„tietoa MANASTA. )
+        H       Enn„tyslista
+        S       Yksinkertaiset palikat p„„lle/pois
+        C       Monimutkaiset palikat p„„lle/pois
+        r       Vaihtaa palikoiden py”rimissuunnan (koskee sek„ 1 ja 2 pelaajaa)
+        R       Vaihtaa palikoiden py”rimissuunnan (koskee vain 2 pelaajaa)
+        f       Vaihtaa palikoiden putoamisnopeuden(koskee sek„ 1 ja 2 pelaajaa)
+        F       Vaihtaa palikoiden putoamisnopeuden(koskee vain 2 pelaajaa)
+        V       Versio numero
+        A       Infoa Fintriksest„
+        U       Rekister”ityneen k„ytt„j„n nimi
+        <F1>    Yksinpeli
+        <F2>    Kaksinpeli
+        <F3>    Kaksintaistelu ( kaksi pelaajaa pelaa toisiaan vastaan )
+        1-9     Vaikeustaso
+        <ESC>   Poistu Fintriksest„
+
+ NŽPPŽIMET PELIN AIKANA:
+        N„pp„in Selitys
+        ------- -------
+        P       Keskeyt„ peli hetkeksi ( Paina jotain n„pp„int„ jatkaaksesi )
+        1       Pelaaja nro 1: Laukaise tykki                        (oletus)
+        2       Pelaaja nro 1: Pudota palikka                        (oletus)
+        3       Pelaaja nro 1: Siirr„ tykki„ alasp„in                (oletus)
+        4       Pelaaja nro 1: Siirr„ palikkaa vasemmalle            (oletus)
+        5       Pelaaja nro 1: Py”rit„ palikkaa                      (oletus)
+        6       Pelaaja nro 1: Siirr„ palikkaa oikealle              (oletus)
+        7       Pelaaja nro 1: Siirr„ tykki„ yl”sp„in                (oletus)
+        8       Pelaaja nro 1: Poista nykyinen palikka               (oletus)
+        9       Pelaaja nro 1: Monista nykyinen palikka              (oletus)
+        0       Pelaaja nro 1: N„yt„ seuraava palikka                (oletus)
+        N       Pelaaja nro 2: Laukaise tykki                        (oletus)
+        <SPACE> Pelaaja nro 2: Pudota palikka                        (oletus)
+        .       Pelaaja nro 2: Siirr„ tykki„ alasp„in                (oletus)
+        J       Pelaaja nro 2: Siirr„ palikkaa vasemmalle            (oletus)
+        K       Pelaaja nro 2: Py”rit„ palikkaa                      (oletus)
+        L       Pelaaja nro 2: Siirr„ palikkaa oikealle              (oletus)
+        U       Pelaaja nro 2: Siirr„ tykki„ yl”sp„in                (oletus)
+        I       Pelaaja nro 2: Poista nykyinen palikka               (oletus)
+        O       Pelaaja nro 2: Monista nykyinen palikka              (oletus)
+        <ENTER> Pelaaja nro 2: N„yt„ seuraava palikka                (oletus)
+        <ESC>   Lopeta peli
+
+  Kaikki n„pp„imet lukuunottamatta "P:t„" ja "ESC:a" voidaan m„„ritell„
+  uudestaan konfiguraatio-ohjelmalla, joka on Fintriksen rekister”idyss„
+  versiossa.
+
+
+ FINTRIS-TIEDOSTOT
+ -----------------
+ Tiedosto         Kuvaus
+ --------         ------
+ FINTRIS.EXE      P„„ohjelma
+ CONFIG.FIN       Konfiguraatiotiedosto ( Jos t„t„ tiedostoa ei l”ydy se luodaan
+                                          automaattisesti. T„m„n tiedoston voi
+                                          siis huoletta tuhota )
+ SCORE.DAT        Enn„tyslista ( Edellinen kommentti p„tee my”s t„h„n tiedostoon
+                                 T„m„n tiedoston voi tuhota, jolloin enn„tykset
+                                 "nollautuvat". )
+ DEFAULT1.KEY     1. pelaajan n„pp„imist”n oletusasetukset
+ DEFAULT2.KEY     2. pelaajan n„pp„imist”n oletusasetukset
+ FINBACK.DAT      Grafiikka tiedosto
+ FINBEG.DAT       Grafiikka tiedosto
+ FINEND.DAT       Grafiikka tiedosto
+ FINMENU.DAT      Grafiikka tiedosto
+ FINSTAT.DAT      Grafiikka tiedosto
+ FINTEXT.DAT      Grafiikka tiedosto
+ FINTRIS.DAT      Grafiikka tiedosto
+ SILOGO.DAT       Grafiikka tiedosto
+ TOPTEN.DAT       Grafiikka tiedosto
+ TOPTEXT.DAT      Grafiikka tiedosto
+ EFINTRIS.TXT     Englanninkieliset dokumentit
+ SFINTRIS.TXT     Sama suomeksi
+ FILE_ID.DIZ      Lyhyt kuvaus pelist„
+
+
+ Seuraavat tiedostot kuuluvat vain ja ainoastaan rekister”ityyn versioon:
+
+ Tiedosto         Kuvaus
+ --------         ------
+ CONFIG.EXE       Konfiguraatio-ohjelma
+                  ( EI OLE SISŽLLYTETTY SHAREWARE-VERSIOON )
+ ECONFIG.TXT      Englanninkieliset ohjeet konfiguraatio-ohjelmaan
+                  ( EI OLE SISŽLLYTETTY SHAREWARE-VERSIOON )
+ SCONFIG.TXT      Sama kuin edellinen, mutta suomeksi
+                  ( EI OLE SISŽLLYTETTY SHAREWARE-VERSIOON )
+ FINMUZ.DAT       Alkumusiikki Soundblasterin kautta
+                  ( EI OLE SISŽLLYTETTY SHAREWARE-VERSIOON )
+ SOUNDFX.DAT      Pelin aikana kuuluvat „„niefektit
+                  ( EI OLE SISŽLLYTETTY SHAREWARE-VERSIOON )
+
+
+ PELIN SUUNNITTELU JA OHJELMOINTI
+ --------------------------------
+                Tommi Tarkiainen
+
+
+ SOFTWARE ILLUSION - LOGO
+ ------------------------
+                Miikka Vilermo
+                Tommi Tarkiainen
+
+
+ MUSIIKKI ( Vain rekister”idyss„ versiossa )
+ -------------------------------------------
+                Kalle Salminen
+
+
+ KIITOKSET SEURAAVILLE HENKIL™ILLE AVUSTA JA TUESTA
+ --------------------------------------------------
+ Teknisi„ neuvoja:
+                Antti Leinonen
+                Kalle Salminen
+ Lis„ideoita:
+                Kalle Salminen
+                Timo Haanp„„
+                Miikka Vilermo
+                Pasi Perttil„
+                Erkko Lehtonen
+ Beta testaajat:
+                Erkko Lehtonen  ( Erityiskiitokset Erkolle perusteellisesta
+                                  testauksesta )
+                Teppo Lehtonen
+                Timo Haanp„„
+                Kalle Salminen
+                Miikka Vilermo
+                Pasi Perttil„
+                Juha Tarkiainen
+                Hannu Tarkiainen
+                Matti Koskinen
+                ja monet muut
+
+
+ LŽHDEKOODIN SAATAVUUS
+ ---------------------
+ KYLLŽ, Fintriksen l„hdekoodit on mahdollista tilata. Fintris on ohjelmoitu
+ k„ytt„en assembleria ja C-kielt„. Kaikki matalantason grafiikkarutiinit on
+ tehty kokonaan assemblerilla ja muut osat pelist„ on tehty C:ll„. Koska n„iden
+ rutiinien kehittelyyn on kulunut suunnaton m„„r„ aikaa ja ty”t„, olen pakotettu
+ pyyt„m„„n niist„ suhteellisen korkeaa hintaa. Jos olet kiinnostunut, voit
+ tilata rutiinit alla olevasta osoitteesta.
+
+
+ TEKIJŽN YHTEYSTIEDOT
+ --------------------
+ Minut tavoittaa parhaiten postitse seuraavasta osoitteesta. Kaikki ideat,
+ bugi-ilmoitukset ja muut kommentit ovat tervetulleita.
+
+ Tommi Tarkiainen
+ Pienkodinkatu 10
+ 33560 Tampere
+
+ Minulle voi nyky„„n my”s l„hett„„ s„hk”postia osoitteeseen:
+
+ t150430@cc.tut.fi
+
+

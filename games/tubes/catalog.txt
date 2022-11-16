@@ -1,0 +1,424 @@
+______________________________________________________________________________
+
+                      I M P U L S E   G A M E S   I N C.
+
+                               SOFTWARE CATALOG
+______________________________________________________________________________
+
+Impulse Games is committed to bringing you the most enjoyable games available.
+Browse through our catalog to find out about the other exciting products that
+are available now!  You can also check out our easy-to-use order form included
+in the file "ORDERFRM.TXT"
+
+Call TOLL-FREE, 24 hours a day: 1-800-6-IMPULSE       MAIL orders to:
+     or FAX your order form to: 1-317-247-1009
+           FOREIGN ORDERS call: 1-317-870-9216          IMPULSE GAMES
+                                                        P.O. BOX 31199
+ You can now order ON-LINE for instant software!        INDIANAPOLIS, IN 46231
+Call the Software Creations BBS at 1-508-368-7139
+      and type "STORE" from the main menu.
+
+If you ever have problems running our software, please read the manuals, and
+consult your hardware supplier for possible device conflicts.  If you still
+cannot get our product to run, give our tech support number a call during
+normal business hours at (317)271-4409.  Our technicians do not have any
+hints or tips for gameplay, but they will assist you with problems relating
+to installing and running our software.
+______________________________________________________________________________
+______________________________________________________________________________
+______________________________________________________________________________
+
+Call Software Creations BBS to get the latest trial versions of our software!
+
+                           Software Creations BBS
+                           "Home of the Authors!"
+
+                      2400 - 16.8K baud: (508)368-7139
+                     16.8K - 28.8K baud: (508)365-9352
+
+______________________________________________________________________________
+
+SHIH DAO                                                                $19.95
+
+  Based on a game played in ancient China, Shih Dao is the
+  ultimate strategy game.  Call upon your deepest powers of
+  intuition as you match beautifully rendered tiles!  You
+  will learn new puzzle skills while using logic and
+  cunning to match tiles and form the four-way combinations
+  that are the mark of the true Shih Dao master!  Test your
+  skills with those of the masters in the ultimate oriental
+  mind game.  Includes a variety of boards and tiles with
+  fantastic 256 color SVGA graphics.
+
+REQUIREMENTS :  WINDOWS
+ALSO SUPPORTS:  SVGA   Windows compatible sound cards
+
+______________________________________________________________________________
+
+ENTOMBED                                                                $39.95
+  CD-ROM VERSION                                                        $59.95
+
+  You play the role of an archaeologist who becomes trapped in
+  an ancient tomb in this ultimate 3-D puzzle adventure game!
+  Breathtaking raytraced 640x480 SVGA graphics in the Windows
+  environment take this a step beyond games like 7th Guest and
+  Myst.  Alone you must navigate your way through deadly traps,
+  intricate puzzles, and involved mazes as you try to escape
+  from your harsh captor before it claims another victim.  What
+  did become of the race that created this vast underground
+  metropolis, and what is its purpose?  Communication with
+  another realm?  Time travel?  Explore 5 detailed levels with
+  over 40 megabytes of graphics.  Excellent digital sound on
+  all Windows compatible sound cards.
+  The CD-ROM version of the game includes an incredible 16-bit
+  CD quality soundtrack, studio recorded narration, and an
+  enhanced ending sequence for over 200 megabytes more than the
+  disk version.
+
+REQUIREMENTS :  WINDOWS 3.1 WITH 386+ CPU   512K SVGA   2MB RAM
+ALSO SUPPORTS:  Windows compatible sound cards
+
+______________________________________________________________________________
+
+TUBES                                                                   $19.95
+
+  Help Dr. Lanny B. Brilliant form new molecules and win the
+  Nobel Prize!  Your goal is to match 3 or more similar atoms
+  before your beaker overflows.  Create new molecules while
+  watching out for mischief crystals and other bad elements.
+  Watch newly formed atomic chains disappear in a whirl of
+  animation!  Impressive digital sound on the Sound Blaster
+  or PC Speaker with an original musical score for Adlib
+  compatible sound cards.
+
+REQUIREMENTS :  VGA   286+ CPU
+ALSO SUPPORTS:  Sound Blaster/Adlib   Joysticks
+
+______________________________________________________________________________
+
+GOD OF THUNDER                                                          $24.95
+  GOD OF THUNDER HINT BOOK!  90 Pages, Fully Illustrated                 $9.95
+
+  Thor battles and plots his way past dozens of puzzles and
+  hundreds of enemies to reach the final showdown with the three
+  evil boss creatures who are terrorizing innocent villagers!
+  A great adventure with fun, Zelda-style gameplay and an
+  engrossing story line of an enchanted past!  Includes Sound
+  Blaster digital sound and a complete musical soundtrack.
+
+REQUIREMENTS :  VGA   286+ CPU
+ALSO SUPPORTS:  Sound Blaster/Adlib   Joysticks
+
+______________________________________________________________________________
+
+ARGO CHECKERS                                                           $14.95
+
+  Gorgeous graphics, great sound, and smooth play make this the
+  most enjoyable Checkers game ever! Includes over a MEG (before
+  compression) of animated 256 color VGA graphics & digital sound.
+  From the developers of HEXXAGON.
+
+REQUIREMENTS :  VGA   286+ CPU
+ALSO SUPPORTS:  Sound Blaster/Adlib   Mouse
+
+______________________________________________________________________________
+
+FILECLIP                                                                $17.95
+
+  FileClip is a simple utility that can be used to augment or
+  replace the Windows File Manager.  Whether you are a novice
+  or a power user, you'll find that FileClip provides a conven-
+  ient way to locate and handle files.  In addition, FileClip
+  greatly enhances the functionality of the Windows Clipboard
+  with the enhanced Clipboard utility in Windows for Workgroups.
+  With FileClip, you can create a clipboard stack.  The stack
+  stores a history of the clipboard, which means you can have a
+  multiple undo capability. In addition, FileClip enhances your
+  ability to paste between applications.  FileClip has been
+  completely revamped for version 4.0, it now is easier to use
+  and far more powerful than any other file manager on the market!
+
+REQUIREMENTS :  Windows 3.1   286+ CPU
+
+______________________________________________________________________________
+
+SQUAREZ DELUXE                                                          $19.95
+
+  Devastator bombs, missiles, and hazardous chemicals dominate
+  the playing field as you try to maneuver ahead of your
+  opponent!  Get a new look at Tetris-style games from the
+  author of Jetpack.  With the enthralling combination of
+  action and strategy you can blow your opponent away, or race
+  the clock for hours of stimulating action!  Maneuver your
+  pieces filled with bizarre items to form 'squarez' and keep
+  your area clear.  Join the ranks of Squarez addicts!  Fast
+  puzzle action with excellent 256 color VGA graphics.
+
+REQUIREMENTS :  VGA   PC compatible
+ALSO SUPPORTS:  Sound Blaster/Adlib   Joysticks   Mouse
+
+______________________________________________________________________________
+
+HEXXAGON                                                                $19.95
+
+  The dictionary defines agon as a classic struggle.  Classic,
+  indeed -- the days of sterile strategy games are over! Immerse
+  yourself in one of the most enjoyable and richly crafted games
+  to date.  The fully animated 256 color graphics and completely
+  digital sound (for SoundBlaster compatibles) will seduce even
+  those who don't consider themselves "strategy game" players.
+  With an almost infinite number of board configurations possible
+  (5 favorites can be saved), the friendliest menus, and CRANIAC
+  -- the unfriendliest of computer opponents -- HEXXAGON will
+  provide hours of fun and intellectual excitement!
+
+REQUIREMENTS :  VGA   286+ CPU
+ALSO SUPPORTS:  Sound Blaster/Adlib   Mouse
+
+______________________________________________________________________________
+
+NIGHT RAID                                                              $14.95
+
+  Violate the Geneva Convention-blast your enemy's paratroopers
+  out of the sky in this fast action arcade game!  Defend your
+  lonely desert bunker against wave after wave of invaders and
+  their delivery aircraft.  Get Night Raid, and discover adren-
+  aline pumping fun!  Supports MULTI-CHANNEL digital sound on a
+  SoundBlaster (or 100% compatible) or the Disney Sound Source,
+  and music playback on AdLib/SoundBlaster.
+
+REQUIREMENTS :  VGA   286+ CPU
+ALSO SUPPORTS:  Sound Blaster/Adlib   Mouse
+
+______________________________________________________________________________
+
+JETPACK                                                                 $19.95
+  JETPACK HINT BOOK!  127 Pages, Fully Illustrated                       $9.95
+
+  Conquer and explore 100 treacherous levels of dungeons with
+  your model L-1069E Jetpack!  Equipped with Jet Turbines and
+  armed with a powerful Phase Shifter, you quest for precious
+  gems through dungeons full of treasures and peril.  With the
+  BUILT-IN EDITOR you can create and collect thousands of
+  levels! Up to 8 players, joysticks supported. Fast 256 color
+  VGA arcade action with digital Sound Blaster support!
+
+REQUIREMENTS :  VGA   PC compatible
+ALSO SUPPORTS:  Sound Blaster/Adlib   Joysticks
+
+______________________________________________________________________________
+
+PICTURE PUZZLE                                                          $16.95
+
+  Picture Puzzle allows you to load and scramble an EGA Pic-
+  ture from 4 to 1400 pieces.  Make the puzzles any size you
+  want, turn the grid on or off, view a scaled down version
+  of the picture into a window for help.  You can watch the
+  grid disappear as you build the puzzle and get the correct
+  pieces. Save puzzles and work on them later.  Send and ask
+  about all our puzzle collections and get a color catalog.
+  Great for ages 7 to 70!  Deluxe version also available!
+
+REQUIREMENTS :  EGA   PC compatible
+ALSO SUPPORTS:  Mouse
+
+
+______________________________________________________________________________
+______________________________________________________________________________
+______________________________________________________________________________
+
+         ASK FOR IMPULSE PRODUCTS AT THESE INTERNATIONAL LOCATIONS
+______________________________________________________________________________
+______________________________________________________________________________
+______________________________________________________________________________
+
+
+==============================================================================
+                AUSTRALIA, NEW ZEALAND, & SURROUNDING ISLANDS
+==============================================================================
+
+Vision Shareware 
+4/146 Greenhill Rd.
+Parkside S.A. 5063
+AUSTRALIA
+TEL: 08-373-4469
+FAX: 08-373-4482
+24 Hour Order Line - 1-800-807-486
+
+Budgetware
+PO Box 496
+Newtown, NSW  2042
+AUSTRALIA
+TEL: 008-022-064
+FAX: 02-516-4236
+
+Manaccom Pty Ltd:
+9 Camford St,
+Milton Qld. 4064
+AUSTRALIA
+TEL: 07-368-2366
+FAX: 07 369-7589
+0055-12685: Call for the location of your nearest reseller
+
+PC-SIG New Zealand
+P.O. Box 90088
+Victoria Street West.
+Auckland, New Zealand
+TEL: 3600-500
+FAX: 3600-800
+
+==============================================================================
+               DENMARK, NORWAY, SWEDEN, NETHERLANDS, & FINLAND
+==============================================================================
+
+HaSa Software Applications
+P.O. Box 414
+9500 AK STADSKANAAL
+The Netherlands
+TEL: (+31) 5990 50161
+FAX: (+31) 5990 50124
+
+PRO-SOFT
+Benlose Skel 4 G
+DK-4100 Ringsted
+Denmark
+TEL: (+45) 53 61 90 42, KL 09:00 - 16:30
+FAX: (+45) 53 61 93 91
+
+==============================================================================
+                                   CANADA
+==============================================================================
+
+Distant Markets
+Box 1149
+194-3803 Calgary Trail S.
+Edmondton, AL T6J 5M8
+ORDERS: (800) 661-7383
+TEL: (403) 436-3009
+FAX: (800) 661-9756
+
+Universal Shareware Alternatives
+P.O. BOX 965
+Pointe-Claire Dorval, Quebec
+H9R 4R6
+TEL: (514) 633-9495
+FAX: (514) 633-8591
+
+Simple Software Solutions
+4319 Fraser Street.
+Vancouver, BC V5V 4G4
+TEL: (604) 879-3563
+FAX: (604) 872-2524
+
+==============================================================================
+                               CZECH REPUBLIC
+==============================================================================
+
+Jimaz Ltd.
+Hermanova 37
+170 60 Praha 7
+TEL: +42 2 379 498
+FAX: +42 2 378 103
+
+==============================================================================
+                                   FRANCE
+==============================================================================
+
+DP TOOL CLUB
+99 rue Parmentier
+59657 Villeneuve d'Ascq
+TEL: (33) 20 05 35 66
+FAX: (33) 20 05 38 27
+
+==============================================================================
+                                   MEXICO
+==============================================================================
+
+Compu Shareware
+Rio San Angel Delg A. Obregon
+CP 1020
+TEL: 525 0183 233
+FAX: 525 0188 117
+
+==============================================================================
+                                    ITALY
+==============================================================================
+
+M.T. Sistemi S.R.L
+Via De Gasperi, 4
+20070 S. Martino In Strada
+TEL: +39 371 475090
+FAX: +39 371 475090
+
+==============================================================================
+                                    CHILE
+==============================================================================
+
+Softmarket S.A.
+Merced 346, PISO 3-D
+Santiago, Chile
+TEL: (562) 638-1441
+TEL: (562) 638-1448
+FAX: (562) 633-5345
+
+==============================================================================
+                                   GERMANY
+==============================================================================
+
+Jurgen Egeling Computer
+Werderstr.41 
+76137 Karlsruhe, Germany
+TEL: 0721 37 38 32 
+FAX: 0721 37 38 42
+
+CDV-Software
+Postfach 2749
+Neureuter Str. 37B
+76014 Karlsruhe
+Germany
+TEL: 0721-97224-0
+FAX: 0721-97224-24
+
+==============================================================================
+                               UNITED KINGDOM
+==============================================================================
+
+Precision Software
+Unit 3, Valley Court Offices
+Lower Rd.
+Croydon, Near Royston.
+Herts., SG8 OHF
+TEL: 0223 208288
+FAX: 0223 208089
+
+Transend Services, Ltd.
+FREEPOST BD2582
+Bradford
+West Yorkshire
+BD10 8BR
+TEL: 0274-622228
+FAX: 0274-620774
+
+==============================================================================
+                                 SOUTH AFRICA
+==============================================================================
+
+Software People
+PO Box 24459
+Innesdale, Pretoria
+South Africa 0031
+Orders: (012) 333-7789
+BBS (012) 73 3104 for online ordering
+
+==============================================================================
+                                    JAPAN
+==============================================================================
+
+P. & A. Shareware Distribution
+302 Bellwins, 1367-23,
+Nakagami, Akishima Tokyo, Japan
+TEL: 0425-46-9141
+FAX: 0425-46-9142
+Nifty: PAF02461
+
+==============================================================================

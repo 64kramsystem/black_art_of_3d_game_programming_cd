@@ -1,0 +1,66 @@
+			S P A C E   G U N N E R
+			      Version 1.0
+				Freeware 
+(Description) 
+
+ Not too much to say, other than "Kill Everything"!  No, but  really, you    
+ are a Space Gunner in a far-off universe. Your job is to destroy all Stray  
+ objects in your Quadrant of the galaxy. You are started off with a Score   
+ of Zero.  Every Ship is worth 10 points. You will Die if you allow 40 of
+ the objects to "Get Away".  The speed of the objects increases with every 
+ wave. Waves are dependent on your score.  You will most likely know you have
+ entered a new Wave by the increase of your Rapid Fire!
+
+(Features)
+
+  On Target  ==>  you will know you are "On Target" by the Cross-Hair's
+		  color change from purple to green. 
+  Radar      ==>  your radar shows the Presence of and the Approximate
+		  Location of all Objects. The color of the dots tell you
+		  which one of the objects is being Tracked.
+  LED Readout =>  As of this Documents being typed, the LED Readout in the 
+		  Bottom Left Corner serves no purpose, but could be easily
+		  made to monitor Fuel, Energy Level, Danger Level, etc.
+  Quit       ==>  You may quit at anytime by Depressing the "Q" Key. 
+
+(Background)
+
+ Space Gunner was my Second Project in C and my first complete game. Space   
+ Gunner was a direct result of my want and desire to be a Game Programmer   
+ and Andre' Lamothe's Books "Tricks of the Game Programming Gurus" and    
+ "Teach Yourself Game Programming in C in 21 Days".
+
+(Sound)
+
+ You can configure your Sound Blaster sound card by using the GNRSetup 
+ Utility. This Utility is Self Explanatory, just Select your Sound Blaster 
+ Card, Your Port setting and Your IRQ setting. Then hit "5" to Save and Exit.
+ You may view the current setting of the Gnr.cfg file by hitting "4" which 
+ is View Settings.
+
+(Troubleshooting)
+
+  If you have an actual SoundBlaster card, SB 1.5, SB 2.0, SB Pro, SB 16 
+  you shouldn't have any problems if you setup Space Gunner to your Sound 
+  Card's configuration with the GNRSETUP Utility. Space Gunner has been     
+  tested on the SB Pro and the SB 16 . 
+  
+  SB 16 USERS==> Be aware that their are apparently 2 different models of
+  the SB 16. If you DO NOT hear sound when configured correctly for your 
+  SB 16, you will need to RENAME the Alternat.16 file to Ct-Voice.16 . 
+  
+  If you have any difficulties with the game and/or find any bugs, PLEASE 
+  Email me at the Internet Address listed Below ! Although not tested with, 
+  or programmed for Sound Blaster Compatibles, you may get Space Gunner to 
+  work with your Sound Blaster Compatible by trying different Sound Blaster 
+  Card settings, of course with Correct Settings for your sound card. 
+
+(About Me) 
+
+ I can be reached via America Online at      GameBoyRB
+ and/or through the Internet at           GameBoyRB@AOL.COM  
+ 
+ All Comments, Suggestions, Questions, etc. are Welcome !
+   
+ Richard Benson
+

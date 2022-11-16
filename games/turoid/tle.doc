@@ -1,0 +1,163 @@
+
+- - - - - TUROID LEVEL EDITOR 1.20 - - - - -
+       Copyright (c) 1994 by Jason Truong
+
+Jason Truong
+12167 Achilles Street
+Norwalk, CA  90650-1824
+U.S.A.
+
+Internet: truong@wintermute.fullerton.edu
+
+
+- - - - - SHAREWARE
+
+Turoid Level Editor (TLE) is a shareware.  TLE can be freely
+distributed provided that it is distributed in its original, unmodified
+form with all accompanying files left intact.  The distribution charges
+must not exceed the reasonable price of shipping and handling charges.
+
+This version of TLE is intended for evaluation purposes only
+("Save" feature is not implemented).  To order the complete copy, please
+refer to the file "order.frm" for more information.
+ 
+
+- - - - - INTRODUCTION
+
+Turoid Level Editor (TLE) let you to create your own levels.
+TLE is very intuitive and easy to use.
+
+
+- - - - - RUNNING TLE
+
+At the DOS prompt, type "TLE" and a file name to start Turoid Level
+Editor (TLE).  For example, if your file name is called "mylevel.tle", at
+the DOS prompt, type:
+
+	>TLE MYLEVEL.TLE
+
+If the file "mylevel.tle" does not exist, a new file will be created.
+(Notice that in the evaluation copy, you don't need to include the file
+name since the "Save" feature is not implemented.)  The Introduction screen
+appears and you can do the following:
+
+	* Click the left mouse (or hit Return key) to start editing.
+	* Click the right mouse button for help.
+	* Hit the ESC key to quit.
+	* Hit key 1..9 to set mouse sensitivity with 9 being most sensitive.
+	  5 is the default value.
+        * B to switch background snow On/Off.
+
+In the editing screen, click the left mouse button to draw (or
+hold down the left mouse button to draw continuously) or click the right
+mouse button to erase.  The default drawing brick is green.
+
+You can change the drawing brick by simply clicking on one of
+the six bricks at the bottom of the screen.  The brick at the far
+bottom-left corner of the screen, pointed to by an arrow, is the selected
+drawing brick.  You can also use short-cut keys to select these drawing
+bricks:
+
+	key	selects brick
+	---	-------------
+	1	green
+	2	orange
+	3	white
+	4	yellow
+	5	gold
+	6	purple
+
+At the far bottom-right corner of the screen are two numbers.  The
+number on the left is the current level being edited.  The number on the
+right is the total number of levels.  When you start TLE, there is only
+one level in the set.  You can add more levels by simply clicking on a
+button.
+
+At the bottom-middle of the screen is a set of buttons that you
+can further customize your level sets.  From left to right, here are the
+functions of each button:
+
+	Button Description
+	------------------						
+	* Go to previous level			 	
+	* Go to next level
+	* Insert a level before the current level
+	* Insert a level after the current level
+	* Swap two levels
+	* Delete the current level
+	* Input general information
+	* Save levels	(Short Cut: 's' key)
+	* Quit 	(Short Cut: ESC key)
+
+There is an online message for each button.  Simply move
+the mouse pointer over the button, a message of its function is displayed.
+
+The following is a brief explanation of those buttons that may
+not seem obvious.
+
+To swap two levels, click on the "swap" button and a "no-typing-
+required" dialog will appear which let you select between two levels to
+be swapped.  Select a level in the "First Level" and another in the
+"Second Level".  Click the OK button to swap these two levels or click
+the Cancel button to close the dialog without swapping.
+
+A "General Information" dialog lets you customize some extra
+features of a level.
+
+	* "Number of paddles" is the starting number paddles when you
+	  start the game.  If your levels are hard, be sure to give the
+	  player enough paddles.
+	* "Falling balls."  This determines how often should a purple ball
+	  randomly drop down from the top wall.  This also determines how
+	  often should a normal brick (green, orange, white and yellow
+	  brick) fall down instead of being destroyed when hit by a ball.
+	* "Total bonus balls" is the number of bonus balls for the
+	  current level.
+	* "Maximum number of bonus balls on screen" is maximum number
+	  of bonus balls can be on the screen at once.
+
+Click OK button to keep the changes or click the Cancel button the
+keep the old values.
+
+
+- - - - - TECHNICAL INFORMATION
+
+TLE was written using Themie Gouthas' public domain
+XLIB library (version 04c).  Although the library is fairly complete, I
+made some minor changes and added some functions to fit my own need.
+
+I'd like to thank Themie (and his contributors) for his generosity
+and released his library to the public.
+
+
+- - - - - BUG REPORT
+
+TLE has been tested greatly and there should not be any bug.
+But if you "catch" any, please report them to my home address given above
+or to my Internet address at "truong@wintermute.fullerton.edu".
+
+
+- - - - - RELEASE HISTORY
+
+Version		Date		Comment
+1.0		8-24-93		First release of TLE.  
+1.10		9-7-93		None
+1.20            1-20-94         None
+		
+
+- - - - - DISCLAIMER
+
+This game is provided "as is".  I'm not responsible for any damages
+resulted from playing or using the files of the game.
+
+
+
+Please register!
+
+
+	
+
+	
+  
+
+

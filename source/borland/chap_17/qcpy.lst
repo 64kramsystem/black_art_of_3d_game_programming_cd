@@ -1,0 +1,83 @@
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:27	    Page 1
+qcpy.asm
+
+
+
+      1
+      2					 ; this	function performs a memory copy	from source to destination using 32
+      3					 ; bit moves
+      4
+      5	    0000			 .MODEL	MEDIUM			 ; use medium memory model C function names
+      6
+      7	    0000			 .CODE				 ; begin the code segment
+      8
+      9					 .386
+     10
+     11					 PUBLIC	_fquadcpy		  ; export function name to linker
+     12
+     13	    0000			 _fquadcpy PROC
+     14
+     15					 ARG dest:DWORD, source:DWORD, count:DWORD
+     16
+     17	    0000  55			 push bp	     ; create stack frame
+     18	    0001  8B EC			 mov bp,sp
+     19
+     20	    0003  57			 push di	     ; save a few registers
+     21	    0004  56			 push si
+     22	    0005  1E			 push ds
+     23
+     24
+     25	    0006  FC			 cld		 ; clear the direction of movement
+     26
+     27	    0007  C5 76	0A		 lds si, source	 ; point ds:si at source
+     28	    000A  C4 7E	06		 les di, dest	 ; point es:di at destination
+     29
+     30	    000D  66| 8B 4E 0E		 mov ecx,count	 ; move	into ecx number	of words
+     31	    0011  F3> 66| A5		 rep movsd	 ; move	the data
+     32
+     33	    0014  1F			 pop ds		 ; restore the registers
+     34	    0015  5E			 pop si
+     35	    0016  5F			 pop di
+     36
+     37	    0017  5D			 pop bp		 ; restore the stack
+     38
+     39	    0018  CB			 ret
+     40
+     41	    0019			 _fquadcpy ENDP
+     42
+     43					 END
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:27	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "05/26/95"
+??filename			  Text	 "qcpy	  "
+??time				  Text	 "02:23:26"
+??version			  Number 0400
+@32Bit				  Text	 0
+@CodeSize			  Text	 1
+@Cpu				  Text	 0F0FH
+@DataSize			  Text	 0
+@FileName			  Text	 qcpy
+@Interface			  Text	 00h
+@Model				  Text	 4
+@WordSize			  Text	 4
+@code				  Text	 qcpy_TEXT
+@curseg				  Text	 qcpy_TEXT
+@data				  Text	 DGROUP
+@stack				  Text	 DGROUP
+_fquadcpy			  Far	 qcpy_TEXT:0000
+count				  Number [DGROUP:BP+000E]
+dest				  Number [DGROUP:BP+0006]
+source				  Number [DGROUP:BP+000A]
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+qcpy_TEXT			  16  0019 Word	  Public  CODE
+

@@ -1,0 +1,262 @@
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:36	    Page 1
+qline.asm
+
+
+
+      1
+      2					 ; this	function draws a line from xs to xe using 32 bit data movement
+      3
+      4	    0000			 .MODEL	MEDIUM,			 ; use medium memory model C function names
+**Error** qline.asm(4) Missing or illegal language ID
+      5
+      6	    0000			 .CODE				 ; begin the code segment
+      7
+      8					 .386
+      9
+     10					 PUBLIC	_Triangle_32Line	  ; export function name to linker
+     11
+     12
+     13	    0000			 _Triangle_32Line PROC
+     14
+     15					 ARG dest:DWORD, xs:WORD, xe:WORD, color:WORD
+     16
+     17
+     18	    0000  55			     push bp	     ; create stack frame
+     19	    0001  8B EC			     mov bp,sp
+     20
+     21	    0003  57			     push di	     ; save di
+     22
+     23
+     24	    0004  C4 7E	06		     les di, dest    ; point es:di to start of line
+     25	    0007  03 7E	0A		     add di,xs
+     26
+     27					 ; process special cases first,	i.e. lines of length 1,2,3 or 4
+     28
+     29	    000A			 begin:
+     30
+     31	    000A  8B 46	0C		     mov ax,xe	     ; ax=xs-xe;
+     32	    000D  2B 46	0A		     sub ax,xs
+     33
+     34	    0010  8B 4E	0E		     mov cx, color   ; cx = color | color << 8
+     35	    0013  8A E9			     mov ch,cl
+     36
+     37	    0015			 test_0:
+     38
+     39	    0015  3D 0000		     cmp ax,0	     ; if (ax==0)
+     40	    0018  75 06	90 90		     jne test_1	     ; else goto test_1
+     41
+     42	    001C  26: 88 0D		     mov es:[di],cl
+     43	    001F  CB			     ret
+     44
+     45
+     46	    0020			 test_1:
+     47
+     48	    0020  3D 0001		     cmp ax,1	     ; if (ax==1)
+     49	    0023  75 06	90 90		     jne test_2	     ; else goto test_2
+     50
+     51	    0027  26: 89 0D		     mov es:[di],cx
+     52	    002A  CB			     ret
+     53
+     54
+     55	    002B			 test_2:
+     56
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:36	    Page 2
+qline.asm
+
+
+
+     57	    002B  3D 0002		     cmp ax,2	     ; if (ax==2)
+     58	    002E  75 0C	90 90		     jne test_3	     ; else goto test_3
+     59
+     60	    0032  26: 89 0D		     mov es:[di],cx
+     61	    0035  83 C7	02		     add di,2
+     62	    0038  26: 88 0D		     mov es:[di],cl
+     63	    003B  CB			     ret
+     64
+     65
+     66	    003C			 test_3:
+     67
+     68	    003C  3D 0003		     cmp ax,3			; if (ax==0)
+     69	    003F  75 0C	90 90		     jne process_left_end	; else process left end
+     70
+     71	    0043  26: 89 0D		     mov es:[di],cx
+     72	    0046  83 C7	02		     add di,2
+     73	    0049  26: 89 0D		     mov es:[di],cx
+     74	    004C  CB			     ret
+     75
+     76	    004D			 process_left_end:
+     77
+     78	    004D  8B 46	0A		     mov ax,xs			; ax=xs	& 0x03
+     79	    0050  25 0003		     and ax,03h
+     80
+     81	    0053			 test_l1:
+     82
+     83	    0053  3D 0001		     cmp ax,1			; if (ax==1)
+     84	    0056  75 10	90 90		     jne test_l2
+     85
+     86	    005A  26: 88 0D		     mov es:[di], cl
+     87	    005D  47			     inc di
+     88	    005E  26: 89 0D		     mov es:[di], cx
+     89
+     90	    0061  83 46	0A 03		     add xs,3			; xs +=3
+     91
+     92	    0065  EB 1F	90		     jmp process_right_end
+     93
+     94	    0068			 test_l2:			; if (ax==2)
+     95
+     96	    0068  3D 0002		     cmp ax,2
+     97	    006B  75 0C	90 90		     jne test_l3
+     98
+     99	    006F  26: 89 0D		     mov es:[di],cx
+    100
+    101	    0072  83 46	0A 02		     add xs,2			; xs+=2
+    102
+    103	    0076  EB 0E	90		     jmp process_right_end
+    104
+    105
+    106	    0079			 test_l3:			; if (ax==3)
+    107
+    108	    0079  3D 0003		     cmp ax,3
+    109	    007C  75 08	90 90		     jne process_right_end
+    110
+    111	    0080  26: 88 0D		     mov es:[di],cl
+    112
+    113	    0083  FF 46	0A		     inc xs			; xs+=1
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:36	    Page 3
+qline.asm
+
+
+
+    114
+    115
+    116	    0086			 process_right_end:
+    117
+    118	    0086  C4 7E	06		     les di, dest		; point	es:di to start of line
+    119	    0089  03 7E	0C		     add di,xe
+    120
+    121	    008C  8B 46	0C		     mov ax,xe			; ax=xs	& 0x03
+    122	    008F  25 0003		     and ax,03h
+    123
+    124	    0092			 test_r0:			; if (ax==0)
+    125
+    126	    0092  3D 0000		     cmp ax,0
+    127	    0095  75 0B	90 90		     jne test_r1
+    128
+    129	    0099  26: 88 0D		     mov es:[di],cl
+    130
+    131	    009C  FF 4E	0C		     dec xe			; xe-=1
+    132
+    133	    009F  EB 27	90		     jmp process_middle
+    134
+    135	    00A2			 test_r1:			; if (ax==1)
+    136
+    137	    00A2  3D 0001		     cmp ax,1
+    138	    00A5  75 0D	90 90		     jne test_r2
+    139
+    140	    00A9  4F			     dec di
+    141	    00AA  26: 89 0D		     mov es:[di],cx
+    142
+    143	    00AD  83 6E	0C 02		     sub xe,2			; xe-=2
+    144
+    145	    00B1  EB 15	90		     jmp process_middle
+    146
+    147
+    148	    00B4			 test_r2:			; if (ax==2)
+    149
+    150	    00B4  3D 0002		     cmp ax,2
+    151	    00B7  75 0F	90 90		     jne process_middle
+    152
+    153	    00BB  26: 88 0D		     mov es:[di],cl
+    154	    00BE  83 EF	02		     sub di,2
+    155	    00C1  26: 89 0D		     mov es:[di],cx
+    156
+    157	    00C4  83 6E	0C 03		     sub xe,3			; xe-=3
+    158
+    159	    00C8			 process_middle:
+    160
+    161
+    162	    00C8  C4 7E	06		     les di,dest		; point	es:di to start of line
+    163	    00CB  03 7E	0A		     add di,xs
+    164
+    165	    00CE  FC			     cld			; clear	the direction of movement
+    166
+    167	    00CF  66| 8B C1		     mov eax, ecx		; move the color data into eax
+    168	    00D2  66| C1 E0 10		     shl eax,16
+    169	    00D6  66| 0B C1		     or	eax,ecx
+    170
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:36	    Page 4
+qline.asm
+
+
+
+    171	    00D9  8B 4E	0C		     mov cx,xe			; compute number of words to move  (xe-xs+1)/2
+    172	    00DC  2B 4E	0A		     sub cx,xs
+    173	    00DF  41			     inc cx
+    174	    00E0  C1 E9	02		     shr cx,2			; divide by 4
+    175
+    176	    00E3  F3> 66| AB		     rep stosd			; fill the region with data
+    177
+    178	    00E6  5F			     pop di			; restore di
+    179	    00E7  5D			     pop bp			; fixup	stack
+    180
+    181	    00E8  CB			     ret			; return to caller
+    182
+    183	    00E9			 Triangle_32Line ENDP
+**Error** qline.asm(183) Unmatched ENDP: Triangle_32Line
+    184
+    185					 END
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:36	    Page 5
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "05/26/95"
+??filename			  Text	 "qline	  "
+??time				  Text	 "02:23:36"
+??version			  Number 0400
+@32Bit				  Text	 0
+@CodeSize			  Text	 1
+@Cpu				  Text	 0F0FH
+@DataSize			  Text	 0
+@FileName			  Text	 qline
+@Model				  Text	 4
+@WordSize			  Text	 4
+@code				  Text	 qline_TEXT
+@curseg				  Text	 qline_TEXT
+@data				  Text	 DGROUP
+_Triangle_32Line		  Far	 qline_TEXT:0000
+begin				  Near	 qline_TEXT:000A
+color				  Number [BP+000E]
+dest				  Number [BP+0006]
+process_left_end		  Near	 qline_TEXT:004D
+process_middle			  Near	 qline_TEXT:00C8
+process_right_end		  Near	 qline_TEXT:0086
+test_0				  Near	 qline_TEXT:0015
+test_1				  Near	 qline_TEXT:0020
+test_2				  Near	 qline_TEXT:002B
+test_3				  Near	 qline_TEXT:003C
+test_l1				  Near	 qline_TEXT:0053
+test_l2				  Near	 qline_TEXT:0068
+test_l3				  Near	 qline_TEXT:0079
+test_r0				  Near	 qline_TEXT:0092
+test_r1				  Near	 qline_TEXT:00A2
+test_r2				  Near	 qline_TEXT:00B4
+xe				  Number [BP+000C]
+xs				  Number [BP+000A]
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+qline_TEXT			  16  00E9 Word	  Public  CODE
+Turbo Assembler	 Version 4.0	    05/26/95 02:23:36	    Page 6
+Error Summary
+
+
+
+**Error** qline.asm(4) Missing or illegal language ID
+**Error** qline.asm(183) Unmatched ENDP: Triangle_32Line
+

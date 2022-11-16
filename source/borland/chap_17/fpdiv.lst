@@ -1,0 +1,77 @@
+Turbo Assembler	 Version 4.0	    05/26/95 02:24:06	    Page 1
+fpdiv.asm
+
+
+
+      1
+      2					 ; this	function uses 64 bit math to divide two	numbers	in 32 bit 16:16
+      3					 ; fixed point format
+      4
+      5	    0000			 .MODEL	MEDIUM		    ; use medium memory	model C	function names
+      6
+      7					 .386
+      8
+      9	    0000			 .CODE			      ;	begin the code segment
+     10
+     11					 PUBLIC	_FP_Div		      ;	export function	name to	linker
+     12
+     13
+     14	    0000			 _FP_Div PROC
+     15
+     16					 ARG dividend:DWORD, divisor:DWORD
+     17
+     18	    0000  55			     push bp	      ;	create stack frame
+     19	    0001  8B EC			     mov bp,sp
+     20
+     21	    0003  66| 8B 46 06		     mov eax,dividend ;	move dividend into eax
+     22	    0007  66| 99		     cdq	      ;	convert	eax into edx:eax using sign extension
+     23	    0009  66| 0F A4 C2 10	     shld edx,eax,16  ;	shift edx:eax 16 bits to the left in so	that
+     24							      ;	result is in fixed point
+     25	    000E  66| C1 E0 10		     sal eax,16	      ;	but manually shift eax since shld doesn't change the
+     26							      ;	source register	(pretty	stupid!)
+     27
+     28	    0012  66| F7 7E 0A		     idiv divisor     ;	perform	divison
+     29
+     30	    0016  66| 0F A4 C2 10	     shld edx,eax,16  ;	move result into dx:ax since it's in eax
+     31
+     32	    001B  5D			     pop bp	      ;	fixup stack
+     33
+     34	    001C  CB			     ret	      ;	return to caller
+     35
+     36	    001D			 _FP_Div ENDP
+     37
+     38					 END
+Turbo Assembler	 Version 4.0	    05/26/95 02:24:06	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "05/26/95"
+??filename			  Text	 "fpdiv	  "
+??time				  Text	 "02:24:05"
+??version			  Number 0400
+@32Bit				  Text	 0
+@CodeSize			  Text	 1
+@Cpu				  Text	 0F0FH
+@DataSize			  Text	 0
+@FileName			  Text	 fpdiv
+@Interface			  Text	 00h
+@Model				  Text	 4
+@WordSize			  Text	 2
+@code				  Text	 fpdiv_TEXT
+@curseg				  Text	 fpdiv_TEXT
+@data				  Text	 DGROUP
+@stack				  Text	 DGROUP
+_FP_Div				  Far	 fpdiv_TEXT:0000
+dividend			  Number [DGROUP:BP+0006]
+divisor				  Number [DGROUP:BP+000A]
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+fpdiv_TEXT			  16  001D Word	  Public  CODE
+
